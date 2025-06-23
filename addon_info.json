@@ -1,0 +1,11 @@
+﻿{
+  "addon_name": "simpleCopy",
+  "addon_description": "Quickly copy selected text without unwanted formatting or line-break issues.",
+  "addon_version": "2025.1",
+  "addon_author": "chaichaimee",
+  "addon_url": "https://github.com/chaichaimee/simpleCopy",
+  "addon_download_url": "https://github.com/chaichaimee/simpleCopy/releases/download/v2025.1/simpleCopy-v2025.1.nvda-addon",
+  "addon_license": "GPLv2",
+  "addon_min_nvda_version": "2022.4"
+}
+
