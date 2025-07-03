@@ -21,7 +21,6 @@ import comtypes.client
 import IAccessibleHandler
 import hashlib
 
-# Configure logging for debugging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 addonHandler.initTranslation()
@@ -41,9 +40,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
     def normalize_text(self, text):
         if not text:
             return ""
-        # Remove non-printable characters except common whitespace and newlines
         text = "".join(char for char in text if char.isprintable() or char in {"\r", "\n", " "})
-        text = text.replace("\r\n", "\n").replace("\r", "\n") # Convert all to consistent \n
+        text = text.replace("\r\n", "\n").replace("\r", "\n")
         return text
 
     def calculate_sha256(self, text):
@@ -51,10 +49,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
         return hashlib.sha256(normalized_text.encode('utf-8')).hexdigest()
 
     def getSelectedText(self, obj_param):
-        """
-        Gets selected text using info.clipboardText, which is designed for clipboard compatibility
-        and is expected to handle multi-line preservation better.
-        """
         logging.info("SimpleCopy: getSelectedText started (using info.clipboardText).")
         current_obj = obj_param
         selected_text = None
@@ -65,11 +59,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
         )
 
         try:
-            # Prioritize treeInterceptor for browser apps if available and capable
-            # This logic is consistent with clipContentsDesigner's approach 
             if is_browser_app and hasattr(current_obj, 'treeInterceptor') and current_obj.treeInterceptor and not current_obj.treeInterceptor.passThrough:
-                # In clipContentsDesigner, it specifically checks for BrowseModeDocumentTreeInterceptor 
-                # We'll adapt by just checking for makeTextInfo on treeInterceptor
                 if hasattr(current_obj.treeInterceptor, 'makeTextInfo'):
                     current_obj = current_obj.treeInterceptor
                     logging.info(f"SimpleCopy: (getSelectedText) Switched to treeInterceptor for app: {obj_param.appModule.appName}")
@@ -77,25 +67,20 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
                     logging.info(f"SimpleCopy: (getSelectedText) TreeInterceptor found but no makeTextInfo, sticking with original obj.")
             else:
                 logging.info(f"SimpleCopy: (getSelectedText) Not a browser app or no valid treeInterceptor. Using original obj.")
-
-            # Attempt to get text from selection using makeTextInfo
+            
             if hasattr(current_obj, 'makeTextInfo'):
                 try:
                     info = current_obj.makeTextInfo(textInfos.POSITION_SELECTION)
                     if info and not info.isCollapsed:
-                        # CRITICAL CHANGE: Use info.clipboardText as suggested by clipContentsDesigner 
                         selected_text = info.clipboardText
                         logging.info(f"SimpleCopy: (getSelectedText) makeTextInfo (Position Selection) using clipboardText: {repr(selected_text)}")
                         if selected_text:
-                            # Apply final normalization: convert line endings and strip overall
                             return selected_text.replace('\r\n', '\n').replace('\r', '\n').strip()
-                        
                 except (RuntimeError, NotImplementedError) as e:
                     logging.warning(f"SimpleCopy: (getSelectedText) makeTextInfo selection failed on {current_obj.name}: {str(e)}")
             else:
                 logging.info(f"SimpleCopy: (getSelectedText) Object does not have makeTextInfo method.")
             
-            # Fallback to simulating Ctrl+C if direct makeTextInfo failed or yielded no useful text
             logging.info("SimpleCopy: (getSelectedText) No text from makeTextInfo, attempting Ctrl+C fallback.")
             original_clipboard_data = ""
             try:
@@ -103,8 +88,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
                     original_clipboard_data = winUser.getClipboardData(winUser.CF_UNICODETEXT) or ""
                     winUser.emptyClipboard()
                 
-                keyboardHandler.feedKeyPress("control+c")
-                time.sleep(0.05) # Small delay for clipboard to update
+                keyboardHandler.injectKey("control+c")
+                time.sleep(0.05)
 
                 with winUser.openClipboard(gui.mainFrame.Handle):
                     clipboard_text = winUser.getClipboardData(winUser.CF_UNICODETEXT) or ""
@@ -113,13 +98,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
                     selected_text = clipboard_text
                     logging.info(f"SimpleCopy: (getSelectedText) Fallback Ctrl+C retrieved: {repr(selected_text)}")
                     
-                    # Apply basic normalization for Ctrl+C text
                     return selected_text.replace('\r\n', '\n').replace('\r', '\n').strip()
 
             except Exception as e_fallback:
                 logging.error(f"SimpleCopy: (getSelectedText) Fallback Ctrl+C failed: {str(e_fallback)}")
             finally:
-                # Restore original clipboard content
                 try:
                     with winUser.openClipboard(gui.mainFrame.Handle):
                         winUser.emptyClipboard()
@@ -176,24 +159,21 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
                         return
             except Exception as e:
                 logging.error(f"SimpleCopy: (script_appendToClipboard) Error reading clipboard: {str(e)}")
-                clipData = "" # Reset if error
+                clipData = ""
 
             processed_text_to_append = text_to_append
             
             if clipData:
-                # Ensure a clear separation with double newline
-                # Normalize line endings from both clipData and processed_text_to_append
                 clipData_normalized = clipData.replace('\r\n', '\n').replace('\r', '\n').rstrip('\n')
                 processed_text_to_append_normalized = processed_text_to_append.replace('\r\n', '\n').replace('\r', '\n').lstrip('\n')
                 
-                newText = clipData_normalized + "\r\n\r\n" + processed_text_to_append_normalized
+                newText = clipData_normalized + "\n\n" + processed_text_to_append_normalized
             else:
-                newText = processed_text_to_append.replace('\r\n', '\n').replace('\r', '\n') # Just normalize if first text
+                newText = processed_text_to_append.replace('\r\n', '\n').replace('\r', '\n')
             
             try:
                 with winUser.openClipboard(gui.mainFrame.Handle):
                     winUser.emptyClipboard()
-                    # Always set clipboard data with \r\n for universal compatibility on Windows
                     winUser.setClipboardData(winUser.CF_UNICODETEXT, newText.replace('\n', '\r\n'))
                 self.isTextCopied = True
                 speech.speak([_("Appended") if clipData else _("Copied")])
@@ -256,33 +236,22 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
             gesture.send()
             return
         currentTime = time.time()
-        if self.lastKeyPress["key"] == "shift+a" and (currentTime - self.lastKeyPress["time"]) < 0.5:
+        key = "shift+a"
+        if self.lastKeyPress["key"] == key and (currentTime - self.lastKeyPress["time"]) < 0.5:
+            self.lastKeyPress = {"key": None, "time": 0}
             try:
-                with winUser.openClipboard(gui.mainFrame.Handle):
-                    winUser.emptyClipboard()
-
-                time.sleep(0.1)
-
-                obj = api.getFocusObject()
-                if not obj or not obj.appModule or obj.appModule.appName not in ("chrome", "firefox", "edge", "msedge", "opera", "safari"):
-                    ui_message(_("Not in a supported browser"))
+                url_to_copy = api.getCurrentURL()
+                if url_to_copy is None:
+                    ui_message(_("No URL"))
                     return
-
-                url = api.getCurrentURL()
-
-                if url is None or not re.match(r'^https?://', url, re.IGNORECASE):
-                    ui_message(_("No valid URL available"))
-                    return
-
-                if api.copyToClip(url):
+                if api.copyToClip(url_to_copy):
                     ui_message(_("Copy"))
                 else:
                     ui_message(_("Failed to copy"))
             except Exception as e:
-                logging.error(f"SimpleCopy: Error in copyBrowserAddress: {str(e)}")
                 ui_message(_("Error copy"))
-        self.lastKeyPress["key"] = "shift+a"
-        self.lastKeyPress["time"] = currentTime
+        else:
+            self.lastKeyPress = {"key": key, "time": currentTime}
 
     @scriptHandler.script(
         description=_("Copy file & folder name"),
@@ -314,8 +283,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
             except Exception as e:
                 logging.error(f"SimpleCopy: Error in copyExplorerFileName: {str(e)}")
                 ui_message(_("Error copy"))
-        self.lastKeyPress["key"] = "shift+f"
-        self.lastKeyPress["time"] = currentTime
+            finally:
+                self.lastKeyPress = {"key": None, "time": 0}
+        else:
+            self.lastKeyPress = {"key": "shift+f", "time": currentTime}
+
 
     @scriptHandler.script(
         description=_("Copy the hyperlink URL"),
@@ -359,8 +331,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
             except Exception as e:
                 logging.error(f"SimpleCopy: Error in copyLink: {str(e)}")
                 ui_message(_("Cannot copy link"))
-        self.lastKeyPress["key"] = "shift+l"
-        self.lastKeyPress["time"] = currentTime
+            finally:
+                self.lastKeyPress = {"key": None, "time": 0}
+        else:
+            self.lastKeyPress = {"key": "shift+l", "time": currentTime}
 
     @scriptHandler.script(
         description=_("Copy current date and time"),
@@ -385,5 +359,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
             except Exception as e:
                 logging.error(f"SimpleCopy: Error in copyDateTime: {str(e)}")
                 ui_message(_("Error copy"))
-        self.lastKeyPress["key"] = "shift+d"
-        self.lastKeyPress["time"] = currentTime
+            finally:
+                self.lastKeyPress = {"key": None, "time": 0}
+        else:
+            self.lastKeyPress = {"key": "shift+d", "time": currentTime}

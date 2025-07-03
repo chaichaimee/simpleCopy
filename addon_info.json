@@ -1,4 +1,4 @@
-{
+﻿{
   "addonId": "simpleCopy.chaichaimee",
   "addonName": "simpleCopy",
   "addonDescription": "Adds copy to clipboard functionality",
@@ -9,3 +9,4 @@
   "addonLicense": "GPLv2",
   "addonMinNVDAVersion": "2022.4"
 }
+
