@@ -1,12 +1,10 @@
 ﻿{
-  "addonId": "simpleCopy.chaichaimee",
-  "addonName": "simpleCopy",
-  "addonDescription": "Adds copy to clipboard functionality",
-  "addonVersion": "2025.3",
-  "addonAuthor": "chai chaimee",
-  "addonUrl": "https://github.com/chaichaimee/simpleCopy",
-  "addonDownloadUrl": "https://github.com/chaichaimee/simpleCopy/releases/download/v2025.3/simpleCopy-v2025.3.nvda-addon",
-  "addonLicense": "GPLv2",
-  "addonMinNVDAVersion": "2022.4"
+  "addon_name": "simpleCopy",
+  "addon_description": "Enhanced clipboard management and data copying for NVDA",
+  "addon_version": "2026.1",
+  "addon_author": "chaichaimee",
+  "addon_url": "https://github.com/chaichaimee/simpleCopy",
+  "addon_download_url": "https://github.com/chaichaimee/simpleCopy/releases/download/v2026.1/simpleCopy-v2026.1.nvda-addon",
+  "addon_min_nvda_version": "2022.4"
 }
 
