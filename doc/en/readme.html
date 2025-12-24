@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Simple Copy NVDA Add-on</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1, h2, h3 {
+    text-align: center;
+}
+b {
+    font-weight: bold;
+}
+.section {
+    margin-bottom: 30px;
+}
+.nvda-logo {
+    display: block;
+    margin: 0 auto 20px;
+    width: 120px;
+    height: auto;
+}
+.hotkey {
+    background: #f8f9fa;
+    border-left: 4px solid #3498db;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 0 4px 4px 0;
+}
+.tap-explanation {
+    background: #e8f4fc;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.feature-item {
+    margin: 15px 0;
+    padding-left: 10px;
+}
+.note {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 0 4px 4px 0;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="section">
+    <img src="https://www.nvaccess.org/files/nvda/documentation/userGuide/images/nvda.ico" alt="NVDA Logo" class="nvda-logo">
+    <h1>Simple Copy</h1>
+
+<br>    
+
+<p style="text-align: center;">Enhanced clipboard management and data copying for NVDA</div>
+
+<br>
+
+<div class="section">
+    <p style="text-align: center;"><b>author:</b> chai chaimee</p>
+    <p style="text-align: center;"><b>url:</b> https://github.com/chaichaimee/simpleCopy</p>
+</div>
+
+<hr>
+
+<div class="section">
+    <h2>Description</h2>
+    <p><b>Simple Copy</b> is an NVDA (NonVisual Desktop Access) add-on designed to significantly improve and extend clipboard management and data copying capabilities for screen reader users.</p>
+    <p>This add-on provides streamlined workflows for common tasks:</p>
+    <ul>
+        <li>Appending selected text to existing clipboard content with a single command</li>
+        <li>Copying browser URLs and hyperlink addresses with intelligent browser detection</li>
+        <li>Utilizing an intuitive <b>single-tap/double-tap</b> system for accessing multiple functions from the same keystrokes</li>
+    </ul>
+    <p>The add-on integrates seamlessly with NVDA and supports all major browsers including Chrome, Firefox, Edge, Safari, Opera, and Brave. It's designed specifically for compatibility with the NVDA 2025.x API.</p>
+</div>
+<br>
+<div class="section">
+    <h2>Hot Keys</h2>
+    <p>The add-on uses an efficient <b>tap-based system</b> where single and double taps of the same keystroke perform different but related functions.</p>
+    
+    <div class="hotkey">
+        <h3>Control+Shift+A - URL Management</h3>
+        <div class="tap-explanation">
+            <p><b>Single Tap (press once):</b> Copy the current browser URL to clipboard</p>
+            <p><b>Double Tap (press twice quickly):</b> Copy the URL of the focused hyperlink</p>
+        </div>
+        <p>When pressed in an editable text field, the original keystroke is passed through to the application.</p>
+    </div>
+    <br>
+    <div class="hotkey">
+        <h3>Control+Shift+C - Clipboard Management</h3>
+        <div class="tap-explanation">
+            <p><b>Single Tap (press once):</b> Copy or append selected text to clipboard</p>
+            <p><b>Double Tap (press twice quickly):</b> Clear all clipboard content</p>
+        </div>
+        <p>If no text is selected when using the append function, the original keystroke is passed through.</p>
+    </div>
+    
+    <div class="note">
+        <p><b>Tap Timing:</b> For a double tap to be recognized, the second press must occur within 0.5 seconds of the first press. If more time elapses, NVDA will treat them as separate single taps.</p>
+    </div>
+</div>
+<br>
+<div class="section">
+    <h2>Features</h2>
+    
+    <div class="feature-item">
+        <h3>1. Smart Browser URL Copying</h3>
+        <p><b>Gesture:</b> Control+Shift+A (Single Tap)</p>
+        <p>When active in a supported web browser, this function copies the complete URL of the current webpage to the clipboard. The add-on automatically detects when you're in a browser environment and adjusts its behavior accordingly.</p>
+        <p><b>Supported browsers:</b> Chrome, Firefox, Edge, Opera, Safari, Brave</p>
+    </div>
+    
+    <div class="feature-item">
+        <h3>2. Hyperlink URL Extraction</h3>
+        <p><b>Gesture:</b> Control+Shift+A (Double Tap)</p>
+        <p>This function extracts the URL from hyperlinks using multiple methods for maximum compatibility:</p>
+        <ul>
+            <li>Standard property access</li>
+            <li>UIA (UI Automation) fallback for modern browsers</li>
+            <li>IAccessible fallback for legacy support</li>
+            <li>Parent element searching if the focused object isn't directly a link</li>
+        </ul>
+    </div>
+    
+    <div class="feature-item">
+        <h3>3. Text Append with Intelligent Formatting</h3>
+        <p><b>Gesture:</b> Control+Shift+C (Single Tap)</p>
+        <p>This core function provides intelligent text appending with automatic formatting:</p>
+        <ul>
+            <li><b>Appends to existing content:</b> If the clipboard contains text, the selected text is appended with proper line separation</li>
+            <li><b>Creates new content:</b> If the clipboard is empty, the selected text is copied as new content</li>
+            <li><b>Format normalization:</b> Automatically normalizes line endings to consistent format</li>
+            <li><b>Non-text protection:</b> Detects and prevents appending to non-text clipboard content</li>
+        </ul>
+    </div>
+    
+    <div class="feature-item">
+        <h3>4. Clipboard Clearing</h3>
+        <p><b>Gesture:</b> Control+Shift+C (Double Tap)</p>
+        <p>Quickly clear all content from the Windows clipboard with audio confirmation. This is particularly useful for security purposes or when preparing the clipboard for new content.</p>
+    </div>
+    
+    <div class="feature-item">
+        <h3>5. Advanced Text Selection Detection</h3>
+        <p>The add-on employs sophisticated methods to retrieve selected text:</p>
+        <ul>
+            <li>Primary method using treeInterceptor or focus objects</li>
+            <li>Fallback method simulating Ctrl+C when the primary method fails</li>
+            <li>Preserves original clipboard content during text extraction operations</li>
+        </ul>
+    </div>
+    
+    <div class="feature-item">
+        <h3>6. Browser Detection & Context Awareness</h3>
+        <p>The add-on intelligently detects the application context:</p>
+        <ul>
+            <li>Automatically identifies when you're working in a web browser</li>
+            <li>Adjusts URL-related functions based on current context</li>
+            <li>Passes through original keystrokes in non-browser contexts or editable fields</li>
+        </ul>
+    </div>
+    
+<br><br>
+
+    <div class="note">
+        <p><b>Technical Note:</b> This add-on is built specifically for the NVDA 2025.x API. It uses proper Python tools and linters to ensure code quality and follows NVDA add-on development best practices.</p>
+<br><br>
+
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>

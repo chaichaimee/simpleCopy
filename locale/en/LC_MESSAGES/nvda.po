@@ -1,0 +1,85 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple Copy 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-24 00:00+0700\n"
+"PO-Revision-Date: 2025-12-24 15:45+0700\n"
+"Last-Translator: \n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.7\n"
+
+#: __init__.py
+msgid "Simple Copy"
+msgstr "Simple Copy"
+
+#: __init__.py
+msgid "Copy URL (single tap), Copy hyperlink (double tap)"
+msgstr "Copy URL (single tap), Copy hyperlink (double tap)"
+
+#: __init__.py
+msgid "Append text (single tap), Clear clipboard (double tap)"
+msgstr "Append text (single tap), Clear clipboard (double tap)"
+
+#: __init__.py
+msgid "No text selected to append"
+msgstr "No text selected to append"
+
+#: __init__.py
+msgid "Appended"
+msgstr "Appended"
+
+#: __init__.py
+msgid "Copied"
+msgstr "Copied"
+
+#: __init__.py
+msgid "Error during append operation"
+msgstr "Error during append operation"
+
+#: __init__.py
+msgid "No URL"
+msgstr "No URL"
+
+#: __init__.py
+msgid "Copy"
+msgstr "Copy"
+
+#: __init__.py
+msgid "Failed to copy"
+msgstr "Failed to copy"
+
+#: __init__.py
+msgid "Error copy"
+msgstr "Error copy"
+
+#: __init__.py
+msgid "Not in a web browser"
+msgstr "Not in a web browser"
+
+#: __init__.py
+msgid "No link found"
+msgstr "No link found"
+
+#: __init__.py
+msgid "Cannot copy link"
+msgstr "Cannot copy link"
+
+#: __init__.py
+msgid "Clean"
+msgstr "Clean"
+
+#: __init__.py
+msgid "Cannot clean"
+msgstr "Cannot clean"
+
+#: clipboard_utils.py
+msgid "Cannot append to non-text clipboard content"
+msgstr "Cannot append to non-text clipboard content"
+
+#: clipboard_utils.py
+msgid "Error writing to clipboard"
+msgstr "Error writing to clipboard"
