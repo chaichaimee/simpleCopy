@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: simpleCopy 2026.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-13 16:18+0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Anonymous <anonymous@example.com>\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: NVDA DevOn Addon\n"
+
+#: __init__.py:222
+msgid "Append"
+msgstr "Ajouter à la suite"
+
+#: clipboard_utils.py:126
+msgid "Appended"
+msgstr "Ajouté à la suite"
+
+#: clipboard_utils.py:102
+msgid "Cannot append to non-text clipboard content"
+msgstr "Impossible d'ajouter à un contenu du presse-papiers non textuel"
+
+#: __init__.py:170
+msgid "Clean"
+msgstr "Effacer"
+
+#: clipboard_utils.py:126
+msgid "Copied"
+msgstr "Copié"
+
+#: __init__.py:112
+#: __init__.py:124
+msgid "Copy"
+msgstr "Copier"
+
+#: __init__.py:230
+msgid "Copy all"
+msgstr "Tout copier"
+
+#: __init__.py:76
+msgid "Error during append operation"
+msgstr "Erreur lors de l'opération d'ajout"
+
+#: clipboard_utils.py:133
+msgid "Error writing to clipboard"
+msgstr "Erreur lors de l'écriture dans le presse-papiers"
+
+#: __init__.py:114
+msgid "No URL"
+msgstr "Pas d'URL"
+
+#: __init__.py:126
+msgid "No link found"
+msgstr "Aucun lien trouvé"
+
+#: __init__.py:65
+msgid "No text selected to append"
+msgstr "Aucun texte sélectionné pour l'ajout"
+
+#: __init__.py:29
+msgid "Simple Copy"
+msgstr "Simple Copy"
+
+#: __init__.py:79
+msgid "copy URL (single) copy hyper link (double)"
+msgstr "copier l'URL (un appui), copier l'hyperlien (deux appuis)"
+
+#: __init__.py:133
+msgid "copy and append (single) clear (double)"
+msgstr "copier et ajouter (un appui), effacer (deux appuis)"
+
+#: __init__.py:180
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
+msgstr "copier dernière annonce (1), ajouter dernière annonce (2), copier jusqu'à la dernière annonce (3), ouvrir l'historique (4)"

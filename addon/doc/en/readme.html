@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>simpleCopy NVDA Add-on</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1, h2, h3 {
+    text-align: center;
+}
+b {
+    font-weight: bold;
+}
+.section {
+    margin-bottom: 30px;
+}
+.nvda-logo {
+    display: block;
+    margin: 0 auto 20px;
+    width: 120px;
+    height: auto;
+}
+.hotkey {
+    background: #f8f9fa;
+    border-left: 4px solid #3498db;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 0 4px 4px 0;
+}
+.tap-explanation {
+    background: #e8f4fc;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.feature-item {
+    margin: 15px 0;
+    padding-left: 10px;
+}
+.note {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 0 4px 4px 0;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="section">
+    <img src="https://www.nvaccess.org/files/nvda/documentation/userGuide/images/nvda.ico" alt="NVDA Logo" class="nvda-logo">
+    <h1>simpleCopy</h1>
+    <br>
+    <p style="text-align: center; font-size: 1.2em; color: #2c3e50;"><b>Ultimate Capture Power: URLs, Text, Last Spoken Words – All at Your Fingertips, Faster and Smarter</b></p>
+</div>
+<br>
+<div class="section">
+    <p style="text-align: center;"><b>author:</b> chai chaimee</p>
+    <p style="text-align: center;"><b>url:</b> https://github.com/chaichaimee/simpleCopy</p>
+</div>
+<hr>
+<div class="section">
+    <h2>Master Every Moment of Information Flow</h2>
+    <p><b>simpleCopy</b> transforms how you seize, collect, and reuse information with NVDA – turning fleeting spoken output, selected text, and web links into instantly accessible assets.</p>
+    <p>No more missed details, repeated reading, or clipboard frustration. With intelligent gestures, you command your data effortlessly while NVDA stays silent when it should.</p>
+    <p>Experience total control through:</p>
+    <ul>
+        <li><b>Lightning-fast URL & hyperlink capture</b> – grab page or link destinations with clear spoken confirmation of exactly what you copied.</li>
+        <li><b>Dynamic text accumulation</b> – append selections seamlessly to build notes, lists, or compilations without losing a single character.</li>
+        <li><b>Powerful speech history mastery</b> – copy, append, or accumulate everything NVDA speaks – from the moment you first use the speech gesture onward.</li>
+    </ul>
+    <p>Seamless across major browsers and the entire Windows desktop – built natively for the NVDA API.</p>
+</div>
+<br>
+<div class="section">
+    <h2>Hot Keys</h2>
+   
+    <div class="hotkey">
+        <h3>Control+Shift+A – URL & Hyperlink Capture</h3>
+        <div class="tap-explanation">
+            <p><b>Single Tap:</b> Copies the current webpage URL and announces: "Copied current page URL: [URL]"</p>
+            <p><b>Double Tap:</b> Copies the focused hyperlink's destination URL and announces: "Copied link URL: [URL]"</p>
+        </div>
+        <p>Browser-optimized. In editable fields, the keystroke passes through untouched.</p>
+    </div>
+    <br>
+    <div class="hotkey">
+        <h3>Control+Shift+C – Text Copy & Clipboard Reset</h3>
+        <div class="tap-explanation">
+            <p><b>Single Tap:</b> Copies selected text – or appends it to the existing clipboard (with intelligent line handling). Announces action taken.</p>
+            <p><b>Double Tap:</b> Clears the entire clipboard and speaks "Clean" for instant confirmation.</p>
+        </div>
+        <p>No selection? Keystroke passes through. Ideal for research, quoting, and quick resets.</p>
+    </div>
+    <br>
+    <div class="hotkey">
+        <h3>F9 – Last Speech Mastery</h3>
+        <div class="tap-explanation">
+            <p><b>Single Tap:</b> Copies the most recent spoken phrase by NVDA to the clipboard and announces it.</p>
+            <p><b>Double Tap:</b> Appends the last spoken phrase to the current clipboard content.</p>
+            <p><b>Triple Tap:</b> Copies the full accumulated speech log – everything NVDA has spoken since your very first F9 press in this session (e.g., you press single-tap F9 to copy phrase "a", from that point onward NVDA logs every phrase spoken: b, c, d, e…; triple-tap then copies the entire sequence from "a" right up to the last phrase spoken before the triple tap).</p>
+            <p><b>Quadruple Tap:</b> Opens the full speech record file – letting you review and search the complete history of what NVDA has read aloud.</p>
+        </div>
+        <p>Never lose another spoken notification, label, error message, or announcement. Perfect for capturing transient output, debugging, documentation, or building references from NVDA's speech.</p>
+    </div>
+   
+</div>
+<br>
+<div class="section">
+    <h2>Core Features That Redefine Accessibility</h2>
+   
+    <div class="feature-item">
+        <h3>1. Instant Webpage URL Grab</h3>
+        <p><b>Gesture:</b> Control+Shift+A (Single Tap)</p>
+        <p>One tap captures the full current URL – announced verbatim so you know precisely what's copied. No address bar hunting required.</p>
+    </div>
+   
+    <div class="feature-item">
+        <h3>2. Precision Hyperlink Extraction</h3>
+        <p><b>Gesture:</b> Control+Shift+A (Double Tap)</p>
+        <p>Double-tap on any focused link to extract and announce its true destination URL. Robust multi-method detection guarantees results.</p>
+    </div>
+   
+    <div class="feature-item">
+        <h3>3. Seamless Text Append Engine</h3>
+        <p><b>Gesture:</b> Control+Shift+C (Single Tap)</p>
+        <p>Build massive notes or compilations by appending selections – smart formatting keeps everything clean and readable.</p>
+    </div>
+   
+    <div class="feature-item">
+        <h3>4. One-Touch Clipboard Clear</h3>
+        <p><b>Gesture:</b> Control+Shift+C (Double Tap)</p>
+        <p>Wipe clean instantly with spoken "Clean" confirmation – perfect for privacy or starting fresh.</p>
+    </div>
+   
+    <div class="feature-item">
+        <h3>5. Last Speech – Single Tap Copy</h3>
+        <p><b>Gesture:</b> F9 (Single Tap)</p>
+        <p>Capture the very last thing NVDA spoke – ideal for errors, tooltips, dynamic labels, or notifications you want to reuse or share. Also starts the speech logging from this point onward.</p>
+    </div>
+   
+    <div class="feature-item">
+        <h3>6. Append or Accumulate Spoken History</h3>
+        <p><b>Gestures:</b> F9 Double / Triple Tap</p>
+        <p>Append the latest utterance, or copy the entire log accumulated since your first F9 use – turn spoken output into persistent, editable text instantly.</p>
+    </div>
+   
+    <div class="feature-item">
+        <h3>7. Full Speech Record Access</h3>
+        <p><b>Gesture:</b> F9 (Quadruple Tap)</p>
+        <p>Open the saved speech log file directly – browse, search, and extract from everything NVDA has announced in your workflow.</p>
+    </div>
+   
+    <div class="feature-item">
+        <h3>8. Zero-Interference Smart Design</h3>
+        <p>Keystrokes pass through in editable contexts. simpleCopy activates only where it delivers value – intelligent and unobtrusive by default.</p>
+    </div>
+   
+<br><br>
+       
+<div class="section">
+    <h2>Support the project</h2>
+
+    <p>If SimpleCopy has improved your daily browsing experience, consider supporting its continued development.</p>
+
+    <br>
+
+    <p style="text-align:center; font-size:1.1em;">
+      <strong><a href="https://github.com/chaichaimee" style="color:#0f766e; text-decoration:none;">Donate via GitHub Sponsors</a></strong>
+    </p>
+  </div>
+
+  <div class="footer-note">
+    <p>© 2026 Chai Chaimee · SimpleCopy NVDA Add-on · Released under GNU GPL v2+</p>
+  </div>
+
+</div>
+</body>
+</html>

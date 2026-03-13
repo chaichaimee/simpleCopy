@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: simpleCopy 2026.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-13 16:18+0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Anonymous <anonymous@example.com>\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: NVDA DevOn Addon\n"
+
+#: __init__.py:222
+msgid "Append"
+msgstr "Añadir al final"
+
+#: clipboard_utils.py:126
+msgid "Appended"
+msgstr "Añadido al final"
+
+#: clipboard_utils.py:102
+msgid "Cannot append to non-text clipboard content"
+msgstr "No se puede añadir a un contenido del portapapeles que no sea texto"
+
+#: __init__.py:170
+msgid "Clean"
+msgstr "Limpiar"
+
+#: clipboard_utils.py:126
+msgid "Copied"
+msgstr "Copiado"
+
+#: __init__.py:112
+#: __init__.py:124
+msgid "Copy"
+msgstr "Copiar"
+
+#: __init__.py:230
+msgid "Copy all"
+msgstr "Copiar todo"
+
+#: __init__.py:76
+msgid "Error during append operation"
+msgstr "Error durante la operación de añadir al final"
+
+#: clipboard_utils.py:133
+msgid "Error writing to clipboard"
+msgstr "Error al escribir en el portapapeles"
+
+#: __init__.py:114
+msgid "No URL"
+msgstr "Sin URL"
+
+#: __init__.py:126
+msgid "No link found"
+msgstr "No se encontró ningún enlace"
+
+#: __init__.py:65
+msgid "No text selected to append"
+msgstr "No hay texto seleccionado para añadir al final"
+
+#: __init__.py:29
+msgid "Simple Copy"
+msgstr "Simple Copy"
+
+#: __init__.py:79
+msgid "copy URL (single) copy hyper link (double)"
+msgstr "copiar URL (un toque), copiar hipervínculo (dos toques)"
+
+#: __init__.py:133
+msgid "copy and append (single) clear (double)"
+msgstr "copiar y añadir al final (un toque), limpiar (dos toques)"
+
+#: __init__.py:180
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
+msgstr "copiar última voz (1), añadir última voz (2), copiar hasta la última voz (3), abrir registro de voz (4)"
