@@ -6,6 +6,7 @@ import os
 import globalVars
 from collections import deque
 import logging
+from eventHandler import FocusLossCancellableSpeechCommand
 
 log = logging.getLogger("nvda.simpleCopy.speech")
 
@@ -57,11 +58,13 @@ class SpeechHistoryHandler:
 		if self._orig_speak:
 			self._orig_speak(sequence, *args, **kwargs)
 		
-		# Extract string items and join with standard separator
-		text_parts = [str(item) for item in sequence if isinstance(item, str)]
+		filtered_seq = [item for item in sequence if not isinstance(item, FocusLossCancellableSpeechCommand)]
+		# Extract string items
+		text_parts = [item for item in filtered_seq if isinstance(item, str)]
 		text = speechViewer.SPEECH_ITEM_SEPARATOR.join(text_parts)
 		
-		if text.strip():
+		# Include all text, even whitespace-only strings, to capture every spoken message
+		if text:
 			self.history.appendleft(text)
 			if self.callback:
 				self.callback(text)

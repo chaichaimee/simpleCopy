@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.3\n"
+"Project-Id-Version: simpleCopy 2026.3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-13 16:18+0700\n"
+"POT-Creation-Date: 2026-03-16 12:21+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Anonymous <anonymous@example.com>\n"
 "Language-Team: French\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: NVDA DevOn Addon\n"
 
-#: __init__.py:222
+#: __init__.py:221
 msgid "Append"
 msgstr "Ajouter à la suite"
 
@@ -22,9 +22,9 @@ msgstr "Ajouté à la suite"
 
 #: clipboard_utils.py:102
 msgid "Cannot append to non-text clipboard content"
-msgstr "Impossible d'ajouter à un contenu du presse-papiers non textuel"
+msgstr "Impossible d'ajouter à un contenu non textuel"
 
-#: __init__.py:170
+#: __init__.py:169
 msgid "Clean"
 msgstr "Effacer"
 
@@ -32,32 +32,32 @@ msgstr "Effacer"
 msgid "Copied"
 msgstr "Copié"
 
-#: __init__.py:112
-#: __init__.py:124
+#: __init__.py:111
+#: __init__.py:123
 msgid "Copy"
 msgstr "Copier"
 
 #: __init__.py:230
-msgid "Copy all"
-msgstr "Tout copier"
+msgid "Copy Until Last"
+msgstr "Copier jusqu'au dernier"
 
-#: __init__.py:76
+#: __init__.py:75
 msgid "Error during append operation"
-msgstr "Erreur lors de l'opération d'ajout"
+msgstr "Erreur lors de l'ajout"
 
 #: clipboard_utils.py:133
 msgid "Error writing to clipboard"
-msgstr "Erreur lors de l'écriture dans le presse-papiers"
+msgstr "Erreur d'écriture dans le presse-papiers"
 
-#: __init__.py:114
+#: __init__.py:113
 msgid "No URL"
 msgstr "Pas d'URL"
 
-#: __init__.py:126
+#: __init__.py:125
 msgid "No link found"
 msgstr "Aucun lien trouvé"
 
-#: __init__.py:65
+#: __init__.py:64
 msgid "No text selected to append"
 msgstr "Aucun texte sélectionné pour l'ajout"
 
@@ -65,14 +65,14 @@ msgstr "Aucun texte sélectionné pour l'ajout"
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:79
+#: __init__.py:78
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "copier l'URL (un appui), copier l'hyperlien (deux appuis)"
+msgstr "copier l'URL (1 appui), copier l'hyperlien (2 appuis)"
 
-#: __init__.py:133
+#: __init__.py:132
 msgid "copy and append (single) clear (double)"
-msgstr "copier et ajouter (un appui), effacer (deux appuis)"
+msgstr "copier et ajouter (1 appui), effacer (2 appuis)"
 
-#: __init__.py:180
+#: __init__.py:177
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "copier dernière annonce (1), ajouter dernière annonce (2), copier jusqu'à la dernière annonce (3), ouvrir l'historique (4)"
+msgstr "copier dernière annonce (1), ajouter dernière (2), copier jusqu'à la dernière (3), ouvrir l'historique (4)"

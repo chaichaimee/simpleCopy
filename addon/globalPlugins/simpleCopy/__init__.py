@@ -1,4 +1,4 @@
-# __init__.py
+# init.py
 # Copyright (C) 2026 Chai Chaimee
 # Licensed under GNU General Public License. See COPYING.txt for details.
 
@@ -29,7 +29,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	scriptCategory = _("Simple Copy")
 	
 	isTextCopied = False
-	_double_tap_threshold = 0.3
+	_double_tap_threshold = 0.5
 	
 	_ctrl_shift_a_tap_count = 0
 	_ctrl_shift_a_last_tap_time = 0
@@ -43,8 +43,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	_f9_last_tap_time = 0
 	_f9_timer = None
 	
-	# Buffer for speech accumulation (used by triple F9)
 	_captured_speech_buffer = []
+	_is_recording_active = False
 	
 	def __init__(self):
 		super().__init__()
@@ -54,8 +54,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		log.info("SimpleCopy: Module initialized")
 
 	def _on_speech_received(self, text):
-		# Always accumulate speech for potential triple-tap copy
-		if text.strip():
+		if self._is_recording_active and text.strip():
 			self._captured_speech_buffer.append(text)
 
 	def _performAppendAction(self, obj):
@@ -159,7 +158,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self._ctrl_shift_c_tap_count = 0
 
 	def _clearClipboard(self):
-		# Direct Win32 API call to ensure clipboard is cleared
 		try:
 			user32 = ctypes.windll.user32
 			if user32.OpenClipboard(None):
@@ -167,13 +165,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				user32.CloseClipboard()
 				self.isTextCopied = False
 				self._captured_speech_buffer.clear()
+				self._is_recording_active = False
 				speech.speak([_("Clean")])
-				log.info("Clipboard cleared successfully using Win32 direct call")
 			else:
-				log.error("Unable to open clipboard via Win32")
 				tones.beep(200, 100)
 		except Exception as e:
-			log.error(f"Win32 clipboard clear failed: {e}")
+			log.error(f"Clipboard clear failed: {e}")
 			tones.beep(200, 100)
 
 	@scriptHandler.script(
@@ -204,16 +201,18 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self._f9_tap_count = 0
 
 	def _handle_f9_single(self):
-		"""Copy the latest spoken text to clipboard."""
 		text = self.speech_history.get_latest()
 		if not text:
 			tones.beep(200, 100)
 			return
 		if api.copyToClip(text):
 			tones.beep(1500, 100)
+			# Start accumulation for triple-tap
+			self._captured_speech_buffer.clear()
+			self._captured_speech_buffer.append(text)
+			self._is_recording_active = True
 
 	def _handle_f9_double(self):
-		"""Append the latest spoken text to current clipboard content."""
 		text = self.speech_history.get_latest()
 		if not text:
 			tones.beep(200, 100)
@@ -222,13 +221,15 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			speech.speak([_("Append")])
 
 	def _handle_f9_triple(self):
-		"""Copy all accumulated speech to clipboard and clear the buffer."""
-		if not self._captured_speech_buffer:
+		if not self._is_recording_active or not self._captured_speech_buffer:
 			tones.beep(200, 100)
 			return
-		if api.copyToClip("\n".join(self._captured_speech_buffer)):
-			speech.speak([_("Copy all")])
+		
+		combined_text = "\n".join(self._captured_speech_buffer)
+		if api.copyToClip(combined_text):
+			speech.speak([_("Copy Until Last")])
 			self._captured_speech_buffer.clear()
+			self._is_recording_active = False
 
 	def terminate(self):
 		self.speech_history.restore_patch()

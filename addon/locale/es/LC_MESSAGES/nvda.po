@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.3\n"
+"Project-Id-Version: simpleCopy 2026.3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-13 16:18+0700\n"
+"POT-Creation-Date: 2026-03-16 12:21+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Anonymous <anonymous@example.com>\n"
 "Language-Team: Spanish\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: NVDA DevOn Addon\n"
 
-#: __init__.py:222
+#: __init__.py:221
 msgid "Append"
 msgstr "Añadir al final"
 
@@ -22,9 +22,9 @@ msgstr "Añadido al final"
 
 #: clipboard_utils.py:102
 msgid "Cannot append to non-text clipboard content"
-msgstr "No se puede añadir a un contenido del portapapeles que no sea texto"
+msgstr "No se puede añadir a contenido que no sea texto"
 
-#: __init__.py:170
+#: __init__.py:169
 msgid "Clean"
 msgstr "Limpiar"
 
@@ -32,47 +32,47 @@ msgstr "Limpiar"
 msgid "Copied"
 msgstr "Copiado"
 
-#: __init__.py:112
-#: __init__.py:124
+#: __init__.py:111
+#: __init__.py:123
 msgid "Copy"
 msgstr "Copiar"
 
 #: __init__.py:230
-msgid "Copy all"
-msgstr "Copiar todo"
+msgid "Copy Until Last"
+msgstr "Copiar hasta el último"
 
-#: __init__.py:76
+#: __init__.py:75
 msgid "Error during append operation"
-msgstr "Error durante la operación de añadir al final"
+msgstr "Error al añadir al final"
 
 #: clipboard_utils.py:133
 msgid "Error writing to clipboard"
 msgstr "Error al escribir en el portapapeles"
 
-#: __init__.py:114
+#: __init__.py:113
 msgid "No URL"
 msgstr "Sin URL"
 
-#: __init__.py:126
+#: __init__.py:125
 msgid "No link found"
-msgstr "No se encontró ningún enlace"
+msgstr "No se encontró enlace"
 
-#: __init__.py:65
+#: __init__.py:64
 msgid "No text selected to append"
-msgstr "No hay texto seleccionado para añadir al final"
+msgstr "No hay texto seleccionado para añadir"
 
 #: __init__.py:29
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:79
+#: __init__.py:78
 msgid "copy URL (single) copy hyper link (double)"
 msgstr "copiar URL (un toque), copiar hipervínculo (dos toques)"
 
-#: __init__.py:133
+#: __init__.py:132
 msgid "copy and append (single) clear (double)"
-msgstr "copiar y añadir al final (un toque), limpiar (dos toques)"
+msgstr "copiar y añadir (un toque), limpiar (dos toques)"
 
-#: __init__.py:180
+#: __init__.py:177
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "copiar última voz (1), añadir última voz (2), copiar hasta la última voz (3), abrir registro de voz (4)"
+msgstr "copiar última voz (1), añadir última voz (2), copiar hasta la última (3), abrir registro (4)"

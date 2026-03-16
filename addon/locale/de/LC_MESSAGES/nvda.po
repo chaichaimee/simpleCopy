@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.3\n"
+"Project-Id-Version: simpleCopy 2026.3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-13 16:18+0700\n"
+"POT-Creation-Date: 2026-03-16 12:21+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Anonymous <anonymous@example.com>\n"
 "Language-Team: German\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: NVDA DevOn Addon\n"
 
-#: __init__.py:222
+#: __init__.py:221
 msgid "Append"
 msgstr "Anhängen"
 
@@ -22,9 +22,9 @@ msgstr "Angehängt"
 
 #: clipboard_utils.py:102
 msgid "Cannot append to non-text clipboard content"
-msgstr "Anhängen an Nicht-Text-Inhalt der Zwischenablage nicht möglich"
+msgstr "Anhängen an Nicht-Text-Inhalt nicht möglich"
 
-#: __init__.py:170
+#: __init__.py:169
 msgid "Clean"
 msgstr "Leeren"
 
@@ -32,32 +32,32 @@ msgstr "Leeren"
 msgid "Copied"
 msgstr "Kopiert"
 
-#: __init__.py:112
-#: __init__.py:124
+#: __init__.py:111
+#: __init__.py:123
 msgid "Copy"
 msgstr "Kopieren"
 
 #: __init__.py:230
-msgid "Copy all"
-msgstr "Alles kopieren"
+msgid "Copy Until Last"
+msgstr "Kopieren bis zum letzten Element"
 
-#: __init__.py:76
+#: __init__.py:75
 msgid "Error during append operation"
-msgstr "Fehler beim Anhängevorgang"
+msgstr "Fehler beim Anhängen"
 
 #: clipboard_utils.py:133
 msgid "Error writing to clipboard"
 msgstr "Fehler beim Schreiben in die Zwischenablage"
 
-#: __init__.py:114
+#: __init__.py:113
 msgid "No URL"
 msgstr "Keine URL"
 
-#: __init__.py:126
+#: __init__.py:125
 msgid "No link found"
 msgstr "Kein Link gefunden"
 
-#: __init__.py:65
+#: __init__.py:64
 msgid "No text selected to append"
 msgstr "Kein Text zum Anhängen ausgewählt"
 
@@ -65,14 +65,14 @@ msgstr "Kein Text zum Anhängen ausgewählt"
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:79
+#: __init__.py:78
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "URL kopieren (einmal drücken), Hyperlink kopieren (zweimal drücken)"
+msgstr "URL kopieren (1x), Hyperlink kopieren (2x)"
 
-#: __init__.py:133
+#: __init__.py:132
 msgid "copy and append (single) clear (double)"
-msgstr "Kopieren und anhängen (einmal drücken), Leeren (zweimal drücken)"
+msgstr "Kopieren und anhängen (1x), Leeren (2x)"
 
-#: __init__.py:180
+#: __init__.py:177
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "Letzte Ansage kopieren (1x), letzte Ansage anhängen (2x), Kopieren bis zur letzten Ansage (3x), Protokoll öffnen (4x)"
+msgstr "Letzte Ansage kopieren (1x), anhängen (2x), bis zur letzten kopieren (3x), Protokoll öffnen (4x)"

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.3\n"
+"Project-Id-Version: simpleCopy 2026.3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-13 16:18+0700\n"
+"POT-Creation-Date: 2026-03-16 12:21+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Anonymous <anonymous@example.com>\n"
 "Language-Team: Russian\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: NVDA DevOn Addon\n"
 
-#: __init__.py:222
+#: __init__.py:221
 msgid "Append"
 msgstr "Добавить в конец"
 
@@ -22,9 +22,9 @@ msgstr "Добавлено в конец"
 
 #: clipboard_utils.py:102
 msgid "Cannot append to non-text clipboard content"
-msgstr "Невозможно добавить к нетекстовому содержимому буфера обмена"
+msgstr "Невозможно добавить к нетекстовому содержимому"
 
-#: __init__.py:170
+#: __init__.py:169
 msgid "Clean"
 msgstr "Очистить"
 
@@ -32,16 +32,16 @@ msgstr "Очистить"
 msgid "Copied"
 msgstr "Скопировано"
 
-#: __init__.py:112
-#: __init__.py:124
+#: __init__.py:111
+#: __init__.py:123
 msgid "Copy"
 msgstr "Копировать"
 
 #: __init__.py:230
-msgid "Copy all"
-msgstr "Копировать всё"
+msgid "Copy Until Last"
+msgstr "Копировать до последнего"
 
-#: __init__.py:76
+#: __init__.py:75
 msgid "Error during append operation"
 msgstr "Ошибка при добавлении в конец"
 
@@ -49,15 +49,15 @@ msgstr "Ошибка при добавлении в конец"
 msgid "Error writing to clipboard"
 msgstr "Ошибка записи в буфер обмена"
 
-#: __init__.py:114
+#: __init__.py:113
 msgid "No URL"
 msgstr "URL не найден"
 
-#: __init__.py:126
+#: __init__.py:125
 msgid "No link found"
 msgstr "Ссылка не найдена"
 
-#: __init__.py:65
+#: __init__.py:64
 msgid "No text selected to append"
 msgstr "Текст для добавления не выбран"
 
@@ -65,14 +65,14 @@ msgstr "Текст для добавления не выбран"
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:79
+#: __init__.py:78
 msgid "copy URL (single) copy hyper link (double)"
 msgstr "копировать URL (одно нажатие), копировать гиперссылку (двойное)"
 
-#: __init__.py:133
+#: __init__.py:132
 msgid "copy and append (single) clear (double)"
 msgstr "копировать и добавить (одно нажатие), очистить (двойное)"
 
-#: __init__.py:180
+#: __init__.py:177
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "копировать последнюю речь (1), добавить последнюю речь (2), копировать до последней речи (3), открыть историю (4)"
+msgstr "копировать последнюю речь (1), добавить последнюю (2), копировать до последней (3), открыть историю (4)"
