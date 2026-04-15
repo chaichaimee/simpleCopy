@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-04-14 12:46+0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Urdu\n"
+"Language: ur\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: __init__.py:221
+msgid "Append"
+msgstr "منسلک کریں"
+
+#: clipboard_utils.py:126
+msgid "Appended"
+msgstr "منسلک کر دیا گیا"
+
+#: clipboard_utils.py:102
+msgid "Cannot append to non-text clipboard content"
+msgstr "غیر متن کلپ بورڈ مواد میں منسلک نہیں کیا جا سکتا"
+
+#: __init__.py:169
+msgid "Clean"
+msgstr "صاف کریں"
+
+#: clipboard_utils.py:126
+msgid "Copied"
+msgstr "کاپی کر لیا گیا"
+
+#: __init__.py:111
+#: __init__.py:123
+msgid "Copy"
+msgstr "کاپی"
+
+#: __init__.py:230
+msgid "Copy Until Last"
+msgstr "آخری تک کاپی کریں"
+
+#: __init__.py:75
+msgid "Error during append operation"
+msgstr "منسلک کرنے کے دوران خرابی"
+
+#: clipboard_utils.py:133
+msgid "Error writing to clipboard"
+msgstr "کلپ بورڈ پر لکھتے وقت خرابی"
+
+#: __init__.py:113
+msgid "No URL"
+msgstr "کوئی URL نہیں"
+
+#: __init__.py:125
+msgid "No link found"
+msgstr "کوئی لنک نہیں ملا"
+
+#: __init__.py:64
+msgid "No text selected to append"
+msgstr "منسلک کرنے کے لیے کوئی متن منتخب نہیں کیا گیا"
+
+#: __init__.py:29
+msgid "Simple Copy"
+msgstr "Simple Copy"
+
+#: __init__.py:78
+msgid "copy URL (single) copy hyper link (double)"
+msgstr "URL کاپی کریں (ایک بار) ہائپر لنک کاپی کریں (دو بار)"
+
+#: __init__.py:132
+msgid "copy and append (single) clear (double)"
+msgstr "کاپی اور منسلک کریں (ایک بار) صاف کریں (دو بار)"
+
+#: __init__.py:177
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
+msgstr "آخری گفتگو کاپی کریں (ایک بار) آخری گفتگو منسلک کریں (دو بار) آخری گفتگو تک کاپی کریں (تین بار) ریکارڈ شدہ گفتگو کھولیں (چار بار)"

@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-04-14 12:46+0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Danish\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: __init__.py:221
+msgid "Append"
+msgstr "Tilføj"
+
+#: clipboard_utils.py:126
+msgid "Appended"
+msgstr "Tilføjet"
+
+#: clipboard_utils.py:102
+msgid "Cannot append to non-text clipboard content"
+msgstr "Kan ikke tilføje til ikke-tekst clipboard-indhold"
+
+#: __init__.py:169
+msgid "Clean"
+msgstr "Ryd"
+
+#: clipboard_utils.py:126
+msgid "Copied"
+msgstr "Kopieret"
+
+#: __init__.py:111
+#: __init__.py:123
+msgid "Copy"
+msgstr "Kopier"
+
+#: __init__.py:230
+msgid "Copy Until Last"
+msgstr "Kopier indtil sidste"
+
+#: __init__.py:75
+msgid "Error during append operation"
+msgstr "Fejl under tilføjelse"
+
+#: clipboard_utils.py:133
+msgid "Error writing to clipboard"
+msgstr "Fejl ved skrivning til clipboard"
+
+#: __init__.py:113
+msgid "No URL"
+msgstr "Ingen URL"
+
+#: __init__.py:125
+msgid "No link found"
+msgstr "Intet link fundet"
+
+#: __init__.py:64
+msgid "No text selected to append"
+msgstr "Ingen tekst valgt til tilføjelse"
+
+#: __init__.py:29
+msgid "Simple Copy"
+msgstr "Simple Copy"
+
+#: __init__.py:78
+msgid "copy URL (single) copy hyper link (double)"
+msgstr "kopier URL (enkelt) kopier hyperlink (dobbelt)"
+
+#: __init__.py:132
+msgid "copy and append (single) clear (double)"
+msgstr "kopier og tilføj (enkelt) ryd (dobbelt)"
+
+#: __init__.py:177
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
+msgstr "kopier sidste tale (enkelt) tilføj sidste tale (dobbelt) kopier indtil sidste tale (tredobbelt) åbn optaget tale (firdobbelt)"

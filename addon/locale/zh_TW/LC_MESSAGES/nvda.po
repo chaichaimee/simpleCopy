@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-04-14 12:46+0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Chinese (Traditional)\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: __init__.py:221
+msgid "Append"
+msgstr "附加"
+
+#: clipboard_utils.py:126
+msgid "Appended"
+msgstr "已附加"
+
+#: clipboard_utils.py:102
+msgid "Cannot append to non-text clipboard content"
+msgstr "無法附加到非文本剪貼板內容"
+
+#: __init__.py:169
+msgid "Clean"
+msgstr "清除"
+
+#: clipboard_utils.py:126
+msgid "Copied"
+msgstr "已複製"
+
+#: __init__.py:111
+#: __init__.py:123
+msgid "Copy"
+msgstr "複製"
+
+#: __init__.py:230
+msgid "Copy Until Last"
+msgstr "複製直到最後"
+
+#: __init__.py:75
+msgid "Error during append operation"
+msgstr "附加操作期間出錯"
+
+#: clipboard_utils.py:133
+msgid "Error writing to clipboard"
+msgstr "寫入剪貼板時出錯"
+
+#: __init__.py:113
+msgid "No URL"
+msgstr "無 URL"
+
+#: __init__.py:125
+msgid "No link found"
+msgstr "未找到連結"
+
+#: __init__.py:64
+msgid "No text selected to append"
+msgstr "未選擇要附加的文本"
+
+#: __init__.py:29
+msgid "Simple Copy"
+msgstr "Simple Copy"
+
+#: __init__.py:78
+msgid "copy URL (single) copy hyper link (double)"
+msgstr "複製 URL (單擊) 複製超連結 (雙擊)"
+
+#: __init__.py:132
+msgid "copy and append (single) clear (double)"
+msgstr "複製並附加 (單擊) 清除 (雙擊)"
+
+#: __init__.py:177
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
+msgstr "複製最後語音 (單擊) 附加最後語音 (雙擊) 複製直到最後語音 (三擊) 打開語音記錄 (四擊)"

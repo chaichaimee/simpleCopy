@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-04-14 12:46+0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: __init__.py:221
+msgid "Append"
+msgstr "إضافة"
+
+#: clipboard_utils.py:126
+msgid "Appended"
+msgstr "تمت الإضافة"
+
+#: clipboard_utils.py:102
+msgid "Cannot append to non-text clipboard content"
+msgstr "لا يمكن إضافة محتوى غير نصي إلى الحافظة"
+
+#: __init__.py:169
+msgid "Clean"
+msgstr "تنظيف"
+
+#: clipboard_utils.py:126
+msgid "Copied"
+msgstr "تم النسخ"
+
+#: __init__.py:111
+#: __init__.py:123
+msgid "Copy"
+msgstr "نسخ"
+
+#: __init__.py:230
+msgid "Copy Until Last"
+msgstr "نسخ حتى الأخير"
+
+#: __init__.py:75
+msgid "Error during append operation"
+msgstr "خطأ أثناء عملية الإضافة"
+
+#: clipboard_utils.py:133
+msgid "Error writing to clipboard"
+msgstr "خطأ أثناء الكتابة إلى الحافظة"
+
+#: __init__.py:113
+msgid "No URL"
+msgstr "لا يوجد رابط URL"
+
+#: __init__.py:125
+msgid "No link found"
+msgstr "لم يتم العثور على رابط"
+
+#: __init__.py:64
+msgid "No text selected to append"
+msgstr "لم يتم اختيار نص لإضافته"
+
+#: __init__.py:29
+msgid "Simple Copy"
+msgstr "Simple Copy"
+
+#: __init__.py:78
+msgid "copy URL (single) copy hyper link (double)"
+msgstr "نسخ رابط URL (مرة واحدة) نسخ ارتباط تشعبي (مرتين)"
+
+#: __init__.py:132
+msgid "copy and append (single) clear (double)"
+msgstr "نسخ وإضافة (مرة واحدة) مسح (مرتين)"
+
+#: __init__.py:177
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
+msgstr "نسخ آخر حديث (مرة واحدة) إضافة آخر حديث (مرتين) نسخ حتى آخر حديث (3 مرات) فتح سجل الحديث (4 مرات)"

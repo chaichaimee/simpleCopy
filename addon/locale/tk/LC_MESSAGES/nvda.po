@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-04-14 12:46+0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Turkmen\n"
+"Language: tk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: __init__.py:221
+msgid "Append"
+msgstr "Goş"
+
+#: clipboard_utils.py:126
+msgid "Appended"
+msgstr "Goşuldy"
+
+#: clipboard_utils.py:102
+msgid "Cannot append to non-text clipboard content"
+msgstr "Tekst bolmadyk gysgyç mazmunyna goşup bolmaýar"
+
+#: __init__.py:169
+msgid "Clean"
+msgstr "Arassala"
+
+#: clipboard_utils.py:126
+msgid "Copied"
+msgstr "Göçürildi"
+
+#: __init__.py:111
+#: __init__.py:123
+msgid "Copy"
+msgstr "Göçür"
+
+#: __init__.py:230
+msgid "Copy Until Last"
+msgstr "Soňkusa çenli göçür"
+
+#: __init__.py:75
+msgid "Error during append operation"
+msgstr "Goşmak wagtynda ýalňyşlyk ýüze çykdy"
+
+#: clipboard_utils.py:133
+msgid "Error writing to clipboard"
+msgstr "Gysgyç paneline ýazmakda ýalňyşlyk"
+
+#: __init__.py:113
+msgid "No URL"
+msgstr "URL ýok"
+
+#: __init__.py:125
+msgid "No link found"
+msgstr "Salgylanyş tapylmady"
+
+#: __init__.py:64
+msgid "No text selected to append"
+msgstr "Goşmak üçin tekst saýlanmady"
+
+#: __init__.py:29
+msgid "Simple Copy"
+msgstr "Simple Copy"
+
+#: __init__.py:78
+msgid "copy URL (single) copy hyper link (double)"
+msgstr "URL göçür (bir gezek) giper-salgylanyşy göçür (iki gezek)"
+
+#: __init__.py:132
+msgid "copy and append (single) clear (double)"
+msgstr "göçür we goş (bir gezek) arassala (iki gezek)"
+
+#: __init__.py:177
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
+msgstr "soňky gepleşigi göçür (bir gezek) soňky gepleşigi goş (iki gezek) soňky gepleşige çenli göçür (üç gezek) gepleşik ýazgysyny aç (dört gezek)"

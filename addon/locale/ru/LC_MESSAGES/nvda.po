@@ -1,28 +1,28 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.3.3\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-16 12:21+0700\n"
+"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-04-14 12:46+0700\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Anonymous <anonymous@example.com>\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Russian\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: NVDA DevOn Addon\n"
+"X-Generator: DevOn Addon\n"
 
 #: __init__.py:221
 msgid "Append"
-msgstr "Добавить в конец"
+msgstr "Добавить"
 
 #: clipboard_utils.py:126
 msgid "Appended"
-msgstr "Добавлено в конец"
+msgstr "Добавлено"
 
 #: clipboard_utils.py:102
 msgid "Cannot append to non-text clipboard content"
-msgstr "Невозможно добавить к нетекстовому содержимому"
+msgstr "Невозможно добавить к нетекстовому содержимому буфера обмена"
 
 #: __init__.py:169
 msgid "Clean"
@@ -43,7 +43,7 @@ msgstr "Копировать до последнего"
 
 #: __init__.py:75
 msgid "Error during append operation"
-msgstr "Ошибка при добавлении в конец"
+msgstr "Ошибка при выполнении операции добавления"
 
 #: clipboard_utils.py:133
 msgid "Error writing to clipboard"
@@ -51,7 +51,7 @@ msgstr "Ошибка записи в буфер обмена"
 
 #: __init__.py:113
 msgid "No URL"
-msgstr "URL не найден"
+msgstr "Нет URL"
 
 #: __init__.py:125
 msgid "No link found"
@@ -67,12 +67,12 @@ msgstr "Simple Copy"
 
 #: __init__.py:78
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "копировать URL (одно нажатие), копировать гиперссылку (двойное)"
+msgstr "копировать URL (один раз) копировать гиперссылку (дважды)"
 
 #: __init__.py:132
 msgid "copy and append (single) clear (double)"
-msgstr "копировать и добавить (одно нажатие), очистить (двойное)"
+msgstr "копировать и добавить (один раз) очистить (дважды)"
 
 #: __init__.py:177
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "копировать последнюю речь (1), добавить последнюю (2), копировать до последней (3), открыть историю (4)"
+msgstr "копировать последнюю речь (один раз) добавить последнюю речь (дважды) копировать до последней речи (трижды) открыть запись речи (четырежды)"

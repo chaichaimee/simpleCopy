@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-04-14 12:46+0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Bengali\n"
+"Language: bn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: __init__.py:221
+msgid "Append"
+msgstr "সংযুক্ত করুন"
+
+#: clipboard_utils.py:126
+msgid "Appended"
+msgstr "সংযুক্ত করা হয়েছে"
+
+#: clipboard_utils.py:102
+msgid "Cannot append to non-text clipboard content"
+msgstr "নন-টেক্সট ক্লিপবোর্ড কন্টেন্টে সংযুক্ত করা সম্ভব নয়"
+
+#: __init__.py:169
+msgid "Clean"
+msgstr "পরিষ্কার করুন"
+
+#: clipboard_utils.py:126
+msgid "Copied"
+msgstr "কপি করা হয়েছে"
+
+#: __init__.py:111
+#: __init__.py:123
+msgid "Copy"
+msgstr "কপি"
+
+#: __init__.py:230
+msgid "Copy Until Last"
+msgstr "শেষ পর্যন্ত কপি করুন"
+
+#: __init__.py:75
+msgid "Error during append operation"
+msgstr "সংযুক্ত করার সময় ত্রুটি"
+
+#: clipboard_utils.py:133
+msgid "Error writing to clipboard"
+msgstr "ক্লিপবোর্ডে লেখার সময় ত্রুটি"
+
+#: __init__.py:113
+msgid "No URL"
+msgstr "কোনো URL নেই"
+
+#: __init__.py:125
+msgid "No link found"
+msgstr "কোনো লিঙ্ক পাওয়া যায়নি"
+
+#: __init__.py:64
+msgid "No text selected to append"
+msgstr "সংযুক্ত করার জন্য কোনো টেক্সট নির্বাচন করা হয়নি"
+
+#: __init__.py:29
+msgid "Simple Copy"
+msgstr "Simple Copy"
+
+#: __init__.py:78
+msgid "copy URL (single) copy hyper link (double)"
+msgstr "URL কপি (একবার) হাইপার লিঙ্ক কপি (দুইবার)"
+
+#: __init__.py:132
+msgid "copy and append (single) clear (double)"
+msgstr "কপি এবং সংযুক্ত (একবার) পরিষ্কার (দুইবার)"
+
+#: __init__.py:177
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
+msgstr "শেষ কথা কপি (একবার) শেষ কথা সংযুক্ত (দুইবার) শেষ কথা পর্যন্ত কপি (তিনবার) রেকর্ড করা কথা খুলুন (চারবার)"

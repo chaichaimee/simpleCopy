@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-04-14 12:46+0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Burmese\n"
+"Language: my\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: __init__.py:221
+msgid "Append"
+msgstr "ဆက်ထည့်ရန်"
+
+#: clipboard_utils.py:126
+msgid "Appended"
+msgstr "ဆက်ထည့်ပြီးပါပြီ"
+
+#: clipboard_utils.py:102
+msgid "Cannot append to non-text clipboard content"
+msgstr "စာသားမဟုတ်သော ကလစ်ဘုတ်အကြောင်းအရာတွင် ဆက်ထည့်၍မရပါ"
+
+#: __init__.py:169
+msgid "Clean"
+msgstr "ရှင်းလင်းရန်"
+
+#: clipboard_utils.py:126
+msgid "Copied"
+msgstr "ကူးယူပြီးပါပြီ"
+
+#: __init__.py:111
+#: __init__.py:123
+msgid "Copy"
+msgstr "ကူးယူရန်"
+
+#: __init__.py:230
+msgid "Copy Until Last"
+msgstr "နောက်ဆုံးအထိ ကူးယူရန်"
+
+#: __init__.py:75
+msgid "Error during append operation"
+msgstr "ဆက်ထည့်နေစဉ် အမှားဖြစ်ပေါ်ပါသည်"
+
+#: clipboard_utils.py:133
+msgid "Error writing to clipboard"
+msgstr "ကလစ်ဘုတ်သို့ ရေးသားရာတွင် အမှားဖြစ်ပေါ်ပါသည်"
+
+#: __init__.py:113
+msgid "No URL"
+msgstr "URL မရှိပါ"
+
+#: __init__.py:125
+msgid "No link found"
+msgstr "လင့်ခ်မတွေ့ပါ"
+
+#: __init__.py:64
+msgid "No text selected to append"
+msgstr "ဆက်ထည့်ရန် စာသားမရွေးချယ်ထားပါ"
+
+#: __init__.py:29
+msgid "Simple Copy"
+msgstr "Simple Copy"
+
+#: __init__.py:78
+msgid "copy URL (single) copy hyper link (double)"
+msgstr "URL ကူးယူရန် (တစ်ချက်နှိပ်) ဟိုက်ပါလင့်ခ် ကူးယူရန် (နှစ်ချက်နှိပ်)"
+
+#: __init__.py:132
+msgid "copy and append (single) clear (double)"
+msgstr "ကူးယူပြီး ဆက်ထည့်ရန် (တစ်ချက်နှိပ်) ရှင်းလင်းရန် (နှစ်ချက်နှိပ်)"
+
+#: __init__.py:177
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
+msgstr "နောက်ဆုံးပြောစကား ကူးယူရန် (တစ်ချက်နှိပ်) နောက်ဆုံးပြောစကား ဆက်ထည့်ရန် (နှစ်ချက်နှိပ်) နောက်ဆုံးပြောစကားအထိ ကူးယူရန် (သုံးချက်နှိပ်) အသံဖမ်းယူမှုဖွင့်ရန် (လေးချက်နှိပ်)"

@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-04-14 12:46+0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Croatian\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: __init__.py:221
+msgid "Append"
+msgstr "Dodaj"
+
+#: clipboard_utils.py:126
+msgid "Appended"
+msgstr "Dodano"
+
+#: clipboard_utils.py:102
+msgid "Cannot append to non-text clipboard content"
+msgstr "Nije moguće dodati u sadržaj međuspremnika koji nije tekst"
+
+#: __init__.py:169
+msgid "Clean"
+msgstr "Očisti"
+
+#: clipboard_utils.py:126
+msgid "Copied"
+msgstr "Kopirano"
+
+#: __init__.py:111
+#: __init__.py:123
+msgid "Copy"
+msgstr "Kopiraj"
+
+#: __init__.py:230
+msgid "Copy Until Last"
+msgstr "Kopiraj do zadnjeg"
+
+#: __init__.py:75
+msgid "Error during append operation"
+msgstr "Pogreška tijekom operacije dodavanja"
+
+#: clipboard_utils.py:133
+msgid "Error writing to clipboard"
+msgstr "Pogreška pri pisanju u međuspremnik"
+
+#: __init__.py:113
+msgid "No URL"
+msgstr "Nema URL-a"
+
+#: __init__.py:125
+msgid "No link found"
+msgstr "Poveznica nije pronađena"
+
+#: __init__.py:64
+msgid "No text selected to append"
+msgstr "Nije odabran tekst za dodavanje"
+
+#: __init__.py:29
+msgid "Simple Copy"
+msgstr "Simple Copy"
+
+#: __init__.py:78
+msgid "copy URL (single) copy hyper link (double)"
+msgstr "kopiraj URL (jednom) kopiraj hipervezu (dvaput)"
+
+#: __init__.py:132
+msgid "copy and append (single) clear (double)"
+msgstr "kopiraj i dodaj (jednom) očisti (dvaput)"
+
+#: __init__.py:177
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
+msgstr "kopiraj zadnji govor (jednom) dodaj zadnji govor (dvaput) kopiraj do zadnjeg govora (triput) otvori snimanje govora (četverostruko)"

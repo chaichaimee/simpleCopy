@@ -1,28 +1,28 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.3.3\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-16 12:21+0700\n"
+"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-04-14 12:46+0700\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Anonymous <anonymous@example.com>\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Spanish\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: NVDA DevOn Addon\n"
+"X-Generator: DevOn Addon\n"
 
 #: __init__.py:221
 msgid "Append"
-msgstr "Añadir al final"
+msgstr "Añadir"
 
 #: clipboard_utils.py:126
 msgid "Appended"
-msgstr "Añadido al final"
+msgstr "Añadido"
 
 #: clipboard_utils.py:102
 msgid "Cannot append to non-text clipboard content"
-msgstr "No se puede añadir a contenido que no sea texto"
+msgstr "No se puede añadir a contenido del portapapeles que no sea texto"
 
 #: __init__.py:169
 msgid "Clean"
@@ -43,7 +43,7 @@ msgstr "Copiar hasta el último"
 
 #: __init__.py:75
 msgid "Error during append operation"
-msgstr "Error al añadir al final"
+msgstr "Error durante la operación de añadir"
 
 #: clipboard_utils.py:133
 msgid "Error writing to clipboard"
@@ -55,11 +55,11 @@ msgstr "Sin URL"
 
 #: __init__.py:125
 msgid "No link found"
-msgstr "No se encontró enlace"
+msgstr "No se encontró ningún enlace"
 
 #: __init__.py:64
 msgid "No text selected to append"
-msgstr "No hay texto seleccionado para añadir"
+msgstr "No se ha seleccionado texto para añadir"
 
 #: __init__.py:29
 msgid "Simple Copy"
@@ -67,12 +67,12 @@ msgstr "Simple Copy"
 
 #: __init__.py:78
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "copiar URL (un toque), copiar hipervínculo (dos toques)"
+msgstr "copiar URL (simple) copiar hipervínculo (doble)"
 
 #: __init__.py:132
 msgid "copy and append (single) clear (double)"
-msgstr "copiar y añadir (un toque), limpiar (dos toques)"
+msgstr "copiar y añadir (simple) limpiar (doble)"
 
 #: __init__.py:177
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "copiar última voz (1), añadir última voz (2), copiar hasta la última (3), abrir registro (4)"
+msgstr "copiar última locución (simple) añadir última locución (doble) copiar hasta la última locución (triple) abrir registro de voz (cuádruple)"

@@ -8,9 +8,8 @@ import browseMode
 import controlTypes
 import NVDAObjects
 import UIAHandler
-import IAccessibleHandler
 import logging
-from comtypes import COMError
+import sys
 
 class URLHandler:
 	
@@ -25,6 +24,12 @@ class URLHandler:
 		)
 	
 	def get_current_url(self):
+		if sys.version_info >= (3, 13):
+			return self._get_current_url_2026()
+		else:
+			return self._get_current_url_2025()
+	
+	def _get_current_url_2025(self):
 		focus = api.getFocusObject()
 		url_to_copy = None
 		
@@ -51,6 +56,52 @@ class URLHandler:
 				pass
 		
 		return url_to_copy
+	
+	def _get_current_url_2026(self):
+		focus = api.getFocusObject()
+		
+		# Traverse up to find the document object
+		current = focus
+		for _ in range(15):
+			if current.role == controlTypes.Role.DOCUMENT:
+				if hasattr(current, 'IAccessibleObject'):
+					try:
+						url = current.IAccessibleObject.accValue(0)
+						if url and isinstance(url, str) and url.startswith(('http://', 'https://')):
+							self.logger.info(f"2026 URL from document IAccessible: {url}")
+							return url
+					except Exception as e:
+						self.logger.warning(f"Document IAccessible accValue failed: {e}")
+				break
+			
+			if hasattr(current, 'parent') and current.parent:
+				current = current.parent
+			else:
+				break
+		
+		# Fallback: try treeInterceptor
+		if hasattr(focus, 'treeInterceptor') and focus.treeInterceptor:
+			try:
+				if hasattr(focus.treeInterceptor, 'URL'):
+					url = focus.treeInterceptor.URL
+					if url:
+						self.logger.info(f"2026 URL from treeInterceptor: {url}")
+						return url
+			except Exception as e:
+				self.logger.warning(f"treeInterceptor URL failed: {e}")
+		
+		# Fallback: try UIA Url property
+		if isinstance(focus, NVDAObjects.UIA.UIA):
+			try:
+				url = focus.UIAElement.getCurrentPropertyValue(UIAHandler.UIA_UrlPropertyId)
+				if url and isinstance(url, str) and url.startswith(('http://', 'https://')):
+					self.logger.info(f"2026 URL from UIA Url: {url}")
+					return url
+			except Exception as e:
+				self.logger.warning(f"UIA Url failed: {e}")
+		
+		self.logger.warning("Could not retrieve current URL in 2026")
+		return None
 	
 	def get_link_url(self, obj):
 		url = None

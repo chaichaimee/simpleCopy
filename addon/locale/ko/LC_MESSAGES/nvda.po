@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-04-14 12:46+0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Korean\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: __init__.py:221
+msgid "Append"
+msgstr "추가"
+
+#: clipboard_utils.py:126
+msgid "Appended"
+msgstr "추가됨"
+
+#: clipboard_utils.py:102
+msgid "Cannot append to non-text clipboard content"
+msgstr "텍스트가 아닌 클립보드 내용에는 추가할 수 없습니다"
+
+#: __init__.py:169
+msgid "Clean"
+msgstr "지우기"
+
+#: clipboard_utils.py:126
+msgid "Copied"
+msgstr "복사됨"
+
+#: __init__.py:111
+#: __init__.py:123
+msgid "Copy"
+msgstr "복사"
+
+#: __init__.py:230
+msgid "Copy Until Last"
+msgstr "마지막까지 복사"
+
+#: __init__.py:75
+msgid "Error during append operation"
+msgstr "추가 작업 중 오류 발생"
+
+#: clipboard_utils.py:133
+msgid "Error writing to clipboard"
+msgstr "클립보드 기록 오류"
+
+#: __init__.py:113
+msgid "No URL"
+msgstr "URL 없음"
+
+#: __init__.py:125
+msgid "No link found"
+msgstr "링크를 찾을 수 없음"
+
+#: __init__.py:64
+msgid "No text selected to append"
+msgstr "추가할 텍스트가 선택되지 않았습니다"
+
+#: __init__.py:29
+msgid "Simple Copy"
+msgstr "Simple Copy"
+
+#: __init__.py:78
+msgid "copy URL (single) copy hyper link (double)"
+msgstr "URL 복사 (한 번) 하이퍼링크 복사 (두 번)"
+
+#: __init__.py:132
+msgid "copy and append (single) clear (double)"
+msgstr "복사 후 추가 (한 번) 지우기 (두 번)"
+
+#: __init__.py:177
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
+msgstr "마지막 음성 복사 (한 번) 마지막 음성 추가 (두 번) 마지막까지 복사 (세 번) 음성 녹음 열기 (네 번)"

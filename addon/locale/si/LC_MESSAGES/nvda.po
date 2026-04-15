@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-04-14 12:46+0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Sinhala\n"
+"Language: si\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: __init__.py:221
+msgid "Append"
+msgstr "අගට එක් කරන්න"
+
+#: clipboard_utils.py:126
+msgid "Appended"
+msgstr "අගට එක් කරන ලදී"
+
+#: clipboard_utils.py:102
+msgid "Cannot append to non-text clipboard content"
+msgstr "පෙළ නොවන පසුරු පුවරු අන්තර්ගතයට අගට එක් කළ නොහැක"
+
+#: __init__.py:169
+msgid "Clean"
+msgstr "පිරිසිදු කරන්න"
+
+#: clipboard_utils.py:126
+msgid "Copied"
+msgstr "පිටපත් කරන ලදී"
+
+#: __init__.py:111
+#: __init__.py:123
+msgid "Copy"
+msgstr "පිටපත් කරන්න"
+
+#: __init__.py:230
+msgid "Copy Until Last"
+msgstr "අවසානය දක්වා පිටපත් කරන්න"
+
+#: __init__.py:75
+msgid "Error during append operation"
+msgstr "එක් කිරීමේ මෙහෙයුමේදී දෝෂයකි"
+
+#: clipboard_utils.py:133
+msgid "Error writing to clipboard"
+msgstr "පසුරු පුවරුවට ලිවීමේ දෝෂයකි"
+
+#: __init__.py:113
+msgid "No URL"
+msgstr "URL එකක් නැත"
+
+#: __init__.py:125
+msgid "No link found"
+msgstr "සබැඳියක් හමු නොවීය"
+
+#: __init__.py:64
+msgid "No text selected to append"
+msgstr "එක් කිරීමට පෙළක් තෝරා නැත"
+
+#: __init__.py:29
+msgid "Simple Copy"
+msgstr "Simple Copy"
+
+#: __init__.py:78
+msgid "copy URL (single) copy hyper link (double)"
+msgstr "URL පිටපත් කරන්න (තනි) අධිසබැඳිය පිටපත් කරන්න (ද්විත්ව)"
+
+#: __init__.py:132
+msgid "copy and append (single) clear (double)"
+msgstr "පිටපත් කර එක් කරන්න (තනි) පිරිසිදු කරන්න (ද්විත්ව)"
+
+#: __init__.py:177
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
+msgstr "අන්තිම කථාව පිටපත් කරන්න (තනි) අන්තිම කථාව එක් කරන්න (ද්විත්ව) අන්තිම කථාව දක්වා පිටපත් කරන්න (ත්‍රිත්ව) කථන වාර්තාව විවෘත කරන්න (චතුර්ථ)"

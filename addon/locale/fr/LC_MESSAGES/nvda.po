@@ -1,28 +1,28 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.3.3\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-16 12:21+0700\n"
+"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-04-14 12:46+0700\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Anonymous <anonymous@example.com>\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: French\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: NVDA DevOn Addon\n"
+"X-Generator: DevOn Addon\n"
 
 #: __init__.py:221
 msgid "Append"
-msgstr "Ajouter à la suite"
+msgstr "Ajouter"
 
 #: clipboard_utils.py:126
 msgid "Appended"
-msgstr "Ajouté à la suite"
+msgstr "Ajouté"
 
 #: clipboard_utils.py:102
 msgid "Cannot append to non-text clipboard content"
-msgstr "Impossible d'ajouter à un contenu non textuel"
+msgstr "Impossible d'ajouter à un contenu de presse-papiers non textuel"
 
 #: __init__.py:169
 msgid "Clean"
@@ -43,11 +43,11 @@ msgstr "Copier jusqu'au dernier"
 
 #: __init__.py:75
 msgid "Error during append operation"
-msgstr "Erreur lors de l'ajout"
+msgstr "Erreur lors de l'opération d'ajout"
 
 #: clipboard_utils.py:133
 msgid "Error writing to clipboard"
-msgstr "Erreur d'écriture dans le presse-papiers"
+msgstr "Erreur lors de l'écriture dans le presse-papiers"
 
 #: __init__.py:113
 msgid "No URL"
@@ -67,12 +67,12 @@ msgstr "Simple Copy"
 
 #: __init__.py:78
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "copier l'URL (1 appui), copier l'hyperlien (2 appuis)"
+msgstr "copier l'URL (simple) copier l'hyperlien (double)"
 
 #: __init__.py:132
 msgid "copy and append (single) clear (double)"
-msgstr "copier et ajouter (1 appui), effacer (2 appuis)"
+msgstr "copier et ajouter (simple) effacer (double)"
 
 #: __init__.py:177
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "copier dernière annonce (1), ajouter dernière (2), copier jusqu'à la dernière (3), ouvrir l'historique (4)"
+msgstr "copier la dernière parole (simple) ajouter la dernière parole (double) copier jusqu'à la dernière parole (triple) ouvrir l'enregistrement de la parole (quadruple)"

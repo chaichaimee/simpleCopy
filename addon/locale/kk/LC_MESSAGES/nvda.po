@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-04-14 12:46+0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Kazakh\n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: __init__.py:221
+msgid "Append"
+msgstr "Қосу"
+
+#: clipboard_utils.py:126
+msgid "Appended"
+msgstr "Қосылды"
+
+#: clipboard_utils.py:102
+msgid "Cannot append to non-text clipboard content"
+msgstr "Мәтіндік емес алмасу буферінің мазмұнына қосу мүмкін емес"
+
+#: __init__.py:169
+msgid "Clean"
+msgstr "Тазалау"
+
+#: clipboard_utils.py:126
+msgid "Copied"
+msgstr "Көшірілді"
+
+#: __init__.py:111
+#: __init__.py:123
+msgid "Copy"
+msgstr "Көшіру"
+
+#: __init__.py:230
+msgid "Copy Until Last"
+msgstr "Соңғысына дейін көшіру"
+
+#: __init__.py:75
+msgid "Error during append operation"
+msgstr "Қосу операциясы кезіндегі қате"
+
+#: clipboard_utils.py:133
+msgid "Error writing to clipboard"
+msgstr "Алмасу буферіне жазу қатесі"
+
+#: __init__.py:113
+msgid "No URL"
+msgstr "URL жоқ"
+
+#: __init__.py:125
+msgid "No link found"
+msgstr "Сілтеме табылмады"
+
+#: __init__.py:64
+msgid "No text selected to append"
+msgstr "Қосу үшін мәтін таңдалмаған"
+
+#: __init__.py:29
+msgid "Simple Copy"
+msgstr "Simple Copy"
+
+#: __init__.py:78
+msgid "copy URL (single) copy hyper link (double)"
+msgstr "URL көшіру (бір рет) гиперсілтемені көшіру (екі рет)"
+
+#: __init__.py:132
+msgid "copy and append (single) clear (double)"
+msgstr "көшіру және қосу (бір рет) тазалау (екі рет)"
+
+#: __init__.py:177
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
+msgstr "соңғы сөзді көшіру (бір рет) соңғы сөзді қосу (екі рет) соңғы сөзге дейін көшіру (үш рет) сөз жазбасын ашу (төрт рет)"

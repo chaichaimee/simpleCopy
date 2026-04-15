@@ -1,16 +1,16 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.3.3\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-16 12:21+0700\n"
+"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-04-14 12:46+0700\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Anonymous <anonymous@example.com>\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: German\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: NVDA DevOn Addon\n"
+"X-Generator: DevOn Addon\n"
 
 #: __init__.py:221
 msgid "Append"
@@ -22,11 +22,11 @@ msgstr "Angehängt"
 
 #: clipboard_utils.py:102
 msgid "Cannot append to non-text clipboard content"
-msgstr "Anhängen an Nicht-Text-Inhalt nicht möglich"
+msgstr "Nicht-Text-Inhalt kann nicht an die Zwischenablage angehängt werden"
 
 #: __init__.py:169
 msgid "Clean"
-msgstr "Leeren"
+msgstr "Bereinigen"
 
 #: clipboard_utils.py:126
 msgid "Copied"
@@ -39,7 +39,7 @@ msgstr "Kopieren"
 
 #: __init__.py:230
 msgid "Copy Until Last"
-msgstr "Kopieren bis zum letzten Element"
+msgstr "Bis zum Letzten kopieren"
 
 #: __init__.py:75
 msgid "Error during append operation"
@@ -67,12 +67,12 @@ msgstr "Simple Copy"
 
 #: __init__.py:78
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "URL kopieren (1x), Hyperlink kopieren (2x)"
+msgstr "URL kopieren (einfach) Hyperlink kopieren (doppelt)"
 
 #: __init__.py:132
 msgid "copy and append (single) clear (double)"
-msgstr "Kopieren und anhängen (1x), Leeren (2x)"
+msgstr "kopieren und anhängen (einfach) bereinigen (doppelt)"
 
 #: __init__.py:177
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "Letzte Ansage kopieren (1x), anhängen (2x), bis zur letzten kopieren (3x), Protokoll öffnen (4x)"
+msgstr "letzte Ansage kopieren (einfach) letzte Ansage anhängen (doppelt) bis zur letzten Ansage kopieren (dreifach) Sprachaufzeichnung öffnen (vierfach)"

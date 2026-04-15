@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-04-14 12:46+0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Tagalog\n"
+"Language: tl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: __init__.py:221
+msgid "Append"
+msgstr "Idugtong"
+
+#: clipboard_utils.py:126
+msgid "Appended"
+msgstr "Naidugtong na"
+
+#: clipboard_utils.py:102
+msgid "Cannot append to non-text clipboard content"
+msgstr "Hindi maaring magdugtong sa clipboard content na hindi text"
+
+#: __init__.py:169
+msgid "Clean"
+msgstr "Linisin"
+
+#: clipboard_utils.py:126
+msgid "Copied"
+msgstr "Nakopya na"
+
+#: __init__.py:111
+#: __init__.py:123
+msgid "Copy"
+msgstr "Kopyahin"
+
+#: __init__.py:230
+msgid "Copy Until Last"
+msgstr "Kopyahin hanggang sa huli"
+
+#: __init__.py:75
+msgid "Error during append operation"
+msgstr "Error habang nagdurugtong"
+
+#: clipboard_utils.py:133
+msgid "Error writing to clipboard"
+msgstr "Error sa pagsulat sa clipboard"
+
+#: __init__.py:113
+msgid "No URL"
+msgstr "Walang URL"
+
+#: __init__.py:125
+msgid "No link found"
+msgstr "Walang nahanap na link"
+
+#: __init__.py:64
+msgid "No text selected to append"
+msgstr "Walang napiling text na idudugtong"
+
+#: __init__.py:29
+msgid "Simple Copy"
+msgstr "Simple Copy"
+
+#: __init__.py:78
+msgid "copy URL (single) copy hyper link (double)"
+msgstr "kopyahin ang URL (isa) kopyahin ang hyper link (dalawa)"
+
+#: __init__.py:132
+msgid "copy and append (single) clear (double)"
+msgstr "kopyahin at idugtong (isa) linisin (dalawa)"
+
+#: __init__.py:177
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
+msgstr "kopyahin ang huling sinabi (isa) idugtong ang huling sinabi (dalawa) kopyahin hanggang sa huling sinabi (tatlo) buksan ang record speech (apat)"

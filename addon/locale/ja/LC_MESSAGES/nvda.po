@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-04-14 12:46+0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: __init__.py:221
+msgid "Append"
+msgstr "追加"
+
+#: clipboard_utils.py:126
+msgid "Appended"
+msgstr "追加しました"
+
+#: clipboard_utils.py:102
+msgid "Cannot append to non-text clipboard content"
+msgstr "テキスト以外のクリップボード内容には追加できません"
+
+#: __init__.py:169
+msgid "Clean"
+msgstr "クリア"
+
+#: clipboard_utils.py:126
+msgid "Copied"
+msgstr "コピーしました"
+
+#: __init__.py:111
+#: __init__.py:123
+msgid "Copy"
+msgstr "コピー"
+
+#: __init__.py:230
+msgid "Copy Until Last"
+msgstr "最後までコピー"
+
+#: __init__.py:75
+msgid "Error during append operation"
+msgstr "追加操作中にエラーが発生しました"
+
+#: clipboard_utils.py:133
+msgid "Error writing to clipboard"
+msgstr "クリップボードへの書き込みエラー"
+
+#: __init__.py:113
+msgid "No URL"
+msgstr "URLなし"
+
+#: __init__.py:125
+msgid "No link found"
+msgstr "リンクが見つかりません"
+
+#: __init__.py:64
+msgid "No text selected to append"
+msgstr "追加するテキストが選択されていません"
+
+#: __init__.py:29
+msgid "Simple Copy"
+msgstr "Simple Copy"
+
+#: __init__.py:78
+msgid "copy URL (single) copy hyper link (double)"
+msgstr "URLをコピー (1回) ハイパーリンクをコピー (2回)"
+
+#: __init__.py:132
+msgid "copy and append (single) clear (double)"
+msgstr "コピーして追加 (1回) クリア (2回)"
+
+#: __init__.py:177
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
+msgstr "最後の読み上げをコピー (1回) 最後の読み上げを追加 (2回) 最後までコピー (3回) 読み上げ録音を開く (4回)"

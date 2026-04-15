@@ -12,6 +12,7 @@ import textInfos
 import browseMode
 import logging
 import hashlib
+import sys
 
 class ClipboardHandler:
 	
@@ -30,7 +31,17 @@ class ClipboardHandler:
 		return hashlib.sha256(normalized_text.encode('utf-8')).hexdigest()
 	
 	def get_selected_text(self, obj_param):
-		self.logger.info("SimpleCopy: get_selected_text started.")
+		# Detect NVDA 2026.1 (Python 3.13) vs older versions
+		if sys.version_info >= (3, 13):
+			return self._get_selected_text_2026(obj_param)
+		else:
+			return self._get_selected_text_2025(obj_param)
+	
+	# ----------------------------------------------------------------------
+	# NVDA 2025.3.3 method (Original working code - preserves newlines)
+	# ----------------------------------------------------------------------
+	def _get_selected_text_2025(self, obj_param):
+		self.logger.info("SimpleCopy: get_selected_text started (2025).")
 		current_obj = obj_param
 		selected_text = None
 		
@@ -38,7 +49,7 @@ class ClipboardHandler:
 			target_obj_for_text = None
 			if hasattr(current_obj, 'treeInterceptor') and isinstance(current_obj.treeInterceptor, browseMode.BrowseModeDocumentTreeInterceptor):
 				target_obj_for_text = current_obj.treeInterceptor
-				self.logger.info("SimpleCopy: (get_selected_text) Using treeInterceptor for text info.")
+				self.logger.info("Using treeInterceptor for text info.")
 			elif hasattr(current_obj, 'makeTextInfo'):
 				target_obj_for_text = current_obj
 			
@@ -48,17 +59,17 @@ class ClipboardHandler:
 					if info and not info.isCollapsed:
 						selected_text = info.clipboardText
 						if selected_text:
-							self.logger.info(f"SimpleCopy: (get_selected_text) makeTextInfo retrieved: {repr(selected_text[:50])}...")
+							self.logger.info(f"makeTextInfo retrieved: {repr(selected_text[:50])}...")
 							return selected_text.replace('\r\n', '\n').replace('\r', '\n').strip()
 				except (RuntimeError, NotImplementedError) as e:
-					self.logger.warning(f"SimpleCopy: (get_selected_text) makeTextInfo selection failed on {target_obj_for_text.name if target_obj_for_text else 'unknown'}: {str(e)}")
+					self.logger.warning(f"makeTextInfo selection failed: {str(e)}")
 			else:
-				self.logger.info("SimpleCopy: (get_selected_text) No makeTextInfo available.")
+				self.logger.info("No makeTextInfo available.")
 		
 		except Exception as e_info:
-			self.logger.error(f"SimpleCopy: (get_selected_text) Error with makeTextInfo attempt: {str(e_info)}")
+			self.logger.error(f"Error with makeTextInfo attempt: {str(e_info)}")
 		
-		self.logger.info("SimpleCopy: (get_selected_text) makeTextInfo failed, attempting Ctrl+C fallback.")
+		self.logger.info("makeTextInfo failed, attempting Ctrl+C fallback.")
 		original_clipboard_data = ""
 		try:
 			with winUser.openClipboard(gui.mainFrame.Handle):
@@ -73,11 +84,11 @@ class ClipboardHandler:
 			
 			if clipboard_text:
 				selected_text = clipboard_text
-				self.logger.info(f"SimpleCopy: (get_selected_text) Fallback Ctrl+C retrieved: {repr(selected_text[:50])}...")
+				self.logger.info(f"Ctrl+C fallback retrieved: {repr(selected_text[:50])}...")
 				return selected_text.replace('\r\n', '\n').replace('\r', '\n').strip()
 		
 		except Exception as e_fallback:
-			self.logger.error(f"SimpleCopy: (get_selected_text) Fallback Ctrl+C failed: {str(e_fallback)}")
+			self.logger.error(f"Ctrl+C fallback failed: {str(e_fallback)}")
 		finally:
 			try:
 				with winUser.openClipboard(gui.mainFrame.Handle):
@@ -85,11 +96,103 @@ class ClipboardHandler:
 					if original_clipboard_data:
 						winUser.setClipboardData(winUser.CF_UNICODETEXT, original_clipboard_data)
 			except Exception as e_restore:
-				self.logger.error(f"SimpleCopy: (get_selected_text) Failed to restore clipboard: {str(e_restore)}")
+				self.logger.error(f"Failed to restore clipboard: {str(e_restore)}")
 		
-		self.logger.info("SimpleCopy: (get_selected_text) No selected text found.")
+		self.logger.info("No selected text found (2025).")
 		return None
 	
+	# ----------------------------------------------------------------------
+	# NVDA 2026.1 method (FIXED: Use clipboardText to preserve newlines)
+	# ----------------------------------------------------------------------
+	def _get_selected_text_2026(self, obj_param):
+		self.logger.info("SimpleCopy: get_selected_text started (2026).")
+		current_obj = obj_param
+		selected_text = None
+		
+		# Method 1: Try treeInterceptor selection (for browse mode)
+		try:
+			if hasattr(current_obj, 'treeInterceptor') and current_obj.treeInterceptor:
+				ti = current_obj.treeInterceptor
+				if hasattr(ti, 'selection'):
+					sel = ti.selection
+					if sel and hasattr(sel, 'isCollapsed') and not sel.isCollapsed:
+						# FIX: Use clipboardText to preserve newlines
+						if hasattr(sel, 'clipboardText'):
+							selected_text = sel.clipboardText
+						elif hasattr(sel, 'text'):
+							selected_text = sel.text
+						if selected_text:
+							self.logger.info(f"treeInterceptor.selection.clipboardText/text success: {repr(selected_text[:50])}")
+							return selected_text.replace('\r\n', '\n').replace('\r', '\n').strip()
+		except Exception as e:
+			self.logger.warning(f"treeInterceptor selection failed: {e}")
+		
+		# Method 2: makeTextInfo with POSITION_SELECTION (original method)
+		try:
+			target_obj_for_text = None
+			if hasattr(current_obj, 'treeInterceptor') and isinstance(current_obj.treeInterceptor, browseMode.BrowseModeDocumentTreeInterceptor):
+				target_obj_for_text = current_obj.treeInterceptor
+				self.logger.info("Using treeInterceptor for makeTextInfo.")
+			elif hasattr(current_obj, 'makeTextInfo'):
+				target_obj_for_text = current_obj
+			
+			if target_obj_for_text:
+				try:
+					info = target_obj_for_text.makeTextInfo(textInfos.POSITION_SELECTION)
+					if info and not info.isCollapsed:
+						# FIX: Use clipboardText to preserve newlines
+						if hasattr(info, 'clipboardText'):
+							selected_text = info.clipboardText
+						elif hasattr(info, 'text'):
+							selected_text = info.text
+						if selected_text:
+							self.logger.info(f"makeTextInfo.clipboardText/text success: {repr(selected_text[:50])}...")
+							return selected_text.replace('\r\n', '\n').replace('\r', '\n').strip()
+				except (RuntimeError, NotImplementedError) as e:
+					self.logger.warning(f"makeTextInfo selection failed: {str(e)}")
+			else:
+				self.logger.info("No makeTextInfo available.")
+		
+		except Exception as e_info:
+			self.logger.error(f"Error with makeTextInfo attempt: {str(e_info)}")
+		
+		# Method 3: Ctrl+C fallback with retry (unchanged)
+		self.logger.info("Falling back to Ctrl+C method (2026).")
+		original_clipboard_data = ""
+		for attempt in range(3):
+			try:
+				with winUser.openClipboard(gui.mainFrame.Handle):
+					original_clipboard_data = winUser.getClipboardData(winUser.CF_UNICODETEXT) or ""
+					winUser.emptyClipboard()
+				
+				keyboardHandler.injectKey("control+c")
+				time.sleep(0.1)
+				
+				with winUser.openClipboard(gui.mainFrame.Handle):
+					clipboard_text = winUser.getClipboardData(winUser.CF_UNICODETEXT) or ""
+				
+				if clipboard_text:
+					selected_text = clipboard_text
+					self.logger.info(f"Ctrl+C fallback attempt {attempt+1} retrieved: {repr(selected_text[:50])}...")
+					return selected_text.replace('\r\n', '\n').replace('\r', '\n').strip()
+			except Exception as e_fallback:
+				self.logger.warning(f"Ctrl+C fallback attempt {attempt+1} failed: {str(e_fallback)}")
+				time.sleep(0.05)
+			finally:
+				try:
+					with winUser.openClipboard(gui.mainFrame.Handle):
+						winUser.emptyClipboard()
+						if original_clipboard_data:
+							winUser.setClipboardData(winUser.CF_UNICODETEXT, original_clipboard_data)
+				except Exception as e_restore:
+					self.logger.warning(f"Failed to restore clipboard: {str(e_restore)}")
+		
+		self.logger.info("No selected text found (2026).")
+		return None
+	
+	# ----------------------------------------------------------------------
+	# Append functions (unchanged)
+	# ----------------------------------------------------------------------
 	def append_to_clipboard(self, text_to_append):
 		clipData = ""
 		try:
@@ -102,7 +205,7 @@ class ClipboardHandler:
 						"message": _("Cannot append to non-text clipboard content")
 					}
 		except Exception as e:
-			self.logger.error(f"SimpleCopy: (append_to_clipboard) Error reading clipboard: {str(e)}")
+			self.logger.error(f"Error reading clipboard: {str(e)}")
 			clipData = ""
 		
 		processed_text_to_append = text_to_append
@@ -126,7 +229,7 @@ class ClipboardHandler:
 				"message": _("Appended") if appended else _("Copied")
 			}
 		except Exception as e:
-			self.logger.error(f"SimpleCopy: (append_to_clipboard) Error writing to clipboard: {str(e)}")
+			self.logger.error(f"Error writing to clipboard: {str(e)}")
 			return {
 				"success": False,
 				"appended": False,
