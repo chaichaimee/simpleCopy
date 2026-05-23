@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Project-Id-Version: simpleCopy 2026.5.4\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-04-14 12:46+0700\n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: 2026-05-23 10:10+0700\n"
+"PO-Revision-Date: 2026-05-23 10:10+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Vietnamese\n"
 "Language: vi\n"
@@ -12,67 +12,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:221
+#: __init__.py:225
 msgid "Append"
-msgstr "Thêm vào cuối"
+msgstr "Nối thêm"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Appended"
-msgstr "Đã thêm vào cuối"
+msgstr "Đã nối thêm"
 
-#: clipboard_utils.py:102
+#: clipboard_utils.py:205
 msgid "Cannot append to non-text clipboard content"
-msgstr "Không thể thêm vào nội dung clipboard không phải là văn bản"
+msgstr "Không thể nối thêm vào nội dung clipboard không phải là văn bản"
 
-#: __init__.py:169
+#: __init__.py:174
 msgid "Clean"
-msgstr "Làm sạch"
+msgstr "Xóa trống"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Copied"
 msgstr "Đã sao chép"
 
-#: __init__.py:111
-#: __init__.py:123
+#: __init__.py:116
+#: __init__.py:128
 msgid "Copy"
 msgstr "Sao chép"
 
-#: __init__.py:230
+#: __init__.py:234
 msgid "Copy Until Last"
-msgstr "Sao chép cho đến cuối"
+msgstr "Sao chép cho đến phần cuối"
 
-#: __init__.py:75
+#: __init__.py:80
 msgid "Error during append operation"
-msgstr "Lỗi trong quá trình thêm vào cuối"
+msgstr "Lỗi trong quá trình nối thêm"
 
-#: clipboard_utils.py:133
+#: clipboard_utils.py:236
 msgid "Error writing to clipboard"
 msgstr "Lỗi khi ghi vào clipboard"
 
-#: __init__.py:113
+#: __init__.py:239
+msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
+msgstr "Duyệt lịch sử lời nói: trước (nhấn một lần) tiếp theo (nhấn hai lần) mở tệp nhật ký (nhấn ba lần)"
+
+#: __init__.py:118
 msgid "No URL"
 msgstr "Không có URL"
 
-#: __init__.py:125
+#: __init__.py:130
 msgid "No link found"
 msgstr "Không tìm thấy liên kết"
 
-#: __init__.py:64
+#: __init__.py:69
 msgid "No text selected to append"
-msgstr "Chưa chọn văn bản để thêm vào cuối"
+msgstr "Chưa chọn văn bản để nối thêm"
 
-#: __init__.py:29
+#: __init__.py:30
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:78
+#: __init__.py:83
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "sao chép URL (một lần) sao chép siêu liên kết (hai lần)"
+msgstr "sao chép URL (nhấn một lần) sao chép siêu liên kết (nhấn hai lần)"
 
-#: __init__.py:132
+#: __init__.py:137
 msgid "copy and append (single) clear (double)"
-msgstr "sao chép và thêm vào cuối (một lần) làm sạch (hai lần)"
+msgstr "sao chép và nối thêm (nhấn một lần) xóa trống clipboard (nhấn hai lần)"
 
-#: __init__.py:177
-msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "sao chép lời nói cuối cùng (một lần) thêm lời nói cuối vào cuối (hai lần) sao chép cho đến lời nói cuối (ba lần) mở ghi âm lời nói (bốn lần)"
+#: __init__.py:182
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
+msgstr "sao chép câu thoại cuối (nhấn một lần) nối thêm câu thoại cuối (nhấn hai lần) sao chép cho đến câu thoại cuối (nhấn ba lần)"

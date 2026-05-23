@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Project-Id-Version: simpleCopy 2026.5.4\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-04-14 12:46+0700\n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: 2026-05-23 10:10+0700\n"
+"PO-Revision-Date: 2026-05-23 10:10+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Turkmen\n"
 "Language: tk\n"
@@ -12,67 +12,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:221
+#: __init__.py:225
 msgid "Append"
-msgstr "Goş"
+msgstr "Soňuna goş"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Appended"
-msgstr "Goşuldy"
+msgstr "Soňuna goşuldy"
 
-#: clipboard_utils.py:102
+#: clipboard_utils.py:205
 msgid "Cannot append to non-text clipboard content"
-msgstr "Tekst bolmadyk gysgyç mazmunyna goşup bolmaýar"
+msgstr "Alçalşyk buferiniň tekst däl mazmunyna goşup bolmaýar"
 
-#: __init__.py:169
+#: __init__.py:174
 msgid "Clean"
 msgstr "Arassala"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Copied"
 msgstr "Göçürildi"
 
-#: __init__.py:111
-#: __init__.py:123
+#: __init__.py:116
+#: __init__.py:128
 msgid "Copy"
 msgstr "Göçür"
 
-#: __init__.py:230
+#: __init__.py:234
 msgid "Copy Until Last"
 msgstr "Soňkusa çenli göçür"
 
-#: __init__.py:75
+#: __init__.py:80
 msgid "Error during append operation"
-msgstr "Goşmak wagtynda ýalňyşlyk ýüze çykdy"
+msgstr "Soňuna goşmak amalynda ýalňyşlyk ýüze çykdy"
 
-#: clipboard_utils.py:133
+#: clipboard_utils.py:236
 msgid "Error writing to clipboard"
-msgstr "Gysgyç paneline ýazmakda ýalňyşlyk"
+msgstr "Alçalşyk buferine ýazmakda ýalňyşlyk"
 
-#: __init__.py:113
+#: __init__.py:239
+msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
+msgstr "Gepleşik taryhynda geziň: öňki (bir gezek basmak) indiki (iki gezek basmak) žurnal faýlyny aç (üç gezek basmak)"
+
+#: __init__.py:118
 msgid "No URL"
 msgstr "URL ýok"
 
-#: __init__.py:125
+#: __init__.py:130
 msgid "No link found"
-msgstr "Salgylanyş tapylmady"
+msgstr "Siltewe tapylmady"
 
-#: __init__.py:64
+#: __init__.py:69
 msgid "No text selected to append"
-msgstr "Goşmak üçin tekst saýlanmady"
+msgstr "Soňuna goşmak üçin tekst saýlanmady"
 
-#: __init__.py:29
+#: __init__.py:30
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:78
+#: __init__.py:83
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "URL göçür (bir gezek) giper-salgylanyşy göçür (iki gezek)"
+msgstr "URL göçür (bir gezek basmak) çykgydy göçür (iki gezek basmak)"
 
-#: __init__.py:132
+#: __init__.py:137
 msgid "copy and append (single) clear (double)"
-msgstr "göçür we goş (bir gezek) arassala (iki gezek)"
+msgstr "göçür we soňuna goş (bir gezek basmak) arassala (iki gezek basmak)"
 
-#: __init__.py:177
-msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "soňky gepleşigi göçür (bir gezek) soňky gepleşigi goş (iki gezek) soňky gepleşige çenli göçür (üç gezek) gepleşik ýazgysyny aç (dört gezek)"
+#: __init__.py:182
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
+msgstr "soňky gepleşigi göçür (bir gezek basmak) soňky gepleşigi soňuna goş (iki gezek basmak) soňky gepลeșige çenli göçür (üç gezek basmak)"

@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Project-Id-Version: simpleCopy 2026.5.4\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-04-14 12:46+0700\n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: 2026-05-23 10:10+0700\n"
+"PO-Revision-Date: 2026-05-23 10:10+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Bulgarian\n"
 "Language: bg\n"
@@ -12,67 +12,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:221
+#: __init__.py:225
 msgid "Append"
 msgstr "Добавяне"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Appended"
 msgstr "Добавено"
 
-#: clipboard_utils.py:102
+#: clipboard_utils.py:205
 msgid "Cannot append to non-text clipboard content"
-msgstr "Не може да се добавя към нетекстово съдържание в клипборда"
+msgstr "Не може да се добавя към нетекстово съдържание на клипборда"
 
-#: __init__.py:169
+#: __init__.py:174
 msgid "Clean"
 msgstr "Изчистване"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Copied"
 msgstr "Копирано"
 
-#: __init__.py:111
-#: __init__.py:123
+#: __init__.py:116
+#: __init__.py:128
 msgid "Copy"
 msgstr "Копиране"
 
-#: __init__.py:230
+#: __init__.py:234
 msgid "Copy Until Last"
 msgstr "Копиране до последното"
 
-#: __init__.py:75
+#: __init__.py:80
 msgid "Error during append operation"
 msgstr "Грешка по време на операцията за добавяне"
 
-#: clipboard_utils.py:133
+#: clipboard_utils.py:236
 msgid "Error writing to clipboard"
 msgstr "Грешка при запис в клипборда"
 
-#: __init__.py:113
+#: __init__.py:239
+msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
+msgstr "Навигация в хронологията на речта: предишна (единично) следваща (двойно) отваряне на лог файл (тройно)"
+
+#: __init__.py:118
 msgid "No URL"
 msgstr "Няма URL адрес"
 
-#: __init__.py:125
+#: __init__.py:130
 msgid "No link found"
-msgstr "Няма намерена връзка"
+msgstr "Не е открита връзка"
 
-#: __init__.py:64
+#: __init__.py:69
 msgid "No text selected to append"
 msgstr "Няма избран текст за добавяне"
 
-#: __init__.py:29
+#: __init__.py:30
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:78
+#: __init__.py:83
 msgid "copy URL (single) copy hyper link (double)"
 msgstr "копиране на URL адрес (единично) копиране на хипервръзка (двойно)"
 
-#: __init__.py:132
+#: __init__.py:137
 msgid "copy and append (single) clear (double)"
 msgstr "копиране и добавяне (единично) изчистване (двойно)"
 
-#: __init__.py:177
-msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "копиране на последната реч (единично) добавяне на последната реч (двойно) копиране до последната реч (тройно) отваряне на запис на реч (четворно)"
+#: __init__.py:182
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
+msgstr "копиране на последната реч (единично) добавяне на последната реч (двойно) копиране до последната реч (тройно)"

@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Project-Id-Version: simpleCopy 2026.5.4\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-04-14 12:46+0700\n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: 2026-05-23 10:10+0700\n"
+"PO-Revision-Date: 2026-05-23 10:10+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Hindi\n"
 "Language: hi\n"
@@ -12,67 +12,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:221
+#: __init__.py:225
 msgid "Append"
 msgstr "जोड़ें"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Appended"
-msgstr "जोड़ा गया"
+msgstr "जोड़ दिया गया"
 
-#: clipboard_utils.py:102
+#: clipboard_utils.py:205
 msgid "Cannot append to non-text clipboard content"
-msgstr "गैर-पाठ क्लिपबोर्ड सामग्री में नहीं जोड़ा जा सकता"
+msgstr "क्लिपबोर्ड की गैर-पाठ्य सामग्री में जोड़ा नहीं जा सकता"
 
-#: __init__.py:169
+#: __init__.py:174
 msgid "Clean"
 msgstr "साफ़ करें"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Copied"
 msgstr "कॉपी किया गया"
 
-#: __init__.py:111
-#: __init__.py:123
+#: __init__.py:116
+#: __init__.py:128
 msgid "Copy"
 msgstr "कॉपी करें"
 
-#: __init__.py:230
+#: __init__.py:234
 msgid "Copy Until Last"
-msgstr "अंतिम तक कॉपी करें"
+msgstr "अंत तक कॉपी करें"
 
-#: __init__.py:75
+#: __init__.py:80
 msgid "Error during append operation"
-msgstr "जोड़ने के दौरान त्रुटि"
+msgstr "जोड़ने की प्रक्रिया के दौरान त्रुटि"
 
-#: clipboard_utils.py:133
+#: clipboard_utils.py:236
 msgid "Error writing to clipboard"
 msgstr "क्लिपबोर्ड पर लिखने में त्रुटि"
 
-#: __init__.py:113
+#: __init__.py:239
+msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
+msgstr "भाषण इतिहास नेविगेट करें: पिछला (एक बार दबाएं) अगला (दो बार दबाएं) लॉग फ़ाइल खोलें (तीन बार दबाएं)"
+
+#: __init__.py:118
 msgid "No URL"
 msgstr "कोई URL नहीं"
 
-#: __init__.py:125
+#: __init__.py:130
 msgid "No link found"
 msgstr "कोई लिंक नहीं मिला"
 
-#: __init__.py:64
+#: __init__.py:69
 msgid "No text selected to append"
-msgstr "जोड़ने के लिए कोई पाठ नहीं चुना गया"
+msgstr "जोड़ने के लिए कोई पाठ चयनित नहीं है"
 
-#: __init__.py:29
+#: __init__.py:30
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:78
+#: __init__.py:83
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "URL कॉपी करें (एकल) हाइपर लिंक कॉपी करें (दोहरा)"
+msgstr "URL कॉपी करें (एक बार दबाएं) हाइपरलिंक कॉपी करें (दो बार दबाएं)"
 
-#: __init__.py:132
+#: __init__.py:137
 msgid "copy and append (single) clear (double)"
-msgstr "कॉपी और जोड़ें (एकल) साफ़ करें (दोहरा)"
+msgstr "कॉपी करें और जोड़ें (एक बार दबाएं) साफ़ करें (दो बार दबाएं)"
 
-#: __init__.py:177
-msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "अंतिम भाषण कॉपी करें (एकल) अंतिम भाषण जोड़ें (दोहरा) अंतिम भाषण तक कॉपी करें (तिहरा) रिकॉर्ड भाषण खोलें (चौगुना)"
+#: __init__.py:182
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
+msgstr "पिछला भाषण कॉपी करें (एक बार दबाएं) पिछला भाषण जोड़ें (दो बार दबाएं) अंत तक भाषण कॉपी करें (तीन बार दबाएं)"

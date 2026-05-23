@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Project-Id-Version: simpleCopy 2026.5.4\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-04-14 12:46+0700\n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: 2026-05-23 10:10+0700\n"
+"PO-Revision-Date: 2026-05-23 10:10+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Croatian\n"
 "Language: hr\n"
@@ -12,67 +12,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:221
+#: __init__.py:225
 msgid "Append"
-msgstr "Dodaj"
+msgstr "Dodaj na kraj"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Appended"
-msgstr "Dodano"
+msgstr "Dodano na kraj"
 
-#: clipboard_utils.py:102
+#: clipboard_utils.py:205
 msgid "Cannot append to non-text clipboard content"
-msgstr "Nije moguće dodati u sadržaj međuspremnika koji nije tekst"
+msgstr "Nije moguće dodati na kraj netekstualni sadržaj međuspremnika"
 
-#: __init__.py:169
+#: __init__.py:174
 msgid "Clean"
 msgstr "Očisti"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Copied"
 msgstr "Kopirano"
 
-#: __init__.py:111
-#: __init__.py:123
+#: __init__.py:116
+#: __init__.py:128
 msgid "Copy"
 msgstr "Kopiraj"
 
-#: __init__.py:230
+#: __init__.py:234
 msgid "Copy Until Last"
-msgstr "Kopiraj do zadnjeg"
+msgstr "Kopiraj do posljednjeg"
 
-#: __init__.py:75
+#: __init__.py:80
 msgid "Error during append operation"
-msgstr "Pogreška tijekom operacije dodavanja"
+msgstr "Pogreška tijekom dodavanja na kraj"
 
-#: clipboard_utils.py:133
+#: clipboard_utils.py:236
 msgid "Error writing to clipboard"
 msgstr "Pogreška pri pisanju u međuspremnik"
 
-#: __init__.py:113
+#: __init__.py:239
+msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
+msgstr "Navigacija povijesti govora: prethodno (jedan pritisak) sljedeće (dvostruki pritisak) otvori datoteku zapisnika (trostruki pritisak)"
+
+#: __init__.py:118
 msgid "No URL"
 msgstr "Nema URL-a"
 
-#: __init__.py:125
+#: __init__.py:130
 msgid "No link found"
 msgstr "Poveznica nije pronađena"
 
-#: __init__.py:64
+#: __init__.py:69
 msgid "No text selected to append"
-msgstr "Nije odabran tekst za dodavanje"
+msgstr "Nije odabran tekst za dodavanje na kraj"
 
-#: __init__.py:29
+#: __init__.py:30
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:78
+#: __init__.py:83
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "kopiraj URL (jednom) kopiraj hipervezu (dvaput)"
+msgstr "kopiraj URL (jedan pritisak) kopiraj poveznicu (dvostruki pritisak)"
 
-#: __init__.py:132
+#: __init__.py:137
 msgid "copy and append (single) clear (double)"
-msgstr "kopiraj i dodaj (jednom) očisti (dvaput)"
+msgstr "kopiraj i dodaj na kraj (jedan pritisak) očisti (dvostruki pritisak)"
 
-#: __init__.py:177
-msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "kopiraj zadnji govor (jednom) dodaj zadnji govor (dvaput) kopiraj do zadnjeg govora (triput) otvori snimanje govora (četverostruko)"
+#: __init__.py:182
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
+msgstr "kopiraj posljednji govor (jedan pritisak) dodaj posljednji govor na kraj (dvostruki pritisak) kopiraj do posljednjeg govora (trostruki pritisak)"

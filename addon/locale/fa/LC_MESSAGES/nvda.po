@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Project-Id-Version: simpleCopy 2026.5.4\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-04-14 12:46+0700\n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: 2026-05-23 10:10+0700\n"
+"PO-Revision-Date: 2026-05-23 10:10+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Persian\n"
 "Language: fa\n"
@@ -12,67 +12,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:221
+#: __init__.py:225
 msgid "Append"
-msgstr "افزودن"
+msgstr "الحاق"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Appended"
-msgstr "افزوده شد"
+msgstr "الحاق شد"
 
-#: clipboard_utils.py:102
+#: clipboard_utils.py:205
 msgid "Cannot append to non-text clipboard content"
-msgstr "نمی‌توان به محتوای غیرمتنی کلیپ‌بورد افزود"
+msgstr "امکان الحاق به محتوای غیرمتنی حافظه‌ی موقت وجود ندارد"
 
-#: __init__.py:169
+#: __init__.py:174
 msgid "Clean"
-msgstr "پاکسازی"
+msgstr "پاک کردن"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Copied"
 msgstr "کپی شد"
 
-#: __init__.py:111
-#: __init__.py:123
+#: __init__.py:116
+#: __init__.py:128
 msgid "Copy"
 msgstr "کپی"
 
-#: __init__.py:230
+#: __init__.py:234
 msgid "Copy Until Last"
 msgstr "کپی تا آخرین مورد"
 
-#: __init__.py:75
+#: __init__.py:80
 msgid "Error during append operation"
-msgstr "خطا در حین عملیات افزودن"
+msgstr "خطا در حین عملیات الحاق"
 
-#: clipboard_utils.py:133
+#: clipboard_utils.py:236
 msgid "Error writing to clipboard"
-msgstr "خطا در نوشتن در کلیپ‌بورد"
+msgstr "خطا در نوشتن روی حافظه‌ی موقت"
 
-#: __init__.py:113
+#: __init__.py:239
+msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
+msgstr "ناوبری در تاریخچه گفتار: قبلی (یک‌بار فشردن) بعدی (دوبار فشردن) باز کردن فایل گزارش (سه‌بار فشردن)"
+
+#: __init__.py:118
 msgid "No URL"
 msgstr "بدون URL"
 
-#: __init__.py:125
+#: __init__.py:130
 msgid "No link found"
-msgstr "لینکی یافت نشد"
+msgstr "پیوندی یافت نشد"
 
-#: __init__.py:64
+#: __init__.py:69
 msgid "No text selected to append"
-msgstr "متنی برای افزودن انتخاب نشده است"
+msgstr "متنی برای الحاق انتخاب نشده است"
 
-#: __init__.py:29
+#: __init__.py:30
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:78
+#: __init__.py:83
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "کپی URL (یک‌بار) کپی هایپرلینک (دوبار)"
+msgstr "کپی URL (یک‌بار فشردن) کپی پیوند متنی (دوبار فشردن)"
 
-#: __init__.py:132
+#: __init__.py:137
 msgid "copy and append (single) clear (double)"
-msgstr "کپی و افزودن (یک‌بار) پاکسازی (دوبار)"
+msgstr "کپی و الحاق (یک‌بار فشردن) پاک کردن حافظه (دوبار فشردن)"
 
-#: __init__.py:177
-msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "کپی آخرین گفتار (یک‌بار) افزودن آخرین گفتار (دوبار) کپی تا آخرین گفتار (سه‌بار) باز کردن ضبط گفتار (چهاربار)"
+#: __init__.py:182
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
+msgstr "کپی آخرین گفتار (یک‌بار فشردن) الحاق آخرین گفتار (دوبار فشردن) کپی تا آخرین گفتار (سه‌بار فشردن)"

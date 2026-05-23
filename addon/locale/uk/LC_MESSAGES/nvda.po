@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Project-Id-Version: simpleCopy 2026.5.4\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-04-14 12:46+0700\n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: 2026-05-23 10:10+0700\n"
+"PO-Revision-Date: 2026-05-23 10:10+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Ukrainian\n"
 "Language: uk\n"
@@ -12,74 +12,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: simpleCopy/__init__.py:29
-msgid "Simple Copy"
-msgstr "Просте копіювання"
+#: __init__.py:225
+msgid "Append"
+msgstr "Додати в кінець"
 
-#: simpleCopy/__init__.py:64
-msgid "No text selected to append"
-msgstr "Не вибрано текст для додавання"
+#: clipboard_utils.py:229
+msgid "Appended"
+msgstr "Додано в кінець"
 
-#: simpleCopy/__init__.py:75
-msgid "Error during append operation"
-msgstr "Помилка під час операції додавання"
+#: clipboard_utils.py:205
+msgid "Cannot append to non-text clipboard content"
+msgstr "Неможливо додати до нетекстового вмісту буфера обміну"
 
-#: simpleCopy/__init__.py:78
-msgid "copy URL (single) copy hyper link (double)"
-msgstr ""
-"скопіювати URL (натисніть один раз) скопіювати гіперпосилання (натисніть "
-"двічі)"
-
-#: simpleCopy/__init__.py:111 simpleCopy/__init__.py:123
-msgid "Copy"
-msgstr "Копіювати"
-
-#: simpleCopy/__init__.py:113
-msgid "No URL"
-msgstr "Немає URL"
-
-#: simpleCopy/__init__.py:125
-msgid "No link found"
-msgstr "Посилання не знайдено"
-
-#: simpleCopy/__init__.py:132
-msgid "copy and append (single) clear (double)"
-msgstr "скопіювати та додати (натисьніть один раз) очистити (натисніть двічі)"
-
-#: simpleCopy/__init__.py:169
+#: __init__.py:174
 msgid "Clean"
 msgstr "Очистити"
 
-#: simpleCopy/__init__.py:177
-msgid ""
-"copy last speech (single) append last speech (double) copy until last speech "
-"(triple) open record speech (quadruple)"
-msgstr ""
-"копіювати останню промовлену фразу (натисніть один раз) додати останню "
-"промовлену фразу(натисніть двічі) копіювати до останньої промовленої "
-"фрази(натисніть тричі) відкрити запис промовленої фрази(натисьніть чотири "
-"рази)"
-
-#: simpleCopy/__init__.py:221
-msgid "Append"
-msgstr "Додати"
-
-#: simpleCopy/__init__.py:230
-msgid "Copy Until Last"
-msgstr "Копіювати до останньої фрази"
-
-#: simpleCopy/clipboard_utils.py:102
-msgid "Cannot append to non-text clipboard content"
-msgstr "Неможливо додати дані до вмісту буфера обміну, що не є текстом"
-
-#: simpleCopy/clipboard_utils.py:126
-msgid "Appended"
-msgstr "Додано"
-
-#: simpleCopy/clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Copied"
 msgstr "Скопійовано"
 
-#: simpleCopy/clipboard_utils.py:133
+#: __init__.py:116
+#: __init__.py:128
+msgid "Copy"
+msgstr "Скопіювати"
+
+#: __init__.py:234
+msgid "Copy Until Last"
+msgstr "Копіювати до останнього"
+
+#: __init__.py:80
+msgid "Error during append operation"
+msgstr "Помилка під час додавання в кінець"
+
+#: clipboard_utils.py:236
 msgid "Error writing to clipboard"
 msgstr "Помилка запису в буфер обміну"
+
+#: __init__.py:239
+msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
+msgstr "Навігація історією мовлення: попередня фраза (одне натискання), наступна фраза (подвійне натискання), відкрити лог-файл (потрійне натискання)"
+
+#: __init__.py:118
+msgid "No URL"
+msgstr "Немає URL-адреси"
+
+#: __init__.py:130
+msgid "No link found"
+msgstr "Посилання не знайдено"
+
+#: __init__.py:69
+msgid "No text selected to append"
+msgstr "Немає виділеного тексту для додавання в кінець"
+
+#: __init__.py:30
+msgid "Simple Copy"
+msgstr "Simple Copy"
+
+#: __init__.py:83
+msgid "copy URL (single) copy hyper link (double)"
+msgstr "копіювати URL (одне натискання), копіювати гіперпосилання (подвійне натискання)"
+
+#: __init__.py:137
+msgid "copy and append (single) clear (double)"
+msgstr "скопіювати та додати в кінець (одне натискання), очистити буфер обміну (подвійне натискання)"
+
+#: __init__.py:182
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
+msgstr "скопіювати останнє мовлення (одне натискання), додати останнє мовлення в кінець (подвійне натискання), копіювати до останнього мовлення (потрійне натискання)"

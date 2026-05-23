@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Project-Id-Version: simpleCopy 2026.5.4\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-04-14 12:46+0700\n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: 2026-05-23 10:10+0700\n"
+"PO-Revision-Date: 2026-05-23 10:10+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Burmese\n"
 "Language: my\n"
@@ -12,67 +12,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:221
+#: __init__.py:225
 msgid "Append"
-msgstr "ဆက်ထည့်ရန်"
+msgstr "နောက်ကဆက်တွဲထည့်ပါ"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Appended"
-msgstr "ဆက်ထည့်ပြီးပါပြီ"
+msgstr "နောက်ကဆက်တွဲထည့်ပြီးပါပြီ"
 
-#: clipboard_utils.py:102
+#: clipboard_utils.py:205
 msgid "Cannot append to non-text clipboard content"
-msgstr "စာသားမဟုတ်သော ကလစ်ဘုတ်အကြောင်းအရာတွင် ဆက်ထည့်၍မရပါ"
+msgstr "စာသားမဟုတ်သော ကလစ်ဘုတ်အကြောင်းအရာထဲသို့ ဆက်တွဲထည့်၍မရပါ"
 
-#: __init__.py:169
+#: __init__.py:174
 msgid "Clean"
-msgstr "ရှင်းလင်းရန်"
+msgstr "ရှင်းလင်းပါ"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Copied"
 msgstr "ကူးယူပြီးပါပြီ"
 
-#: __init__.py:111
-#: __init__.py:123
+#: __init__.py:116
+#: __init__.py:128
 msgid "Copy"
-msgstr "ကူးယူရန်"
+msgstr "ကူးယူပါ"
 
-#: __init__.py:230
+#: __init__.py:234
 msgid "Copy Until Last"
-msgstr "နောက်ဆုံးအထိ ကူးယူရန်"
+msgstr "နောက်ဆုံးအထိ ကူးယူပါ"
 
-#: __init__.py:75
+#: __init__.py:80
 msgid "Error during append operation"
-msgstr "ဆက်ထည့်နေစဉ် အမှားဖြစ်ပေါ်ပါသည်"
+msgstr "နောက်ကဆက်တွဲထည့်သည့် လုပ်ဆောင်ချက်အတွင်း အမှားအယွင်းရှိပါသည်"
 
-#: clipboard_utils.py:133
+#: clipboard_utils.py:236
 msgid "Error writing to clipboard"
-msgstr "ကလစ်ဘုတ်သို့ ရေးသားရာတွင် အမှားဖြစ်ပေါ်ပါသည်"
+msgstr "ကလစ်ဘုတ်ထဲသို့ ရေးသားရာတွင် အမှားအယွင်းရှိပါသည်"
 
-#: __init__.py:113
+#: __init__.py:239
+msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
+msgstr "ဖတ်ကြားမှုမှတ်တမ်းအတွင်း ရွှေ့လျားပါ- ယခင် (တစ်ချက်နှိပ်) နောက်တစ်ခု (နှစ်ချက်နှိပ်) မှတ်တမ်းဖိုင်ဖွင့်ပါ (သုံးချက်နှိပ်)"
+
+#: __init__.py:118
 msgid "No URL"
 msgstr "URL မရှိပါ"
 
-#: __init__.py:125
+#: __init__.py:130
 msgid "No link found"
 msgstr "လင့်ခ်မတွေ့ပါ"
 
-#: __init__.py:64
+#: __init__.py:69
 msgid "No text selected to append"
-msgstr "ဆက်ထည့်ရန် စာသားမရွေးချယ်ထားပါ"
+msgstr "နောက်ကဆက်တွဲထည့်ရန် စာသားရွေးချယ်ထားခြင်းမရှိပါ"
 
-#: __init__.py:29
+#: __init__.py:30
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:78
+#: __init__.py:83
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "URL ကူးယူရန် (တစ်ချက်နှိပ်) ဟိုက်ပါလင့်ခ် ကူးယူရန် (နှစ်ချက်နှိပ်)"
+msgstr "URL ကူးယူပါ (တစ်ချက်နှိပ်) ဟိုက်ပါလင့်ခ်ကူးယူပါ (နှစ်ချက်နှိပ်)"
 
-#: __init__.py:132
+#: __init__.py:137
 msgid "copy and append (single) clear (double)"
-msgstr "ကူးယူပြီး ဆက်ထည့်ရန် (တစ်ချက်နှိပ်) ရှင်းလင်းရန် (နှစ်ချက်နှိပ်)"
+msgstr "ကူးယူပြီး နောက်ကဆက်တွဲထည့်ပါ (တစ်ချက်နှိပ်) ရှင်းလင်းပါ (နှစ်ချက်နှိပ်)"
 
-#: __init__.py:177
-msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "နောက်ဆုံးပြောစကား ကူးယူရန် (တစ်ချက်နှိပ်) နောက်ဆုံးပြောစကား ဆက်ထည့်ရန် (နှစ်ချက်နှိပ်) နောက်ဆုံးပြောစကားအထိ ကူးယူရန် (သုံးချက်နှိပ်) အသံဖမ်းယူမှုဖွင့်ရန် (လေးချက်နှိပ်)"
+#: __init__.py:182
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
+msgstr "နောက်ဆုံးဖတ်ကြားချက်ကို ကူးယူပါ (တစ်ချက်နှိပ်) နောက်ဆုံးဖတ်ကြားချက်ကို နောက်ကဆက်တွဲထည့်ပါ (နှစ်ချက်နှိပ်) နောက်ဆုံးဖတ်ကြားချက်အထိ ကူးယူပါ (သုံးချက်နှိပ်)"

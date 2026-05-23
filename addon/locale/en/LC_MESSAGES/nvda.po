@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Project-Id-Version: simpleCopy 2026.5.4\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-04-15 15:47+0700\n"
+"POT-Creation-Date: 2026-05-23 10:10+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: English\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:221
+#: __init__.py:225
 msgid "Append"
 msgstr "Append"
 
@@ -24,7 +24,7 @@ msgstr "Appended"
 msgid "Cannot append to non-text clipboard content"
 msgstr "Cannot append to non-text clipboard content"
 
-#: __init__.py:169
+#: __init__.py:174
 msgid "Clean"
 msgstr "Clean"
 
@@ -32,16 +32,16 @@ msgstr "Clean"
 msgid "Copied"
 msgstr "Copied"
 
-#: __init__.py:111
-#: __init__.py:123
+#: __init__.py:116
+#: __init__.py:128
 msgid "Copy"
 msgstr "Copy"
 
-#: __init__.py:230
+#: __init__.py:234
 msgid "Copy Until Last"
 msgstr "Copy Until Last"
 
-#: __init__.py:75
+#: __init__.py:80
 msgid "Error during append operation"
 msgstr "Error during append operation"
 
@@ -49,30 +49,34 @@ msgstr "Error during append operation"
 msgid "Error writing to clipboard"
 msgstr "Error writing to clipboard"
 
-#: __init__.py:113
+#: __init__.py:239
+msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
+msgstr "Navigate speech history: previous (single) next (double) open log file (triple)"
+
+#: __init__.py:118
 msgid "No URL"
 msgstr "No URL"
 
-#: __init__.py:125
+#: __init__.py:130
 msgid "No link found"
 msgstr "No link found"
 
-#: __init__.py:64
+#: __init__.py:69
 msgid "No text selected to append"
 msgstr "No text selected to append"
 
-#: __init__.py:29
+#: __init__.py:30
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:78
+#: __init__.py:83
 msgid "copy URL (single) copy hyper link (double)"
 msgstr "copy URL (single) copy hyper link (double)"
 
-#: __init__.py:132
+#: __init__.py:137
 msgid "copy and append (single) clear (double)"
 msgstr "copy and append (single) clear (double)"
 
-#: __init__.py:177
-msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
+#: __init__.py:182
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
+msgstr "copy last speech (single) append last speech (double) copy until last speech (triple)"

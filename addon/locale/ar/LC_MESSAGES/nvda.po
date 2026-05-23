@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Project-Id-Version: simpleCopy 2026.5.4\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-04-14 12:46+0700\n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: 2026-05-23 10:10+0700\n"
+"PO-Revision-Date: 2026-05-23 10:10+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Arabic\n"
 "Language: ar\n"
@@ -12,67 +12,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:221
+#: __init__.py:225
 msgid "Append"
-msgstr "إضافة"
+msgstr "إلحاق"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Appended"
-msgstr "تمت الإضافة"
+msgstr "تم الإلحاق"
 
-#: clipboard_utils.py:102
+#: clipboard_utils.py:205
 msgid "Cannot append to non-text clipboard content"
-msgstr "لا يمكن إضافة محتوى غير نصي إلى الحافظة"
+msgstr "لا يمكن الإلحاق بمحتوى حافظة غير نصي"
 
-#: __init__.py:169
+#: __init__.py:174
 msgid "Clean"
-msgstr "تنظيف"
+msgstr "مسح"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Copied"
 msgstr "تم النسخ"
 
-#: __init__.py:111
-#: __init__.py:123
+#: __init__.py:116
+#: __init__.py:128
 msgid "Copy"
 msgstr "نسخ"
 
-#: __init__.py:230
+#: __init__.py:234
 msgid "Copy Until Last"
 msgstr "نسخ حتى الأخير"
 
-#: __init__.py:75
+#: __init__.py:80
 msgid "Error during append operation"
-msgstr "خطأ أثناء عملية الإضافة"
+msgstr "خطأ أثناء عملية الإلحاق"
 
-#: clipboard_utils.py:133
+#: clipboard_utils.py:236
 msgid "Error writing to clipboard"
-msgstr "خطأ أثناء الكتابة إلى الحافظة"
+msgstr "خطأ أثناء الكتابة في الحافظة"
 
-#: __init__.py:113
+#: __init__.py:239
+msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
+msgstr "التنقل في تاريخ النطق: السابق (فردية) التالي (مزدوجة) فتح ملف السجل (ثلاثية)"
+
+#: __init__.py:118
 msgid "No URL"
 msgstr "لا يوجد رابط URL"
 
-#: __init__.py:125
+#: __init__.py:130
 msgid "No link found"
 msgstr "لم يتم العثور على رابط"
 
-#: __init__.py:64
+#: __init__.py:69
 msgid "No text selected to append"
-msgstr "لم يتم اختيار نص لإضافته"
+msgstr "لم يتم تحديد نص لإلحاقه"
 
-#: __init__.py:29
+#: __init__.py:30
 msgid "Simple Copy"
-msgstr "Simple Copy"
+msgstr "النسخ البسيط"
 
-#: __init__.py:78
+#: __init__.py:83
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "نسخ رابط URL (مرة واحدة) نسخ ارتباط تشعبي (مرتين)"
+msgstr "نسخ رابط URL (فردية) نسخ الارتباط التشعبي (مزدوجة)"
 
-#: __init__.py:132
+#: __init__.py:137
 msgid "copy and append (single) clear (double)"
-msgstr "نسخ وإضافة (مرة واحدة) مسح (مرتين)"
+msgstr "نسخ وإلحاق (فردية) مسح الحافظة (مزدوجة)"
 
-#: __init__.py:177
-msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "نسخ آخر حديث (مرة واحدة) إضافة آخر حديث (مرتين) نسخ حتى آخر حديث (3 مرات) فتح سجل الحديث (4 مرات)"
+#: __init__.py:182
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
+msgstr "نسخ آخر عبارة منطوقة (فردية) إلحاق آخر عبارة منطوقة (مزدوجة) نسخ حتى آخر عبارة منطوقة (ثلاثية)"

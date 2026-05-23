@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Project-Id-Version: simpleCopy 2026.5.4\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-04-14 12:46+0700\n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: 2026-05-23 10:10+0700\n"
+"PO-Revision-Date: 2026-05-23 10:10+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Thai\n"
 "Language: th\n"
@@ -12,67 +12,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:221
+#: __init__.py:225
 msgid "Append"
-msgstr "เพิ่มต่อท้าย"
+msgstr "คัดลอกต่อท้าย"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Appended"
-msgstr "เพิ่มต่อท้ายแล้ว"
+msgstr "คัดลอกต่อท้ายแล้ว"
 
-#: clipboard_utils.py:102
+#: clipboard_utils.py:205
 msgid "Cannot append to non-text clipboard content"
-msgstr "ไม่สามารถเพิ่มต่อท้ายเนื้อหาในคลิปบอร์ดที่ไม่ใช่ข้อความได้"
+msgstr "ไม่สามารถคัดลอกต่อท้ายข้อมูลในคลิปบอร์ดที่ไม่ใช่ข้อความได้"
 
-#: __init__.py:169
+#: __init__.py:174
 msgid "Clean"
-msgstr "ล้าง"
+msgstr "ล้างคลิปบอร์ด"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Copied"
 msgstr "คัดลอกแล้ว"
 
-#: __init__.py:111
-#: __init__.py:123
+#: __init__.py:116
+#: __init__.py:128
 msgid "Copy"
 msgstr "คัดลอก"
 
-#: __init__.py:230
+#: __init__.py:234
 msgid "Copy Until Last"
-msgstr "คัดลอกจนถึงล่าสุด"
+msgstr "คัดลอกจนถึงข้อความล่าสุด"
 
-#: __init__.py:75
+#: __init__.py:80
 msgid "Error during append operation"
-msgstr "เกิดข้อผิดพลาดระหว่างการเพิ่มต่อท้าย"
+msgstr "เกิดข้อผิดพลาดระหว่างการคัดลอกต่อท้าย"
 
-#: clipboard_utils.py:133
+#: clipboard_utils.py:236
 msgid "Error writing to clipboard"
-msgstr "เกิดข้อผิดพลาดในการเขียนลงคลิปบอร์ด"
+msgstr "เกิดข้อผิดพลาดในการบันทึกข้อมูลลงคลิปบอร์ด"
 
-#: __init__.py:113
+#: __init__.py:239
+msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
+msgstr "ท่องดูประวัติคำพูด: ก่อนหน้า (กดครั้งเดียว) ถัดไป (กดสองครั้ง) เปิดไฟล์บันทึกประวัติ (กดสามครั้ง)"
+
+#: __init__.py:118
 msgid "No URL"
-msgstr "ไม่มี URL"
+msgstr "ไม่พบ URL"
 
-#: __init__.py:125
+#: __init__.py:130
 msgid "No link found"
 msgstr "ไม่พบลิงก์"
 
-#: __init__.py:64
+#: __init__.py:69
 msgid "No text selected to append"
-msgstr "ไม่ได้เลือกข้อความที่จะเพิ่มต่อท้าย"
+msgstr "ไม่ได้เลือกข้อความเพื่อคัดลอกต่อท้าย"
 
-#: __init__.py:29
+#: __init__.py:30
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:78
+#: __init__.py:83
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "คัดลอก URL (หนึ่งครั้ง) คัดลอกไฮเปอร์ลิงก์ (สองครั้ง)"
+msgstr "คัดลอก URL (กดครั้งเดียว) คัดลอกไฮเปอร์ลิงก์ (กดสองครั้ง)"
 
-#: __init__.py:132
+#: __init__.py:137
 msgid "copy and append (single) clear (double)"
-msgstr "คัดลอกและเพิ่มต่อท้าย (หนึ่งครั้ง) ล้าง (สองครั้ง)"
+msgstr "คัดลอกและต่อท้าย (กดครั้งเดียว) ล้างคลิปบอร์ด (กดสองครั้ง)"
 
-#: __init__.py:177
-msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "คัดลอกคำพูดล่าสุด (หนึ่งครั้ง) เพิ่มต่อท้ายคำพูดล่าสุด (สองครั้ง) คัดลอกจนถึงคำพูดล่าสุด (สามครั้ง) เปิดบันทึกคำพูด (สี่ครั้ง)"
+#: __init__.py:182
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
+msgstr "คัดลอกคำพูดล่าสุด (กดครั้งเดียว) คัดลอกคำพูดล่าสุดต่อท้าย (กดสองครั้ง) คัดลอกจนถึงคำพูดล่าสุด (กดสามครั้ง)"

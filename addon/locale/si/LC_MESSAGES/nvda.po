@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Project-Id-Version: simpleCopy 2026.5.4\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-04-14 12:46+0700\n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: 2026-05-23 10:10+0700\n"
+"PO-Revision-Date: 2026-05-23 10:10+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Sinhala\n"
 "Language: si\n"
@@ -12,67 +12,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:221
+#: __init__.py:225
 msgid "Append"
-msgstr "අගට එක් කරන්න"
+msgstr "අගට එකතු කරන්න"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Appended"
-msgstr "අගට එක් කරන ලදී"
+msgstr "අගට එකතු කරන ලදී"
 
-#: clipboard_utils.py:102
+#: clipboard_utils.py:205
 msgid "Cannot append to non-text clipboard content"
-msgstr "පෙළ නොවන පසුරු පුවරු අන්තර්ගතයට අගට එක් කළ නොහැක"
+msgstr "පෙළ නොවන පසුරු පුවරු අන්තර්ගතයක අගට එකතු කළ නොහැක"
 
-#: __init__.py:169
+#: __init__.py:174
 msgid "Clean"
-msgstr "පිරිසිදු කරන්න"
+msgstr "හිස් කරන්න"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Copied"
 msgstr "පිටපත් කරන ලදී"
 
-#: __init__.py:111
-#: __init__.py:123
+#: __init__.py:116
+#: __init__.py:128
 msgid "Copy"
 msgstr "පිටපත් කරන්න"
 
-#: __init__.py:230
+#: __init__.py:234
 msgid "Copy Until Last"
 msgstr "අවසානය දක්වා පිටපත් කරන්න"
 
-#: __init__.py:75
+#: __init__.py:80
 msgid "Error during append operation"
-msgstr "එක් කිරීමේ මෙහෙයුමේදී දෝෂයකි"
+msgstr "අගට එකතු කිරීමේ ක්‍රියාවලියේදී දෝෂයක් ඇති විය"
 
-#: clipboard_utils.py:133
+#: clipboard_utils.py:236
 msgid "Error writing to clipboard"
-msgstr "පසුරු පුවරුවට ලිවීමේ දෝෂයකි"
+msgstr "පසුරු පුවරුවට ලිවීමේදී දෝෂයක් ඇති විය"
 
-#: __init__.py:113
+#: __init__.py:239
+msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
+msgstr "කථන ඉතිහාසය පිරික්සන්න: පෙර (එක් වරක් එබීම) ඊළඟ (දෙවරක් එබීම) ලොග් ගොනුව විවෘත කරන්න (තෙවරක් එබීම)"
+
+#: __init__.py:118
 msgid "No URL"
-msgstr "URL එකක් නැත"
+msgstr "URL එකක් නොමැත"
 
-#: __init__.py:125
+#: __init__.py:130
 msgid "No link found"
-msgstr "සබැඳියක් හමු නොවීය"
+msgstr "සබැඳියක් හමු නොවිය"
 
-#: __init__.py:64
+#: __init__.py:69
 msgid "No text selected to append"
-msgstr "එක් කිරීමට පෙළක් තෝරා නැත"
+msgstr "අගට එකතු කිරීම සඳහා කිසිදු පෙළක් තෝරා නොමැත"
 
-#: __init__.py:29
+#: __init__.py:30
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:78
+#: __init__.py:83
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "URL පිටපත් කරන්න (තනි) අධිසබැඳිය පිටපත් කරන්න (ද්විත්ව)"
+msgstr "URL පිටපත් කරන්න (එක් වරක් එබීම) අධිසබැඳිය පිටපත් කරන්න (දෙවරක් එබීම)"
 
-#: __init__.py:132
+#: __init__.py:137
 msgid "copy and append (single) clear (double)"
-msgstr "පිටපත් කර එක් කරන්න (තනි) පිරිසිදු කරන්න (ද්විත්ව)"
+msgstr "පිටපත් කර අගට එකතු කරන්න (එක් වරක් එබීම) පසුරු පුවරුව හිස් කරන්න (දෙවරක් එබීම)"
 
-#: __init__.py:177
-msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "අන්තිම කථාව පිටපත් කරන්න (තනි) අන්තිම කථාව එක් කරන්න (ද්විත්ව) අන්තිම කථාව දක්වා පිටපත් කරන්න (ත්‍රිත්ව) කථන වාර්තාව විවෘත කරන්න (චතුර්ථ)"
+#: __init__.py:182
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
+msgstr "අවසාන කථනය පිටපත් කරන්න (එක් වරක් එබීම) අවසාන කථනය අගට එකතු කරන්න (දෙවරක් එබීම) අවසාන කථනය දක්වා පිටපත් කරන්න (තෙවරක් එබීම)"

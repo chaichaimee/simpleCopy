@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Project-Id-Version: simpleCopy 2026.5.4\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-04-14 12:46+0700\n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: 2026-05-23 10:10+0700\n"
+"PO-Revision-Date: 2026-05-23 10:10+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Romanian\n"
 "Language: ro\n"
@@ -12,67 +12,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:221
+#: __init__.py:225
 msgid "Append"
-msgstr "Adăugare"
+msgstr "Adaugă la sfârșit"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Appended"
-msgstr "Adăugat"
+msgstr "Adăugat la sfârșit"
 
-#: clipboard_utils.py:102
+#: clipboard_utils.py:205
 msgid "Cannot append to non-text clipboard content"
-msgstr "Nu se poate adăuga la conținutul de clipboard care nu este text"
+msgstr "Nu se poate adăuga la un conținut non-text al clipboard-ului"
 
-#: __init__.py:169
+#: __init__.py:174
 msgid "Clean"
-msgstr "Curățare"
+msgstr "Golește"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Copied"
 msgstr "Copiat"
 
-#: __init__.py:111
-#: __init__.py:123
+#: __init__.py:116
+#: __init__.py:128
 msgid "Copy"
-msgstr "Copiere"
+msgstr "Copiază"
 
-#: __init__.py:230
+#: __init__.py:234
 msgid "Copy Until Last"
-msgstr "Copiere până la ultimul"
+msgstr "Copiază până la ultimul"
 
-#: __init__.py:75
+#: __init__.py:80
 msgid "Error during append operation"
-msgstr "Eroare în timpul operației de adăugare"
+msgstr "Eroare în timpul operației de adăugare la sfârșit"
 
-#: clipboard_utils.py:133
+#: clipboard_utils.py:236
 msgid "Error writing to clipboard"
 msgstr "Eroare la scrierea în clipboard"
 
-#: __init__.py:113
+#: __init__.py:239
+msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
+msgstr "Navigare în istoricul rostirii: precedentul (o apăsare) următorul (două apăsări) deschide fișierul jurnal (trei apăsări)"
+
+#: __init__.py:118
 msgid "No URL"
-msgstr "Fără URL"
+msgstr "Niciun URL"
 
-#: __init__.py:125
+#: __init__.py:130
 msgid "No link found"
-msgstr "Niciun link găsit"
+msgstr "Nu a fost găsit nicio legătură"
 
-#: __init__.py:64
+#: __init__.py:69
 msgid "No text selected to append"
-msgstr "Niciun text selectat pentru adăugare"
+msgstr "Niciun text selectat pentru a fi adăugat la sfârșit"
 
-#: __init__.py:29
+#: __init__.py:30
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:78
+#: __init__.py:83
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "copiere URL (o dată) copiere hyperlink (de două ori)"
+msgstr "copiază URL-ul (o apăsare) copiază hiperlegătura (două apăsări)"
 
-#: __init__.py:132
+#: __init__.py:137
 msgid "copy and append (single) clear (double)"
-msgstr "copiere și adăugare (o dată) curățare (de două ori)"
+msgstr "copiază și adăugă la sfârșit (o apăsare) golește clipboard-ul (două apăsări)"
 
-#: __init__.py:177
-msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "copiere ultima rostire (o dată) adăugare ultima rostire (de două ori) copiere până la ultima rostire (de trei ori) deschidere înregistrare rostire (de patru ori)"
+#: __init__.py:182
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
+msgstr "copiază ultima rostire (o apăsare) adaugă ultima rostire la sfârșit (două apăsări) copiază până la ultima rostire (trei apăsări)"

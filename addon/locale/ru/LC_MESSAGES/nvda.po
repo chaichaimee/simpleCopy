@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Project-Id-Version: simpleCopy 2026.5.4\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-04-14 12:46+0700\n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: 2026-05-23 10:10+0700\n"
+"PO-Revision-Date: 2026-05-23 10:10+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Russian\n"
 "Language: ru\n"
@@ -12,67 +12,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:221
+#: __init__.py:225
 msgid "Append"
-msgstr "Добавить"
+msgstr "Добавить в конец"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Appended"
-msgstr "Добавлено"
+msgstr "Добавлено в конец"
 
-#: clipboard_utils.py:102
+#: clipboard_utils.py:205
 msgid "Cannot append to non-text clipboard content"
 msgstr "Невозможно добавить к нетекстовому содержимому буфера обмена"
 
-#: __init__.py:169
+#: __init__.py:174
 msgid "Clean"
 msgstr "Очистить"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Copied"
 msgstr "Скопировано"
 
-#: __init__.py:111
-#: __init__.py:123
+#: __init__.py:116
+#: __init__.py:128
 msgid "Copy"
-msgstr "Копировать"
+msgstr "Скопировать"
 
-#: __init__.py:230
+#: __init__.py:234
 msgid "Copy Until Last"
 msgstr "Копировать до последнего"
 
-#: __init__.py:75
+#: __init__.py:80
 msgid "Error during append operation"
-msgstr "Ошибка при выполнении операции добавления"
+msgstr "Ошибка при добавлении в конец"
 
-#: clipboard_utils.py:133
+#: clipboard_utils.py:236
 msgid "Error writing to clipboard"
 msgstr "Ошибка записи в буфер обмена"
 
-#: __init__.py:113
-msgid "No URL"
-msgstr "Нет URL"
+#: __init__.py:239
+msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
+msgstr "Навигация по истории речи: предыдущая фраза (одно нажатие), следующая фраза (двойное нажатие), открыть лог-файл (тройное нажатие)"
 
-#: __init__.py:125
+#: __init__.py:118
+msgid "No URL"
+msgstr "Нет URL-адреса"
+
+#: __init__.py:130
 msgid "No link found"
 msgstr "Ссылка не найдена"
 
-#: __init__.py:64
+#: __init__.py:69
 msgid "No text selected to append"
-msgstr "Текст для добавления не выбран"
+msgstr "Нет выделенного текста для добавления в конец"
 
-#: __init__.py:29
+#: __init__.py:30
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:78
+#: __init__.py:83
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "копировать URL (один раз) копировать гиперссылку (дважды)"
+msgstr "копировать URL (одно нажатие), копировать гиперссылку (двойное нажатие)"
 
-#: __init__.py:132
+#: __init__.py:137
 msgid "copy and append (single) clear (double)"
-msgstr "копировать и добавить (один раз) очистить (дважды)"
+msgstr "скопировать и добавить в конец (одно нажатие), очистить буфер обмена (двойное нажатие)"
 
-#: __init__.py:177
-msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "копировать последнюю речь (один раз) добавить последнюю речь (дважды) копировать до последней речи (трижды) открыть запись речи (четырежды)"
+#: __init__.py:182
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
+msgstr "скопировать последнюю речь (одно нажатие), добавить последнюю речь в конец (двойное нажатие), копировать до последней речи (тройное нажатие)"

@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Project-Id-Version: simpleCopy 2026.5.4\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-04-14 12:46+0700\n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: 2026-05-23 10:10+0700\n"
+"PO-Revision-Date: 2026-05-23 10:10+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Tagalog\n"
 "Language: tl\n"
@@ -12,67 +12,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:221
+#: __init__.py:225
 msgid "Append"
-msgstr "Idugtong"
+msgstr "Idagdag sa huli"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Appended"
-msgstr "Naidugtong na"
+msgstr "Naidagdag sa huli"
 
-#: clipboard_utils.py:102
+#: clipboard_utils.py:205
 msgid "Cannot append to non-text clipboard content"
-msgstr "Hindi maaring magdugtong sa clipboard content na hindi text"
+msgstr "Hindi maidadagdag sa nilalaman ng clipboard na hindi teksto"
 
-#: __init__.py:169
+#: __init__.py:174
 msgid "Clean"
 msgstr "Linisin"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Copied"
 msgstr "Nakopya na"
 
-#: __init__.py:111
-#: __init__.py:123
+#: __init__.py:116
+#: __init__.py:128
 msgid "Copy"
 msgstr "Kopyahin"
 
-#: __init__.py:230
+#: __init__.py:234
 msgid "Copy Until Last"
 msgstr "Kopyahin hanggang sa huli"
 
-#: __init__.py:75
+#: __init__.py:80
 msgid "Error during append operation"
-msgstr "Error habang nagdurugtong"
+msgstr "Mali sa panahon ng pagdadagdag sa huli"
 
-#: clipboard_utils.py:133
+#: clipboard_utils.py:236
 msgid "Error writing to clipboard"
-msgstr "Error sa pagsulat sa clipboard"
+msgstr "Mali sa pagsulat sa clipboard"
 
-#: __init__.py:113
+#: __init__.py:239
+msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
+msgstr "Mag-navigate sa kasaysayan ng pagsasalita: nakaraan (isang pindot) susunod (dalawang pindot) buksan ang log file (tatlong pindot)"
+
+#: __init__.py:118
 msgid "No URL"
 msgstr "Walang URL"
 
-#: __init__.py:125
+#: __init__.py:130
 msgid "No link found"
 msgstr "Walang nahanap na link"
 
-#: __init__.py:64
+#: __init__.py:69
 msgid "No text selected to append"
-msgstr "Walang napiling text na idudugtong"
+msgstr "Walang napiling teksto para idagdag sa huli"
 
-#: __init__.py:29
+#: __init__.py:30
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:78
+#: __init__.py:83
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "kopyahin ang URL (isa) kopyahin ang hyper link (dalawa)"
+msgstr "kopyahin ang URL (isang pindot) kopyahin ang hyper link (dalawang pindot)"
 
-#: __init__.py:132
+#: __init__.py:137
 msgid "copy and append (single) clear (double)"
-msgstr "kopyahin at idugtong (isa) linisin (dalawa)"
+msgstr "kopyahin at idagdag sa huli (isang pindot) linisin (dalawang pindot)"
 
-#: __init__.py:177
-msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "kopyahin ang huling sinabi (isa) idugtong ang huling sinabi (dalawa) kopyahin hanggang sa huling sinabi (tatlo) buksan ang record speech (apat)"
+#: __init__.py:182
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
+msgstr "kopyahin ang huling sinalita (isang pindot) idagdag ang huling sinalita (dalawang pindot) kopyahin hanggang sa huling sinalita (tatlong pindot)"

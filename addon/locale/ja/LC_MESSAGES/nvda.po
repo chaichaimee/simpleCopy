@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Project-Id-Version: simpleCopy 2026.5.4\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-04-14 12:46+0700\n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: 2026-05-23 10:10+0700\n"
+"PO-Revision-Date: 2026-05-23 10:10+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -12,67 +12,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:221
+#: __init__.py:225
 msgid "Append"
 msgstr "追加"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Appended"
 msgstr "追加しました"
 
-#: clipboard_utils.py:102
+#: clipboard_utils.py:205
 msgid "Cannot append to non-text clipboard content"
-msgstr "テキスト以外のクリップボード内容には追加できません"
+msgstr "テキスト以外のクリップボードの内容には追加できません"
 
-#: __init__.py:169
+#: __init__.py:174
 msgid "Clean"
 msgstr "クリア"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Copied"
 msgstr "コピーしました"
 
-#: __init__.py:111
-#: __init__.py:123
+#: __init__.py:116
+#: __init__.py:128
 msgid "Copy"
 msgstr "コピー"
 
-#: __init__.py:230
+#: __init__.py:234
 msgid "Copy Until Last"
 msgstr "最後までコピー"
 
-#: __init__.py:75
+#: __init__.py:80
 msgid "Error during append operation"
-msgstr "追加操作中にエラーが発生しました"
+msgstr "追加処理中にエラーが発生しました"
 
-#: clipboard_utils.py:133
+#: clipboard_utils.py:236
 msgid "Error writing to clipboard"
 msgstr "クリップボードへの書き込みエラー"
 
-#: __init__.py:113
+#: __init__.py:239
+msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
+msgstr "音声履歴の移動: 前へ (1回押す) 次へ (2回押す) ログファイルを開く (3回押す)"
+
+#: __init__.py:118
 msgid "No URL"
 msgstr "URLなし"
 
-#: __init__.py:125
+#: __init__.py:130
 msgid "No link found"
 msgstr "リンクが見つかりません"
 
-#: __init__.py:64
+#: __init__.py:69
 msgid "No text selected to append"
 msgstr "追加するテキストが選択されていません"
 
-#: __init__.py:29
+#: __init__.py:30
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:78
+#: __init__.py:83
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "URLをコピー (1回) ハイパーリンクをコピー (2回)"
+msgstr "URLをコピー (1回押す) ハイパーリンクをコピー (2回押す)"
 
-#: __init__.py:132
+#: __init__.py:137
 msgid "copy and append (single) clear (double)"
-msgstr "コピーして追加 (1回) クリア (2回)"
+msgstr "コピーして追加 (1回押す) クリア (2回押す)"
 
-#: __init__.py:177
-msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "最後の読み上げをコピー (1回) 最後の読み上げを追加 (2回) 最後までコピー (3回) 読み上げ録音を開く (4回)"
+#: __init__.py:182
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
+msgstr "最後の音声をコピー (1回押す) 最後の音声を追加 (2回押す) 最後の音声までコピー (3回押す)"

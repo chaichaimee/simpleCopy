@@ -1,4 +1,4 @@
-# init.py
+# __init__.py
 # Copyright (C) 2026 Chai Chaimee
 # Licensed under GNU General Public License. See COPYING.txt for details.
 
@@ -25,27 +25,32 @@ log = logging.getLogger("nvda.simpleCopy")
 
 addonHandler.initTranslation()
 
+
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	scriptCategory = _("Simple Copy")
-	
+
 	isTextCopied = False
 	_double_tap_threshold = 0.5
-	
+
 	_ctrl_shift_a_tap_count = 0
 	_ctrl_shift_a_last_tap_time = 0
 	_ctrl_shift_a_timer = None
-	
+
 	_ctrl_shift_c_tap_count = 0
 	_ctrl_shift_c_last_tap_time = 0
 	_ctrl_shift_c_timer = None
-	
+
 	_f9_tap_count = 0
 	_f9_last_tap_time = 0
 	_f9_timer = None
-	
+
+	_shift_f9_tap_count = 0
+	_shift_f9_last_tap_time = 0
+	_shift_f9_timer = None
+
 	_captured_speech_buffer = []
 	_is_recording_active = False
-	
+
 	def __init__(self):
 		super().__init__()
 		self.clipboard_handler = clipboard_utils.ClipboardHandler()
@@ -63,7 +68,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			if not text_to_append:
 				speech.speak([_("No text selected to append")])
 				return
-				
+
 			result = self.clipboard_handler.append_to_clipboard(text_to_append)
 			if result["success"]:
 				self.isTextCopied = True
@@ -83,15 +88,15 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		current_time = time.time()
 		if current_time - self._ctrl_shift_a_last_tap_time > self._double_tap_threshold:
 			self._ctrl_shift_a_tap_count = 0
-		
+
 		self._ctrl_shift_a_tap_count += 1
 		self._ctrl_shift_a_last_tap_time = current_time
-		
+
 		if self._ctrl_shift_a_timer and self._ctrl_shift_a_timer.IsRunning():
 			self._ctrl_shift_a_timer.Stop()
-		
+
 		self._ctrl_shift_a_timer = wx.CallLater(int(self._double_tap_threshold * 1000), self._execute_a_action)
-	
+
 	def _execute_a_action(self):
 		if self._ctrl_shift_a_tap_count == 1:
 			self._copyBrowserUrl()
@@ -104,7 +109,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if (obj.role in (controlTypes.Role.EDITABLETEXT, controlTypes.Role.TEXTFRAME) or controlTypes.State.EDITABLE in obj.states):
 			keyboardHandler.KeyboardInputGesture.fromName("control+shift+a").send()
 			return
-		
+
 		if self.url_handler.is_browser_app(obj):
 			url = self.url_handler.get_current_url()
 			if url and api.copyToClip(url):
@@ -137,13 +142,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		current_time = time.time()
 		if current_time - self._ctrl_shift_c_last_tap_time > self._double_tap_threshold:
 			self._ctrl_shift_c_tap_count = 0
-		
+
 		self._ctrl_shift_c_tap_count += 1
 		self._ctrl_shift_c_last_tap_time = current_time
-		
+
 		if self._ctrl_shift_c_timer and self._ctrl_shift_c_timer.IsRunning():
 			self._ctrl_shift_c_timer.Stop()
-		
+
 		self._ctrl_shift_c_timer = wx.CallLater(int(self._double_tap_threshold * 1000), self._execute_c_action)
 
 	def _execute_c_action(self):
@@ -174,7 +179,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			tones.beep(200, 100)
 
 	@scriptHandler.script(
-		description=_("copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"),
+		description=_("copy last speech (single) append last speech (double) copy until last speech (triple)"),
 		gesture="kb:f9",
 		category=scriptCategory
 	)
@@ -184,7 +189,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self._f9_tap_count = 0
 		self._f9_tap_count += 1
 		self._f9_last_tap_time = current_time
-		
+
 		if self._f9_timer and self._f9_timer.IsRunning():
 			self._f9_timer.Stop()
 		self._f9_timer = wx.CallLater(int(self._double_tap_threshold * 1000), self._execute_f9_action)
@@ -194,26 +199,25 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self._handle_f9_single()
 		elif self._f9_tap_count == 2:
 			self._handle_f9_double()
-		elif self._f9_tap_count == 3:
+		elif self._f9_tap_count >= 3:
 			self._handle_f9_triple()
-		elif self._f9_tap_count >= 4:
-			self.speech_history.open_history_file()
 		self._f9_tap_count = 0
 
 	def _handle_f9_single(self):
-		text = self.speech_history.get_latest()
-		if not text:
+		seq = self.speech_history.get_latest_sequence()
+		if seq is None:
 			tones.beep(200, 100)
 			return
-		if api.copyToClip(text):
+
+		text_version = self.speech_history.get_latest_text()
+		if api.copyToClip(text_version):
 			tones.beep(1500, 100)
-			# Start accumulation for triple-tap
 			self._captured_speech_buffer.clear()
-			self._captured_speech_buffer.append(text)
+			self._captured_speech_buffer.append(text_version)
 			self._is_recording_active = True
 
 	def _handle_f9_double(self):
-		text = self.speech_history.get_latest()
+		text = self.speech_history.get_latest_text()
 		if not text:
 			tones.beep(200, 100)
 			return
@@ -224,12 +228,53 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if not self._is_recording_active or not self._captured_speech_buffer:
 			tones.beep(200, 100)
 			return
-		
+
 		combined_text = "\n".join(self._captured_speech_buffer)
 		if api.copyToClip(combined_text):
 			speech.speak([_("Copy Until Last")])
 			self._captured_speech_buffer.clear()
 			self._is_recording_active = False
+
+	@scriptHandler.script(
+		description=_("Navigate speech history: previous (single) next (double) open log file (triple)"),
+		gesture="kb:shift+f9",
+		category=scriptCategory
+	)
+	def script_navigateSpeechHistory(self, gesture):
+		current_time = time.time()
+		if current_time - self._shift_f9_last_tap_time > self._double_tap_threshold:
+			self._shift_f9_tap_count = 0
+
+		self._shift_f9_tap_count += 1
+		self._shift_f9_last_tap_time = current_time
+
+		if self._shift_f9_timer and self._shift_f9_timer.IsRunning():
+			self._shift_f9_timer.Stop()
+
+		self._shift_f9_timer = wx.CallLater(int(self._double_tap_threshold * 1000), self._execute_shift_f9_action)
+
+	def _execute_shift_f9_action(self):
+		if self._shift_f9_tap_count == 1:
+			self._navigate_history_backward()
+		elif self._shift_f9_tap_count == 2:
+			self._navigate_history_forward()
+		elif self._shift_f9_tap_count >= 3:
+			self.speech_history.open_history_file()
+		self._shift_f9_tap_count = 0
+
+	def _navigate_history_backward(self):
+		seq = self.speech_history.get_previous_sequence()
+		if seq is not None:
+			speech.speak(seq)
+		else:
+			tones.beep(200, 100)
+
+	def _navigate_history_forward(self):
+		seq = self.speech_history.get_next_sequence()
+		if seq is not None:
+			speech.speak(seq)
+		else:
+			tones.beep(200, 100)
 
 	def terminate(self):
 		self.speech_history.restore_patch()

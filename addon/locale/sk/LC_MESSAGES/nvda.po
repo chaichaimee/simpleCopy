@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Project-Id-Version: simpleCopy 2026.5.4\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-04-14 12:46+0700\n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: 2026-05-23 10:10+0700\n"
+"PO-Revision-Date: 2026-05-23 10:10+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Slovak\n"
 "Language: sk\n"
@@ -12,67 +12,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:221
+#: __init__.py:225
 msgid "Append"
 msgstr "Pripojiť"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Appended"
 msgstr "Pripojené"
 
-#: clipboard_utils.py:102
+#: clipboard_utils.py:205
 msgid "Cannot append to non-text clipboard content"
-msgstr "Nemožno pripojiť k netextovému obsahu schránky"
+msgstr "Nezobraziteľný netextový obsah schránky nemožno pripojiť"
 
-#: __init__.py:169
+#: __init__.py:174
 msgid "Clean"
-msgstr "Vymazať"
+msgstr "Vyčistiť"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Copied"
 msgstr "Skopírované"
 
-#: __init__.py:111
-#: __init__.py:123
+#: __init__.py:116
+#: __init__.py:128
 msgid "Copy"
 msgstr "Kopírovať"
 
-#: __init__.py:230
+#: __init__.py:234
 msgid "Copy Until Last"
-msgstr "Kopírovať až po posledný"
+msgstr "Kopírovať po poslednú"
 
-#: __init__.py:75
+#: __init__.py:80
 msgid "Error during append operation"
 msgstr "Chyba počas operácie pripájania"
 
-#: clipboard_utils.py:133
+#: clipboard_utils.py:236
 msgid "Error writing to clipboard"
 msgstr "Chyba pri zápise do schránky"
 
-#: __init__.py:113
-msgid "No URL"
-msgstr "Žiadna URL"
+#: __init__.py:239
+msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
+msgstr "Prechádzanie histórie reči: predchádzajúca (jedno stlačenie) nasledujúca (dvojité stlačenie) otvoriť súbor denníka (trojité stlačenie)"
 
-#: __init__.py:125
+#: __init__.py:118
+msgid "No URL"
+msgstr "Žiadna adresa URL"
+
+#: __init__.py:130
 msgid "No link found"
 msgstr "Nenašiel sa žiadny odkaz"
 
-#: __init__.py:64
+#: __init__.py:69
 msgid "No text selected to append"
-msgstr "Nebol vybraný žiadny text na pripojenie"
+msgstr "Nebol vybraný žiaden text na pripojenie"
 
-#: __init__.py:29
+#: __init__.py:30
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:78
+#: __init__.py:83
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "kopírovať URL (raz) kopírovať hypertextový odkaz (dvakrát)"
+msgstr "kopírovať adresu URL (jedno stlačenie) kopírovať odkaz (dvojité stlačenie)"
 
-#: __init__.py:132
+#: __init__.py:137
 msgid "copy and append (single) clear (double)"
-msgstr "kopírovať a pripojiť (raz) vymazať (dvakrát)"
+msgstr "kopírovať a pripojiť (jedno stlačenie) vyčistiť schránku (dvojité stlačenie)"
 
-#: __init__.py:177
-msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "kopírovať poslednú reč (raz) pripojiť poslednú reč (dvakrát) kopírovať až po poslednú reč (trikrát) otvoriť záznam reči (štyrikrát)"
+#: __init__.py:182
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
+msgstr "kopírovať poslednú reč (jedno stlačenie) pripojiť poslednú reč (dvojité stlačenie) kopírovať po poslednú reč (trojité stlačenie)"

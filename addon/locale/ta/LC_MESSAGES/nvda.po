@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Project-Id-Version: simpleCopy 2026.5.4\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-04-14 12:46+0700\n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: 2026-05-23 10:10+0700\n"
+"PO-Revision-Date: 2026-05-23 10:10+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Tamil\n"
 "Language: ta\n"
@@ -12,67 +12,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:221
+#: __init__.py:225
 msgid "Append"
-msgstr "சேர்"
+msgstr "இணைக்கவும்"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Appended"
-msgstr "சேர்க்கப்பட்டது"
+msgstr "இணைக்கப்பட்டது"
 
-#: clipboard_utils.py:102
+#: clipboard_utils.py:205
 msgid "Cannot append to non-text clipboard content"
-msgstr "உரை அல்லாத கிளிப்போர்டு உள்ளடக்கத்தைச் சேர்க்க முடியாது"
+msgstr "உரை அல்லாத கிளிப்போர்டு உள்ளடக்கத்துடன் இணைக்க முடியாது"
 
-#: __init__.py:169
+#: __init__.py:174
 msgid "Clean"
-msgstr "சுத்தம் செய்"
+msgstr "துடைக்கவும்"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Copied"
 msgstr "நகலெடுக்கப்பட்டது"
 
-#: __init__.py:111
-#: __init__.py:123
+#: __init__.py:116
+#: __init__.py:128
 msgid "Copy"
 msgstr "நகலெடு"
 
-#: __init__.py:230
+#: __init__.py:234
 msgid "Copy Until Last"
 msgstr "கடைசி வரை நகலெடு"
 
-#: __init__.py:75
+#: __init__.py:80
 msgid "Error during append operation"
-msgstr "சேர்க்கும் செயல்பாட்டின் போது பிழை"
+msgstr "இணைக்கும் செயல்பாட்டின் போது பிழை"
 
-#: clipboard_utils.py:133
+#: clipboard_utils.py:236
 msgid "Error writing to clipboard"
-msgstr "கிளிப்போர்டில் எழுதும்போது பிழை"
+msgstr "கிளிப்போர்டில் எழுதும் போது பிழை"
 
-#: __init__.py:113
+#: __init__.py:239
+msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
+msgstr "பேச்சு வரலாற்றை வழிநடத்து: முந்தையது (ஒரு முறை அழுத்தவும்) அடுத்தது (இரு முறை அழுத்தவும்) பதிவுக் கோப்பைத் திறக்கவும் (மூன்று முறை அழுத்தவும்)"
+
+#: __init__.py:118
 msgid "No URL"
 msgstr "URL இல்லை"
 
-#: __init__.py:125
+#: __init__.py:130
 msgid "No link found"
-msgstr "இணைப்பு எதுவும் காணப்படவில்லை"
+msgstr "இணைப்பு எதுவும் இல்லை"
 
-#: __init__.py:64
+#: __init__.py:69
 msgid "No text selected to append"
-msgstr "சேர்ப்பதற்கு உரை எதுவும் தேர்ந்தெடுக்கப்படவில்லை"
+msgstr "இணைப்பதற்கு எந்த உரையும் தேர்ந்தெடுக்கப்படவில்லை"
 
-#: __init__.py:29
+#: __init__.py:30
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:78
+#: __init__.py:83
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "URL நகலெடு (ஒற்றை) ஹைப்பர் லிங்க் நகலெடு (இரட்டை)"
+msgstr "URL-ஐ நகலெடு (ஒரு முறை அழுத்தவும்) ஹைப்பர் லிங்கை நகலெடு (இரு முறை அழுத்தவும்)"
 
-#: __init__.py:132
+#: __init__.py:137
 msgid "copy and append (single) clear (double)"
-msgstr "நகலெடுத்து சேர் (ஒற்றை) சுத்தம் செய் (இரட்டை)"
+msgstr "நகலெடுத்து இணைக்கவும் (ஒரு முறை அழுத்தவும்) துடைக்கவும் (இரு முறை அழுத்தவும்)"
 
-#: __init__.py:177
-msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "கடைசி உரையை நகலெடு (ஒற்றை) கடைசி உரையைச் சேர் (இரட்டை) கடைசி உரை வரை நகலெடு (மூன்று முறை) பேச்சுப் பதிவைத் திற (நான்கு முறை)"
+#: __init__.py:182
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
+msgstr "கடைசி பேச்சை நகலெடு (ஒரு முறை அழுத்தவும்) கடைசி பேச்சை இணைக்கவும் (இரு முறை அழுத்தவும்) கடைசி பேச்சு வரை நகலெடு (மூன்று முறை அழுத்தவும்)"

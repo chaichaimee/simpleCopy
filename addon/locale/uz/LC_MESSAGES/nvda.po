@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Project-Id-Version: simpleCopy 2026.5.4\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-04-14 12:46+0700\n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: 2026-05-23 10:10+0700\n"
+"PO-Revision-Date: 2026-05-23 10:10+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Uzbek\n"
 "Language: uz\n"
@@ -12,55 +12,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: settingsPanel.py:21
-msgid "Alternate language code:"
-msgstr "Muqobil til kodi:"
+#: __init__.py:225
+msgid "Append"
+msgstr "Oxiriga qoʻshish"
 
-#: settingsPanel.py:38
-msgid "Command translations:"
-msgstr "Buyruq tarjimalari:"
+#: clipboard_utils.py:229
+msgid "Appended"
+msgstr "Oxiriga qoʻshildi"
 
-#: settingsPanel.py:27
+#: clipboard_utils.py:205
+msgid "Cannot append to non-text clipboard content"
+msgstr "Almashish buferining matnsiz tarkibiga qoʻshib boʻlmaydi"
+
+#: __init__.py:174
+msgid "Clean"
+msgstr "Tozalash"
+
+#: clipboard_utils.py:229
+msgid "Copied"
+msgstr "Nusxalandi"
+
+#: __init__.py:116
+#: __init__.py:128
 msgid "Copy"
 msgstr "Nusxalash"
 
-#: settingsPanel.py:29
-msgid "Copy file"
-msgstr "Faylni nusxalash"
+#: __init__.py:234
+msgid "Copy Until Last"
+msgstr "Oxirgisigacha nusxalash"
 
-#: settingsPanel.py:28
-msgid "Copy path"
-msgstr "Yo'lni nusxalash"
+#: __init__.py:80
+msgid "Error during append operation"
+msgstr "Oxiriga qoʻshish amali bajarilayotganda xatolik yuz berdi"
 
-#: settingsPanel.py:30
-msgid "Cut"
-msgstr "Kesish"
+#: clipboard_utils.py:236
+msgid "Error writing to clipboard"
+msgstr "Almashish buferiga yozishda xatolik"
 
-#: settingsPanel.py:31
-msgid "Paste"
-msgstr "joylashtirish"
+#: __init__.py:239
+msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
+msgstr "Nutq tarixini koʻrish: oldingi (bir marta bosish) keyingi (ikki marta bosish) jurnal faylini ochish (uch marta bosish)"
 
-#: settingsPanel.py:32
-msgid "Redo"
-msgstr "Qayta qiling"
+#: __init__.py:118
+msgid "No URL"
+msgstr "URL manzili yoʻq"
 
-#: settingsPanel.py:48
-msgid "Restore Defaults"
-msgstr "Standart sozlamalarni tiklash"
+#: __init__.py:130
+msgid "No link found"
+msgstr "Havola topilmadi"
 
-#: settingsPanel.py:33
-msgid "Save"
-msgstr "Saqlash"
+#: __init__.py:69
+msgid "No text selected to append"
+msgstr "Oxiriga qoʻshish uchun matn tanlanmagan"
 
-#: settingsPanel.py:34
-msgid "Select all"
-msgstr "Hammasini tanlang"
+#: __init__.py:30
+msgid "Simple Copy"
+msgstr "Simple Copy"
 
-#: settingsPanel.py:35
-msgid "Undo"
-msgstr "Bekor qilish"
+#: __init__.py:83
+msgid "copy URL (single) copy hyper link (double)"
+msgstr "URL manzilidan nusxalash (bir marta bosish) havoladan nusxalash (ikki marta bosish)"
 
-#: __init__.py:25
-#: settingsPanel.py:14
-msgid "uTalk"
-msgstr "uTalk"
+#: __init__.py:137
+msgid "copy and append (single) clear (double)"
+msgstr "nusxalash va oxiriga qoʻshish (bir marta bosish) tozalash (ikki marta bosish)"
+
+#: __init__.py:182
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
+msgstr "oxirgi gapirilgan nutqdan nusxalash (bir marta bosish) oxirgi nutqni oxiriga qoʻshish (ikki marta bosish) oxirgi nutqqacha nusxalash (uch marta bosish)"

@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Project-Id-Version: simpleCopy 2026.5.4\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-04-14 12:46+0700\n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: 2026-05-23 10:10+0700\n"
+"PO-Revision-Date: 2026-05-23 10:10+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: French\n"
 "Language: fr\n"
@@ -12,67 +12,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:221
+#: __init__.py:225
 msgid "Append"
 msgstr "Ajouter"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Appended"
 msgstr "Ajouté"
 
-#: clipboard_utils.py:102
+#: clipboard_utils.py:205
 msgid "Cannot append to non-text clipboard content"
-msgstr "Impossible d'ajouter à un contenu de presse-papiers non textuel"
+msgstr "Impossible d'ajouter à un contenu du presse-papiers non textuel"
 
-#: __init__.py:169
+#: __init__.py:174
 msgid "Clean"
-msgstr "Effacer"
+msgstr "Vider"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Copied"
 msgstr "Copié"
 
-#: __init__.py:111
-#: __init__.py:123
+#: __init__.py:116
+#: __init__.py:128
 msgid "Copy"
 msgstr "Copier"
 
-#: __init__.py:230
+#: __init__.py:234
 msgid "Copy Until Last"
 msgstr "Copier jusqu'au dernier"
 
-#: __init__.py:75
+#: __init__.py:80
 msgid "Error during append operation"
 msgstr "Erreur lors de l'opération d'ajout"
 
-#: clipboard_utils.py:133
+#: clipboard_utils.py:236
 msgid "Error writing to clipboard"
-msgstr "Erreur lors de l'écriture dans le presse-papiers"
+msgstr "Erreur d'écriture dans le presse-papiers"
 
-#: __init__.py:113
+#: __init__.py:239
+msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
+msgstr "Naviguer dans l'historique de la parole : précédent (simple pression), suivant (double pression), ouvrir le fichier journal (triple pression)"
+
+#: __init__.py:118
 msgid "No URL"
 msgstr "Pas d'URL"
 
-#: __init__.py:125
+#: __init__.py:130
 msgid "No link found"
 msgstr "Aucun lien trouvé"
 
-#: __init__.py:64
+#: __init__.py:69
 msgid "No text selected to append"
 msgstr "Aucun texte sélectionné pour l'ajout"
 
-#: __init__.py:29
+#: __init__.py:30
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:78
+#: __init__.py:83
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "copier l'URL (simple) copier l'hyperlien (double)"
+msgstr "copier l'URL (simple pression), copier le lien hypertexte (double pression)"
 
-#: __init__.py:132
+#: __init__.py:137
 msgid "copy and append (single) clear (double)"
-msgstr "copier et ajouter (simple) effacer (double)"
+msgstr "copier et ajouter (simple pression), vider le presse-papiers (double pression)"
 
-#: __init__.py:177
-msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "copier la dernière parole (simple) ajouter la dernière parole (double) copier jusqu'à la dernière parole (triple) ouvrir l'enregistrement de la parole (quadruple)"
+#: __init__.py:182
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
+msgstr "copier la dernière parole (simple pression), ajouter la dernière parole (double pression), copier jusqu'à la dernière parole (triple pression)"

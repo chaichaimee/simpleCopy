@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Project-Id-Version: simpleCopy 2026.5.4\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-04-14 12:46+0700\n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: 2026-05-23 10:10+0700\n"
+"PO-Revision-Date: 2026-05-23 10:10+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Italian\n"
 "Language: it\n"
@@ -12,67 +12,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:221
+#: __init__.py:225
 msgid "Append"
-msgstr "Aggiungi"
+msgstr "Accoda"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Appended"
-msgstr "Aggiunto"
+msgstr "Accodato"
 
-#: clipboard_utils.py:102
+#: clipboard_utils.py:205
 msgid "Cannot append to non-text clipboard content"
-msgstr "Impossibile aggiungere a contenuti degli appunti non testuali"
+msgstr "Impossibile accodare a contenuto non testuale degli appunti"
 
-#: __init__.py:169
+#: __init__.py:174
 msgid "Clean"
-msgstr "Pulisci"
+msgstr "Svuota"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Copied"
 msgstr "Copiato"
 
-#: __init__.py:111
-#: __init__.py:123
+#: __init__.py:116
+#: __init__.py:128
 msgid "Copy"
 msgstr "Copia"
 
-#: __init__.py:230
+#: __init__.py:234
 msgid "Copy Until Last"
 msgstr "Copia fino all'ultimo"
 
-#: __init__.py:75
+#: __init__.py:80
 msgid "Error during append operation"
-msgstr "Errore durante l'operazione di aggiunta"
+msgstr "Errore durante l'operazione di accodamento"
 
-#: clipboard_utils.py:133
+#: clipboard_utils.py:236
 msgid "Error writing to clipboard"
 msgstr "Errore durante la scrittura negli appunti"
 
-#: __init__.py:113
+#: __init__.py:239
+msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
+msgstr "Naviga nella cronologia del parlato: precedente (singola pressione) successivo (doppia pressione) apri file di registro (tripla pressione)"
+
+#: __init__.py:118
 msgid "No URL"
 msgstr "Nessun URL"
 
-#: __init__.py:125
+#: __init__.py:130
 msgid "No link found"
 msgstr "Nessun collegamento trovato"
 
-#: __init__.py:64
+#: __init__.py:69
 msgid "No text selected to append"
-msgstr "Nessun testo selezionato da aggiungere"
+msgstr "Nessun testo selezionato da accodare"
 
-#: __init__.py:29
+#: __init__.py:30
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:78
+#: __init__.py:83
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "copia URL (singolo) copia collegamento ipertestuale (doppio)"
+msgstr "copia URL (singola pressione) copia collegamento ipertestuale (doppia pressione)"
 
-#: __init__.py:132
+#: __init__.py:137
 msgid "copy and append (single) clear (double)"
-msgstr "copia e aggiungi (singolo) cancella (doppio)"
+msgstr "copia e accoda (singola pressione) svuota (doppia pressione)"
 
-#: __init__.py:177
-msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "copia l'ultimo discorso (singolo) aggiungi l'ultimo discorso (doppio) copia fino all'ultimo discorso (triplo) apri registrazione discorso (quadruplo)"
+#: __init__.py:182
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
+msgstr "copia ultimo parlato (singola pressione) accoda ultimo parlato (doppia pressione) copia fino all'ultimo parlato (tripla pressione)"

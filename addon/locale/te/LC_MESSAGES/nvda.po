@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.4.4\n"
+"Project-Id-Version: simpleCopy 2026.5.4\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-04-14 12:46+0700\n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: 2026-05-23 10:10+0700\n"
+"PO-Revision-Date: 2026-05-23 10:10+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -12,67 +12,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:221
+#: __init__.py:225
 msgid "Append"
-msgstr "జత చేయి"
+msgstr "చివరన జోడించు"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Appended"
-msgstr "జత చేయబడింది"
+msgstr "చివరన జోడించబడింది"
 
-#: clipboard_utils.py:102
+#: clipboard_utils.py:205
 msgid "Cannot append to non-text clipboard content"
-msgstr "టెక్స్ట్ కాని క్లిప్‌బోర్డ్ కంటెంట్‌కు జత చేయలేము"
+msgstr "పాఠ్యరహిత క్లిప్‌బోర్డ్ కంటెంట్‌కు జోడించడం సాధ్యం కాదు"
 
-#: __init__.py:169
+#: __init__.py:174
 msgid "Clean"
-msgstr "శుభ్రం చేయి"
+msgstr "క్లియర్ చేయి"
 
-#: clipboard_utils.py:126
+#: clipboard_utils.py:229
 msgid "Copied"
-msgstr "కాపీ చేయబడింది"
+msgstr "నకలు చేయబడింది"
 
-#: __init__.py:111
-#: __init__.py:123
+#: __init__.py:116
+#: __init__.py:128
 msgid "Copy"
-msgstr "కాపీ చేయి"
+msgstr "నకలు చేయి"
 
-#: __init__.py:230
+#: __init__.py:234
 msgid "Copy Until Last"
-msgstr "చివరి వరకు కాపీ చేయి"
+msgstr "చివరి వరకు నకలు చేయి"
 
-#: __init__.py:75
+#: __init__.py:80
 msgid "Error during append operation"
-msgstr "జత చేసే ప్రక్రియలో లోపం"
+msgstr "జోడించే ప్రక్రియలో లోపం"
 
-#: clipboard_utils.py:133
+#: clipboard_utils.py:236
 msgid "Error writing to clipboard"
-msgstr "క్లిప్‌బోర్డ్‌కు వ్రాయడంలో లోపం"
+msgstr "క్లిప్‌బోర్డ్‌కు రాయడంలో లోపం"
 
-#: __init__.py:113
+#: __init__.py:239
+msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
+msgstr "ప్రసంగ చరిత్రను నావిగేట్ చేయి: మునుపటిది (ఒకసారి నొక్కు) తదుపరిది (రెండుసార్లు నొక్కు) లాగ్ ఫైల్‌ను తెరువు (మూడుసార్లు నొక్కు)"
+
+#: __init__.py:118
 msgid "No URL"
-msgstr "URL లేదు"
+msgstr "ఎటువంటి URL లేదు"
 
-#: __init__.py:125
+#: __init__.py:130
 msgid "No link found"
 msgstr "లింక్ కనుగొనబడలేదు"
 
-#: __init__.py:64
+#: __init__.py:69
 msgid "No text selected to append"
-msgstr "జత చేయడానికి టెక్స్ట్ ఏదీ ఎంచుకోలేదు"
+msgstr "జోడించడానికి ఎటువంటి పాఠ్యం ఎంపిక చేయబడలేదు"
 
-#: __init__.py:29
+#: __init__.py:30
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:78
+#: __init__.py:83
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "URL కాపీ చేయి (ఒక్కసారి) హైపర్ లింక్ కాపీ చేయి (రెండుసార్లు)"
+msgstr "URL నకలు చేయి (ఒకసారి నొక్కు) హైపర్‌లింక్ నకలు చేయి (రెండుసార్లు నొక్కు)"
 
-#: __init__.py:132
+#: __init__.py:137
 msgid "copy and append (single) clear (double)"
-msgstr "కాపీ చేసి జత చేయి (ఒక్కసారి) శుభ్రం చేయి (రెండుసార్లు)"
+msgstr "నకలు చేసి జోడించు (ఒకసారి నొక్కు) క్లియర్ చేయి (రెండుసార్లు నొక్కు)"
 
-#: __init__.py:177
-msgid "copy last speech (single) append last speech (double) copy until last speech (triple) open record speech (quadruple)"
-msgstr "చివరి మాట కాపీ చేయి (ఒక్కసారి) చివరి మాట జత చేయి (రెండుసార్లు) చివరి మాట వరకు కాపీ చేయి (మూడు సార్లు) స్పీచ్ రికార్డ్ తెరువు (నాలుగు సార్లు)"
+#: __init__.py:182
+msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
+msgstr "చివరి ప్రసంగాన్ని నకలు చేయి (ఒకసారి నొక్కు) చివరి ప్రసంగాన్ని జోడించు (రెండుసార్లు నొక్కు) చివరి ప్రసంగం వరకు నకలు చేయి (మూడుసార్లు నొక్కు)"
