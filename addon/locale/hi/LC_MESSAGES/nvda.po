@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.5.4\n"
+"Project-Id-Version: simpleCopy 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-23 10:10+0700\n"
-"PO-Revision-Date: 2026-05-23 10:10+0700\n"
+"POT-Creation-Date: 2026-06-17 17:32+0700\n"
+"PO-Revision-Date: 2026-06-17 18:01+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Hindi\n"
 "Language: hi\n"
@@ -12,71 +12,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:225
+#: __init__.py:266
 msgid "Append"
-msgstr "जोड़ें"
+msgstr "अंत में जोड़ें"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Appended"
-msgstr "जोड़ दिया गया"
+msgstr "अंत में जोड़ा गया"
 
-#: clipboard_utils.py:205
+#: clipboard_utils.py:190
 msgid "Cannot append to non-text clipboard content"
-msgstr "क्लिपबोर्ड की गैर-पाठ्य सामग्री में जोड़ा नहीं जा सकता"
+msgstr "गैर-पाठ्य क्लिपबोर्ड सामग्री के अंत में जोड़ा नहीं जा सकता"
 
-#: __init__.py:174
+#: __init__.py:109
 msgid "Clean"
 msgstr "साफ़ करें"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Copied"
 msgstr "कॉपी किया गया"
 
-#: __init__.py:116
-#: __init__.py:128
+#: __init__.py:202
+#: __init__.py:214
 msgid "Copy"
 msgstr "कॉपी करें"
 
-#: __init__.py:234
+#: __init__.py:275
 msgid "Copy Until Last"
-msgstr "अंत तक कॉपी करें"
+msgstr "आखिरी तक कॉपी करें"
 
-#: __init__.py:80
+#: __init__.py:162
+msgid "Copy failed"
+msgstr "कॉपी करना विफल रहा"
+
+#: __init__.py:158
+msgid "Copy from review"
+msgstr "समीक्षा कर्सर से कॉपी करें"
+
+#: __init__.py:117
+msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
+msgstr "चयनित पाठ कॉपी करें/अंत में जोड़ें (एक बार दबाएं), समीक्षा कर्सर से कॉपी करें (दो बार दबाएं), क्लिपबोर्ड साफ़ करें (तीन बार दबाएं)"
+
+#: __init__.py:98
 msgid "Error during append operation"
-msgstr "जोड़ने की प्रक्रिया के दौरान त्रुटि"
+msgstr "अंत में जोड़ने की प्रक्रिया के दौरान त्रुटि"
 
-#: clipboard_utils.py:236
+#: clipboard_utils.py:223
 msgid "Error writing to clipboard"
 msgstr "क्लिपबोर्ड पर लिखने में त्रुटि"
 
-#: __init__.py:239
+#: __init__.py:280
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
-msgstr "भाषण इतिहास नेविगेट करें: पिछला (एक बार दबाएं) अगला (दो बार दबाएं) लॉग फ़ाइल खोलें (तीन बार दबाएं)"
+msgstr "भाषण इतिहास को नेविगेट करें: पिछला (एक बार दबाएं), अगला (दो बार दबाएं), लॉग फ़ाइल खोलें (तीन बार दबाएं)"
 
-#: __init__.py:118
+#: __init__.py:204
 msgid "No URL"
-msgstr "कोई URL नहीं"
+msgstr "कोई URL नहीं है"
 
-#: __init__.py:130
+#: __init__.py:216
 msgid "No link found"
 msgstr "कोई लिंक नहीं मिला"
 
-#: __init__.py:69
-msgid "No text selected to append"
-msgstr "जोड़ने के लिए कोई पाठ चयनित नहीं है"
+#: __init__.py:165
+msgid "No text at review cursor"
+msgstr "समीक्षा कर्सर पर कोई पाठ नहीं है"
 
-#: __init__.py:30
+#: __init__.py:71
+msgid "No text selected to append"
+msgstr "अंत में जोड़ने के लिए कोई पाठ चयनित नहीं है"
+
+#: __init__.py:31
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:83
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "character"
+msgstr "वर्ण"
+
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "characters"
+msgstr "वर्ण"
+
+#: __init__.py:169
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "URL कॉपी करें (एक बार दबाएं) हाइपरलिंक कॉपी करें (दो बार दबाएं)"
+msgstr "URL कॉपी करें (एक बार दबाएं), हाइपरलिंक कॉपी करें (दो बार दबाएं)"
 
-#: __init__.py:137
-msgid "copy and append (single) clear (double)"
-msgstr "कॉपी करें और जोड़ें (एक बार दबाएं) साफ़ करें (दो बार दबाएं)"
-
-#: __init__.py:182
+#: __init__.py:223
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
-msgstr "पिछला भाषण कॉपी करें (एक बार दबाएं) पिछला भाषण जोड़ें (दो बार दबाएं) अंत तक भाषण कॉपी करें (तीन बार दबाएं)"
+msgstr "अंतिम भाषण कॉपी करें (एक बार दबाएं), अंतिम भाषण अंत में जोड़ें (दो बार दबाएं), अंतिम भाषण तक कॉपी करें (तीन बार दबाएं)"
+
+#: __init__.py:86
+msgid "total"
+msgstr "कुल"

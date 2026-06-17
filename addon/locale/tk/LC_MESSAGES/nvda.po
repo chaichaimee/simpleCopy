@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.5.4\n"
+"Project-Id-Version: simpleCopy 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-23 10:10+0700\n"
-"PO-Revision-Date: 2026-05-23 10:10+0700\n"
+"POT-Creation-Date: 2026-06-17 17:32+0700\n"
+"PO-Revision-Date: 2026-06-17 18:06+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Turkmen\n"
 "Language: tk\n"
@@ -12,71 +12,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:225
+#: __init__.py:266
 msgid "Append"
-msgstr "Soňuna goş"
+msgstr "Soňuna goşmak"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Appended"
 msgstr "Soňuna goşuldy"
 
-#: clipboard_utils.py:205
+#: clipboard_utils.py:190
 msgid "Cannot append to non-text clipboard content"
-msgstr "Alçalşyk buferiniň tekst däl mazmunyna goşup bolmaýar"
+msgstr "Alşyk buferindäki tekst däl mazmuna goşup bolmaýar"
 
-#: __init__.py:174
+#: __init__.py:109
 msgid "Clean"
-msgstr "Arassala"
+msgstr "Arassalamak"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Copied"
 msgstr "Göçürildi"
 
-#: __init__.py:116
-#: __init__.py:128
+#: __init__.py:202
+#: __init__.py:214
 msgid "Copy"
-msgstr "Göçür"
+msgstr "Göçürmek"
 
-#: __init__.py:234
+#: __init__.py:275
 msgid "Copy Until Last"
-msgstr "Soňkusa çenli göçür"
+msgstr "Soňkusa çenli göçürmek"
 
-#: __init__.py:80
+#: __init__.py:162
+msgid "Copy failed"
+msgstr "Göçürmek şowsuz tamamlandy"
+
+#: __init__.py:158
+msgid "Copy from review"
+msgstr "Synlaýyş kursorundan göçürmek"
+
+#: __init__.py:117
+msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
+msgstr "Saýlanan teksti göçürmek/soňuna goşmak (bir basyş), synlaýyş kursorundan göçürmek (iki basyş), alşyk buferini arassalamak (üç basyş)"
+
+#: __init__.py:98
 msgid "Error during append operation"
-msgstr "Soňuna goşmak amalynda ýalňyşlyk ýüze çykdy"
+msgstr "Soňuna goşmak operasiýasynda ýalňyşlyk ýüze çykdy"
 
-#: clipboard_utils.py:236
+#: clipboard_utils.py:223
 msgid "Error writing to clipboard"
-msgstr "Alçalşyk buferine ýazmakda ýalňyşlyk"
+msgstr "Alşyk buferine ýazmakda ýalňyşlyk ýüze çykdy"
 
-#: __init__.py:239
+#: __init__.py:280
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
-msgstr "Gepleşik taryhynda geziň: öňki (bir gezek basmak) indiki (iki gezek basmak) žurnal faýlyny aç (üç gezek basmak)"
+msgstr "Gepleşik taryhynda nawigasiýa: öňki (bir basyş), indiki (iki basyş), žurnal faýlyny açmak (üç basyş)"
 
-#: __init__.py:118
+#: __init__.py:204
 msgid "No URL"
 msgstr "URL ýok"
 
-#: __init__.py:130
+#: __init__.py:216
 msgid "No link found"
 msgstr "Siltewe tapylmady"
 
-#: __init__.py:69
+#: __init__.py:165
+msgid "No text at review cursor"
+msgstr "Synlaýyş kursorunda tekst ýok"
+
+#: __init__.py:71
 msgid "No text selected to append"
 msgstr "Soňuna goşmak üçin tekst saýlanmady"
 
-#: __init__.py:30
+#: __init__.py:31
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:83
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "character"
+msgstr "simwol"
+
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "characters"
+msgstr "simwollar"
+
+#: __init__.py:169
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "URL göçür (bir gezek basmak) çykgydy göçür (iki gezek basmak)"
+msgstr "URL-i göçürmek (bir basyş), giper-siltewäni göçürmek (iki basyş)"
 
-#: __init__.py:137
-msgid "copy and append (single) clear (double)"
-msgstr "göçür we soňuna goş (bir gezek basmak) arassala (iki gezek basmak)"
-
-#: __init__.py:182
+#: __init__.py:223
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
-msgstr "soňky gepleşigi göçür (bir gezek basmak) soňky gepleşigi soňuna goş (iki gezek basmak) soňky gepลeșige çenli göçür (üç gezek basmak)"
+msgstr "soňky aýdylan sözleri göçürmek (bir basyş), soňky aýdylan sözleri soňuna goşmak (iki basyş), soňky aýdylan sözlere çenli göçürmek (üç basyş)"
+
+#: __init__.py:86
+msgid "total"
+msgstr "jemi"

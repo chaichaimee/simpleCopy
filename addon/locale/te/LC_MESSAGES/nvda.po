@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.5.4\n"
+"Project-Id-Version: simpleCopy 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-23 10:10+0700\n"
-"PO-Revision-Date: 2026-05-23 10:10+0700\n"
+"POT-Creation-Date: 2026-06-17 17:32+0700\n"
+"PO-Revision-Date: 2026-06-17 18:06+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -12,71 +12,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:225
+#: __init__.py:266
 msgid "Append"
 msgstr "చివరన జోడించు"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Appended"
 msgstr "చివరన జోడించబడింది"
 
-#: clipboard_utils.py:205
+#: clipboard_utils.py:190
 msgid "Cannot append to non-text clipboard content"
-msgstr "పాఠ్యరహిత క్లిప్‌బోర్డ్ కంటెంట్‌కు జోడించడం సాధ్యం కాదు"
+msgstr "పాఠ్యేతర క్లిప్‌బోర్డ్ కంటెంట్‌కు చివరన జోడించడం సాధ్యం కాదు"
 
-#: __init__.py:174
+#: __init__.py:109
 msgid "Clean"
-msgstr "క్లియర్ చేయి"
+msgstr "శుభ్రం చేయి"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Copied"
 msgstr "నకలు చేయబడింది"
 
-#: __init__.py:116
-#: __init__.py:128
+#: __init__.py:202
+#: __init__.py:214
 msgid "Copy"
 msgstr "నకలు చేయి"
 
-#: __init__.py:234
+#: __init__.py:275
 msgid "Copy Until Last"
 msgstr "చివరి వరకు నకలు చేయి"
 
-#: __init__.py:80
-msgid "Error during append operation"
-msgstr "జోడించే ప్రక్రియలో లోపం"
+#: __init__.py:162
+msgid "Copy failed"
+msgstr "నకలు చేయడం విఫలమైంది"
 
-#: clipboard_utils.py:236
+#: __init__.py:158
+msgid "Copy from review"
+msgstr "సమీక్షా కర్సర్ నుండి నకలు చేయి"
+
+#: __init__.py:117
+msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
+msgstr "ఎంచుకున్న పాఠ్యాన్ని నకలు చేయి/చివరన జోడించు (ఒకసారి నొక్కండి), समीक्षा కర్సర్ నుండి నకలు చేయి (రెండుసార్లు నొక్కండి), క్లిప్‌బోర్డ్‌ను శుభ్రం చేయి (మూడుసార్లు నొక్కండి)"
+
+#: __init__.py:98
+msgid "Error during append operation"
+msgstr "చివరన జోడించే ప్రక్రియలో లోపం"
+
+#: clipboard_utils.py:223
 msgid "Error writing to clipboard"
 msgstr "క్లిప్‌బోర్డ్‌కు రాయడంలో లోపం"
 
-#: __init__.py:239
+#: __init__.py:280
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
-msgstr "ప్రసంగ చరిత్రను నావిగేట్ చేయి: మునుపటిది (ఒకసారి నొక్కు) తదుపరిది (రెండుసార్లు నొక్కు) లాగ్ ఫైల్‌ను తెరువు (మూడుసార్లు నొక్కు)"
+msgstr "ప్రసంగ చరిత్రను నావిగేట్ చేయి: మునుపటి (ఒకసారి నొక్కండి), తదుపరి (రెండుసార్లు నొక్కండి), లాగ్ ఫైల్ తెరువు (మూడుసార్లు నొక్కండి)"
 
-#: __init__.py:118
+#: __init__.py:204
 msgid "No URL"
-msgstr "ఎటువంటి URL లేదు"
+msgstr "URL లేదు"
 
-#: __init__.py:130
+#: __init__.py:216
 msgid "No link found"
 msgstr "లింక్ కనుగొనబడలేదు"
 
-#: __init__.py:69
-msgid "No text selected to append"
-msgstr "జోడించడానికి ఎటువంటి పాఠ్యం ఎంపిక చేయబడలేదు"
+#: __init__.py:165
+msgid "No text at review cursor"
+msgstr "సమీక్షా కర్సర్ వద్ద పాఠ్యం లేదు"
 
-#: __init__.py:30
+#: __init__.py:71
+msgid "No text selected to append"
+msgstr "చివరన జోడించడానికి ఎటువంటి పాఠ్యం ఎంచుకోబడలేదు"
+
+#: __init__.py:31
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:83
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "character"
+msgstr "అక్షరం"
+
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "characters"
+msgstr "అక్షరాలు"
+
+#: __init__.py:169
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "URL నకలు చేయి (ఒకసారి నొక్కు) హైపర్‌లింక్ నకలు చేయి (రెండుసార్లు నొక్కు)"
+msgstr "URL నకలు చేయి (ఒకసారి నొక్కండి), హైపర్‌లింక్ నకలు చేయి (రెండుసార్లు నొక్కండి)"
 
-#: __init__.py:137
-msgid "copy and append (single) clear (double)"
-msgstr "నకలు చేసి జోడించు (ఒకసారి నొక్కు) క్లియర్ చేయి (రెండుసార్లు నొక్కు)"
-
-#: __init__.py:182
+#: __init__.py:223
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
-msgstr "చివరి ప్రసంగాన్ని నకలు చేయి (ఒకసారి నొక్కు) చివరి ప్రసంగాన్ని జోడించు (రెండుసార్లు నొక్కు) చివరి ప్రసంగం వరకు నకలు చేయి (మూడుసార్లు నొక్కు)"
+msgstr "చివరి ప్రసంగాన్ని నకలు చేయి (ఒకసారి నొక్కండి), చివరి ప్రసంగాన్ని చివరన జోడించు (రెండుసార్లు నొక్కండి), చివరి ప్రసంగం వరకు నకలు చేయి (మూడుసార్లు నొక్కండి)"
+
+#: __init__.py:86
+msgid "total"
+msgstr "మొత్తం"

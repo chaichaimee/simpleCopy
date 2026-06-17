@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.5.4\n"
+"Project-Id-Version: simpleCopy 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-23 10:10+0700\n"
-"PO-Revision-Date: 2026-05-23 10:10+0700\n"
+"POT-Creation-Date: 2026-06-17 17:32+0700\n"
+"PO-Revision-Date: 2026-06-17 17:57+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: French\n"
 "Language: fr\n"
@@ -12,71 +12,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:225
+#: __init__.py:266
 msgid "Append"
 msgstr "Ajouter"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Appended"
 msgstr "Ajouté"
 
-#: clipboard_utils.py:205
+#: clipboard_utils.py:190
 msgid "Cannot append to non-text clipboard content"
-msgstr "Impossible d'ajouter à un contenu du presse-papiers non textuel"
+msgstr "Impossible d'ajouter à un contenu de presse-papiers non textuel"
 
-#: __init__.py:174
+#: __init__.py:109
 msgid "Clean"
-msgstr "Vider"
+msgstr "Effacer"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Copied"
 msgstr "Copié"
 
-#: __init__.py:116
-#: __init__.py:128
+#: __init__.py:202
+#: __init__.py:214
 msgid "Copy"
 msgstr "Copier"
 
-#: __init__.py:234
+#: __init__.py:275
 msgid "Copy Until Last"
 msgstr "Copier jusqu'au dernier"
 
-#: __init__.py:80
+#: __init__.py:162
+msgid "Copy failed"
+msgstr "Échec de la copie"
+
+#: __init__.py:158
+msgid "Copy from review"
+msgstr "Copier à partir de la revue"
+
+#: __init__.py:117
+msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
+msgstr "Copier/Ajouter le texte sélectionné (simple pression), Copier depuis le curseur de revue (double pression), Vider le presse-papiers (triple pression)"
+
+#: __init__.py:98
 msgid "Error during append operation"
 msgstr "Erreur lors de l'opération d'ajout"
 
-#: clipboard_utils.py:236
+#: clipboard_utils.py:223
 msgid "Error writing to clipboard"
-msgstr "Erreur d'écriture dans le presse-papiers"
+msgstr "Erreur lors de l'écriture dans le presse-papiers"
 
-#: __init__.py:239
+#: __init__.py:280
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
 msgstr "Naviguer dans l'historique de la parole : précédent (simple pression), suivant (double pression), ouvrir le fichier journal (triple pression)"
 
-#: __init__.py:118
+#: __init__.py:204
 msgid "No URL"
 msgstr "Pas d'URL"
 
-#: __init__.py:130
+#: __init__.py:216
 msgid "No link found"
 msgstr "Aucun lien trouvé"
 
-#: __init__.py:69
-msgid "No text selected to append"
-msgstr "Aucun texte sélectionné pour l'ajout"
+#: __init__.py:165
+msgid "No text at review cursor"
+msgstr "Aucun texte au curseur de revue"
 
-#: __init__.py:30
+#: __init__.py:71
+msgid "No text selected to append"
+msgstr "Aucun texte sélectionné à ajouter"
+
+#: __init__.py:31
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:83
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "character"
+msgstr "caractère"
+
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "characters"
+msgstr "caractères"
+
+#: __init__.py:169
 msgid "copy URL (single) copy hyper link (double)"
 msgstr "copier l'URL (simple pression), copier le lien hypertexte (double pression)"
 
-#: __init__.py:137
-msgid "copy and append (single) clear (double)"
-msgstr "copier et ajouter (simple pression), vider le presse-papiers (double pression)"
-
-#: __init__.py:182
+#: __init__.py:223
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
 msgstr "copier la dernière parole (simple pression), ajouter la dernière parole (double pression), copier jusqu'à la dernière parole (triple pression)"
+
+#: __init__.py:86
+msgid "total"
+msgstr "total"

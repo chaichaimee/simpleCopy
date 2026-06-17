@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.5.4\n"
+"Project-Id-Version: simpleCopy 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-23 10:10+0700\n"
-"PO-Revision-Date: 2026-05-23 10:10+0700\n"
+"POT-Creation-Date: 2026-06-17 17:32+0700\n"
+"PO-Revision-Date: 2026-06-17 18:01+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Korean\n"
 "Language: ko\n"
@@ -12,71 +12,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:225
+#: __init__.py:266
 msgid "Append"
-msgstr "덧붙이기"
+msgstr "추가"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Appended"
-msgstr "덧붙임"
+msgstr "추가됨"
 
-#: clipboard_utils.py:205
+#: clipboard_utils.py:190
 msgid "Cannot append to non-text clipboard content"
-msgstr "텍스트가 아닌 클립보드 내용에는 덧붙일 수 없습니다"
+msgstr "텍스트가 아닌 클립보드 내용에는 추가할 수 없습니다"
 
-#: __init__.py:174
+#: __init__.py:109
 msgid "Clean"
 msgstr "지우기"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Copied"
 msgstr "복사됨"
 
-#: __init__.py:116
-#: __init__.py:128
+#: __init__.py:202
+#: __init__.py:214
 msgid "Copy"
 msgstr "복사"
 
-#: __init__.py:234
+#: __init__.py:275
 msgid "Copy Until Last"
 msgstr "마지막까지 복사"
 
-#: __init__.py:80
+#: __init__.py:162
+msgid "Copy failed"
+msgstr "복사 실패"
+
+#: __init__.py:158
+msgid "Copy from review"
+msgstr "검토 커서에서 복사"
+
+#: __init__.py:117
+msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
+msgstr "선택한 텍스트 복사/추가(한 번 누름), 검토 커서에서 복사(두 번 누름), 클립보드 지우기(세 번 누름)"
+
+#: __init__.py:98
 msgid "Error during append operation"
-msgstr "덧붙이기 작업 중 오류 발생"
+msgstr "추가 작업 중 오류가 발생했습니다"
 
-#: clipboard_utils.py:236
+#: clipboard_utils.py:223
 msgid "Error writing to clipboard"
-msgstr "클립보드 쓰기 오류"
+msgstr "클립보드에 쓰는 중 오류가 발생했습니다"
 
-#: __init__.py:239
+#: __init__.py:280
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
-msgstr "음성 기록 탐색: 이전 (한 번 누름) 다음 (두 번 누름) 로그 파일 열기 (세 번 누름)"
+msgstr "음성 기록 탐색: 이전(한 번 누름), 다음(두 번 누름), 로그 파일 열기(세 번 누름)"
 
-#: __init__.py:118
+#: __init__.py:204
 msgid "No URL"
 msgstr "URL 없음"
 
-#: __init__.py:130
+#: __init__.py:216
 msgid "No link found"
 msgstr "링크를 찾을 수 없음"
 
-#: __init__.py:69
-msgid "No text selected to append"
-msgstr "덧붙일 텍스트가 선택되지 않음"
+#: __init__.py:165
+msgid "No text at review cursor"
+msgstr "검토 커서에 텍스트가 없음"
 
-#: __init__.py:30
+#: __init__.py:71
+msgid "No text selected to append"
+msgstr "추가할 텍스트가 선택되지 않았습니다"
+
+#: __init__.py:31
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:83
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "character"
+msgstr "글자"
+
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "characters"
+msgstr "글자"
+
+#: __init__.py:169
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "URL 복사 (한 번 누름) 하이퍼링크 복사 (두 번 누름)"
+msgstr "URL 복사(한 번 누름), 하이퍼링크 복사(두 번 누름)"
 
-#: __init__.py:137
-msgid "copy and append (single) clear (double)"
-msgstr "복사 후 덧붙이기 (한 번 누름) 지우기 (두 번 누름)"
-
-#: __init__.py:182
+#: __init__.py:223
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
-msgstr "마지막 음성 복사 (한 번 누름) 마지막 음성 덧붙이기 (두 번 누름) 마지막 음성까지 복사 (세 번 누름)"
+msgstr "마지막 음성 복사(한 번 누름), 마지막 음성 추가(두 번 누름), 마지막 음성까지 복사(세 번 누름)"
+
+#: __init__.py:86
+msgid "total"
+msgstr "총"

@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.5.4\n"
+"Project-Id-Version: simpleCopy 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-23 10:10+0700\n"
-"PO-Revision-Date: 2026-05-23 10:10+0700\n"
+"POT-Creation-Date: 2026-06-17 17:32+0700\n"
+"PO-Revision-Date: 2026-06-17 17:57+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Czech\n"
 "Language: cs\n"
@@ -12,71 +12,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:225
+#: __init__.py:266
 msgid "Append"
 msgstr "Připojit"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Appended"
 msgstr "Připojeno"
 
-#: clipboard_utils.py:205
+#: clipboard_utils.py:190
 msgid "Cannot append to non-text clipboard content"
 msgstr "Nelze připojit k netextovému obsahu schránky"
 
-#: __init__.py:174
+#: __init__.py:109
 msgid "Clean"
 msgstr "Vyčistit"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Copied"
 msgstr "Zkopírováno"
 
-#: __init__.py:116
-#: __init__.py:128
+#: __init__.py:202
+#: __init__.py:214
 msgid "Copy"
 msgstr "Kopírovat"
 
-#: __init__.py:234
+#: __init__.py:275
 msgid "Copy Until Last"
 msgstr "Kopírovat po poslední"
 
-#: __init__.py:80
-msgid "Error during append operation"
-msgstr "Chyba během připojování"
+#: __init__.py:162
+msgid "Copy failed"
+msgstr "Kopírování selhalo"
 
-#: clipboard_utils.py:236
+#: __init__.py:158
+msgid "Copy from review"
+msgstr "Kopírovat z prohlížecího kurzoru"
+
+#: __init__.py:117
+msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
+msgstr "Kopírovat/připojit vybraný text (jeden stisk), Kopírovat z prohlížecího kurzoru (dva stisky), Vymazat schránku (tři stisky)"
+
+#: __init__.py:98
+msgid "Error during append operation"
+msgstr "Chyba během operace připojování"
+
+#: clipboard_utils.py:223
 msgid "Error writing to clipboard"
 msgstr "Chyba při zápisu do schránky"
 
-#: __init__.py:239
+#: __init__.py:280
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
-msgstr "Procházení historie řeči: předchozí (stisk jednou) následující (stisk dvakrát) otevřít soubor protokolu (stisk třikrát)"
+msgstr "Procházení historie řeči: předchozí (jeden stisk), následující (dva stisky), otevřít soubor protokolu (tři stisky)"
 
-#: __init__.py:118
+#: __init__.py:204
 msgid "No URL"
-msgstr "Žádná URL adresa"
+msgstr "Žádná URL"
 
-#: __init__.py:130
+#: __init__.py:216
 msgid "No link found"
-msgstr "Nebyl nalezen žádný odkaz"
+msgstr "Odkaz nenalezen"
 
-#: __init__.py:69
+#: __init__.py:165
+msgid "No text at review cursor"
+msgstr "Žádný text na prohlížecím kurzoru"
+
+#: __init__.py:71
 msgid "No text selected to append"
 msgstr "Nebyl vybrán žádný text k připojení"
 
-#: __init__.py:30
+#: __init__.py:31
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:83
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "character"
+msgstr "znak"
+
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "characters"
+msgstr "znaky"
+
+#: __init__.py:169
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "kopírovat URL adresu (stisk jednou) kopírovat hypertextový odkaz (stisk dvakrát)"
+msgstr "kopírovat URL (jeden stisk), kopírovat odkaz (dva stisky)"
 
-#: __init__.py:137
-msgid "copy and append (single) clear (double)"
-msgstr "kopírovat a připojit (stisk jednou) vyčistit schránku (stisk dvakrát)"
-
-#: __init__.py:182
+#: __init__.py:223
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
-msgstr "kopírovat poslední promluvu (stisk jednou) připojit poslední promluvu (stisk dvakrát) kopírovat po poslední promluvu (stisk třikrát)"
+msgstr "kopírovat poslední promluvu (jeden stisk), připojit poslední promluvu (dva stisky), kopírovat po poslední promluvu (tři stisky)"
+
+#: __init__.py:86
+msgid "total"
+msgstr "celkem"

@@ -67,7 +67,7 @@ b {
     <img src="https://www.nvaccess.org/files/nvda/documentation/userGuide/images/nvda.ico" alt="NVDA Logo" class="nvda-logo">
     <h1>simpleCopy</h1>
 <br>
-<p style="text-align: center; font-size: 1.2em; color: #2c3e50;"><b>Ultimate Capture Power: URLs, Text, Last Spoken Words; All at Your Fingertips, Faster and Smarter</b></p>
+<p style="text-align: center; font-size: 1.2em; color: #2c3e50;"><b>Copy, Append, and Manage Text Efficiently with NVDA</b></p>
 </div>
 
 <br>
@@ -82,11 +82,9 @@ b {
 <div class="section">
     <h2>Description</h2>
     <br>
-    <p><b>Stop missing vital information. Stop fighting with your clipboard. Welcome to simpleCopy.</b></p>
+    <p><b>simpleCopy</b> is a lightweight NVDA add-on that simplifies text copying, URL extraction, and speech history management.</p>
     <br>
-    <p>In a fast-paced digital world, information flows past us in a blink of an eye. Text snippets, web links, and the spoken announcements from your screen reader are incredibly valuable—yet they are so easily lost. <b>simpleCopy</b> completely reimagines how you capture, collect, and reuse information with NVDA. It transforms your screen reader into an intelligent data collection assistant, putting absolute power right at your fingertips.</p>
-    <br>
-    <p>Whether you are doing heavy web research, compiling notes from different sources, grabbing web link paths, or trying to log fleeting spoken notifications that disappeared too quickly, simpleCopy does it all instantly without disrupting your workflow. No complicated menus, no developer technicalities—just simple, fluid, and incredibly fast keystrokes that work exactly when and where you need them.</p>
+    <p>This tool helps you capture and organize information quickly without interrupting your workflow. Whether you are copying text, grabbing web links, or saving spoken content, simpleCopy provides intuitive keyboard shortcuts that work seamlessly with NVDA.</p>
 </div>
 
 <br>
@@ -94,43 +92,44 @@ b {
 <div class="section">
     <h2>Hot Keys</h2>
     <br>
-    <p>Master your workflow with these easy-to-remember shortcuts. Multitap commands respond smoothly based on how many times you press them in quick succession.</p>
+    <p>All commands use a multi-tap system. Press the key combination once, twice, or three times in quick succession to perform different actions.</p>
     <br>
 
     <div class="hotkey">
-        <h3>CTRL+Shift+A — Web and Link Destination Capture</h3>
+        <h3>CTRL+Shift+A — URL and Link Capture</h3>
         <div class="tap-explanation">
-            <p><b>Single Tap:</b> Copies the full website address (URL) of the page you are currently viewing.</p>
-            <p><b>Double Tap:</b> Extracts and copies the destination link of the specific hyperlink you are focused on.</p>
+            <p><b>Single Tap:</b> Copies the current webpage URL.</p>
+            <p><b>Double Tap:</b> Copies the destination URL of the focused hyperlink.</p>
         </div>
     </div>
     <br>
 
     <div class="hotkey">
-        <h3>CTRL+Shift+C — Text Aggregation and Reset</h3>
+        <h3>CTRL+Shift+V — Text Copy, Append, and Clipboard Management</h3>
         <div class="tap-explanation">
-            <p><b>Single Tap:</b> Copies your currently highlighted text. If there is already text inside your clipboard, it smoothly attaches (appends) your new selection to the end of it.</p>
-            <p><b>Double Tap:</b> Instantly wipes out everything currently saved in your clipboard so you can start fresh.</p>
+            <p><b>Single Tap:</b> Copies the selected text. If text already exists in the clipboard, the new selection is appended to it.</p>
+            <p><b>Double Tap:</b> Copies text from the current review cursor position. This works with any selection made using NVDA's review cursor, including multi-line selections and full document selection.</p>
+            <p><b>Triple Tap:</b> Clears all content from the clipboard.</p>
         </div>
     </div>
     <br>
 
     <div class="hotkey">
-        <h3>F9 — Real-time Speech Capture Mastery</h3>
+        <h3>F9 — Speech Capture and Management</h3>
         <div class="tap-explanation">
-            <p><b>Single Tap:</b> Copies the very last phrase that NVDA spoke aloud.</p>
-            <p><b>Double Tap:</b> Attaches (appends) the very last spoken phrase to whatever text is currently inside your clipboard.</p>
-            <p><b>Triple Tap:</b> Copies the entire accumulated history of everything NVDA has said since you first used the F9 command in your session.</p>
+            <p><b>Single Tap:</b> Copies the most recent speech output from NVDA.</p>
+            <p><b>Double Tap:</b> Appends the most recent speech output to existing clipboard content.</p>
+            <p><b>Triple Tap:</b> Copies all speech output accumulated since the first F9 press.</p>
         </div>
     </div>
     <br>
 
     <div class="hotkey">
-        <h3>Shift+F9 — Speech History File Navigation and Access</h3>
+        <h3>Shift+F9 — Speech History Navigation</h3>
         <div class="tap-explanation">
-            <p><b>Single Tap:</b> Jumps backward to the previous speech history item.</p>
-            <p><b>Double Tap:</b> Jumps forward to the next speech history item.</p>
-            <p><b>Triple Tap:</b> Instantly opens your complete Speech History text file on your computer screen for easy reviewing, editing, or searching.</p>
+            <p><b>Single Tap:</b> Navigates to the previous speech history item.</p>
+            <p><b>Double Tap:</b> Navigates to the next speech history item.</p>
+            <p><b>Triple Tap:</b> Opens the complete speech history log file.</p>
         </div>
     </div>
 </div>
@@ -140,119 +139,79 @@ b {
 <div class="section">
     <h2>Features</h2>
     <br>
-    <p>Let's dive into exactly how these features work together to supercharge your daily computer experience. Here is your step-by-step guide to effortless information harvesting:</p>
+    <p>Here is how each feature works in practice:</p>
     <br>
 
     <div class="feature-item">
-        <h3>1. Instant Webpage URL Grabber</h3>
-        <p>Never waste time clicking into your browser's address bar again just to share or save a link.</p>
-        <p><b>Step-by-Step Guide:</b></p>
-        <ul>
-            <li>While browsing any website on Chrome, Edge, or Firefox, simply press <b>CTRL+Shift+A once (Single Tap)</b>.</li>
-            <li>simpleCopy automatically grabs the webpage address behind the scenes.</li>
-            <li>NVDA will speak a clear confirmation: <i>"Copied current page URL: [Web Address]"</i>. Your link is now ready to be pasted anywhere!</li>
-        </ul>
+        <h3>1. Webpage URL Copy</h3>
+        <p>Press <b>CTRL+Shift+A once</b> while browsing any website. The current page URL is copied to your clipboard. NVDA confirms by speaking the copied URL.</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>2. Precision Hyperlink Link Extractor</h3>
-        <p>Want to copy where a link goes without actually opening the website? This feature extracts the true destination link cleanly.</p>
-        <p><b>Step-by-Step Guide:</b></p>
-        <ul>
-            <li>Move your cursor or focus onto any link on a webpage.</li>
-            <li>Press <b>CTRL+Shift+A twice quickly (Double Tap)</b>.</li>
-            <li>simpleCopy uses smart detection methods to find the hidden link destination, copies it to your clipboard, and announces: <i>"Copied link URL: [Web Address]"</i>.</li>
-        </ul>
+        <h3>2. Hyperlink URL Extraction</h3>
+        <p>Focus on any link and press <b>CTRL+Shift+A twice</b>. The destination URL is extracted and copied without opening the link.</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>3. Endless Text Aggregation Engine</h3>
-        <p>Imagine reading an article or a document and wanting to copy paragraphs 1, 5, and 12. Normally, copying paragraph 5 would erase paragraph 1. Not anymore! This engine lets you accumulate text seamlessly.</p>
-        <p><b>Step-by-Step Guide:</b></p>
-        <ul>
-            <li>Highlight the first piece of text you want and press <b>CTRL+Shift+C once</b>. It copies smoothly into your clipboard.</li>
-            <li>Move to another paragraph, highlight it, and press <b>CTRL+Shift+C once</b> again. simpleCopy automatically adds a clean line break and attaches this text right below the first one.</li>
-            <li>Repeat this as many times as you like! You can gather quotes, build research documents, or collect grocery lists from multiple sources without losing a single line.</li>
-        </ul>
+        <h3>3. Text Copy and Append</h3>
+        <p>Select text and press <b>CTRL+Shift+V once</b>. If the clipboard is empty, the text is copied. If the clipboard already contains text, the new selection is appended with a line break.</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>4. One-Touch Clipboard Reset</h3>
-        <p>When you are done accumulating text or want to clear your clipboard for privacy reasons, you can reset everything instantly.</p>
-        <p><b>Step-by-Step Guide:</b></p>
-        <ul>
-            <li>Press <b>CTRL+Shift+C twice quickly (Double Tap)</b>.</li>
-            <li>Your clipboard is immediately emptied, and NVDA will say <i>"Clean"</i> to give you peace of mind.</li>
-        </ul>
+        <h3>4. Review Cursor Copy</h3>
+        <p>Use NVDA's review cursor to select text (using NVDA+Shift+Down or NVDA+Ctrl+Shift+Down to select multiple lines), then press <b>CTRL+Shift+V twice</b>. All selected text from the review cursor position is copied to the clipboard. This works with any selection size, from a single word to an entire document.</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>5. Last Spoken Phrase Capture</h3>
-        <p>Have you ever heard NVDA read an error message, an official notification, a complex serial number, or a tooltip, and wished you could write it down? This feature turns spoken words into text instantly.</p>
-        <p><b>Step-by-Step Guide:</b></p>
-        <ul>
-            <li>The moment NVDA speaks a phrase you want to keep, press <b>F9 once (Single Tap)</b>.</li>
-            <li>The exact text of that last utterance is instantly captured into your clipboard, and NVDA repeats it so you know it was successful. This action also activates the background speech logging.</li>
-        </ul>
+        <h3>5. Clipboard Clear</h3>
+        <p>Press <b>CTRL+Shift+V three times</b> to instantly clear all clipboard content. NVDA confirms with the message "Clean".</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>6. Dynamic Spoken History Accumulation</h3>
-        <p>You can choose to append just the latest phrase or grab a massive log of everything spoken over time, turning verbal output into editable data.</p>
-        <p><b>Step-by-Step Guide for Appending:</b></p>
-        <ul>
-            <li>If you want to append the very last spoken utterance directly to your existing clipboard, press <b>F9 twice quickly (Double Tap)</b>.</li>
-        </ul>
-        <p><b>Step-by-Step Guide for Timeline Logging:</b></p>
-        <ul>
-            <li>Once you use the F9 key for the first time, simpleCopy starts tracking your screen reader's spoken output.</li>
-            <li>After navigating through menus, reading messages, or reviewing documents, press <b>F9 three times quickly (Triple Tap)</b>.</li>
-            <li>The entire continuous log of everything spoken from your very first F9 press up until that exact moment is gathered and copied directly to your clipboard.</li>
-        </ul>
+        <h3>6. Last Speech Copy</h3>
+        <p>When NVDA speaks something you want to save, press <b>F9 once</b>. The last spoken phrase is copied to your clipboard.</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>7. Interactive Speech History Navigation</h3>
-        <p>Review what NVDA said previously without moving your actual reading focus away from your current window.</p>
-        <p><b>Step-by-Step Guide:</b></p>
-        <ul>
-            <li>Press <b>Shift+F9 once (Single Tap)</b> to travel backward and hear the previously spoken phrases one by one.</li>
-            <li>Press <b>Shift+F9 twice quickly (Double Tap)</b> to navigate forward toward the most recent speech items. This is perfect for double-checking instructions or names you just heard.</li>
-        </ul>
+        <h3>7. Speech Append</h3>
+        <p>Press <b>F9 twice</b> to append the last spoken phrase to existing clipboard content.</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>8. Full Speech Record File Access</h3>
-        <p>When you need to review a massive amount of information that NVDA read throughout your session, you can open your entire history log in a clean text file layout.</p>
-        <p><b>Step-by-Step Guide:</b></p>
-        <ul>
-            <li>Press <b>Shift+F9 three times quickly (Triple Tap)</b>.</li>
-            <li>simpleCopy immediately launches your computer's text viewer, displaying the <code>speech history.txt</code> file. Now, you can easily use standard word processing tools to search, edit, or copy parts of your spoken history file at your own leisure.</li>
-        </ul>
+        <h3>8. Speech History Logging</h3>
+        <p>Press <b>F9 three times</b> to copy all speech output accumulated during your current session.</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>9. Zero-Interference Smart Guard</h3>
-        <p>You never have to worry about simpleCopy messing up your normal typing. The add-on is designed with full situational awareness.</p>
-        <p><b>Step-by-Step Guide:</b></p>
-        <ul>
-            <li>When you are typing inside editable fields, input boxes, or word documents, simpleCopy gracefully steps aside. Your shortcut presses will pass through naturally to the active application without taking over your keyboard. It only springs into action where it delivers pure productivity value.</li>
-        </ul>
+        <h3>9. Speech History Navigation</h3>
+        <p>Use <b>Shift+F9 once</b> to move backward through speech history, and <b>Shift+F9 twice</b> to move forward. This lets you review past speech output without changing your current focus.</p>
+    </div>
+    <br>
+
+    <div class="feature-item">
+        <h3>10. Speech Log File Access</h3>
+        <p>Press <b>Shift+F9 three times</b> to open the complete speech history file in your default text editor for reviewing, searching, or copying.</p>
+    </div>
+    <br>
+
+    <div class="feature-item">
+        <h3>11. Smart Context Awareness</h3>
+        <p>When you are typing in editable fields, simpleCopy does not interfere. Commands only activate when they are useful, preserving your normal workflow.</p>
     </div>
 </div>
 
 <br><br>
 
 <h2>Support Me</h2>
-    <p>If this tool has made your life easier, consider fueling the next update with a small donation.</p>
+    <p>If this add-on helps you work more efficiently, consider supporting future development with a small donation.</p>
 
 <br>
 
@@ -263,12 +222,12 @@ b {
 </p>
 <br>
 
-<p>Your support means the world. Let's build something great together</p>
+<p>Your support helps keep this project alive and improving.</p>
 
 <br>
 
 <div class="footer-note">
-<p>&copy; 2026 Chai Chaimee NVDA Add-on Released under GN</p>
+<p>&copy; 2026 Chai Chaimee NVDA Add-on Released under GNU General Public License</p>
 </div>
 
 </div>

@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.5.4\n"
+"Project-Id-Version: simpleCopy 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-23 10:10+0700\n"
-"PO-Revision-Date: 2026-05-23 10:10+0700\n"
+"POT-Creation-Date: 2026-06-17 17:32+0700\n"
+"PO-Revision-Date: 2026-06-17 18:04+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Portuguese\n"
 "Language: pt\n"
@@ -12,71 +12,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:225
+#: __init__.py:266
 msgid "Append"
-msgstr "Acrescentar"
+msgstr "Anexar"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Appended"
-msgstr "Acrescentado"
+msgstr "Anexado"
 
-#: clipboard_utils.py:205
+#: clipboard_utils.py:190
 msgid "Cannot append to non-text clipboard content"
-msgstr "Não é possível acrescentar a conteúdo da área de transferência que não seja texto"
+msgstr "Não é possível anexar a conteúdo da área de transferência que não seja texto"
 
-#: __init__.py:174
+#: __init__.py:109
 msgid "Clean"
 msgstr "Limpar"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Copied"
 msgstr "Copiado"
 
-#: __init__.py:116
-#: __init__.py:128
+#: __init__.py:202
+#: __init__.py:214
 msgid "Copy"
 msgstr "Copiar"
 
-#: __init__.py:234
+#: __init__.py:275
 msgid "Copy Until Last"
 msgstr "Copiar até ao último"
 
-#: __init__.py:80
+#: __init__.py:162
+msgid "Copy failed"
+msgstr "Falha ao copiar"
+
+#: __init__.py:158
+msgid "Copy from review"
+msgstr "Copiar da revisão"
+
+#: __init__.py:117
+msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
+msgstr "Copiar/Anexar texto selecionado (um toque), Copiar do cursor de revisão (dois toques), Limpar área de transferência (três toques)"
+
+#: __init__.py:98
 msgid "Error during append operation"
-msgstr "Erro durante a operação de acrescentar"
+msgstr "Erro durante a operação de anexação"
 
-#: clipboard_utils.py:236
+#: clipboard_utils.py:223
 msgid "Error writing to clipboard"
-msgstr "Erro ao gravar na área de transferência"
+msgstr "Erro ao escrever na área de transferência"
 
-#: __init__.py:239
+#: __init__.py:280
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
-msgstr "Navegar no histórico de fala: anterior (um toque) seguinte (dois toques) abrir ficheiro de log (três toques)"
+msgstr "Navegar no histórico de fala: anterior (um toque), seguinte (dois toques), abrir arquivo de registo (três toques)"
 
-#: __init__.py:118
+#: __init__.py:204
 msgid "No URL"
 msgstr "Nenhum URL"
 
-#: __init__.py:130
+#: __init__.py:216
 msgid "No link found"
-msgstr "Nenhuma hiperligação encontrada"
+msgstr "Nenhum link encontrado"
 
-#: __init__.py:69
+#: __init__.py:165
+msgid "No text at review cursor"
+msgstr "Nenhum texto no cursor de revisão"
+
+#: __init__.py:71
 msgid "No text selected to append"
-msgstr "Nenhum texto selecionado para acrescentar"
+msgstr "Nenhum texto selecionado para anexar"
 
-#: __init__.py:30
+#: __init__.py:31
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:83
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "character"
+msgstr "caractere"
+
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "characters"
+msgstr "caracteres"
+
+#: __init__.py:169
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "copiar URL (um toque) copiar hiperligação (dois toques)"
+msgstr "copiar URL (um toque), copiar hiperligação (dois toques)"
 
-#: __init__.py:137
-msgid "copy and append (single) clear (double)"
-msgstr "copiar e acrescentar (um toque) limpar (dois toques)"
-
-#: __init__.py:182
+#: __init__.py:223
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
-msgstr "copiar última fala (um toque) acrescentar última fala (dois toques) copiar até à última fala (três toques)"
+msgstr "copiar última fala (um toque), anexar última fala (dois toques), copiar até à última fala (três toques)"
+
+#: __init__.py:86
+msgid "total"
+msgstr "total"

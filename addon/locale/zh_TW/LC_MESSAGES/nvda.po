@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.5.4\n"
+"Project-Id-Version: simpleCopy 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-23 10:10+0700\n"
-"PO-Revision-Date: 2026-05-23 10:10+0700\n"
+"POT-Creation-Date: 2026-06-17 17:32+0700\n"
+"PO-Revision-Date: 2026-06-17 18:06+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Chinese (Traditional)\n"
 "Language: zh_TW\n"
@@ -12,71 +12,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:225
+#: __init__.py:266
 msgid "Append"
 msgstr "附加"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Appended"
 msgstr "已附加"
 
-#: clipboard_utils.py:205
+#: clipboard_utils.py:190
 msgid "Cannot append to non-text clipboard content"
 msgstr "無法附加至非文字的剪貼簿內容"
 
-#: __init__.py:174
+#: __init__.py:109
 msgid "Clean"
 msgstr "清除"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Copied"
 msgstr "已複製"
 
-#: __init__.py:116
-#: __init__.py:128
+#: __init__.py:202
+#: __init__.py:214
 msgid "Copy"
 msgstr "複製"
 
-#: __init__.py:234
+#: __init__.py:275
 msgid "Copy Until Last"
-msgstr "複製到最後一條"
+msgstr "複製直到最後一項"
 
-#: __init__.py:80
+#: __init__.py:162
+msgid "Copy failed"
+msgstr "複製失敗"
+
+#: __init__.py:158
+msgid "Copy from review"
+msgstr "從瀏覽游標複製"
+
+#: __init__.py:117
+msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
+msgstr "複製/附加選取的文字（按一次），從瀏覽游標複製（按 twice），清除剪貼簿（按三次）"
+
+#: __init__.py:98
 msgid "Error during append operation"
-msgstr "附加操作中出錯"
+msgstr "附加操作時發生錯誤"
 
-#: clipboard_utils.py:236
+#: clipboard_utils.py:223
 msgid "Error writing to clipboard"
-msgstr "寫入剪貼簿時出錯"
+msgstr "寫入剪貼簿時發生錯誤"
 
-#: __init__.py:239
+#: __init__.py:280
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
-msgstr "瀏覽語音歷史：上一條（按一次）下一條（按twice/兩次）開啟記錄檔（按三次）"
+msgstr "瀏覽語音歷史記錄：上一項（按一次），下一項（按 twice），開啟記錄檔（按三次）"
 
-#: __init__.py:118
+#: __init__.py:204
 msgid "No URL"
 msgstr "沒有 URL"
 
-#: __init__.py:130
+#: __init__.py:216
 msgid "No link found"
 msgstr "找不到連結"
 
-#: __init__.py:69
+#: __init__.py:165
+msgid "No text at review cursor"
+msgstr "瀏覽游标處沒有文字"
+
+#: __init__.py:71
 msgid "No text selected to append"
 msgstr "未選取要附加的文字"
 
-#: __init__.py:30
+#: __init__.py:31
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:83
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "character"
+msgstr "字元"
+
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "characters"
+msgstr "字元"
+
+#: __init__.py:169
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "複製 URL（按一次）複製超連結（按兩次）"
+msgstr "複製 URL（按一次），複製超連結（按 twice）"
 
-#: __init__.py:137
-msgid "copy and append (single) clear (double)"
-msgstr "複製並附加（按一次）清除剪貼簿（按兩次）"
-
-#: __init__.py:182
+#: __init__.py:223
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
-msgstr "複製最後一條語音（按一次）附加最後一條語音（按兩次）複製到最後一條語音（按三次）"
+msgstr "複製最後朗讀的語音（按一次），附加最後朗讀的語音（按 twice），複製直到最後朗讀的語音（按三次）"
+
+#: __init__.py:86
+msgid "total"
+msgstr "總計"

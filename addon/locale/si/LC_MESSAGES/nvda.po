@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.5.4\n"
+"Project-Id-Version: simpleCopy 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-23 10:10+0700\n"
-"PO-Revision-Date: 2026-05-23 10:10+0700\n"
+"POT-Creation-Date: 2026-06-17 17:32+0700\n"
+"PO-Revision-Date: 2026-06-17 18:04+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Sinhala\n"
 "Language: si\n"
@@ -12,71 +12,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:225
+#: __init__.py:266
 msgid "Append"
 msgstr "අගට එකතු කරන්න"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Appended"
 msgstr "අගට එකතු කරන ලදී"
 
-#: clipboard_utils.py:205
+#: clipboard_utils.py:190
 msgid "Cannot append to non-text clipboard content"
-msgstr "පෙළ නොවන පසුරු පුවරු අන්තර්ගතයක අගට එකතු කළ නොහැක"
+msgstr "පෙළ නොවන පසුතල පුවරු අන්තර්ගතයක අගට එකතු කළ නොහැක"
 
-#: __init__.py:174
+#: __init__.py:109
 msgid "Clean"
-msgstr "හිස් කරන්න"
+msgstr "පිරිසිදු කරන්න"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Copied"
 msgstr "පිටපත් කරන ලදී"
 
-#: __init__.py:116
-#: __init__.py:128
+#: __init__.py:202
+#: __init__.py:214
 msgid "Copy"
 msgstr "පිටපත් කරන්න"
 
-#: __init__.py:234
+#: __init__.py:275
 msgid "Copy Until Last"
-msgstr "අවසානය දක්වා පිටපත් කරන්න"
+msgstr "අවසන් එක දක්වා පිටපත් කරන්න"
 
-#: __init__.py:80
+#: __init__.py:162
+msgid "Copy failed"
+msgstr "පිටපත් කිරීම අසාර්ථකයි"
+
+#: __init__.py:158
+msgid "Copy from review"
+msgstr "සමාලෝචන දර්ශකය වෙතින් පිටපත් කරන්න"
+
+#: __init__.py:117
+msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
+msgstr "තෝරාගත් පෙළ පිටපත් කරන්න/අගට එකතු කරන්න (එක් වරක්), සමාලෝචන දර්ශකයෙන් පිටපත් කරන්න (දෙවරක්), පසුතල පුවරුව හිස් කරන්න (තෙවරක්)"
+
+#: __init__.py:98
 msgid "Error during append operation"
-msgstr "අගට එකතු කිරීමේ ක්‍රියාවලියේදී දෝෂයක් ඇති විය"
+msgstr "අගට එකතු කිරීමේ ක්‍රියාවලියේදී දෝෂයකි"
 
-#: clipboard_utils.py:236
+#: clipboard_utils.py:223
 msgid "Error writing to clipboard"
-msgstr "පසුරු පුවරුවට ලිවීමේදී දෝෂයක් ඇති විය"
+msgstr "පසුතල පුවරුවට ලිවීමේදී දෝෂයකි"
 
-#: __init__.py:239
+#: __init__.py:280
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
-msgstr "කථන ඉතිහාසය පිරික්සන්න: පෙර (එක් වරක් එබීම) ඊළඟ (දෙවරක් එබීම) ලොග් ගොනුව විවෘත කරන්න (තෙවරක් එබීම)"
+msgstr "කථන ඉතිහාසය සැරිසරන්න: පෙර (එක් වරක්), මීළඟ (දෙවරක්), ලොග් ගොනුව විවෘත කරන්න (තෙවරක්)"
 
-#: __init__.py:118
+#: __init__.py:204
 msgid "No URL"
-msgstr "URL එකක් නොමැත"
+msgstr "URL එකක් නැත"
 
-#: __init__.py:130
+#: __init__.py:216
 msgid "No link found"
-msgstr "සබැඳියක් හමු නොවිය"
+msgstr "සබැඳියක් හමු නොවීය"
 
-#: __init__.py:69
+#: __init__.py:165
+msgid "No text at review cursor"
+msgstr "සමාලෝචන දර්ශකයේ පෙළක් නැත"
+
+#: __init__.py:71
 msgid "No text selected to append"
-msgstr "අගට එකතු කිරීම සඳහා කිසිදු පෙළක් තෝරා නොමැත"
+msgstr "අගට එකතු කිරීම සඳහා පෙළක් තෝරා නැත"
 
-#: __init__.py:30
+#: __init__.py:31
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:83
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "character"
+msgstr "අක්ෂරය"
+
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "characters"
+msgstr "අක්ෂර"
+
+#: __init__.py:169
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "URL පිටපත් කරන්න (එක් වරක් එබීම) අධිසබැඳිය පිටපත් කරන්න (දෙවරක් එබීම)"
+msgstr "URL පිටපත් කරන්න (එක් වරක්), අධිසබැඳිය පිටපත් කරන්න (දෙවරක්)"
 
-#: __init__.py:137
-msgid "copy and append (single) clear (double)"
-msgstr "පිටපත් කර අගට එකතු කරන්න (එක් වරක් එබීම) පසුරු පුවරුව හිස් කරන්න (දෙවරක් එබීම)"
-
-#: __init__.py:182
+#: __init__.py:223
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
-msgstr "අවසාන කථනය පිටපත් කරන්න (එක් වරක් එබීම) අවසාන කථනය අගට එකතු කරන්න (දෙවරක් එබීම) අවසාන කථනය දක්වා පිටපත් කරන්න (තෙවරක් එබීම)"
+msgstr "අවසාන කථාව පිටපත් කරන්න (එක් වරක්), අවසාන කථාව අගට එකතු කරන්න (දෙවරක්), අවසාන කථාව දක්වා පිටපත් කරන්න (තෙවරක්)"
+
+#: __init__.py:86
+msgid "total"
+msgstr "මුළු"

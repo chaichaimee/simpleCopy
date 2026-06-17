@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.5.4\n"
+"Project-Id-Version: simpleCopy 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-23 10:10+0700\n"
-"PO-Revision-Date: 2026-05-23 10:10+0700\n"
+"POT-Creation-Date: 2026-06-17 17:32+0700\n"
+"PO-Revision-Date: 2026-06-17 18:06+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Uzbek\n"
 "Language: uz\n"
@@ -12,71 +12,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:225
+#: __init__.py:266
 msgid "Append"
 msgstr "Oxiriga qoʻshish"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Appended"
 msgstr "Oxiriga qoʻshildi"
 
-#: clipboard_utils.py:205
+#: clipboard_utils.py:190
 msgid "Cannot append to non-text clipboard content"
-msgstr "Almashish buferining matnsiz tarkibiga qoʻshib boʻlmaydi"
+msgstr "Almashish buferidagi matnsiz tarkib oxiriga qoʻshib boʻlmaydi"
 
-#: __init__.py:174
+#: __init__.py:109
 msgid "Clean"
 msgstr "Tozalash"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Copied"
 msgstr "Nusxalandi"
 
-#: __init__.py:116
-#: __init__.py:128
+#: __init__.py:202
+#: __init__.py:214
 msgid "Copy"
 msgstr "Nusxalash"
 
-#: __init__.py:234
+#: __init__.py:275
 msgid "Copy Until Last"
 msgstr "Oxirgisigacha nusxalash"
 
-#: __init__.py:80
+#: __init__.py:162
+msgid "Copy failed"
+msgstr "Nusxalash muvaffaqiyatsiz tugadi"
+
+#: __init__.py:158
+msgid "Copy from review"
+msgstr "Koʻrib chiqish kursoridan nusxalash"
+
+#: __init__.py:117
+msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
+msgstr "Tanlangan matnni nusxalash/oxiriga qoʻshish (bitta bosish), Koʻrib chiqish kursoridan nusxalash (ikkita bosish), Almashish buferini tozalash (uchta bosish)"
+
+#: __init__.py:98
 msgid "Error during append operation"
-msgstr "Oxiriga qoʻshish amali bajarilayotganda xatolik yuz berdi"
+msgstr "Oxiriga qoʻshish jarayonida xatolik yuz berdi"
 
-#: clipboard_utils.py:236
+#: clipboard_utils.py:223
 msgid "Error writing to clipboard"
-msgstr "Almashish buferiga yozishda xatolik"
+msgstr "Almashish buferiga yozishda xatolik yuz berdi"
 
-#: __init__.py:239
+#: __init__.py:280
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
-msgstr "Nutq tarixini koʻrish: oldingi (bir marta bosish) keyingi (ikki marta bosish) jurnal faylini ochish (uch marta bosish)"
+msgstr "Nutq tarixini harakatlantirish: oldingi (bitta bosish), keyingi (ikkita bosish), jurnal faylini ochish (uchta bosish)"
 
-#: __init__.py:118
+#: __init__.py:204
 msgid "No URL"
-msgstr "URL manzili yoʻq"
+msgstr "URL yoʻq"
 
-#: __init__.py:130
+#: __init__.py:216
 msgid "No link found"
 msgstr "Havola topilmadi"
 
-#: __init__.py:69
+#: __init__.py:165
+msgid "No text at review cursor"
+msgstr "Koʻrib chiqish kursorida matn yoʻq"
+
+#: __init__.py:71
 msgid "No text selected to append"
 msgstr "Oxiriga qoʻshish uchun matn tanlanmagan"
 
-#: __init__.py:30
+#: __init__.py:31
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:83
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "character"
+msgstr "belgi"
+
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "characters"
+msgstr "belgi"
+
+#: __init__.py:169
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "URL manzilidan nusxalash (bir marta bosish) havoladan nusxalash (ikki marta bosish)"
+msgstr "URL manzilini nusxalash (bitta bosish), giperhavolani nusxalash (ikkita bosish)"
 
-#: __init__.py:137
-msgid "copy and append (single) clear (double)"
-msgstr "nusxalash va oxiriga qoʻshish (bir marta bosish) tozalash (ikki marta bosish)"
-
-#: __init__.py:182
+#: __init__.py:223
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
-msgstr "oxirgi gapirilgan nutqdan nusxalash (bir marta bosish) oxirgi nutqni oxiriga qoʻshish (ikki marta bosish) oxirgi nutqqacha nusxalash (uch marta bosish)"
+msgstr "oxirgi nutqni nusxalash (bitta bosish), oxirgi nutqni oxiriga qoʻshish (ikkita bosish), oxirgi nutqqacha nusxalash (uchta bosish)"
+
+#: __init__.py:86
+msgid "total"
+msgstr "jami"

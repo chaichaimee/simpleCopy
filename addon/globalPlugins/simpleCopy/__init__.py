@@ -20,6 +20,7 @@ import tones
 from . import url_utils
 from . import clipboard_utils
 from . import speech_utils
+from . import reviewCursor
 
 log = logging.getLogger("nvda.simpleCopy")
 
@@ -36,9 +37,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	_ctrl_shift_a_last_tap_time = 0
 	_ctrl_shift_a_timer = None
 
-	_ctrl_shift_c_tap_count = 0
-	_ctrl_shift_c_last_tap_time = 0
-	_ctrl_shift_c_timer = None
+	_ctrl_shift_v_tap_count = 0
+	_ctrl_shift_v_last_tap_time = 0
+	_ctrl_shift_v_timer = None
 
 	_f9_tap_count = 0
 	_f9_last_tap_time = 0
@@ -56,6 +57,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self.clipboard_handler = clipboard_utils.ClipboardHandler()
 		self.url_handler = url_utils.URLHandler()
 		self.speech_history = speech_utils.SpeechHistoryHandler(callback=self._on_speech_received)
+		self.review_cursor_handler = reviewCursor.ReviewCursorHandler()
 		log.info("SimpleCopy: Module initialized")
 
 	def _on_speech_received(self, text):
@@ -64,20 +66,104 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def _performAppendAction(self, obj):
 		try:
-			text_to_append = self.clipboard_handler.get_selected_text(obj)
-			if not text_to_append:
+			selected_text = self.clipboard_handler.get_selected_text(obj)
+			if not selected_text:
 				speech.speak([_("No text selected to append")])
 				return
 
-			result = self.clipboard_handler.append_to_clipboard(text_to_append)
+			result = self.clipboard_handler.append_to_clipboard(selected_text)
 			if result["success"]:
 				self.isTextCopied = True
-				speech.speak([_(result["message"])])
+				appended_char_count = len(selected_text)
+				total_char_count = len(result.get("fullText", selected_text))
+				char_label = _("character") if appended_char_count == 1 else _("characters")
+				total_label = _("character") if total_char_count == 1 else _("characters")
+
+				if result.get("appended"):
+					speech.speak([
+						_(result["message"]),
+						f"{appended_char_count} {char_label}, ",
+						_("total"),
+						f"{total_char_count} {total_label}"
+					])
+				else:
+					speech.speak([
+						_(result["message"]),
+						f"{appended_char_count} {char_label}"
+					])
 			else:
 				speech.speak([_(result["message"])])
 		except Exception as e:
 			log.error(f"Append action failed: {e}")
 			speech.speak([_("Error during append operation")])
+
+	def _clearClipboard(self):
+		try:
+			user32 = ctypes.windll.user32
+			if user32.OpenClipboard(None):
+				user32.EmptyClipboard()
+				user32.CloseClipboard()
+				self.isTextCopied = False
+				self._captured_speech_buffer.clear()
+				self._is_recording_active = False
+				speech.speak([_("Clean")])
+			else:
+				tones.beep(200, 100)
+		except Exception as e:
+			log.error(f"Clipboard clear failed: {e}")
+			tones.beep(200, 100)
+
+	@scriptHandler.script(
+		description=_("Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"),
+		gesture="kb:control+shift+v",
+		category=scriptCategory
+	)
+	def script_handleTextCopy(self, gesture):
+		current_time = time.time()
+		if current_time - self._ctrl_shift_v_last_tap_time > self._double_tap_threshold:
+			self._ctrl_shift_v_tap_count = 0
+
+		self._ctrl_shift_v_tap_count += 1
+		self._ctrl_shift_v_last_tap_time = current_time
+
+		if self._ctrl_shift_v_timer and self._ctrl_shift_v_timer.IsRunning():
+			self._ctrl_shift_v_timer.Stop()
+
+		self._ctrl_shift_v_timer = wx.CallLater(int(self._double_tap_threshold * 1000), self._execute_v_action)
+
+	def _execute_v_action(self):
+		if self._ctrl_shift_v_tap_count == 1:
+			self._handle_single_tap()
+		elif self._ctrl_shift_v_tap_count == 2:
+			self._handle_double_tap()
+		elif self._ctrl_shift_v_tap_count >= 3:
+			self._clearClipboard()
+		self._ctrl_shift_v_tap_count = 0
+
+	def _handle_single_tap(self):
+		obj = api.getFocusObject()
+		selected_text = self.clipboard_handler.get_selected_text(obj)
+		if not selected_text:
+			keyboardHandler.KeyboardInputGesture.fromName("control+shift+c").send()
+		else:
+			self._performAppendAction(obj)
+
+	def _handle_double_tap(self):
+		text = self.review_cursor_handler.copy_from_review_cursor()
+		if text:
+			if api.copyToClip(text):
+				tones.beep(1500, 100)
+				char_count = len(text)
+				char_label = _("character") if char_count == 1 else _("characters")
+				speech.speak([_("Copy from review"), f"{char_count} {char_label}"])
+				log.info(f"Review cursor copied: {char_count} characters")
+			else:
+				tones.beep(200, 100)
+				speech.speak([_("Copy failed")])
+		else:
+			tones.beep(200, 100)
+			speech.speak([_("No text at review cursor")])
+			log.warning("No text retrieved from review cursor")
 
 	@scriptHandler.script(
 		description=_("copy URL (single) copy hyper link (double)"),
@@ -132,51 +218,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				log.error(f"Hyperlink copy error: {e}")
 		else:
 			keyboardHandler.KeyboardInputGesture.fromName("control+shift+a").send()
-
-	@scriptHandler.script(
-		description=_("copy and append (single) clear (double)"),
-		gesture="kb:control+shift+c",
-		category=scriptCategory
-	)
-	def script_appendOrClear(self, gesture):
-		current_time = time.time()
-		if current_time - self._ctrl_shift_c_last_tap_time > self._double_tap_threshold:
-			self._ctrl_shift_c_tap_count = 0
-
-		self._ctrl_shift_c_tap_count += 1
-		self._ctrl_shift_c_last_tap_time = current_time
-
-		if self._ctrl_shift_c_timer and self._ctrl_shift_c_timer.IsRunning():
-			self._ctrl_shift_c_timer.Stop()
-
-		self._ctrl_shift_c_timer = wx.CallLater(int(self._double_tap_threshold * 1000), self._execute_c_action)
-
-	def _execute_c_action(self):
-		if self._ctrl_shift_c_tap_count == 1:
-			obj = api.getFocusObject()
-			if not self.clipboard_handler.get_selected_text(obj):
-				keyboardHandler.KeyboardInputGesture.fromName("control+shift+c").send()
-			else:
-				self._performAppendAction(obj)
-		elif self._ctrl_shift_c_tap_count >= 2:
-			self._clearClipboard()
-		self._ctrl_shift_c_tap_count = 0
-
-	def _clearClipboard(self):
-		try:
-			user32 = ctypes.windll.user32
-			if user32.OpenClipboard(None):
-				user32.EmptyClipboard()
-				user32.CloseClipboard()
-				self.isTextCopied = False
-				self._captured_speech_buffer.clear()
-				self._is_recording_active = False
-				speech.speak([_("Clean")])
-			else:
-				tones.beep(200, 100)
-		except Exception as e:
-			log.error(f"Clipboard clear failed: {e}")
-			tones.beep(200, 100)
 
 	@scriptHandler.script(
 		description=_("copy last speech (single) append last speech (double) copy until last speech (triple)"),

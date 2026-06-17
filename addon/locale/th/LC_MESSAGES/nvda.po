@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.5.4\n"
+"Project-Id-Version: simpleCopy 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-23 10:10+0700\n"
-"PO-Revision-Date: 2026-05-23 10:10+0700\n"
+"POT-Creation-Date: 2026-06-17 17:32+0700\n"
+"PO-Revision-Date: 2026-06-17 18:06+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Thai\n"
 "Language: th\n"
@@ -12,71 +12,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:225
+#: __init__.py:266
 msgid "Append"
-msgstr "คัดลอกต่อท้าย"
+msgstr "นำไปต่อท้าย"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Appended"
-msgstr "คัดลอกต่อท้ายแล้ว"
+msgstr "นำไปต่อท้ายแล้ว"
 
-#: clipboard_utils.py:205
+#: clipboard_utils.py:190
 msgid "Cannot append to non-text clipboard content"
-msgstr "ไม่สามารถคัดลอกต่อท้ายข้อมูลในคลิปบอร์ดที่ไม่ใช่ข้อความได้"
+msgstr "ไม่สามารถนำไปต่อท้ายคลิปบอร์ดที่ไม่ใช่ข้อความได้"
 
-#: __init__.py:174
+#: __init__.py:109
 msgid "Clean"
-msgstr "ล้างคลิปบอร์ด"
+msgstr "ล้าง"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Copied"
 msgstr "คัดลอกแล้ว"
 
-#: __init__.py:116
-#: __init__.py:128
+#: __init__.py:202
+#: __init__.py:214
 msgid "Copy"
 msgstr "คัดลอก"
 
-#: __init__.py:234
+#: __init__.py:275
 msgid "Copy Until Last"
 msgstr "คัดลอกจนถึงข้อความล่าสุด"
 
-#: __init__.py:80
+#: __init__.py:162
+msgid "Copy failed"
+msgstr "การคัดลอกล้มเหลว"
+
+#: __init__.py:158
+msgid "Copy from review"
+msgstr "คัดลอกจากเคอร์เซอร์ทบทวน"
+
+#: __init__.py:117
+msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
+msgstr "คัดลอก/นำข้อความที่เลือกไปต่อท้าย (กดครั้งเดียว), คัดลอกจากเคอร์เซอร์ทบทวน (กดสองครั้ง), ล้างคลิปบอร์ด (กดสามครั้ง)"
+
+#: __init__.py:98
 msgid "Error during append operation"
-msgstr "เกิดข้อผิดพลาดระหว่างการคัดลอกต่อท้าย"
+msgstr "เกิดข้อผิดพลาดระหว่างการนำข้อความไปต่อท้าย"
 
-#: clipboard_utils.py:236
+#: clipboard_utils.py:223
 msgid "Error writing to clipboard"
-msgstr "เกิดข้อผิดพลาดในการบันทึกข้อมูลลงคลิปบอร์ด"
+msgstr "เกิดข้อผิดพลาดในการเขียนข้อมูลลงคลิปบอร์ด"
 
-#: __init__.py:239
+#: __init__.py:280
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
-msgstr "ท่องดูประวัติคำพูด: ก่อนหน้า (กดครั้งเดียว) ถัดไป (กดสองครั้ง) เปิดไฟล์บันทึกประวัติ (กดสามครั้ง)"
+msgstr "ท่องดูประวัติการพูด: ก่อนหน้า (กดครั้งเดียว), ถัดไป (กดสองครั้ง), เปิดไฟล์ล็อก (กดสามครั้ง)"
 
-#: __init__.py:118
+#: __init__.py:204
 msgid "No URL"
-msgstr "ไม่พบ URL"
+msgstr "ไม่มี URL"
 
-#: __init__.py:130
+#: __init__.py:216
 msgid "No link found"
 msgstr "ไม่พบลิงก์"
 
-#: __init__.py:69
-msgid "No text selected to append"
-msgstr "ไม่ได้เลือกข้อความเพื่อคัดลอกต่อท้าย"
+#: __init__.py:165
+msgid "No text at review cursor"
+msgstr "ไม่มีข้อความที่เคอร์เซอร์ทบทวน"
 
-#: __init__.py:30
+#: __init__.py:71
+msgid "No text selected to append"
+msgstr "ไม่ได้เลือกข้อความเพื่อนำไปต่อท้าย"
+
+#: __init__.py:31
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:83
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "character"
+msgstr "ตัวอักษร"
+
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "characters"
+msgstr "ตัวอักษร"
+
+#: __init__.py:169
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "คัดลอก URL (กดครั้งเดียว) คัดลอกไฮเปอร์ลิงก์ (กดสองครั้ง)"
+msgstr "คัดลอก URL (กดครั้งเดียว), คัดลอกไฮเปอร์ลิงก์ (กดสองครั้ง)"
 
-#: __init__.py:137
-msgid "copy and append (single) clear (double)"
-msgstr "คัดลอกและต่อท้าย (กดครั้งเดียว) ล้างคลิปบอร์ด (กดสองครั้ง)"
-
-#: __init__.py:182
+#: __init__.py:223
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
-msgstr "คัดลอกคำพูดล่าสุด (กดครั้งเดียว) คัดลอกคำพูดล่าสุดต่อท้าย (กดสองครั้ง) คัดลอกจนถึงคำพูดล่าสุด (กดสามครั้ง)"
+msgstr "คัดลอกคำพูดล่าสุด (กดครั้งเดียว), นำคำพูดล่าสุดไปต่อท้าย (กดสองครั้ง), คัดลอกจนถึงคำพูดล่าสุด (กดสามครั้ง)"
+
+#: __init__.py:86
+msgid "total"
+msgstr "ทั้งหมด"

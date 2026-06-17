@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.5.4\n"
+"Project-Id-Version: simpleCopy 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-23 10:10+0700\n"
-"PO-Revision-Date: 2026-05-23 10:10+0700\n"
+"POT-Creation-Date: 2026-06-17 17:32+0700\n"
+"PO-Revision-Date: 2026-06-17 18:01+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Galician\n"
 "Language: gl\n"
@@ -12,71 +12,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:225
+#: __init__.py:266
 msgid "Append"
-msgstr "Engadir"
+msgstr "Engadir ao final"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Appended"
-msgstr "Engadido"
+msgstr "Engadido ao final"
 
-#: clipboard_utils.py:205
+#: clipboard_utils.py:190
 msgid "Cannot append to non-text clipboard content"
-msgstr "Non se pode engadir a un contido do portapapeis que non sexa texto"
+msgstr "Non se pode engadir a contido do portapapeis que non sexa texto"
 
-#: __init__.py:174
+#: __init__.py:109
 msgid "Clean"
 msgstr "Limpar"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Copied"
 msgstr "Copiado"
 
-#: __init__.py:116
-#: __init__.py:128
+#: __init__.py:202
+#: __init__.py:214
 msgid "Copy"
 msgstr "Copiar"
 
-#: __init__.py:234
+#: __init__.py:275
 msgid "Copy Until Last"
 msgstr "Copiar ata o último"
 
-#: __init__.py:80
+#: __init__.py:162
+msgid "Copy failed"
+msgstr "Fallo ao copiar"
+
+#: __init__.py:158
+msgid "Copy from review"
+msgstr "Copiar desde a revisión"
+
+#: __init__.py:117
+msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
+msgstr "Copiar/Engadir texto seleccionado (un toque), Copiar desde o cursor de revisión (dous toques), Limpar portapapeis (tres toques)"
+
+#: __init__.py:98
 msgid "Error during append operation"
 msgstr "Erro durante a operación de engadir"
 
-#: clipboard_utils.py:236
+#: clipboard_utils.py:223
 msgid "Error writing to clipboard"
 msgstr "Erro ao escribir no portapapeis"
 
-#: __init__.py:239
+#: __init__.py:280
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
-msgstr "Navegar polo historial de voz: anterior (un toque) seguinte (dobre toque) abrir ficheiro de rexistro (triplo toque)"
+msgstr "Navegar polo historial de voz: anterior (un toque), seguinte (dous toques), abrir arquivo de rexistro (tres toques)"
 
-#: __init__.py:118
+#: __init__.py:204
 msgid "No URL"
 msgstr "Sen URL"
 
-#: __init__.py:130
+#: __init__.py:216
 msgid "No link found"
 msgstr "Non se atopou ningunha ligazón"
 
-#: __init__.py:69
+#: __init__.py:165
+msgid "No text at review cursor"
+msgstr "Non hai texto no cursor de revisión"
+
+#: __init__.py:71
 msgid "No text selected to append"
 msgstr "Non hai texto seleccionado para engadir"
 
-#: __init__.py:30
+#: __init__.py:31
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:83
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "character"
+msgstr "carácter"
+
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "characters"
+msgstr "caracteres"
+
+#: __init__.py:169
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "copiar URL (un toque) copiar hiperligazón (dobre toque)"
+msgstr "copiar URL (un toque), copiar hiperligazón (dous toques)"
 
-#: __init__.py:137
-msgid "copy and append (single) clear (double)"
-msgstr "copiar e engadir (un toque) limpar (dobre toque)"
-
-#: __init__.py:182
+#: __init__.py:223
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
-msgstr "copiar última fala (un toque) engadir última fala (dobre toque) copiar ata a última fala (triplo toque)"
+msgstr "copiar última emisión de voz (un toque), engadir última emisión de voz (dous toques), copiar ata a última emisión de voz (tres toques)"
+
+#: __init__.py:86
+msgid "total"
+msgstr "total"

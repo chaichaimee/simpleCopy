@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.5.4\n"
+"Project-Id-Version: simpleCopy 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-23 10:10+0700\n"
-"PO-Revision-Date: 2026-05-23 10:10+0700\n"
+"POT-Creation-Date: 2026-06-17 17:32+0700\n"
+"PO-Revision-Date: 2026-06-17 18:04+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Lao\n"
 "Language: lo\n"
@@ -12,71 +12,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:225
+#: __init__.py:266
 msgid "Append"
 msgstr "ຕໍ່ທ້າຍ"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Appended"
 msgstr "ຕໍ່ທ້າຍແລ້ວ"
 
-#: clipboard_utils.py:205
+#: clipboard_utils.py:190
 msgid "Cannot append to non-text clipboard content"
 msgstr "ບໍ່ສາມາດຕໍ່ທ້າຍໃສ່ເນື້ອຫາຄລິບບອດທີ່ບໍ່ແມ່ນຂໍ້ຄວາມໄດ້"
 
-#: __init__.py:174
+#: __init__.py:109
 msgid "Clean"
-msgstr "ລ້າງຄລິບບອດ"
+msgstr "ລ້າງ"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Copied"
 msgstr "ສຳເນົາແລ້ວ"
 
-#: __init__.py:116
-#: __init__.py:128
+#: __init__.py:202
+#: __init__.py:214
 msgid "Copy"
 msgstr "ສຳເນົາ"
 
-#: __init__.py:234
+#: __init__.py:275
 msgid "Copy Until Last"
-msgstr "ສຳເນົາຈົນຮອດຂໍ້ຄວາມສຸດທ້າຍ"
+msgstr "ສຳເນົາຈົນຮອດອັນສຸດທ້າຍ"
 
-#: __init__.py:80
+#: __init__.py:162
+msgid "Copy failed"
+msgstr "ການສຳເນົາຫຼົ້ມເຫຼວ"
+
+#: __init__.py:158
+msgid "Copy from review"
+msgstr "ສຳເນົາຈາກເຄີເຊີທົບທວນ"
+
+#: __init__.py:117
+msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
+msgstr "ສຳເນົາ/ຕໍ່ທ້າຍຂໍ້ຄວາມທີ່ເລືອກ (ກົດເທື່ອດຽວ) ສຳເນົາຈາກເຄີເຊີທົບທວນ (ກົດສອງເທື່ອ) ລ້າງຄລິບບອດ (ກົດສາມເທື່ອ)"
+
+#: __init__.py:98
 msgid "Error during append operation"
-msgstr "ເກີດຂໍ້ຜິດພາດໃນລະຫວ່າງການຕໍ່ທ້າຍ"
+msgstr "ເກີດຂໍ້ຜິດພາດໃນລະຫວ່າງການຕໍ່ທ້าย"
 
-#: clipboard_utils.py:236
+#: clipboard_utils.py:223
 msgid "Error writing to clipboard"
-msgstr "ເກີດຂໍ້ຜິດພາດໃນການຂຽນລົງຄລິບບອດ"
+msgstr "ເກີດຂໍ້ຜผิดພາດໃນການຂຽນລົງຄລິບບອດ"
 
-#: __init__.py:239
+#: __init__.py:280
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
-msgstr "ທ່ອງທ່ຽວປະຫວັດການເວົ້າ: ກ່ອນໜ້າ (ກົດເທື່ອດຽວ) ຖັດໄປ (ກົດສອງເທື່ອ) ເປີດໄຟລ໌ບັນທຶກເຫດການ (ກົດສາມເທື່ອ)"
+msgstr "ທ່ອງເບິ່ງປະຫວັດການເວົ້າ: ກ່ອນໜ້າ (ກົດເທື່ອດຽວ) ຖັດໄປ (ກົດສອງເທື່ອ) ເປີດໄຟລ໌ບັນທຶກ (ກົດສາມເທື່ອ)"
 
-#: __init__.py:118
+#: __init__.py:204
 msgid "No URL"
 msgstr "ບໍ່ມີ URL"
 
-#: __init__.py:130
+#: __init__.py:216
 msgid "No link found"
 msgstr "ບໍ່ພົບລີ້ງຄ໌"
 
-#: __init__.py:69
-msgid "No text selected to append"
-msgstr "ບໍ່ມີຂໍ້ຄວາມທີ່ຖືກເລືອກເພື່ອຕໍ່ທ້າຍ"
+#: __init__.py:165
+msgid "No text at review cursor"
+msgstr "ບໍ່ມີຂໍ້ຄວາມຢູ່ເຄີເຊີທົບທວນ"
 
-#: __init__.py:30
+#: __init__.py:71
+msgid "No text selected to append"
+msgstr "ບໍ່ມີຂໍ้ຄວາມທີ່ຖືກເລືອກເພື່ອຕໍ່ທ້າຍ"
+
+#: __init__.py:31
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:83
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "character"
+msgstr "ຕົວອັກສອນ"
+
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "characters"
+msgstr "ຕົວອັກສອນ"
+
+#: __init__.py:169
 msgid "copy URL (single) copy hyper link (double)"
 msgstr "ສຳເນົາ URL (ກົດເທື່ອດຽວ) ສຳເນົາໄຮເປີລີ້ງຄ໌ (ກົດສອງເທື່ອ)"
 
-#: __init__.py:137
-msgid "copy and append (single) clear (double)"
-msgstr "ສຳເນົາແລະຕໍ່ທ້າຍ (ກົດເທື່ອດຽວ) ລ້າງຄລິບບອດ (ກົດສອງເທື່ອ)"
-
-#: __init__.py:182
+#: __init__.py:223
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
-msgstr "ສຳເນົາຄຳເວົ້າສຸດທ້າຍ (ກົດເທື່ອດຽວ) ຕໍ່ທ້າຍຄຳເວົ້າສຸດທ້າຍ (ກົດສອງເທື່ອ) ສຳເນົາຈົນຮອດຄຳເວົ້າສຸດທ້າຍ (ກົດສາມເທື່ອ)"
+msgstr "ສຳເນົາຄຳເວົ້າສຸດທ້າຍ (ກົດເທື່ອດຽו) ຕໍ່ທ້າຍຄຳເວົ້າສຸດທ้າຍ (ກົດສອງເທື່ອ) ສຳເນົາຈົນຮອດຄຳເວົ້າສຸດທ້າຍ (ກົດສາມເທື່ອ)"
+
+#: __init__.py:86
+msgid "total"
+msgstr "ທັງໝົດ"

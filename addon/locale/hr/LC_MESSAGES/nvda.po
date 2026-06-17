@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.5.4\n"
+"Project-Id-Version: simpleCopy 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-23 10:10+0700\n"
-"PO-Revision-Date: 2026-05-23 10:10+0700\n"
+"POT-Creation-Date: 2026-06-17 17:32+0700\n"
+"PO-Revision-Date: 2026-06-17 18:01+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Croatian\n"
 "Language: hr\n"
@@ -12,71 +12,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:225
+#: __init__.py:266
 msgid "Append"
-msgstr "Dodaj na kraj"
+msgstr "Pridodaj"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Appended"
-msgstr "Dodano na kraj"
+msgstr "Pridodano"
 
-#: clipboard_utils.py:205
+#: clipboard_utils.py:190
 msgid "Cannot append to non-text clipboard content"
-msgstr "Nije moguće dodati na kraj netekstualni sadržaj međuspremnika"
+msgstr "Nije moguće pridodati netekstualnom sadržaju međuspremnika"
 
-#: __init__.py:174
+#: __init__.py:109
 msgid "Clean"
 msgstr "Očisti"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Copied"
 msgstr "Kopirano"
 
-#: __init__.py:116
-#: __init__.py:128
+#: __init__.py:202
+#: __init__.py:214
 msgid "Copy"
 msgstr "Kopiraj"
 
-#: __init__.py:234
+#: __init__.py:275
 msgid "Copy Until Last"
-msgstr "Kopiraj do posljednjeg"
+msgstr "Kopiraj do zadnjeg"
 
-#: __init__.py:80
+#: __init__.py:162
+msgid "Copy failed"
+msgstr "Kopiranje nije uspjelo"
+
+#: __init__.py:158
+msgid "Copy from review"
+msgstr "Kopiraj iz preglednog načina"
+
+#: __init__.py:117
+msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
+msgstr "Kopiraj/Pridodaj odabrani tekst (jedan pritisak), Kopiraj s preglednog pokazivača (dva pritiska), Očisti međuspremnik (tri pritiska)"
+
+#: __init__.py:98
 msgid "Error during append operation"
-msgstr "Pogreška tijekom dodavanja na kraj"
+msgstr "Pogreška tijekom operacije pridodavanja"
 
-#: clipboard_utils.py:236
+#: clipboard_utils.py:223
 msgid "Error writing to clipboard"
 msgstr "Pogreška pri pisanju u međuspremnik"
 
-#: __init__.py:239
+#: __init__.py:280
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
-msgstr "Navigacija povijesti govora: prethodno (jedan pritisak) sljedeće (dvostruki pritisak) otvori datoteku zapisnika (trostruki pritisak)"
+msgstr "Navigacija kroz povijest govora: prethodno (jedan pritisak), sljedeće (dva pritiska), otvori datoteku zapisa (tri pritiska)"
 
-#: __init__.py:118
+#: __init__.py:204
 msgid "No URL"
 msgstr "Nema URL-a"
 
-#: __init__.py:130
+#: __init__.py:216
 msgid "No link found"
 msgstr "Poveznica nije pronađena"
 
-#: __init__.py:69
-msgid "No text selected to append"
-msgstr "Nije odabran tekst za dodavanje na kraj"
+#: __init__.py:165
+msgid "No text at review cursor"
+msgstr "Nema teksta na preglednom pokazivaču"
 
-#: __init__.py:30
+#: __init__.py:71
+msgid "No text selected to append"
+msgstr "Nema odabranog teksta za pridodavanje"
+
+#: __init__.py:31
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:83
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "character"
+msgstr "znak"
+
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "characters"
+msgstr "znakova"
+
+#: __init__.py:169
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "kopiraj URL (jedan pritisak) kopiraj poveznicu (dvostruki pritisak)"
+msgstr "kopiraj URL (jedan pritisak), kopiraj poveznicu (dva pritiska)"
 
-#: __init__.py:137
-msgid "copy and append (single) clear (double)"
-msgstr "kopiraj i dodaj na kraj (jedan pritisak) očisti (dvostruki pritisak)"
-
-#: __init__.py:182
+#: __init__.py:223
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
-msgstr "kopiraj posljednji govor (jedan pritisak) dodaj posljednji govor na kraj (dvostruki pritisak) kopiraj do posljednjeg govora (trostruki pritisak)"
+msgstr "kopiraj zadnji govor (jedan pritisak), pridodaj zadnji govor (dva pritiska), kopiraj do zadnjeg govora (tri pritiska)"
+
+#: __init__.py:86
+msgid "total"
+msgstr "ukupno"

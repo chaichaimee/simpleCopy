@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.5.4\n"
+"Project-Id-Version: simpleCopy 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-23 10:10+0700\n"
-"PO-Revision-Date: 2026-05-23 10:10+0700\n"
+"POT-Creation-Date: 2026-06-17 17:32+0700\n"
+"PO-Revision-Date: 2026-06-17 18:01+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Hebrew\n"
 "Language: he\n"
@@ -12,71 +12,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:225
+#: __init__.py:266
 msgid "Append"
 msgstr "הוספה לסוף"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Appended"
-msgstr "נוסף לסוף"
+msgstr "התווסף לסוף"
 
-#: clipboard_utils.py:205
+#: clipboard_utils.py:190
 msgid "Cannot append to non-text clipboard content"
-msgstr "לא ניתן להוסיף לסוף תוכן לוח שאינו טקסט"
+msgstr "אין אפשרות להוסיף לתוכן לוח גזירים שאינו טקסט"
 
-#: __init__.py:174
+#: __init__.py:109
 msgid "Clean"
 msgstr "ניקוי"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Copied"
 msgstr "הועתק"
 
-#: __init__.py:116
-#: __init__.py:128
+#: __init__.py:202
+#: __init__.py:214
 msgid "Copy"
-msgstr "העתק"
+msgstr "העתקה"
 
-#: __init__.py:234
+#: __init__.py:275
 msgid "Copy Until Last"
 msgstr "העתקה עד האחרון"
 
-#: __init__.py:80
+#: __init__.py:162
+msgid "Copy failed"
+msgstr "העתקה נכשלה"
+
+#: __init__.py:158
+msgid "Copy from review"
+msgstr "העתקה מסמן הסקירה"
+
+#: __init__.py:117
+msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
+msgstr "העתקת/הוספת הטקסט הנבחר לסוף (לחיצה אחת), העתקה מסמן הסקירה (לחיצה כפולה), ניקוי לוח הגזירים (לחיצה משולשת)"
+
+#: __init__.py:98
 msgid "Error during append operation"
 msgstr "שגיאה במהלך פעולת ההוספה לסוף"
 
-#: clipboard_utils.py:236
+#: clipboard_utils.py:223
 msgid "Error writing to clipboard"
-msgstr "שגיאה בכתיבה ללוח"
+msgstr "שגיאה בכתיבה ללוח הגזירים"
 
-#: __init__.py:239
+#: __init__.py:280
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
-msgstr "ניווט בהיסטוריית הדיבור: הקודם (לחיצה אחת) הבא (לחיצה כפולה) פתיחת קובץ יומן רישום (לחיצה משולשת)"
+msgstr "ניווט בהיסטוריית הדיבור: הקודם (לחיצה אחת), הבא (לחיצה כפולה), פתיחת קובץ יומן רישום (לחיצה משולשת)"
 
-#: __init__.py:118
+#: __init__.py:204
 msgid "No URL"
-msgstr "אין כתובת אינטרנט"
+msgstr "אין כתובת URL"
 
-#: __init__.py:130
+#: __init__.py:216
 msgid "No link found"
 msgstr "לא נמצא קישור"
 
-#: __init__.py:69
+#: __init__.py:165
+msgid "No text at review cursor"
+msgstr "אין טקסט בסמן הסקירה"
+
+#: __init__.py:71
 msgid "No text selected to append"
 msgstr "לא נבחר טקסט להוספה לסוף"
 
-#: __init__.py:30
+#: __init__.py:31
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:83
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "character"
+msgstr "תו"
+
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "characters"
+msgstr "תווים"
+
+#: __init__.py:169
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "העתקת כתובת אינטרנט (לחיצה אחת) העתקת היפר-קישור (לחיצה כפולה)"
+msgstr "העתקת כתובת URL (לחיצה אחת), העתקת היפר-קישור (לחיצה כפולה)"
 
-#: __init__.py:137
-msgid "copy and append (single) clear (double)"
-msgstr "העתקה והוספה לסוף (לחיצה אחת) ניקוי (לחיצה כפולה)"
-
-#: __init__.py:182
+#: __init__.py:223
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
-msgstr "העתקת דיבור אחרון (לחיצה אחת) הוספת דיבור אחרון לסוף (לחיצה כפולה) העתקה עד הדיבור האחרון (לחיצה משולשת)"
+msgstr "העתקת הדיבור האחרון (לחיצה אחת), הוספת הדיבור האחרון לסוף (לחיצה כפולה), העתקה עד הדיבור האחרון (לחיצה משולשת)"
+
+#: __init__.py:86
+msgid "total"
+msgstr "סך הכל"

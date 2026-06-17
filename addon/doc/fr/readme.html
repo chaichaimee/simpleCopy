@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>simpleCopy NVDA Add-on</title>
+<title>Extension simpleCopy pour NVDA</title>
 <style>
 body {
     font-family: Arial, sans-serif;
@@ -64,16 +64,16 @@ b {
 <div class="container">
 
 <div class="section">
-    <img src="https://www.nvaccess.org/files/nvda/documentation/userGuide/images/nvda.ico" alt="NVDA Logo" class="nvda-logo">
+    <img src="https://www.nvaccess.org/files/nvda/documentation/userGuide/images/nvda.ico" alt="Logo NVDA" class="nvda-logo">
     <h1>simpleCopy</h1>
 <br>
-<p style="text-align: center; font-size: 1.2em; color: #2c3e50;"><b>La puissance de capture ultime : URL, texte, derniers mots prononcés ; tout à portée de main, plus rapide et plus intelligent</b></p>
+<p style="text-align: center; font-size: 1.2em; color: #2c3e50;"><b>Copier, ajouter et gérer le texte efficacement avec NVDA</b></p>
 </div>
 
 <br>
 
 <div class="section">
-    <p style="text-align: center;"><b>author:</b> chai chaimee</p>
+    <p style="text-align: center;"><b>auteur:</b> chai chaimee</p>
     <p style="text-align: center;"><b>url:</b> https://github.com/chaichaimee/simpleCopy</p>
 </div>
 
@@ -82,55 +82,54 @@ b {
 <div class="section">
     <h2>Description</h2>
     <br>
-    <p><b>Ne laissez plus passer les informations vitales. Arrêtez de vous battre avec votre presse-papiers. Bienvenue dans simpleCopy.</b></p>
+    <p><b>simpleCopy</b> est une extension légère pour NVDA qui simplifie la copie de texte, l'extraction d'URL et la gestion de l'historique de parole.</p>
     <br>
-    <p>Dans un monde numérique en constante effervescence, les informations défilent sous nos yeux en un clin d'œil. Les extraits de texte, les liens Web et les annonces vocales de votre lecteur d'écran sont incroyablement précieux — et pourtant, ils se perdent si facilement. <b>simpleCopy</b> réinvente complètement la façon dont vous capturez, collectez et réutilisez les informations avec NVDA. Il transforme votre lecteur d'écran en un assistant intelligent de collecte de données, mettant une puissance absolue au bout de vos doigts.</p>
-    <br>
-    <p>Que vous effectuiez des recherches approfondies sur le Web, que vous compiliez des notes provenant de différentes sources, que dupliquiez des adresses de liens Web ou que vous tentiez d'enregistrer des notifications vocales fugaces disparues trop rapidement, simpleCopy fait tout cela instantanément sans interrompre votre flux de travail. Pas de menus compliqués, pas de jargon technique de développeur — juste des raccourcis clavier simples, fluides et incroyablement rapides qui fonctionnent exactement quand et là où vous en avez besoin.</p>
+    <p>Cet outil vous aide à capturer et organiser rapidement les informations sans interrompre votre flux de travail. Que vous copiiez du texte, récupériez des liens Web ou enregistriez du contenu parlé, simpleCopy fournit des raccourcis clavier intuitifs qui fonctionnent parfaitement avec NVDA.</p>
 </div>
 
 <br>
 
 <div class="section">
-    <h2>Raccourcis Clavier</h2>
+    <h2>Raccourcis clavier</h2>
     <br>
-    <p>Maîtrisez votre flux de travail grâce à ces raccourcis faciles à retenir. Les commandes à pressions multiples répondent de manière fluide selon le nombre de fois que vous les enfoncez en succession rapide.</p>
+    <p>Toutes les commandes utilisent un système de tapotement multiple. Appuyez sur la combinaison de touches une, deux ou trois fois en succession rapide pour effectuer différentes actions.</p>
     <br>
 
     <div class="hotkey">
-        <h3>CTRL+Maj+A — Capture d'URL Web et de destinations de liens</h3>
+        <h3>CTRL+Maj+A — Capture d'URL et de liens</h3>
         <div class="tap-explanation">
-            <p><b>Simple pression :</b> Copie l'adresse Web complète (URL) de la page que vous consultez actuellement.</p>
-            <p><b>Double pression :</b> Extrait et copie le lien de destination de l'hypertexte spécifique sur lequel vous êtes positionné.</p>
+            <p><b>Une pression:</b> Copie l'URL de la page Web actuelle.</p>
+            <p><b>Deux pressions:</b> Copie l'URL de destination du lien hypertexte focalisé.</p>
         </div>
     </div>
     <br>
 
     <div class="hotkey">
-        <h3>CTRL+Maj+C — Accumulation de texte et réinitialisation</h3>
+        <h3>CTRL+Maj+V — Copier, ajouter et gérer le presse-papiers</h3>
         <div class="tap-explanation">
-            <p><b>Simple pression :</b> Copie votre texte actuellement mis en surbrillance. Si votre presse-papiers contient déjà du texte, il y attache (ajoute) fluidement votre nouvelle sélection à la fin.</p>
-            <p><b>Double pression :</b> Efface instantanément tout ce qui est actuellement enregistré dans votre presse-papiers pour vous permettre de repartir à zéro.</p>
+            <p><b>Une pression:</b> Copie le texte sélectionné. Si du texte existe déjà dans le presse-papiers, la nouvelle sélection y est ajoutée.</p>
+            <p><b>Deux pressions:</b> Copie le texte à partir de la position actuelle du curseur de revue. Cela fonctionne avec toute sélection effectuée à l'aide du curseur de revue de NVDA, y compris les sélections multilignes et la sélection de document complet.</p>
+            <p><b>Trois pressions:</b> Efface tout le contenu du presse-papiers.</p>
         </div>
     </div>
     <br>
 
     <div class="hotkey">
-        <h3>F9 — Maîtrise de la capture vocale en temps réel</h3>
+        <h3>F9 — Capture et gestion de la parole</h3>
         <div class="tap-explanation">
-            <p><b>Simple pression :</b> Copie la toute dernière phrase que NVDA a prononcée à haute voix.</p>
-            <p><b>Double pression :</b> Attache (ajoute) la toute dernière phrase prononcée à tout texte se trouvant déjà dans votre presse-papiers.</p>
-            <p><b>Triple pression :</b> Copie l'intégralité de l'historique accumulé de tout ce que NVDA a dit depuis que vous avez utilisé la commande F9 pour la première fois au cours de votre session.</p>
+            <p><b>Une pression:</b> Copie la sortie vocale la plus récente de NVDA.</p>
+            <p><b>Deux pressions:</b> Ajoute la sortie vocale la plus récente au contenu existant du presse-papiers.</p>
+            <p><b>Trois pressions:</b> Copie toute la sortie vocale accumulée depuis la première pression de F9.</p>
         </div>
     </div>
     <br>
 
     <div class="hotkey">
-        <h3>Maj+F9 — Navigation et accès au fichier de l'historique de la parole</h3>
+        <h3>Maj+F9 — Navigation dans l'historique de parole</h3>
         <div class="tap-explanation">
-            <p><b>Simple pression :</b> Recule vers l'élément précédent de l'historique de la parole.</p>
-            <p><b>Double pression :</b> Avance vers l'élément suivant de l'historique de la parole.</p>
-            <p><b>Triple pression :</b> Ouvre instantanément votre fichier texte complet de l'historique de la parole sur votre écran d'ordinateur pour un examen, une édition ou une recherche faciles.</p>
+            <p><b>Une pression:</b> Navigue vers l'élément précédent de l'historique de parole.</p>
+            <p><b>Deux pressions:</b> Navigue vers l'élément suivant de l'historique de parole.</p>
+            <p><b>Trois pressions:</b> Ouvre le fichier journal complet de l'historique de parole.</p>
         </div>
     </div>
 </div>
@@ -140,135 +139,95 @@ b {
 <div class="section">
     <h2>Fonctionnalités</h2>
     <br>
-    <p>Découvrez exactement comment ces fonctionnalités s'associent pour doper votre expérience informatique quotidienne. Voici votre guide étape par étape pour une collecte d'informations sans effort :</p>
+    <p>Voici comment chaque fonctionnalité fonctionne en pratique:</p>
     <br>
 
     <div class="feature-item">
-        <h3>1. Captureur instantané d'URL de page Web</h3>
-        <p>Ne perdez plus jamais de temps à cliquer dans la barre d'adresse de votre navigateur juste pour partager ou enregistrer un lien.</p>
-        <p><b>Guide étape par étape :</b></p>
-        <ul>
-            <li>Tout en naviguant sur un site Web via Chrome, Edge ou Firefox, appuyez simplement <b>une fois sur CTRL+Maj+A (Simple pression)</b>.</li>
-            <li>simpleCopy récupère automatiquement l'adresse de la page Web en arrière-plan.</li>
-            <li>NVDA prononcera une confirmation claire : <i>"URL de la page actuelle copiée : [Adresse Web]"</i>. Votre lien est maintenant prêt à être collé n'importe où !</li>
-        </ul>
+        <h3>1. Copier l'URL d'une page Web</h3>
+        <p>Appuyez sur <b>CTRL+Maj+A une fois</b> lorsque vous naviguez sur un site Web. L'URL de la page actuelle est copiée dans votre presse-papiers. NVDA le confirme en lisant l'URL copiée.</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>2. Extracteur de précision pour liens hypertexte</h3>
-        <p>Vous voulez copier la destination d'un lien sans avoir à ouvrir le site Web ? Cette fonctionnalité extrait proprement le lien de destination réel.</p>
-        <p><b>Guide étape par étape :</b></p>
-        <ul>
-            <li>Déplacez votre curseur ou votre focus sur n'importe quel lien d'une page Web.</li>
-            <li>Appuyez <b>rapidement deux fois sur CTRL+Maj+A (Double pression)</b>.</li>
-            <li>simpleCopy utilise des méthodes de détection intelligentes pour trouver la destination cachée du lien, la copie dans votre presse-papiers et annonce : <i>"URL du lien copiée : [Adresse Web]"</i>.</li>
-        </ul>
+        <h3>2. Extraire l'URL d'un lien hypertexte</h3>
+        <p>Focalisez un lien et appuyez sur <b>CTRL+Maj+A deux fois</b>. L'URL de destination est extraite et copiée sans ouvrir le lien.</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>3. Moteur d'accumulation de texte infini</h3>
-        <p>Imaginez que vous lisez un article ou un document et que vous souhaitiez copier les paragraphes 1, 5 et 12. Normalement, copier le paragraphe 5 effacerait le paragraphe 1. C'est du passé ! Ce moteur vous permet d'accumuler du texte de manière transparente.</p>
-        <p><b>Guide étape par étape :</b></p>
-        <ul>
-            <li>Mettez en surbrillance le premier morceau de texte que vous souhaitez et appuyez <b>une fois sur CTRL+Maj+C</b>. Il se copie proprement dans votre presse-papiers.</li>
-            <li>Passez à un autre paragraphe, mettez-le en surbrillance et appuyez à nouveau <b>une fois sur CTRL+Maj+C</b>. simpleCopy insère automatiquement un saut de ligne propre et attache ce texte juste en dessous du premier.</li>
-            <li>Répétez l'opération autant de fois que vous le souhaitez ! Vous pouvez rassembler des citations, élaborer des documents de recherche ou collecter des listes de courses à partir de plusieurs sources sans perdre une seule ligne.</li>
-        </ul>
+        <h3>3. Copier et ajouter du texte</h3>
+        <p>Sélectionnez du texte et appuyez sur <b>CTRL+Maj+V une fois</b>. Si le presse-papiers est vide, le texte est copié. Si le presse-papiers contient déjà du texte, la nouvelle sélection est ajoutée avec un saut de ligne.</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>4. Réinitialisation du presse-papiers en un seul geste</h3>
-        <p>Lorsque vous avez fini d'accumuler du texte ou si vous souhaitez vider votre presse-papiers pour des raisons de confidentialité, vous pouvez tout réinitialiser instantanément.</p>
-        <p><b>Guide étape par étape :</b></p>
-        <ul>
-            <li>Appuyez <b>rapidement deux fois sur CTRL+Maj+C (Double pression)</b>.</li>
-            <li>Votre presse-papiers est immédiatement vidé et NVDA dira <i>"Nettoyé"</i> pour vous garantir une tranquillité d'esprit totale.</li>
-        </ul>
+        <h3>4. Copier depuis le curseur de revue</h3>
+        <p>Utilisez le curseur de revue de NVDA pour sélectionner du texte (en utilisant NVDA+Maj+Flèche bas ou NVDA+CTRL+Maj+Flèche bas pour sélectionner plusieurs lignes), puis appuyez sur <b>CTRL+Maj+V deux fois</b>. Tout le texte sélectionné à partir de la position du curseur de revue est copié dans le presse-papiers. Cela fonctionne avec n'importe quelle taille de sélection, d'un seul mot à un document entier.</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>5. Capture de la dernière phrase prononcée</h3>
-        <p>Avez-vous déjà entendu NVDA lire un message d'erreur, une notification officielle, un numéro de série complexe ou une info-bulle, en regrettant de ne pas pouvoir le noter ? Cette fonctionnalité transforme instantanément les mots parlés en texte.</p>
-        <p><b>Guide étape par étape :</b></p>
-        <ul>
-            <li>Au moment précis où NVDA prononce une phrase que vous souhaitez conserver, appuyez <b>une fois sur F9 (Simple pression)</b>.</li>
-            <li>Le texte exact de cette dernière phrase est instantanément capturé dans votre presse-papiers, et NVDA la répète pour vous confirmer la réussite de l'opération. Cette action active également la journalisation de la parole en arrière-plan.</li>
-        </ul>
+        <h3>5. Effacer le presse-papiers</h3>
+        <p>Appuyez sur <b>CTRL+Maj+V trois fois</b> pour effacer instantanément tout le contenu du presse-papiers. NVDA le confirme avec le message "Clean".</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>6. Accumulation dynamique de l'historique de la parole</h3>
-        <p>Vous pouvez choisir d'ajouter uniquement la dernière phrase ou de capturer un journal massif de tout ce qui a été dit au fil du temps, transformant ainsi les flux verbaux en données modifiables.</p>
-        <p><b>Guide étape par étape pour l'ajout :</b></p>
-        <ul>
-            <li>Si vous souhaitez ajouter la toute dernière phrase parlée directement à votre presse-papiers existant, appuyez <b>rapidement deux fois sur F9 (Double pression)</b>.</li>
-        </ul>
-        <p><b>Guide étape par étape pour la journalisation chronologique :</b></p>
-        <ul>
-            <li>Dès que vous utilisez la touche F9 pour la première fois, simpleCopy commence à suivre la production parlée de votre lecteur d'écran.</li>
-            <li>Après avoir navigué dans les menus, lu des messages ou examiné des documents, appuyez <b>rapidement trois fois sur F9 (Triple pression)</b>.</li>
-            <li>L'intégralité du journal continu de tout ce qui a été dit depuis votre toute première pression sur F9 jusqu'à ce moment précis est rassemblée et copiée directement dans votre presse-papiers.</li>
-        </ul>
+        <h3>6. Copier la dernière parole</h3>
+        <p>Lorsque NVDA dit quelque chose que vous souhaitez enregistrer, appuyez sur <b>F9 une fois</b>. La dernière phrase prononcée est copiée dans votre presse-papiers.</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>7. Navigation interactive dans l'historique de la parole</h3>
-        <p>Passez en revue ce que NVDA a dit précédemment sans déplacer votre focus de lecture actuel de votre fenêtre active.</p>
-        <p><b>Guide étape par étape :</b></p>
-        <ul>
-            <li>Appuyez <b>une fois sur Maj+F9 (Simple pression)</b> pour revenir en arrière et écouter les phrases prononcées précédemment, une par une.</li>
-            <li>Appuyez <b>rapidement deux fois sur Maj+F9 (Double pression)</b> pour naviguer vers l'avant, vers les éléments de parole les plus récents. C'est parfait pour revérifier des instructions ou des noms que vous venez d'entendre.</li>
-        </ul>
+        <h3>7. Ajouter la parole</h3>
+        <p>Appuyez sur <b>F9 deux fois</b> pour ajouter la dernière phrase prononcée au contenu existant du presse-papiers.</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>8. Accès complet au fichier du registre de la parole</h3>
-        <p>Lorsque vous avez besoin d'examiner une quantité massive d'informations lues par NVDA tout au long de votre session, vous pouvez ouvrir l'intégralité de votre journal d'historique dans une mise en page de fichier texte claire.</p>
-        <p><b>Guide étape par étape :</b></p>
-        <ul>
-            <li>Appuyez <b>rapidement trois fois sur Maj+F9 (Triple pression)</b>.</li>
-            <li>simpleCopy lance immédiatement le visionneur de texte de votre ordinateur, affichant le fichier <code>speech history.txt</code>. À présent, vous pouvez facilement utiliser les outils de traitement de texte standard pour rechercher, modifier ou copier des parties de votre fichier d'historique de la parole à votre convenance.</li>
-        </ul>
+        <h3>8. Enregistrer l'historique de parole</h3>
+        <p>Appuyez sur <b>F9 trois fois</b> pour copier toute la sortie vocale accumulée pendant votre session en cours.</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>9. Protection intelligente sans interférence</h3>
-        <p>Vous n'avez jamais à vous soucier que simpleCopy vienne perturber votre saisie normale. L'extension est conçue avec une conscience situationnelle totale.</p>
-        <p><b>Guide étape par étape :</b></p>
-        <ul>
-            <li>Lorsque vous tapez dans des champs modifiables, des zones de saisieหรือ des documents Word, simpleCopy s'efface élégamment. Vos pressions sur les raccourcis seront transmises naturellement à l'application active sans accaparer votre clavier. Il n'entre en action que là où il apporte une valeur ajoutée de productivité pure.</li>
-        </ul>
+        <h3>9. Naviguer dans l'historique de parole</h3>
+        <p>Utilisez <b>Maj+F9 une fois</b> pour reculer dans l'historique de parole, et <b>Maj+F9 deux fois</b> pour avancer. Cela vous permet de consulter les sorties vocales passées sans changer votre focus actuel.</p>
+    </div>
+    <br>
+
+    <div class="feature-item">
+        <h3>10. Accéder au fichier journal de parole</h3>
+        <p>Appuyez sur <b>Maj+F9 trois fois</b> pour ouvrir le fichier complet de l'historique de parole dans votre éditeur de texte par défaut pour le consulter, le rechercher ou le copier.</p>
+    </div>
+    <br>
+
+    <div class="feature-item">
+        <h3>11. Intelligence contextuelle</h3>
+        <p>Lorsque vous tapez dans des champs modifiables, simpleCopy n'interfère pas. Les commandes ne s'activent que lorsqu'elles sont utiles, préservant ainsi votre flux de travail normal.</p>
     </div>
 </div>
 
 <br><br>
 
 <h2>Soutenez-moi</h2>
-    <p>Si cet outil vous a facilité la vie, pensez à propulser la prochaine mise à jour grâce à un petit don.</p>
+    <p>Si cette extension vous aide à travailler plus efficacement, envisagez de faire un petit don pour soutenir le développement futur.</p>
 
 <br>
 
 <p>
   <a href="https://buy.stripe.com/dRm9AU1xQ3Ds22N6VK1VK01">
-    <img src="https://img.shields.io/badge/Donate-Support%20Me-blue?style=for-the-badge&logo=stripe" alt="Support me">
+    <img src="https://img.shields.io/badge/Donate-Support%20Me-blue?style=for-the-badge&logo=stripe" alt="Soutenez-moi">
   </a>
 </p>
 <br>
 
-<p>Votre soutien représente énormément pour moi. Construisons ensemble de grandes choses !</p>
+<p>Votre soutien aide à garder ce projet vivant et en amélioration.</p>
 
 <br>
 
 <div class="footer-note">
-<p>&copy; 2026 Chai Chaimee NVDA Add-on Released under GN</p>
+<p>&copy; 2026 Chai Chaimee Extension NVDA Publiée sous licence GNU General Public License</p>
 </div>
 
 </div>

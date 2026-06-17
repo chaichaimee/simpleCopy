@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.5.4\n"
+"Project-Id-Version: simpleCopy 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-23 10:10+0700\n"
-"PO-Revision-Date: 2026-05-23 10:10+0700\n"
+"POT-Creation-Date: 2026-06-17 17:32+0700\n"
+"PO-Revision-Date: 2026-06-17 18:01+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Hungarian\n"
 "Language: hu\n"
@@ -12,71 +12,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:225
+#: __init__.py:266
 msgid "Append"
 msgstr "Hozzáfűzés"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Appended"
 msgstr "Hozzáfűzve"
 
-#: clipboard_utils.py:205
+#: clipboard_utils.py:190
 msgid "Cannot append to non-text clipboard content"
-msgstr "Nem lehet hozzáadni a vágólap nem szöveges tartalmához"
+msgstr "Nem lehet hozzáfűzni nem szöveges vágólaptartalomhoz"
 
-#: __init__.py:174
+#: __init__.py:109
 msgid "Clean"
 msgstr "Törlés"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Copied"
 msgstr "Másolva"
 
-#: __init__.py:116
-#: __init__.py:128
+#: __init__.py:202
+#: __init__.py:214
 msgid "Copy"
 msgstr "Másolás"
 
-#: __init__.py:234
+#: __init__.py:275
 msgid "Copy Until Last"
 msgstr "Másolás az utolsóig"
 
-#: __init__.py:80
+#: __init__.py:162
+msgid "Copy failed"
+msgstr "A másolás sikertelen"
+
+#: __init__.py:158
+msgid "Copy from review"
+msgstr "Másolás az áttekintő kurzortól"
+
+#: __init__.py:117
+msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
+msgstr "Kijelölt szöveg másolása/hozzáfűzése (egyszeri gombnyomás), Másolás az áttekintő kurzortól (kétszeri gombnyomás), Vágólap törlése (háromszori gombnyomás)"
+
+#: __init__.py:98
 msgid "Error during append operation"
-msgstr "Hiba a hozzáfűzési művelet során"
+msgstr "Hiba történt a hozzáfűzés során"
 
-#: clipboard_utils.py:236
+#: clipboard_utils.py:223
 msgid "Error writing to clipboard"
-msgstr "Hiba a vágólapra íráskor"
+msgstr "Hiba történt a vágólapra íráskor"
 
-#: __init__.py:239
+#: __init__.py:280
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
-msgstr "Navigálás a beszédelőzményekben: előző (egyszeri gombnyomás) következő (dupla gombnyomás) naplófájl megnyitása (tripla gombnyomás)"
+msgstr "Navigálás a beszédelőzményekben: előző (egyszeri gombnyomás), következő (kétszeri gombnyomás), naplófájl megnyitása (háromszori gombnyomás)"
 
-#: __init__.py:118
+#: __init__.py:204
 msgid "No URL"
 msgstr "Nincs URL"
 
-#: __init__.py:130
+#: __init__.py:216
 msgid "No link found"
 msgstr "Nem található hivatkozás"
 
-#: __init__.py:69
-msgid "No text selected to append"
-msgstr "Nincs kijelölve hozzáfűzendő szöveg"
+#: __init__.py:165
+msgid "No text at review cursor"
+msgstr "Nincs szöveg az áttekintő kurzornál"
 
-#: __init__.py:30
+#: __init__.py:71
+msgid "No text selected to append"
+msgstr "Nincs kijelölt szöveg a hozzáfűzéshez"
+
+#: __init__.py:31
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:83
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "character"
+msgstr "karakter"
+
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "characters"
+msgstr "karakter"
+
+#: __init__.py:169
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "URL másolása (egyszeri gombnyomás) hiperhivatkozás másolása (dupla gombnyomás)"
+msgstr "URL másolása (egyszeri gombnyomás), hiperhivatkozás másolása (kétszeri gombnyomás)"
 
-#: __init__.py:137
-msgid "copy and append (single) clear (double)"
-msgstr "másolás és hozzáfűzés (egyszeri gombnyomás) törlés (dupla gombnyomás)"
-
-#: __init__.py:182
+#: __init__.py:223
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
-msgstr "utolsó beszéd másolása (egyszeri gombnyomás) utolsó beszéd hozzáfűzése (dupla gombnyomás) másolás az utolsó beszédig (tripla gombnyomás)"
+msgstr "Utolsó beszéd másolása (egyszeri gombnyomás), Utolsó beszéd hozzáfűzése (kétszeri gombnyomás), Másolás az utolsó beszédig (háromszori gombnyomás)"
+
+#: __init__.py:86
+msgid "total"
+msgstr "összesen"

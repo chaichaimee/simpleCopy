@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.5.4\n"
+"Project-Id-Version: simpleCopy 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-23 10:10+0700\n"
-"PO-Revision-Date: 2026-05-23 10:10+0700\n"
+"POT-Creation-Date: 2026-06-17 17:32+0700\n"
+"PO-Revision-Date: 2026-06-17 18:01+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -12,71 +12,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:225
+#: __init__.py:266
 msgid "Append"
 msgstr "追加"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Appended"
-msgstr "追加しました"
+msgstr "追加されました"
 
-#: clipboard_utils.py:205
+#: clipboard_utils.py:190
 msgid "Cannot append to non-text clipboard content"
 msgstr "テキスト以外のクリップボードの内容には追加できません"
 
-#: __init__.py:174
+#: __init__.py:109
 msgid "Clean"
-msgstr "クリア"
+msgstr "消去"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Copied"
-msgstr "コピーしました"
+msgstr "コピーされました"
 
-#: __init__.py:116
-#: __init__.py:128
+#: __init__.py:202
+#: __init__.py:214
 msgid "Copy"
 msgstr "コピー"
 
-#: __init__.py:234
+#: __init__.py:275
 msgid "Copy Until Last"
 msgstr "最後までコピー"
 
-#: __init__.py:80
+#: __init__.py:162
+msgid "Copy failed"
+msgstr "コピーに失敗しました"
+
+#: __init__.py:158
+msgid "Copy from review"
+msgstr "レビューカーソルからコピー"
+
+#: __init__.py:117
+msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
+msgstr "選択されたテキストをコピー/追加（1回押す）、レビューカーソルからコピー（2回押す）、クリップボードを消去（3回押す）"
+
+#: __init__.py:98
 msgid "Error during append operation"
 msgstr "追加処理中にエラーが発生しました"
 
-#: clipboard_utils.py:236
+#: clipboard_utils.py:223
 msgid "Error writing to clipboard"
 msgstr "クリップボードへの書き込みエラー"
 
-#: __init__.py:239
+#: __init__.py:280
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
-msgstr "音声履歴の移動: 前へ (1回押す) 次へ (2回押す) ログファイルを開く (3回押す)"
+msgstr "音声履歴の移動：前へ（1回押す）、次へ（2回押す）、ログファイルを開く（3回押す）"
 
-#: __init__.py:118
+#: __init__.py:204
 msgid "No URL"
 msgstr "URLなし"
 
-#: __init__.py:130
+#: __init__.py:216
 msgid "No link found"
 msgstr "リンクが見つかりません"
 
-#: __init__.py:69
+#: __init__.py:165
+msgid "No text at review cursor"
+msgstr "レビューカーソルにテキストがありません"
+
+#: __init__.py:71
 msgid "No text selected to append"
 msgstr "追加するテキストが選択されていません"
 
-#: __init__.py:30
+#: __init__.py:31
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:83
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "character"
+msgstr "文字"
+
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "characters"
+msgstr "文字"
+
+#: __init__.py:169
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "URLをコピー (1回押す) ハイパーリンクをコピー (2回押す)"
+msgstr "URLをコピー（1回押す）、ハイパーリンクをコピー（2回押す）"
 
-#: __init__.py:137
-msgid "copy and append (single) clear (double)"
-msgstr "コピーして追加 (1回押す) クリア (2回押す)"
-
-#: __init__.py:182
+#: __init__.py:223
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
-msgstr "最後の音声をコピー (1回押す) 最後の音声を追加 (2回押す) 最後の音声までコピー (3回押す)"
+msgstr "最後の音声をコピー（1回押す）、最後の音声を追加（2回押す）、最後の音声までコピー（3回押す）"
+
+#: __init__.py:86
+msgid "total"
+msgstr "合計"

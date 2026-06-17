@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.5.4\n"
+"Project-Id-Version: simpleCopy 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-23 10:10+0700\n"
-"PO-Revision-Date: 2026-05-23 10:10+0700\n"
+"POT-Creation-Date: 2026-06-17 17:32+0700\n"
+"PO-Revision-Date: 2026-06-17 17:57+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Bengali\n"
 "Language: bn\n"
@@ -12,71 +12,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:225
+#: __init__.py:266
 msgid "Append"
-msgstr "শেষে যুক্ত করুন"
+msgstr "শেষে যোগ করুন"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Appended"
-msgstr "শেষে যুক্ত করা হয়েছে"
+msgstr "শেষে যোগ করা হয়েছে"
 
-#: clipboard_utils.py:205
+#: clipboard_utils.py:190
 msgid "Cannot append to non-text clipboard content"
-msgstr "ক্লিপবোর্ডের অ-পাঠ্য উপাদানের শেষে যুক্ত করা যাবে না"
+msgstr "টেক্সট নয় এমন ক্লিপবোর্ড কন্টেন্টে শেষে যোগ করা সম্ভব নয়"
 
-#: __init__.py:174
+#: __init__.py:109
 msgid "Clean"
-msgstr "খালি করুন"
+msgstr "মুছে ফেলুন"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Copied"
-msgstr "অনুলিপি করা হয়েছে"
+msgstr "কপি করা হয়েছে"
 
-#: __init__.py:116
-#: __init__.py:128
+#: __init__.py:202
+#: __init__.py:214
 msgid "Copy"
-msgstr "অনুলিপি করুন"
+msgstr "কপি করুন"
 
-#: __init__.py:234
+#: __init__.py:275
 msgid "Copy Until Last"
-msgstr "শেষ পর্যন্ত অনুলিপি করুন"
+msgstr "শেষ পর্যন্ত কপি করুন"
 
-#: __init__.py:80
+#: __init__.py:162
+msgid "Copy failed"
+msgstr "কপি করা ব্যর্থ হয়েছে"
+
+#: __init__.py:158
+msgid "Copy from review"
+msgstr "রিভিউ থেকে কপি করুন"
+
+#: __init__.py:117
+msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
+msgstr "নির্বাচিত টেক্সট কপি/শেষে যোগ করুন (একবার চাপুন), রিভিউ কার্সার থেকে কপি করুন (দুবার চাপুন), ক্লিপবোর্ড খালি করুন (তিনবার চাপুন)"
+
+#: __init__.py:98
 msgid "Error during append operation"
-msgstr "শেষে যুক্ত করার সময় ত্রুটি হয়েছে"
+msgstr "শেষে যোগ করার সময় ত্রুটি দেখা দিয়েছে"
 
-#: clipboard_utils.py:236
+#: clipboard_utils.py:223
 msgid "Error writing to clipboard"
-msgstr "ক্লিপবোর্ডে লেখার সময় ত্রুটি"
+msgstr "ক্লিপবোর্ডে লেখার সময় ত্রুটি দেখা দিয়েছে"
 
-#: __init__.py:239
+#: __init__.py:280
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
-msgstr "কথ্য ইতিহাস নেভিগেট করুন: পূর্ববর্তী (একবার) পরবর্তী (দুবার) লগ ফাইল খুলুন (তিনবার)"
+msgstr "বক্তৃতা ইতিহাস নেভিগেট করুন: পূর্ববর্তী (একবার চাপুন), পরবর্তী (দুবার চাপুন), লগ ফাইল খুলুন (তিনবার চাপুন)"
 
-#: __init__.py:118
+#: __init__.py:204
 msgid "No URL"
 msgstr "কোনো URL নেই"
 
-#: __init__.py:130
+#: __init__.py:216
 msgid "No link found"
-msgstr "কোনো লিঙ্ক পাওয়া যায়নি"
+msgstr "কোনো লিঙ্ক পাওয়া যায়নি"
 
-#: __init__.py:69
+#: __init__.py:165
+msgid "No text at review cursor"
+msgstr "রিভিউ কার্সারে কোনো টেক্সট নেই"
+
+#: __init__.py:71
 msgid "No text selected to append"
-msgstr "শেষে যুক্ত করার জন্য কোনো লেখা নির্বাচন করা হয়নি"
+msgstr "শেষে যোগ করার জন্য কোনো টেক্সট নির্বাচন করা হয়নি"
 
-#: __init__.py:30
+#: __init__.py:31
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:83
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "character"
+msgstr "অক্ষর"
+
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "characters"
+msgstr "অক্ষরসমূহ"
+
+#: __init__.py:169
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "URL অনুলিপি (একবার) হাইপারলিঙ্ক অনুলিপি (দুবার)"
+msgstr "URL কপি করুন (একবার চাপুন), হাইপার লিঙ্ক কপি করুন (দুবার চাপুন)"
 
-#: __init__.py:137
-msgid "copy and append (single) clear (double)"
-msgstr "অনুলিপি এবং শেষে যুক্ত (একবার) খালি করুন (দুবার)"
-
-#: __init__.py:182
+#: __init__.py:223
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
-msgstr "শেষ কথ্য অংশ অনুলিপি (একবার) শেষ কথ্য অংশ শেষে যুক্ত (দুবার) শেষ অংশ পর্যন্ত অনুলিপি (তিনবার)"
+msgstr "শেষ বক্তৃতা কপি করুন (একবার চাপুন), শেষ বক্তৃতা শেষে যোগ করুন (দুবার চাপুন), শেষ বক্তৃতা পর্যন্ত কপি করুন (তিনবার চাপুন)"
+
+#: __init__.py:86
+msgid "total"
+msgstr "মোট"

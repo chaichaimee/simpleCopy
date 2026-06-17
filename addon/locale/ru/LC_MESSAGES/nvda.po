@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.5.4\n"
+"Project-Id-Version: simpleCopy 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-23 10:10+0700\n"
-"PO-Revision-Date: 2026-05-23 10:10+0700\n"
+"POT-Creation-Date: 2026-06-17 17:32+0700\n"
+"PO-Revision-Date: 2026-06-17 18:04+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Russian\n"
 "Language: ru\n"
@@ -12,71 +12,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:225
+#: __init__.py:266
 msgid "Append"
 msgstr "Добавить в конец"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Appended"
 msgstr "Добавлено в конец"
 
-#: clipboard_utils.py:205
+#: clipboard_utils.py:190
 msgid "Cannot append to non-text clipboard content"
 msgstr "Невозможно добавить к нетекстовому содержимому буфера обмена"
 
-#: __init__.py:174
+#: __init__.py:109
 msgid "Clean"
 msgstr "Очистить"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Copied"
 msgstr "Скопировано"
 
-#: __init__.py:116
-#: __init__.py:128
+#: __init__.py:202
+#: __init__.py:214
 msgid "Copy"
 msgstr "Скопировать"
 
-#: __init__.py:234
+#: __init__.py:275
 msgid "Copy Until Last"
-msgstr "Копировать до последнего"
+msgstr "Скопировать до последнего"
 
-#: __init__.py:80
+#: __init__.py:162
+msgid "Copy failed"
+msgstr "Ошибка копирования"
+
+#: __init__.py:158
+msgid "Copy from review"
+msgstr "Скопировать из курсора обзора"
+
+#: __init__.py:117
+msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
+msgstr "Скопировать/Добавить в конец выделенный текст (одно нажатие), скопировать из курсора обзора (два нажатия), очистить буфер обмена (три нажатия)"
+
+#: __init__.py:98
 msgid "Error during append operation"
 msgstr "Ошибка при добавлении в конец"
 
-#: clipboard_utils.py:236
+#: clipboard_utils.py:223
 msgid "Error writing to clipboard"
 msgstr "Ошибка записи в буфер обмена"
 
-#: __init__.py:239
+#: __init__.py:280
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
-msgstr "Навигация по истории речи: предыдущая фраза (одно нажатие), следующая фраза (двойное нажатие), открыть лог-файл (тройное нажатие)"
+msgstr "Навигация по истории речи: предыдущая (одно нажатие), следующая (два нажатия), открыть лог-файл (три нажатия)"
 
-#: __init__.py:118
+#: __init__.py:204
 msgid "No URL"
-msgstr "Нет URL-адреса"
+msgstr "Нет URL"
 
-#: __init__.py:130
+#: __init__.py:216
 msgid "No link found"
 msgstr "Ссылка не найдена"
 
-#: __init__.py:69
-msgid "No text selected to append"
-msgstr "Нет выделенного текста для добавления в конец"
+#: __init__.py:165
+msgid "No text at review cursor"
+msgstr "Нет текста в курсоре обзора"
 
-#: __init__.py:30
+#: __init__.py:71
+msgid "No text selected to append"
+msgstr "Нет выделенного текста для добавления"
+
+#: __init__.py:31
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:83
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "character"
+msgstr "символ"
+
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "characters"
+msgstr "символов"
+
+#: __init__.py:169
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "копировать URL (одно нажатие), копировать гиперссылку (двойное нажатие)"
+msgstr "скопировать URL (одно нажатие), скопировать гиперссылку (два нажатия)"
 
-#: __init__.py:137
-msgid "copy and append (single) clear (double)"
-msgstr "скопировать и добавить в конец (одно нажатие), очистить буфер обмена (двойное нажатие)"
-
-#: __init__.py:182
+#: __init__.py:223
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
-msgstr "скопировать последнюю речь (одно нажатие), добавить последнюю речь в конец (двойное нажатие), копировать до последней речи (тройное нажатие)"
+msgstr "скопировать последнюю фразу речи (одно нажатие), добавить последнюю фразу в конец (два нажатия), скопировать до последней фразы (три нажатия)"
+
+#: __init__.py:86
+msgid "total"
+msgstr "всего"

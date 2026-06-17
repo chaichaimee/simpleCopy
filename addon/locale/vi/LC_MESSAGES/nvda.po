@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.5.4\n"
+"Project-Id-Version: simpleCopy 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-23 10:10+0700\n"
-"PO-Revision-Date: 2026-05-23 10:10+0700\n"
+"POT-Creation-Date: 2026-06-17 17:32+0700\n"
+"PO-Revision-Date: 2026-06-17 18:06+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Vietnamese\n"
 "Language: vi\n"
@@ -12,71 +12,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:225
+#: __init__.py:266
 msgid "Append"
-msgstr "Nối thêm"
+msgstr "Thêm vào cuối"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Appended"
-msgstr "Đã nối thêm"
+msgstr "Đã thêm vào cuối"
 
-#: clipboard_utils.py:205
+#: clipboard_utils.py:190
 msgid "Cannot append to non-text clipboard content"
-msgstr "Không thể nối thêm vào nội dung clipboard không phải là văn bản"
+msgstr "Không thể thêm vào nội dung clipboard không phải là văn bản"
 
-#: __init__.py:174
+#: __init__.py:109
 msgid "Clean"
-msgstr "Xóa trống"
+msgstr "Xóa sạch"
 
-#: clipboard_utils.py:229
+#: clipboard_utils.py:215
 msgid "Copied"
 msgstr "Đã sao chép"
 
-#: __init__.py:116
-#: __init__.py:128
+#: __init__.py:202
+#: __init__.py:214
 msgid "Copy"
 msgstr "Sao chép"
 
-#: __init__.py:234
+#: __init__.py:275
 msgid "Copy Until Last"
-msgstr "Sao chép cho đến phần cuối"
+msgstr "Sao chép cho đến phần cuối cùng"
 
-#: __init__.py:80
+#: __init__.py:162
+msgid "Copy failed"
+msgstr "Sao chép thất bại"
+
+#: __init__.py:158
+msgid "Copy from review"
+msgstr "Sao chép từ con trỏ duyệt"
+
+#: __init__.py:117
+msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
+msgstr "Sao chép/Thêm văn bản đã chọn vào cuối (nhấn một lần), Sao chép từ con trỏ duyệt (nhấn hai lần), Xóa sạch clipboard (nhấn ba lần)"
+
+#: __init__.py:98
 msgid "Error during append operation"
-msgstr "Lỗi trong quá trình nối thêm"
+msgstr "Lỗi trong quá trình thêm vào cuối"
 
-#: clipboard_utils.py:236
+#: clipboard_utils.py:223
 msgid "Error writing to clipboard"
 msgstr "Lỗi khi ghi vào clipboard"
 
-#: __init__.py:239
+#: __init__.py:280
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
-msgstr "Duyệt lịch sử lời nói: trước (nhấn một lần) tiếp theo (nhấn hai lần) mở tệp nhật ký (nhấn ba lần)"
+msgstr "Duyệt lịch sử giọng đọc: trước (nhấn một lần), sau (nhấn hai lần), mở tệp nhật ký (nhấn ba lần)"
 
-#: __init__.py:118
+#: __init__.py:204
 msgid "No URL"
 msgstr "Không có URL"
 
-#: __init__.py:130
+#: __init__.py:216
 msgid "No link found"
 msgstr "Không tìm thấy liên kết"
 
-#: __init__.py:69
-msgid "No text selected to append"
-msgstr "Chưa chọn văn bản để nối thêm"
+#: __init__.py:165
+msgid "No text at review cursor"
+msgstr "Không có văn bản tại con trỏ duyệt"
 
-#: __init__.py:30
+#: __init__.py:71
+msgid "No text selected to append"
+msgstr "Chưa chọn văn bản để thêm vào cuối"
+
+#: __init__.py:31
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:83
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "character"
+msgstr "ký tự"
+
+#: __init__.py:79
+#: __init__.py:80
+#: __init__.py:157
+msgid "characters"
+msgstr "ký tự"
+
+#: __init__.py:169
 msgid "copy URL (single) copy hyper link (double)"
-msgstr "sao chép URL (nhấn một lần) sao chép siêu liên kết (nhấn hai lần)"
+msgstr "sao chép URL (nhấn một lần), sao chép siêu liên kết (nhấn hai lần)"
 
-#: __init__.py:137
-msgid "copy and append (single) clear (double)"
-msgstr "sao chép và nối thêm (nhấn một lần) xóa trống clipboard (nhấn hai lần)"
-
-#: __init__.py:182
+#: __init__.py:223
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
-msgstr "sao chép câu thoại cuối (nhấn một lần) nối thêm câu thoại cuối (nhấn hai lần) sao chép cho đến câu thoại cuối (nhấn ba lần)"
+msgstr "sao chép câu đọc cuối cùng (nhấn một lần), thêm câu đọc cuối cùng vào cuối (nhấn hai lần), sao chép cho đến câu đọc cuối cùng (nhấn ba lần)"
+
+#: __init__.py:86
+msgid "total"
+msgstr "tổng cộng"
