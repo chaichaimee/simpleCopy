@@ -15,6 +15,7 @@ import logging
 import gui
 import wx
 import ctypes
+import core
 from ui import message as ui_message
 import tones
 from . import url_utils
@@ -61,8 +62,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		log.info("SimpleCopy: Module initialized")
 
 	def _on_speech_received(self, text):
+		# Append stripped text to avoid unwanted line breaks
 		if self._is_recording_active and text.strip():
-			self._captured_speech_buffer.append(text)
+			self._captured_speech_buffer.append(text.strip())
 
 	def _performAppendAction(self, obj):
 		try:
@@ -79,20 +81,21 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				char_label = _("character") if appended_char_count == 1 else _("characters")
 				total_label = _("character") if total_char_count == 1 else _("characters")
 
+				# Note: result["message"] must be pre-translated inside clipboard_utils.py using _()
 				if result.get("appended"):
 					speech.speak([
-						_(result["message"]),
+						result["message"],
 						f"{appended_char_count} {char_label}, ",
 						_("total"),
 						f"{total_char_count} {total_label}"
 					])
 				else:
 					speech.speak([
-						_(result["message"]),
+						result["message"],
 						f"{appended_char_count} {char_label}"
 					])
 			else:
-				speech.speak([_(result["message"])])
+				speech.speak([result["message"]])
 		except Exception as e:
 			log.error(f"Append action failed: {e}")
 			speech.speak([_("Error during append operation")])
@@ -129,7 +132,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if self._ctrl_shift_v_timer and self._ctrl_shift_v_timer.IsRunning():
 			self._ctrl_shift_v_timer.Stop()
 
-		self._ctrl_shift_v_timer = wx.CallLater(int(self._double_tap_threshold * 1000), self._execute_v_action)
+		# Using core.callLater to avoid lambda scope and deferred issues
+		self._ctrl_shift_v_timer = core.callLater(int(self._double_tap_threshold * 1000), self._execute_v_action)
 
 	def _execute_v_action(self):
 		if self._ctrl_shift_v_tap_count == 1:
@@ -181,7 +185,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if self._ctrl_shift_a_timer and self._ctrl_shift_a_timer.IsRunning():
 			self._ctrl_shift_a_timer.Stop()
 
-		self._ctrl_shift_a_timer = wx.CallLater(int(self._double_tap_threshold * 1000), self._execute_a_action)
+		# Using core.callLater to avoid lambda scope and deferred issues
+		self._ctrl_shift_a_timer = core.callLater(int(self._double_tap_threshold * 1000), self._execute_a_action)
 
 	def _execute_a_action(self):
 		if self._ctrl_shift_a_tap_count == 1:
@@ -233,7 +238,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 		if self._f9_timer and self._f9_timer.IsRunning():
 			self._f9_timer.Stop()
-		self._f9_timer = wx.CallLater(int(self._double_tap_threshold * 1000), self._execute_f9_action)
+		
+		# Using core.callLater to avoid lambda scope and deferred issues
+		self._f9_timer = core.callLater(int(self._double_tap_threshold * 1000), self._execute_f9_action)
 
 	def _execute_f9_action(self):
 		if self._f9_tap_count == 1:
@@ -270,6 +277,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			tones.beep(200, 100)
 			return
 
+		# Join captured lines with newline – no extra blank lines because entries are pre-stripped
 		combined_text = "\n".join(self._captured_speech_buffer)
 		if api.copyToClip(combined_text):
 			speech.speak([_("Copy Until Last")])
@@ -292,7 +300,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if self._shift_f9_timer and self._shift_f9_timer.IsRunning():
 			self._shift_f9_timer.Stop()
 
-		self._shift_f9_timer = wx.CallLater(int(self._double_tap_threshold * 1000), self._execute_shift_f9_action)
+		# Using core.callLater to avoid lambda scope and deferred issues
+		self._shift_f9_timer = core.callLater(int(self._double_tap_threshold * 1000), self._execute_shift_f9_action)
 
 	def _execute_shift_f9_action(self):
 		if self._shift_f9_tap_count == 1:

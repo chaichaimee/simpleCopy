@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.7.0\n"
+"Project-Id-Version: simpleCopy 2026.7.3\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-06-17 17:32+0700\n"
+"POT-Creation-Date: 2026-07-14 17:39+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: English\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:266
+#: __init__.py:273
 msgid "Append"
 msgstr "Append"
 
@@ -24,7 +24,7 @@ msgstr "Appended"
 msgid "Cannot append to non-text clipboard content"
 msgstr "Cannot append to non-text clipboard content"
 
-#: __init__.py:109
+#: __init__.py:112
 msgid "Clean"
 msgstr "Clean"
 
@@ -32,28 +32,28 @@ msgstr "Clean"
 msgid "Copied"
 msgstr "Copied"
 
-#: __init__.py:202
-#: __init__.py:214
+#: __init__.py:207
+#: __init__.py:219
 msgid "Copy"
 msgstr "Copy"
 
-#: __init__.py:275
+#: __init__.py:283
 msgid "Copy Until Last"
 msgstr "Copy Until Last"
 
-#: __init__.py:162
+#: __init__.py:166
 msgid "Copy failed"
 msgstr "Copy failed"
 
-#: __init__.py:158
+#: __init__.py:162
 msgid "Copy from review"
 msgstr "Copy from review"
 
-#: __init__.py:117
+#: __init__.py:120
 msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
 msgstr "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
 
-#: __init__.py:98
+#: __init__.py:101
 msgid "Error during append operation"
 msgstr "Error during append operation"
 
@@ -61,50 +61,50 @@ msgstr "Error during append operation"
 msgid "Error writing to clipboard"
 msgstr "Error writing to clipboard"
 
-#: __init__.py:280
+#: __init__.py:288
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
 msgstr "Navigate speech history: previous (single) next (double) open log file (triple)"
 
-#: __init__.py:204
+#: __init__.py:209
 msgid "No URL"
 msgstr "No URL"
 
-#: __init__.py:216
+#: __init__.py:221
 msgid "No link found"
 msgstr "No link found"
 
-#: __init__.py:165
+#: __init__.py:169
 msgid "No text at review cursor"
 msgstr "No text at review cursor"
 
-#: __init__.py:71
+#: __init__.py:73
 msgid "No text selected to append"
 msgstr "No text selected to append"
 
-#: __init__.py:31
+#: __init__.py:32
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:79
-#: __init__.py:80
-#: __init__.py:157
+#: __init__.py:81
+#: __init__.py:82
+#: __init__.py:161
 msgid "character"
 msgstr "character"
 
-#: __init__.py:79
-#: __init__.py:80
-#: __init__.py:157
+#: __init__.py:81
+#: __init__.py:82
+#: __init__.py:161
 msgid "characters"
 msgstr "characters"
 
-#: __init__.py:169
+#: __init__.py:173
 msgid "copy URL (single) copy hyper link (double)"
 msgstr "copy URL (single) copy hyper link (double)"
 
-#: __init__.py:223
+#: __init__.py:228
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
 msgstr "copy last speech (single) append last speech (double) copy until last speech (triple)"
 
-#: __init__.py:86
+#: __init__.py:89
 msgid "total"
 msgstr "total"

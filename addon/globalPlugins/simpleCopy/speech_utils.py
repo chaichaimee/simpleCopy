@@ -88,65 +88,65 @@ class SpeechHistoryHandler:
 			self._patched = False
 			log.info("Speech interception restored")
 
-	def _clean_sequence(self, seq):
-		"""
-		Remove FocusLossCancellableSpeechCommand and keep only strings.
-		Returns a new list that can be stored and spoken later.
-		"""
-		if isinstance(seq, (list, tuple)):
-			return [item for item in seq if not isinstance(item, FocusLossCancellableSpeechCommand)]
-		return seq
-
-	def _sequence_to_text(self, seq):
-		"""Convert a sequence (list/tuple of strings) to a single string for clipboard/file."""
+	def _get_sequence_text(self, seq):
 		if not seq:
 			return ""
+		
 		if isinstance(seq, str):
 			return seq
+			
 		if isinstance(seq, (list, tuple)):
-			strings = [item for item in seq if isinstance(item, str)]
-			return speechViewer.SPEECH_ITEM_SEPARATOR.join(strings)
+			valid_commands = [
+				command for command in seq 
+				if not isinstance(command, FocusLossCancellableSpeechCommand)
+			]
+			return speechViewer.SPEECH_ITEM_SEPARATOR.join(
+				[item for item in valid_commands if isinstance(item, str)]
+			)
+			
 		return ""
 
 	def _my_speak(self, sequence, *args, **kwargs):
 		if self._orig_speak:
 			self._orig_speak(sequence, *args, **kwargs)
 
-		cleaned_seq = self._clean_sequence(sequence)
-		if not cleaned_seq:
-			return
-
-		self.history.appendleft(cleaned_seq)
-		if self.callback:
-			text_version = self._sequence_to_text(cleaned_seq)
-			if text_version:
-				self.callback(text_version)
+		try:
+			text_version = self._get_sequence_text(sequence)
+			if not text_version:
+				return
+				
+			self.history.appendleft(sequence)
+			
+			clean_text = text_version.strip()
+			if clean_text and self.callback:
+				if "\n" not in clean_text:
+					clean_text += "\n"
+				self.callback(clean_text)
+		except Exception as e:
+			log.error(f"MySpeak processing error: {e}")
 
 	def get_latest_sequence(self):
-		"""Return the raw sequence of the most recent speech."""
 		return self.history[0] if self.history else None
 
 	def get_latest_text(self):
-		"""Return the string version of the most recent speech (for clipboard)."""
 		seq = self.get_latest_sequence()
 		if seq is None:
 			return ""
-		return self._sequence_to_text(seq)
+		return self._get_sequence_text(seq).strip()
 
 	def open_history_file(self):
 		lines = []
 		for seq in reversed(self.history):
-			text_line = self._sequence_to_text(seq)
-			if text_line.strip():
-				lines.append(text_line)
+			text_line = self._get_sequence_text(seq)
+			clean_line = text_line.strip()
+			if clean_line:
+				lines.append(clean_line)
 
-		# Remove duplicates while preserving order
 		seen = set()
 		unique_lines = []
 		for line in lines:
-			clean = line.strip()
-			if clean and clean not in seen:
-				seen.add(clean)
+			if line and line not in seen:
+				seen.add(line)
 				unique_lines.append(line)
 
 		try:
@@ -157,18 +157,12 @@ class SpeechHistoryHandler:
 			log.error(f"File access error: {e}")
 
 	def get_previous_sequence(self):
-		"""Return the raw sequence of the previous speech item."""
-		if not self.history:
-			return None
-		if not self.navigator.has_previous():
+		if not self.history or not self.navigator.has_previous():
 			return None
 		return self.navigator.move_backward()
 
 	def get_next_sequence(self):
-		"""Return the raw sequence of the next speech item."""
-		if not self.history:
-			return None
-		if not self.navigator.has_next():
+		if not self.history or not self.navigator.has_next():
 			return None
 		return self.navigator.move_forward()
 
