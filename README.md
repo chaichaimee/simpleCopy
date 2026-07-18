@@ -104,4 +104,4 @@ Your support helps keep this project alive and improving.
 
 ---
 
-© 2026 Chai Chaimee NVDA Add-on Released under GNU General Public License
+© 2026 Chai Chaimee NVDA Add-on Released under GNU General Public License 1
