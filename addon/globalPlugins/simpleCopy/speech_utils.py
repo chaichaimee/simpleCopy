@@ -4,11 +4,17 @@ import speech
 import speechViewer
 import os
 import globalVars
-from collections import deque
+from collections import deque, namedtuple
 import logging
 from eventHandler import FocusLossCancellableSpeechCommand
 
 log = logging.getLogger("nvda.simpleCopy.speech")
+
+# Snapshot of one intercepted speak() call.
+# text is extracted immediately inside _my_speak, the same moment record.txt
+# extracts it, so later reads never depend on the original sequence object
+# still being intact (NVDA may reuse/clear that list once speak() returns).
+SpeechHistoryEntry = namedtuple("SpeechHistoryEntry", ["sequence", "text"])
 
 
 class SpeechNavigator:
@@ -91,19 +97,19 @@ class SpeechHistoryHandler:
 	def _get_sequence_text(self, seq):
 		if not seq:
 			return ""
-		
+
 		if isinstance(seq, str):
 			return seq
-			
+
 		if isinstance(seq, (list, tuple)):
 			valid_commands = [
-				command for command in seq 
+				command for command in seq
 				if not isinstance(command, FocusLossCancellableSpeechCommand)
 			]
 			return speechViewer.SPEECH_ITEM_SEPARATOR.join(
 				[item for item in valid_commands if isinstance(item, str)]
 			)
-			
+
 		return ""
 
 	def _my_speak(self, sequence, *args, **kwargs):
@@ -111,36 +117,44 @@ class SpeechHistoryHandler:
 			self._orig_speak(sequence, *args, **kwargs)
 
 		try:
+			# Extract the full text right now, while sequence is still the
+			# exact list NVDA just built for this utterance. Once speak()
+			# returns, NVDA is free to reuse/clear/mutate that list, so any
+			# extraction done later (e.g. when the user presses F9) can
+			# silently come back short. Freezing the string here - the same
+			# moment record.txt does it - is what guarantees the full line.
 			text_version = self._get_sequence_text(sequence)
 			if not text_version:
 				return
-				
-			self.history.appendleft(sequence)
-			
+
 			clean_text = text_version.strip()
-			if clean_text and self.callback:
-				if "\n" not in clean_text:
-					clean_text += "\n"
-				self.callback(clean_text)
+			if not clean_text:
+				return
+
+			self.history.appendleft(SpeechHistoryEntry(sequence=sequence, text=clean_text))
+
+			if self.callback:
+				callback_text = clean_text
+				if "\n" not in callback_text:
+					callback_text += "\n"
+				self.callback(callback_text)
 		except Exception as e:
 			log.error(f"MySpeak processing error: {e}")
 
 	def get_latest_sequence(self):
-		return self.history[0] if self.history else None
+		return self.history[0].sequence if self.history else None
 
 	def get_latest_text(self):
-		seq = self.get_latest_sequence()
-		if seq is None:
-			return ""
-		return self._get_sequence_text(seq).strip()
+		# Return the text frozen at capture time - never re-derive it from
+		# the stored sequence, since that sequence may no longer hold the
+		# same content it did when it was spoken.
+		return self.history[0].text if self.history else ""
 
 	def open_history_file(self):
 		lines = []
-		for seq in reversed(self.history):
-			text_line = self._get_sequence_text(seq)
-			clean_line = text_line.strip()
-			if clean_line:
-				lines.append(clean_line)
+		for entry in self.history:
+			if entry.text:
+				lines.append(entry.text)
 
 		seen = set()
 		unique_lines = []
@@ -159,12 +173,14 @@ class SpeechHistoryHandler:
 	def get_previous_sequence(self):
 		if not self.history or not self.navigator.has_previous():
 			return None
-		return self.navigator.move_backward()
+		entry = self.navigator.move_backward()
+		return entry.sequence if entry else None
 
 	def get_next_sequence(self):
 		if not self.history or not self.navigator.has_next():
 			return None
-		return self.navigator.move_forward()
+		entry = self.navigator.move_forward()
+		return entry.sequence if entry else None
 
 	def reset_navigation(self):
 		self.navigator.reset()
