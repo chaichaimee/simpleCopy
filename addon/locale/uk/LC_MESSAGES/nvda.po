@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.7.0\n"
+"Project-Id-Version: simpleCopy 2026.9.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-06-17 17:32+0700\n"
-"PO-Revision-Date: 2026-06-17 18:06+0700\n"
+"POT-Creation-Date: 2026-08-16 16:13+0700\n"
+"PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Ukrainian\n"
 "Language: uk\n"
@@ -12,99 +12,185 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:266
+#: url_history.py:185
+msgid "&Cancel"
+msgstr "&Скасувати"
+
+#: url_history.py:184
+msgid "&OK"
+msgstr "&OK"
+
+#: __init__.py:291
 msgid "Append"
-msgstr "Додати в кінець"
+msgstr "Додати"
 
 #: clipboard_utils.py:215
 msgid "Appended"
-msgstr "Додано в кінець"
+msgstr "Додано"
 
 #: clipboard_utils.py:190
 msgid "Cannot append to non-text clipboard content"
 msgstr "Неможливо додати до нетекстового вмісту буфера обміну"
 
-#: __init__.py:109
+#: __init__.py:129
 msgid "Clean"
 msgstr "Очистити"
+
+#: url_history.py:354
+msgid "Clear"
+msgstr "Очистити"
+
+#: url_history.py:348
+msgid "Cleared all non-pinned items"
+msgstr "Очищено всі незакріплені елементи"
 
 #: clipboard_utils.py:215
 msgid "Copied"
 msgstr "Скопійовано"
 
-#: __init__.py:202
-#: __init__.py:214
+#: __init__.py:224
+#: __init__.py:237
+#: url_history.py:286
 msgid "Copy"
-msgstr "Скопіювати"
+msgstr "Копіювати"
 
-#: __init__.py:275
+#: __init__.py:300
 msgid "Copy Until Last"
 msgstr "Скопіювати до останнього"
 
-#: __init__.py:162
+#: __init__.py:182
+#: url_history.py:288
 msgid "Copy failed"
-msgstr "Помилка копіювання"
+msgstr "Не вдалося скопіювати"
 
-#: __init__.py:158
+#: __init__.py:178
 msgid "Copy from review"
-msgstr "Скопіювати з курсора перегляду"
+msgstr "Копіювати з курсора огляду"
 
-#: __init__.py:117
+#: __init__.py:137
 msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
-msgstr "Скопіювати/Додати в кінець виділений текст (одне натискання), Скопіювати з курсора перегляду (два натискання), Очистити буфер обміну (три натискання)"
+msgstr "Копіювати/додати виділений текст (одинарне) Копіювати з курсора огляду (подвійне) Очистити буфер обміну (потрійне)"
 
-#: __init__.py:98
+#: url_history.py:367
+msgid "Delete"
+msgstr "Видалити"
+
+#: url_history.py:296
+msgid "Deleted"
+msgstr "Видалено"
+
+#: url_history.py:175
+msgid "Display name (optional):"
+msgstr "Відображуване ім'я (необов'язково):"
+
+#: url_history.py:366
+msgid "Edit"
+msgstr "Редагувати"
+
+#: url_history.py:303
+msgid "Edit URL"
+msgstr "Редагувати URL"
+
+#: __init__.py:118
 msgid "Error during append operation"
-msgstr "Помилка під час додавання в кінець"
+msgstr "Помилка під час операції додавання"
 
 #: clipboard_utils.py:223
 msgid "Error writing to clipboard"
 msgstr "Помилка запису в буфер обміну"
 
-#: __init__.py:280
-msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
-msgstr "Навігація історією мовлення: попередня (одне натискання), наступна (два натискання), відкрити файл журналу (три натискання)"
+#: url_history.py:307
+msgid "Item edited"
+msgstr "Елемент відредаговано"
 
-#: __init__.py:204
+#: url_history.py:364
+msgid "Move Down"
+msgstr "Перемістити вниз"
+
+#: url_history.py:363
+msgid "Move Up"
+msgstr "Перемістити вгору"
+
+#: url_history.py:343
+msgid "Moved down"
+msgstr "Переміщено вниз"
+
+#: url_history.py:331
+msgid "Moved up"
+msgstr "Переміщено вгору"
+
+#: __init__.py:305
+msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
+msgstr "Навігація історією мовлення: попередня (одинарне) наступна (подвійне) відкрити файл журналу (потрійне)"
+
+#: __init__.py:227
 msgid "No URL"
 msgstr "Немає URL"
 
-#: __init__.py:216
+#: __init__.py:240
 msgid "No link found"
 msgstr "Посилання не знайдено"
 
-#: __init__.py:165
+#: __init__.py:185
 msgid "No text at review cursor"
-msgstr "Немає тексту в курсорі перегляду"
+msgstr "Немає тексту на курсорі огляду"
 
-#: __init__.py:71
+#: __init__.py:91
 msgid "No text selected to append"
-msgstr "Немає виділеного тексту для додавання в кінець"
+msgstr "Немає виділеного тексту для додавання"
 
-#: __init__.py:31
+#: url_history.py:360
+msgid "Pin"
+msgstr "Закріпити"
+
+#: url_history.py:319
+msgid "Pinned"
+msgstr "Закріплено"
+
+#: __init__.py:33
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:79
-#: __init__.py:80
-#: __init__.py:157
+#: url_history.py:225
+msgid "URL"
+msgstr "URL"
+
+#: url_history.py:209
+msgid "URL History"
+msgstr "Історія URL"
+
+#: url_history.py:170
+msgid "URL:"
+msgstr "URL:"
+
+#: url_history.py:360
+msgid "Unpin"
+msgstr "Відкріпити"
+
+#: url_history.py:319
+msgid "Unpinned"
+msgstr "Відкріплено"
+
+#: __init__.py:99
+#: __init__.py:100
+#: __init__.py:177
 msgid "character"
 msgstr "символ"
 
-#: __init__.py:79
-#: __init__.py:80
-#: __init__.py:157
+#: __init__.py:99
+#: __init__.py:100
+#: __init__.py:177
 msgid "characters"
-msgstr "символів"
+msgstr "символи"
 
-#: __init__.py:169
-msgid "copy URL (single) copy hyper link (double)"
-msgstr "скопіювати URL (одне натискання), скопіювати гіперпосилання (два натискання)"
+#: __init__.py:189
+msgid "copy URL (single) copy hyper link (double) open URL history (triple)"
+msgstr "скопіювати URL (одинарне) скопіювати гіперпосилання (подвійне) відкрити історію URL (потрійне)"
 
-#: __init__.py:223
+#: __init__.py:247
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
-msgstr "скопіювати останню фразу мовлення (одне натискання), додати останню фразу в кінець (два натискання), скопіювати до останньої фрази (три натискання)"
+msgstr "скопіювати останнє мовлення (одинарне) додати останнє мовлення (подвійне) скопіювати до останнього мовлення (потрійне)"
 
-#: __init__.py:86
+#: __init__.py:106
 msgid "total"
 msgstr "всього"

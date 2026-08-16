@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.7.0\n"
+"Project-Id-Version: simpleCopy 2026.9.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-06-17 17:32+0700\n"
-"PO-Revision-Date: 2026-06-17 18:01+0700\n"
+"POT-Creation-Date: 2026-08-16 16:13+0700\n"
+"PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Hindi\n"
 "Language: hi\n"
@@ -12,99 +12,185 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:266
+#: url_history.py:185
+msgid "&Cancel"
+msgstr "&रद्द करें"
+
+#: url_history.py:184
+msgid "&OK"
+msgstr "&ٹھیک ہے"
+
+#: __init__.py:291
 msgid "Append"
-msgstr "अंत में जोड़ें"
+msgstr "जोड़ें"
 
 #: clipboard_utils.py:215
 msgid "Appended"
-msgstr "अंत में जोड़ा गया"
+msgstr "जोड़ा गया"
 
 #: clipboard_utils.py:190
 msgid "Cannot append to non-text clipboard content"
-msgstr "गैर-पाठ्य क्लिपबोर्ड सामग्री के अंत में जोड़ा नहीं जा सकता"
+msgstr "गैर-पाठ क्लिपबोर्ड सामग्री में नहीं जोड़ा जा सकता"
 
-#: __init__.py:109
+#: __init__.py:129
 msgid "Clean"
 msgstr "साफ़ करें"
+
+#: url_history.py:354
+msgid "Clear"
+msgstr "साफ़ करें"
+
+#: url_history.py:348
+msgid "Cleared all non-pinned items"
+msgstr "सभी अनपिन किए गए आइटम साफ़ कर दिए गए"
 
 #: clipboard_utils.py:215
 msgid "Copied"
 msgstr "कॉपी किया गया"
 
-#: __init__.py:202
-#: __init__.py:214
+#: __init__.py:224
+#: __init__.py:237
+#: url_history.py:286
 msgid "Copy"
 msgstr "कॉपी करें"
 
-#: __init__.py:275
+#: __init__.py:300
 msgid "Copy Until Last"
-msgstr "आखिरी तक कॉपी करें"
+msgstr "अंतिम तक कॉपी करें"
 
-#: __init__.py:162
+#: __init__.py:182
+#: url_history.py:288
 msgid "Copy failed"
-msgstr "कॉपी करना विफल रहा"
+msgstr "कॉपी करने में विफल"
 
-#: __init__.py:158
+#: __init__.py:178
 msgid "Copy from review"
 msgstr "समीक्षा कर्सर से कॉपी करें"
 
-#: __init__.py:117
+#: __init__.py:137
 msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
-msgstr "चयनित पाठ कॉपी करें/अंत में जोड़ें (एक बार दबाएं), समीक्षा कर्सर से कॉपी करें (दो बार दबाएं), क्लिपबोर्ड साफ़ करें (तीन बार दबाएं)"
+msgstr "चयनित पाठ कॉपी/जोड़ें (एकल) समीक्षा कर्सर से कॉपी करें (डबल) क्लिपबोर्ड साफ़ करें (ट्रिपल)"
 
-#: __init__.py:98
+#: url_history.py:367
+msgid "Delete"
+msgstr "हटाएं"
+
+#: url_history.py:296
+msgid "Deleted"
+msgstr "हटाया गया"
+
+#: url_history.py:175
+msgid "Display name (optional):"
+msgstr "प्रदर्शित नाम (वैकल्पिक):"
+
+#: url_history.py:366
+msgid "Edit"
+msgstr "संपादित करें"
+
+#: url_history.py:303
+msgid "Edit URL"
+msgstr "URL संपादित करें"
+
+#: __init__.py:118
 msgid "Error during append operation"
-msgstr "अंत में जोड़ने की प्रक्रिया के दौरान त्रुटि"
+msgstr "जोड़ने की प्रक्रिया के दौरान त्रुटि"
 
 #: clipboard_utils.py:223
 msgid "Error writing to clipboard"
 msgstr "क्लिपबोर्ड पर लिखने में त्रुटि"
 
-#: __init__.py:280
+#: url_history.py:307
+msgid "Item edited"
+msgstr "आइटम संपादित किया गया"
+
+#: url_history.py:364
+msgid "Move Down"
+msgstr "नीचे ले जाएं"
+
+#: url_history.py:363
+msgid "Move Up"
+msgstr "ऊपर ले जाएं"
+
+#: url_history.py:343
+msgid "Moved down"
+msgstr "नीचे ले जाया गया"
+
+#: url_history.py:331
+msgid "Moved up"
+msgstr "ऊपर ले जाया गया"
+
+#: __init__.py:305
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
-msgstr "भाषण इतिहास को नेविगेट करें: पिछला (एक बार दबाएं), अगला (दो बार दबाएं), लॉग फ़ाइल खोलें (तीन बार दबाएं)"
+msgstr "वाक् इतिहास नेविगेट करें: पिछला (एकल) अगला (डबल) लॉग फ़ाइल खोलें (ट्रिपल)"
 
-#: __init__.py:204
+#: __init__.py:227
 msgid "No URL"
-msgstr "कोई URL नहीं है"
+msgstr "कोई URL नहीं"
 
-#: __init__.py:216
+#: __init__.py:240
 msgid "No link found"
 msgstr "कोई लिंक नहीं मिला"
 
-#: __init__.py:165
+#: __init__.py:185
 msgid "No text at review cursor"
 msgstr "समीक्षा कर्सर पर कोई पाठ नहीं है"
 
-#: __init__.py:71
+#: __init__.py:91
 msgid "No text selected to append"
-msgstr "अंत में जोड़ने के लिए कोई पाठ चयनित नहीं है"
+msgstr "जोड़ने के लिए कोई पाठ चयनित नहीं है"
 
-#: __init__.py:31
+#: url_history.py:360
+msgid "Pin"
+msgstr "पिन करें"
+
+#: url_history.py:319
+msgid "Pinned"
+msgstr "पिन किया गया"
+
+#: __init__.py:33
 msgid "Simple Copy"
-msgstr "Simple Copy"
+msgstr "सिंपल कॉपी"
 
-#: __init__.py:79
-#: __init__.py:80
-#: __init__.py:157
+#: url_history.py:225
+msgid "URL"
+msgstr "URL"
+
+#: url_history.py:209
+msgid "URL History"
+msgstr "URL इतिहास"
+
+#: url_history.py:170
+msgid "URL:"
+msgstr "URL:"
+
+#: url_history.py:360
+msgid "Unpin"
+msgstr "अनपिन करें"
+
+#: url_history.py:319
+msgid "Unpinned"
+msgstr "अनपिन किया गया"
+
+#: __init__.py:99
+#: __init__.py:100
+#: __init__.py:177
 msgid "character"
 msgstr "वर्ण"
 
-#: __init__.py:79
-#: __init__.py:80
-#: __init__.py:157
+#: __init__.py:99
+#: __init__.py:100
+#: __init__.py:177
 msgid "characters"
 msgstr "वर्ण"
 
-#: __init__.py:169
-msgid "copy URL (single) copy hyper link (double)"
-msgstr "URL कॉपी करें (एक बार दबाएं), हाइपरलिंक कॉपी करें (दो बार दबाएं)"
+#: __init__.py:189
+msgid "copy URL (single) copy hyper link (double) open URL history (triple)"
+msgstr "URL कॉपी करें (एकल) हाइपरलिंक कॉपी करें (डबल) URL इतिहास खोलें (ट्रिपल)"
 
-#: __init__.py:223
+#: __init__.py:247
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
-msgstr "अंतिम भाषण कॉपी करें (एक बार दबाएं), अंतिम भाषण अंत में जोड़ें (दो बार दबाएं), अंतिम भाषण तक कॉपी करें (तीन बार दबाएं)"
+msgstr "अंतिम वाक् कॉपी करें (एकल) अंतिम वाक् जोड़ें (डबल) अंतिम वाक् तक कॉपी करें (ट्रिपल)"
 
-#: __init__.py:86
+#: __init__.py:106
 msgid "total"
 msgstr "कुल"

@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.7.0\n"
+"Project-Id-Version: simpleCopy 2026.9.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-06-17 17:32+0700\n"
-"PO-Revision-Date: 2026-06-17 18:01+0700\n"
+"POT-Creation-Date: 2026-08-16 16:13+0700\n"
+"PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -12,99 +12,185 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:266
+#: url_history.py:185
+msgid "&Cancel"
+msgstr "キャンセル(&C)"
+
+#: url_history.py:184
+msgid "&OK"
+msgstr "OK(&O)"
+
+#: __init__.py:291
 msgid "Append"
 msgstr "追加"
 
 #: clipboard_utils.py:215
 msgid "Appended"
-msgstr "追加されました"
+msgstr "追加しました"
 
 #: clipboard_utils.py:190
 msgid "Cannot append to non-text clipboard content"
-msgstr "テキスト以外のクリップボードの内容には追加できません"
+msgstr "非テキストのクリップボードコンテンツに追加できません"
 
-#: __init__.py:109
+#: __init__.py:129
 msgid "Clean"
-msgstr "消去"
+msgstr "クリーン"
+
+#: url_history.py:354
+msgid "Clear"
+msgstr "クリア"
+
+#: url_history.py:348
+msgid "Cleared all non-pinned items"
+msgstr "ピン留めされていないすべてのアイテムをクリアしました"
 
 #: clipboard_utils.py:215
 msgid "Copied"
-msgstr "コピーされました"
+msgstr "コピーしました"
 
-#: __init__.py:202
-#: __init__.py:214
+#: __init__.py:224
+#: __init__.py:237
+#: url_history.py:286
 msgid "Copy"
 msgstr "コピー"
 
-#: __init__.py:275
+#: __init__.py:300
 msgid "Copy Until Last"
 msgstr "最後までコピー"
 
-#: __init__.py:162
+#: __init__.py:182
+#: url_history.py:288
 msgid "Copy failed"
 msgstr "コピーに失敗しました"
 
-#: __init__.py:158
+#: __init__.py:178
 msgid "Copy from review"
 msgstr "レビューカーソルからコピー"
 
-#: __init__.py:117
+#: __init__.py:137
 msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
-msgstr "選択されたテキストをコピー/追加（1回押す）、レビューカーソルからコピー（2回押す）、クリップボードを消去（3回押す）"
+msgstr "選択テキストのコピー/追加 (1回) レビューカーソルからコピー (2回) クリップボードのクリア (3回)"
 
-#: __init__.py:98
+#: url_history.py:367
+msgid "Delete"
+msgstr "削除"
+
+#: url_history.py:296
+msgid "Deleted"
+msgstr "削除しました"
+
+#: url_history.py:175
+msgid "Display name (optional):"
+msgstr "表示名 (オプション):"
+
+#: url_history.py:366
+msgid "Edit"
+msgstr "編集"
+
+#: url_history.py:303
+msgid "Edit URL"
+msgstr "URL の編集"
+
+#: __init__.py:118
 msgid "Error during append operation"
-msgstr "追加処理中にエラーが発生しました"
+msgstr "追加操作中にエラーが発生しました"
 
 #: clipboard_utils.py:223
 msgid "Error writing to clipboard"
 msgstr "クリップボードへの書き込みエラー"
 
-#: __init__.py:280
+#: url_history.py:307
+msgid "Item edited"
+msgstr "アイテムを編集しました"
+
+#: url_history.py:364
+msgid "Move Down"
+msgstr "下へ移動"
+
+#: url_history.py:363
+msgid "Move Up"
+msgstr "上へ移動"
+
+#: url_history.py:343
+msgid "Moved down"
+msgstr "下へ移動しました"
+
+#: url_history.py:331
+msgid "Moved up"
+msgstr "上へ移動しました"
+
+#: __init__.py:305
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
-msgstr "音声履歴の移動：前へ（1回押す）、次へ（2回押す）、ログファイルを開く（3回押す）"
+msgstr "音声履歴の移動: 前へ (1回) 次へ (2回) ログファイルを開く (3回)"
 
-#: __init__.py:204
+#: __init__.py:227
 msgid "No URL"
-msgstr "URLなし"
+msgstr "URL がありません"
 
-#: __init__.py:216
+#: __init__.py:240
 msgid "No link found"
 msgstr "リンクが見つかりません"
 
-#: __init__.py:165
+#: __init__.py:185
 msgid "No text at review cursor"
-msgstr "レビューカーソルにテキストがありません"
+msgstr "レビューカーソル位置にテキストがありません"
 
-#: __init__.py:71
+#: __init__.py:91
 msgid "No text selected to append"
 msgstr "追加するテキストが選択されていません"
 
-#: __init__.py:31
+#: url_history.py:360
+msgid "Pin"
+msgstr "ピン留め"
+
+#: url_history.py:319
+msgid "Pinned"
+msgstr "ピン留めされました"
+
+#: __init__.py:33
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: __init__.py:79
-#: __init__.py:80
-#: __init__.py:157
+#: url_history.py:225
+msgid "URL"
+msgstr "URL"
+
+#: url_history.py:209
+msgid "URL History"
+msgstr "URL 履歴"
+
+#: url_history.py:170
+msgid "URL:"
+msgstr "URL:"
+
+#: url_history.py:360
+msgid "Unpin"
+msgstr "ピン留め解除"
+
+#: url_history.py:319
+msgid "Unpinned"
+msgstr "ピン留め解除されました"
+
+#: __init__.py:99
+#: __init__.py:100
+#: __init__.py:177
 msgid "character"
 msgstr "文字"
 
-#: __init__.py:79
-#: __init__.py:80
-#: __init__.py:157
+#: __init__.py:99
+#: __init__.py:100
+#: __init__.py:177
 msgid "characters"
 msgstr "文字"
 
-#: __init__.py:169
-msgid "copy URL (single) copy hyper link (double)"
-msgstr "URLをコピー（1回押す）、ハイパーリンクをコピー（2回押す）"
+#: __init__.py:189
+msgid "copy URL (single) copy hyper link (double) open URL history (triple)"
+msgstr "URL のコピー (1回) ハイパーリンクのコピー (2回) URL 履歴を開く (3回)"
 
-#: __init__.py:223
+#: __init__.py:247
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
-msgstr "最後の音声をコピー（1回押す）、最後の音声を追加（2回押す）、最後の音声までコピー（3回押す）"
+msgstr "最後の音声のコピー (1回) 最後の音声の追加 (2回) 最後の一節までコピー (3回)"
 
-#: __init__.py:86
+#: __init__.py:106
 msgid "total"
 msgstr "合計"

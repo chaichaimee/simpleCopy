@@ -22,6 +22,7 @@ from . import url_utils
 from . import clipboard_utils
 from . import speech_utils
 from . import reviewCursor
+from . import url_history
 
 log = logging.getLogger("nvda.simpleCopy")
 
@@ -59,12 +60,29 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self.url_handler = url_utils.URLHandler()
 		self.speech_history = speech_utils.SpeechHistoryHandler(callback=self._on_speech_received)
 		self.review_cursor_handler = reviewCursor.ReviewCursorHandler()
+		self.url_history_handler = url_history.URLHistoryManager()
+		self.url_history_dialog = None
 		log.info("SimpleCopy: Module initialized")
 
+	def _is_state_echo_duplicate(self, previous_text, current_text):
+		if not previous_text or not current_text:
+			return False
+		previous_without_checkbox_role = previous_text.replace(" check box", " ").strip()
+		previous_tokens = set(previous_without_checkbox_role.lower().split())
+		current_tokens = set(current_text.lower().split())
+		return bool(previous_tokens) and previous_tokens.issubset(current_tokens)
+
 	def _on_speech_received(self, text):
-		# Append stripped text to avoid unwanted line breaks
-		if self._is_recording_active and text.strip():
-			self._captured_speech_buffer.append(text.strip())
+		clean_text = text.strip()
+		if not self._is_recording_active or not clean_text:
+			return
+
+		if self._captured_speech_buffer and self._is_state_echo_duplicate(
+			self._captured_speech_buffer[-1], clean_text
+		):
+			self._captured_speech_buffer[-1] = clean_text
+		else:
+			self._captured_speech_buffer.append(clean_text)
 
 	def _performAppendAction(self, obj):
 		try:
@@ -81,7 +99,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				char_label = _("character") if appended_char_count == 1 else _("characters")
 				total_label = _("character") if total_char_count == 1 else _("characters")
 
-				# Note: result["message"] must be pre-translated inside clipboard_utils.py using _()
 				if result.get("appended"):
 					speech.speak([
 						result["message"],
@@ -132,7 +149,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if self._ctrl_shift_v_timer and self._ctrl_shift_v_timer.IsRunning():
 			self._ctrl_shift_v_timer.Stop()
 
-		# Using core.callLater to avoid lambda scope and deferred issues
 		self._ctrl_shift_v_timer = core.callLater(int(self._double_tap_threshold * 1000), self._execute_v_action)
 
 	def _execute_v_action(self):
@@ -170,7 +186,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			log.warning("No text retrieved from review cursor")
 
 	@scriptHandler.script(
-		description=_("copy URL (single) copy hyper link (double)"),
+		description=_("copy URL (single) copy hyper link (double) open URL history (triple)"),
 		gesture="kb:control+shift+a",
 		category=scriptCategory
 	)
@@ -185,14 +201,15 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if self._ctrl_shift_a_timer and self._ctrl_shift_a_timer.IsRunning():
 			self._ctrl_shift_a_timer.Stop()
 
-		# Using core.callLater to avoid lambda scope and deferred issues
 		self._ctrl_shift_a_timer = core.callLater(int(self._double_tap_threshold * 1000), self._execute_a_action)
 
 	def _execute_a_action(self):
 		if self._ctrl_shift_a_tap_count == 1:
 			self._copyBrowserUrl()
-		elif self._ctrl_shift_a_tap_count >= 2:
+		elif self._ctrl_shift_a_tap_count == 2:
 			self._copyHyperlinkUrl()
+		elif self._ctrl_shift_a_tap_count >= 3:
+			self.show_url_history()
 		self._ctrl_shift_a_tap_count = 0
 
 	def _copyBrowserUrl(self):
@@ -205,6 +222,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			url = self.url_handler.get_current_url()
 			if url and api.copyToClip(url):
 				speech.speak([_("Copy"), url])
+				self.url_history_handler.add_item(url)
 			else:
 				ui_message(_("No URL"))
 		else:
@@ -217,6 +235,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				url = self.url_handler.get_link_url(obj)
 				if url and api.copyToClip(url):
 					speech.speak([_("Copy"), url])
+					self.url_history_handler.add_item(url)
 				else:
 					ui_message(_("No link found"))
 			except Exception as e:
@@ -238,8 +257,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 		if self._f9_timer and self._f9_timer.IsRunning():
 			self._f9_timer.Stop()
-		
-		# Using core.callLater to avoid lambda scope and deferred issues
+
 		self._f9_timer = core.callLater(int(self._double_tap_threshold * 1000), self._execute_f9_action)
 
 	def _execute_f9_action(self):
@@ -277,7 +295,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			tones.beep(200, 100)
 			return
 
-		# Join captured lines with newline – no extra blank lines because entries are pre-stripped
 		combined_text = "\n".join(self._captured_speech_buffer)
 		if api.copyToClip(combined_text):
 			speech.speak([_("Copy Until Last")])
@@ -300,7 +317,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if self._shift_f9_timer and self._shift_f9_timer.IsRunning():
 			self._shift_f9_timer.Stop()
 
-		# Using core.callLater to avoid lambda scope and deferred issues
 		self._shift_f9_timer = core.callLater(int(self._double_tap_threshold * 1000), self._execute_shift_f9_action)
 
 	def _execute_shift_f9_action(self):
@@ -326,6 +342,22 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		else:
 			tones.beep(200, 100)
 
+	def show_url_history(self):
+		if self.url_history_dialog and self.url_history_dialog.IsShown():
+			self.url_history_dialog.Raise()
+			return
+		self.url_history_dialog = url_history.URLHistoryDialog(gui.mainFrame, self.url_history_handler, self)
+		gui.mainFrame.prePopup()
+		self.url_history_dialog.Show()
+		self.url_history_dialog.CentreOnScreen()
+		self.url_history_dialog.Raise()
+		gui.mainFrame.postPopup()
+		log.info("URL History dialog shown")
+
 	def terminate(self):
 		self.speech_history.restore_patch()
+		if self.url_history_dialog:
+			self.url_history_dialog.Destroy()
+		if hasattr(self, "url_history_handler"):
+			self.url_history_handler.save(immediate=True)
 		super().terminate()

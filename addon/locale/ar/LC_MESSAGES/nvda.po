@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.7.0\n"
+"Project-Id-Version: simpleCopy 2026.9.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-06-17 17:32+0700\n"
-"PO-Revision-Date: 2026-06-17 17:57+0700\n"
+"POT-Creation-Date: 2026-08-16 16:13+0700\n"
+"PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Arabic\n"
 "Language: ar\n"
@@ -12,7 +12,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: __init__.py:266
+#: url_history.py:185
+msgid "&Cancel"
+msgstr "&إلغاء"
+
+#: url_history.py:184
+msgid "&OK"
+msgstr "&موافق"
+
+#: __init__.py:291
 msgid "Append"
 msgstr "إلحاق"
 
@@ -22,89 +30,167 @@ msgstr "تم الإلحاق"
 
 #: clipboard_utils.py:190
 msgid "Cannot append to non-text clipboard content"
-msgstr "لا يمكن إلحاق محتوى غير نصي بالحافظة"
+msgstr "لا يمكن الإلحاق بمحتوى الحافظة غير النصي"
 
-#: __init__.py:109
+#: __init__.py:129
 msgid "Clean"
+msgstr "تنظيف"
+
+#: url_history.py:354
+msgid "Clear"
 msgstr "مسح"
+
+#: url_history.py:348
+msgid "Cleared all non-pinned items"
+msgstr "تم مسح جميع العناصر غير المثبتة"
 
 #: clipboard_utils.py:215
 msgid "Copied"
 msgstr "تم النسخ"
 
-#: __init__.py:202
-#: __init__.py:214
+#: __init__.py:224
+#: __init__.py:237
+#: url_history.py:286
 msgid "Copy"
 msgstr "نسخ"
 
-#: __init__.py:275
+#: __init__.py:300
 msgid "Copy Until Last"
 msgstr "نسخ حتى الأخير"
 
-#: __init__.py:162
+#: __init__.py:182
+#: url_history.py:288
 msgid "Copy failed"
 msgstr "فشل النسخ"
 
-#: __init__.py:158
+#: __init__.py:178
 msgid "Copy from review"
-msgstr "نسخ من مؤشر المراجعة"
+msgstr "نسخ من مؤشر الاستعراض"
 
-#: __init__.py:117
+#: __init__.py:137
 msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
-msgstr "نسخ/إلحاق النص المحدد (ضغطة واحدة)، نسخ من مؤشر المراجعة (ضغطتان)، مسح الحافظة (ثلاث ضغطات)"
+msgstr "نسخ/إلحاق النص المحدد (نقرة واحدة) نسخ من مؤشر الاستعراض (نقرتان) مسح الحافظة (ثلاث نقرات)"
 
-#: __init__.py:98
+#: url_history.py:367
+msgid "Delete"
+msgstr "حذف"
+
+#: url_history.py:296
+msgid "Deleted"
+msgstr "تم الحذف"
+
+#: url_history.py:175
+msgid "Display name (optional):"
+msgstr "اسم العرض (اختياري):"
+
+#: url_history.py:366
+msgid "Edit"
+msgstr "تعديل"
+
+#: url_history.py:303
+msgid "Edit URL"
+msgstr "تعديل الرابط"
+
+#: __init__.py:118
 msgid "Error during append operation"
 msgstr "خطأ أثناء عملية الإلحاق"
 
 #: clipboard_utils.py:223
 msgid "Error writing to clipboard"
-msgstr "خطأ أثناء الكتابة في الحافظة"
+msgstr "خطأ في الكتابة إلى الحافظة"
 
-#: __init__.py:280
+#: url_history.py:307
+msgid "Item edited"
+msgstr "تم تعديل العنصر"
+
+#: url_history.py:364
+msgid "Move Down"
+msgstr "تحريك للأسفل"
+
+#: url_history.py:363
+msgid "Move Up"
+msgstr "تحريك للأعلى"
+
+#: url_history.py:343
+msgid "Moved down"
+msgstr "تم التحريك للأسفل"
+
+#: url_history.py:331
+msgid "Moved up"
+msgstr "تم التحريك للأعلى"
+
+#: __init__.py:305
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
-msgstr "تنقل في سجل النطق: السابق (ضغطة واحدة)، التالي (ضغطتان)، فتح ملف السجل (ثلاث ضغطات)"
+msgstr "التنقل في تاريخ النطق: السابق (نقرة واحدة) التالي (نقرتان) فتح ملف السجل (ثلاث نقرات)"
 
-#: __init__.py:204
+#: __init__.py:227
 msgid "No URL"
-msgstr "لا يوجد رابط URL"
+msgstr "لا يوجد رابط"
 
-#: __init__.py:216
+#: __init__.py:240
 msgid "No link found"
 msgstr "لم يتم العثور على رابط"
 
-#: __init__.py:165
+#: __init__.py:185
 msgid "No text at review cursor"
-msgstr "لا يوجد نص عند مؤشر المراجعة"
+msgstr "لا يوجد نص عند مؤشر الاستعراض"
 
-#: __init__.py:71
+#: __init__.py:91
 msgid "No text selected to append"
-msgstr "لم يتم تحديد نص لإلحاقه"
+msgstr "لم يتم تحديد نص للإلحاق"
 
-#: __init__.py:31
+#: url_history.py:360
+msgid "Pin"
+msgstr "تثبيت"
+
+#: url_history.py:319
+msgid "Pinned"
+msgstr "تم التثبيت"
+
+#: __init__.py:33
 msgid "Simple Copy"
-msgstr "Simple Copy"
+msgstr "نسخ بسيط"
 
-#: __init__.py:79
-#: __init__.py:80
-#: __init__.py:157
+#: url_history.py:225
+msgid "URL"
+msgstr "الرابط"
+
+#: url_history.py:209
+msgid "URL History"
+msgstr "تاريخ الروابط"
+
+#: url_history.py:170
+msgid "URL:"
+msgstr "الرابط:"
+
+#: url_history.py:360
+msgid "Unpin"
+msgstr "إلغاء التثبيت"
+
+#: url_history.py:319
+msgid "Unpinned"
+msgstr "تم إلغاء التثبيت"
+
+#: __init__.py:99
+#: __init__.py:100
+#: __init__.py:177
 msgid "character"
 msgstr "حرف"
 
-#: __init__.py:79
-#: __init__.py:80
-#: __init__.py:157
+#: __init__.py:99
+#: __init__.py:100
+#: __init__.py:177
 msgid "characters"
 msgstr "أحرف"
 
-#: __init__.py:169
-msgid "copy URL (single) copy hyper link (double)"
-msgstr "نسخ رابط URL (ضغطة واحدة)، نسخ الارتباط التشعبي (ضغطتان)"
+#: __init__.py:189
+msgid "copy URL (single) copy hyper link (double) open URL history (triple)"
+msgstr "نسخ الرابط (نقرة واحدة) نسخ الارتباط التشعبي (نقرتان) فتح تاريخ الروابط (ثلاث نقرات)"
 
-#: __init__.py:223
+#: __init__.py:247
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
-msgstr "نسخ النطق الأخير (ضغطة واحدة)، إلحاق النطق الأخير (ضغطتان)، نسخ حتى النطق الأخير (ثلاث ضغطات)"
+msgstr "نسخ النطق الأخير (نقرة واحدة) إلحاق النطق الأخير (نقرتان) نسخ حتى النطق الأخير (ثلاث نقرات)"
 
-#: __init__.py:86
+#: __init__.py:106
 msgid "total"
 msgstr "الإجمالي"

@@ -10,10 +10,6 @@ from eventHandler import FocusLossCancellableSpeechCommand
 
 log = logging.getLogger("nvda.simpleCopy.speech")
 
-# Snapshot of one intercepted speak() call.
-# text is extracted immediately inside _my_speak, the same moment record.txt
-# extracts it, so later reads never depend on the original sequence object
-# still being intact (NVDA may reuse/clear that list once speak() returns).
 SpeechHistoryEntry = namedtuple("SpeechHistoryEntry", ["sequence", "text"])
 
 
@@ -112,17 +108,19 @@ class SpeechHistoryHandler:
 
 		return ""
 
+	def _is_state_echo_duplicate(self, previous_text, current_text):
+		if not previous_text or not current_text:
+			return False
+		previous_without_checkbox_role = previous_text.replace(" check box", " ").strip()
+		previous_tokens = set(previous_without_checkbox_role.lower().split())
+		current_tokens = set(current_text.lower().split())
+		return bool(previous_tokens) and previous_tokens.issubset(current_tokens)
+
 	def _my_speak(self, sequence, *args, **kwargs):
 		if self._orig_speak:
 			self._orig_speak(sequence, *args, **kwargs)
 
 		try:
-			# Extract the full text right now, while sequence is still the
-			# exact list NVDA just built for this utterance. Once speak()
-			# returns, NVDA is free to reuse/clear/mutate that list, so any
-			# extraction done later (e.g. when the user presses F9) can
-			# silently come back short. Freezing the string here - the same
-			# moment record.txt does it - is what guarantees the full line.
 			text_version = self._get_sequence_text(sequence)
 			if not text_version:
 				return
@@ -131,7 +129,10 @@ class SpeechHistoryHandler:
 			if not clean_text:
 				return
 
-			self.history.appendleft(SpeechHistoryEntry(sequence=sequence, text=clean_text))
+			if self.history and self._is_state_echo_duplicate(self.history[0].text, clean_text):
+				self.history[0] = SpeechHistoryEntry(sequence=sequence, text=clean_text)
+			else:
+				self.history.appendleft(SpeechHistoryEntry(sequence=sequence, text=clean_text))
 
 			if self.callback:
 				callback_text = clean_text
@@ -145,9 +146,6 @@ class SpeechHistoryHandler:
 		return self.history[0].sequence if self.history else None
 
 	def get_latest_text(self):
-		# Return the text frozen at capture time - never re-derive it from
-		# the stored sequence, since that sequence may no longer hold the
-		# same content it did when it was spoken.
 		return self.history[0].text if self.history else ""
 
 	def open_history_file(self):

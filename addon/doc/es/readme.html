@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Complemento simpleCopy para NVDA</title>
+<title>simpleCopy NVDA Add-on</title>
 <style>
 body {
     font-family: Arial, sans-serif;
@@ -64,16 +64,16 @@ b {
 <div class="container">
 
 <div class="section">
-    <img src="https://www.nvaccess.org/files/nvda/documentation/userGuide/images/nvda.ico" alt="Logo de NVDA" class="nvda-logo">
+    <img src="https://www.nvaccess.org/files/nvda/documentation/userGuide/images/nvda.ico" alt="NVDA Logo" class="nvda-logo">
     <h1>simpleCopy</h1>
 <br>
-<p style="text-align: center; font-size: 1.2em; color: #2c3e50;"><b>Copie, añada y gestione texto de manera eficiente con NVDA</b></p>
+<p style="text-align: center; font-size: 1.2em; color: #2c3e50;"><b>Copia, añade y gestiona texto eficientemente con NVDA</b></p>
 </div>
 
 <br>
 
 <div class="section">
-    <p style="text-align: center;"><b>autor:</b> chai chaimee</p>
+    <p style="text-align: center;"><b>author:</b> chai chaimee</p>
     <p style="text-align: center;"><b>url:</b> https://github.com/chaichaimee/simpleCopy</p>
 </div>
 
@@ -82,9 +82,9 @@ b {
 <div class="section">
     <h2>Descripción</h2>
     <br>
-    <p><b>simpleCopy</b> es un complemento ligero para NVDA que simplifica la copia de texto, la extracción de URL y la gestión del historial de voz.</p>
+    <p><b>simpleCopy</b> es un complemento ligero para NVDA que simplifica la copia de textos, la extracción de URLs, la gestión del historial de voz y la organización del historial de URLs.</p>
     <br>
-    <p>Esta herramienta le ayuda a capturar y organizar información rápidamente sin interrumpir su flujo de trabajo. Ya sea que esté copiando texto, capturando enlaces web o guardando contenido hablado, simpleCopy proporciona atajos de teclado intuitivos que funcionan perfectamente con NVDA.</p>
+    <p>Esta herramienta te ayuda a capturar y organizar información rápidamente sin interrumpir tu flujo de trabajo. Ya sea que estés copiando texto, capturando enlaces web, guardando contenido pronunciado o gestionando URLs de uso frecuente, simpleCopy ofrece atajos de teclado intuitivos que funcionan perfectamente con NVDA.</p>
 </div>
 
 <br>
@@ -92,24 +92,25 @@ b {
 <div class="section">
     <h2>Atajos de teclado</h2>
     <br>
-    <p>Todos los comandos utilizan un sistema de pulsaciones múltiples. Pulse la combinación de teclas una, dos o tres veces en rápida sucesión para realizar diferentes acciones.</p>
+    <p>Todos los comandos utilizan un sistema de pulsación múltiple. Presiona la combinación de teclas una, dos o tres veces en rápida sucesión para realizar diferentes acciones.</p>
     <br>
 
     <div class="hotkey">
-        <h3>CTRL+Mayús+A — Captura de URL y enlaces</h3>
+        <h3>CTRL+Shift+A — URL, enlace e historial de URLs</h3>
         <div class="tap-explanation">
-            <p><b>Una pulsación:</b> Copia la URL de la página web actual.</p>
-            <p><b>Dos pulsaciones:</b> Copia la URL de destino del hipervínculo enfocado.</p>
+            <p><b>Pulsación simple:</b> Copia la URL de la página web actual.</p>
+            <p><b>Pulsación doble:</b> Copia la URL de destino del hiperenlace enfocado.</p>
+            <p><b>Pulsación triple:</b> Abre el cuadro de diálogo Historial de URLs para gestionar las URLs e hiperenlaces guardados.</p>
         </div>
     </div>
     <br>
 
     <div class="hotkey">
-        <h3>CTRL+Mayús+V — Copiar, añadir y gestionar el portapapeles</h3>
+        <h3>CTRL+Shift+V — Copiar texto, añadir y gestión del portapapeles</h3>
         <div class="tap-explanation">
-            <p><b>Una pulsación:</b> Copia el texto seleccionado. Si ya hay texto en el portapapeles, la nueva selección se añade a él.</p>
-            <p><b>Dos pulsaciones:</b> Copia el texto desde la posición actual del cursor de revisión. Funciona con cualquier selección realizada con el cursor de revisión de NVDA, incluyendo selecciones de varias líneas y selección de documento completo.</p>
-            <p><b>Tres pulsaciones:</b> Borra todo el contenido del portapapeles.</p>
+            <p><b>Pulsación simple:</b> Copia el texto seleccionado. Si ya existe texto en el portapapeles, la nueva selección se añade al final.</p>
+            <p><b>Pulsación doble:</b> Copia el texto desde la posición actual del cursor de revisión. Esto funciona con cualquier selección realizada usando el cursor de revisión de NVDA, incluidas selecciones de múltiples líneas y de todo el documento.</p>
+            <p><b>Pulsación triple:</b> Borra todo el contenido del portapapeles.</p>
         </div>
     </div>
     <br>
@@ -117,19 +118,19 @@ b {
     <div class="hotkey">
         <h3>F9 — Captura y gestión de voz</h3>
         <div class="tap-explanation">
-            <p><b>Una pulsación:</b> Copia la salida de voz más reciente de NVDA.</p>
-            <p><b>Dos pulsaciones:</b> Añade la salida de voz más reciente al contenido existente del portapapeles.</p>
-            <p><b>Tres pulsaciones:</b> Copia toda la salida de voz acumulada desde la primera pulsación de F9.</p>
+            <p><b>Pulsación simple:</b> Copia la salida de voz más reciente de NVDA.</p>
+            <p><b>Pulsación doble:</b> Añade la salida de voz más reciente al contenido existente del portapapeles.</p>
+            <p><b>Pulsación triple:</b> Copia toda la salida de voz acumulada desde la primera pulsación de F9.</p>
         </div>
     </div>
     <br>
 
     <div class="hotkey">
-        <h3>Mayús+F9 — Navegación por el historial de voz</h3>
+        <h3>Shift+F9 — Navegación por el historial de voz</h3>
         <div class="tap-explanation">
-            <p><b>Una pulsación:</b> Navega al elemento anterior del historial de voz.</p>
-            <p><b>Dos pulsaciones:</b> Navega al siguiente elemento del historial de voz.</p>
-            <p><b>Tres pulsaciones:</b> Abre el archivo de registro completo del historial de voz.</p>
+            <p><b>Pulsación simple:</b> Navega al elemento anterior del historial de voz.</p>
+            <p><b>Pulsación doble:</b> Navega al siguiente elemento del historial de voz.</p>
+            <p><b>Pulsación triple:</b> Abre el archivo de registro completo del historial de voz.</p>
         </div>
     </div>
 </div>
@@ -143,75 +144,95 @@ b {
     <br>
 
     <div class="feature-item">
-        <h3>1. Copiar URL de página web</h3>
-        <p>Pulse <b>CTRL+Mayús+A una vez</b> mientras navega por cualquier sitio web. La URL de la página actual se copia en su portapapeles. NVDA lo confirma leyendo la URL copiada.</p>
+        <h3>1. Copia de URL de página web</h3>
+        <p>Presiona <b>CTRL+Shift+A una vez</b> mientras navegas por cualquier sitio web. La URL de la página actual se copia en tu portapapeles. NVDA lo confirma anunciando la URL copiada.</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>2. Extraer URL de hipervínculo</h3>
-        <p>Enfoque cualquier enlace y pulse <b>CTRL+Mayús+A dos veces</b>. La URL de destino se extrae y se copia sin abrir el enlace.</p>
+        <h3>2. Extracción de URL de hiperenlace</h3>
+        <p>Enfócate en cualquier enlace y presiona <b>CTRL+Shift+A dos veces</b>. La URL de destino se extrae y se copia sin abrir el enlace.</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>3. Copiar y añadir texto</h3>
-        <p>Seleccione texto y pulse <b>CTRL+Mayús+V una vez</b>. Si el portapapeles está vacío, el texto se copia. Si el portapapeles ya contiene texto, la nueva selección se añade con un salto de línea.</p>
+        <h3>3. Copia y adición de texto</h3>
+        <p>Selecciona texto y presiona <b>CTRL+Shift+V una vez</b>. Si el portapapeles está vacío, se copia el texto. Si el portapapeles ya contiene texto, la nueva selección se añade con un salto de línea.</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>4. Copiar desde el cursor de revisión</h3>
-        <p>Utilice el cursor de revisión de NVDA para seleccionar texto (usando NVDA+Mayús+Flecha abajo o NVDA+CTRL+Mayús+Flecha abajo para seleccionar varias líneas) y, a continuación, pulse <b>CTRL+Mayús+V dos veces</b>. Todo el texto seleccionado desde la posición del cursor de revisión se copia al portapapeles. Funciona con cualquier tamaño de selección, desde una sola palabra hasta un documento completo.</p>
+        <h3>4. Copia del cursor de revisión</h3>
+        <p>Utiliza el cursor de revisión de NVDA para seleccionar texto (usando NVDA+Shift+Flecha abajo o NVDA+Ctrl+Shift+Flecha abajo para seleccionar varias líneas), luego presiona <b>CTRL+Shift+V dos veces</b>. Todo el texto seleccionado desde la posición del cursor de revisión se copia al portapapeles. Esto funciona con cualquier tamaño de selección, desde una sola palabra hasta un documento entero.</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>5. Borrar portapapeles</h3>
-        <p>Pulse <b>CTRL+Mayús+V tres veces</b> para borrar instantáneamente todo el contenido del portapapeles. NVDA lo confirma con el mensaje "Clean".</p>
+        <h3>5. Limpieza del portapapeles</h3>
+        <p>Presiona <b>CTRL+Shift+V tres veces</b> para borrar instantáneamente todo el contenido del portapapeles. NVDA lo confirma con el mensaje "Clean".</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>6. Copiar última voz</h3>
-        <p>Cuando NVDA diga algo que desee guardar, pulse <b>F9 una vez</b>. La última frase hablada se copia en su portapapeles.</p>
+        <h3>6. Copia de la última voz</h3>
+        <p>Cuando NVDA diga algo que quieras guardar, presiona <b>F9 una vez</b>. La última frase pronunciada se copia en tu portapapeles.</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>7. Añadir voz</h3>
-        <p>Pulse <b>F9 dos veces</b> para añadir la última frase hablada al contenido existente del portapapeles.</p>
+        <h3>7. Adición de voz</h3>
+        <p>Presiona <b>F9 dos veces</b> para añadir la última frase pronunciada al contenido existente del portapapeles.</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>8. Registrar historial de voz</h3>
-        <p>Pulse <b>F9 tres veces</b> para copiar toda la salida de voz acumulada durante su sesión actual.</p>
+        <h3>8. Registro del historial de voz</h3>
+        <p>Presiona <b>F9 tres veces</b> para copiar toda la salida de voz acumulada durante tu sesión actual.</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>9. Navegar por el historial de voz</h3>
-        <p>Utilice <b>Mayús+F9 una vez</b> para retroceder en el historial de voz, y <b>Mayús+F9 dos veces</b> para avanzar. Esto le permite revisar la salida de voz anterior sin cambiar su enfoque actual.</p>
+        <h3>9. Navegación por el historial de voz</h3>
+        <p>Usa <b>Shift+F9 una vez</b> para retroceder en el historial de voz, y <b>Shift+F9 dos veces</b> para avanzar. Esto te permite revisar la salida de voz pasada sin cambiar tu foco actual.</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>10. Acceder al archivo de registro de voz</h3>
-        <p>Pulse <b>Mayús+F9 tres veces</b> para abrir el archivo completo del historial de voz en su editor de texto predeterminado para revisarlo, buscarlo o copiarlo.</p>
+        <h3>10. Acceso al archivo de registro de voz</h3>
+        <p>Presiona <b>Shift+F9 tres veces</b> para abrir el archivo completo del historial de voz en tu editor de texto predeterminado para revisarlo, buscar o copiar.</p>
     </div>
     <br>
 
     <div class="feature-item">
-        <h3>11. Conciencia de contexto inteligente</h3>
-        <p>Cuando está escribiendo en campos editables, simpleCopy no interfiere. Los comandos solo se activan cuando son útiles, preservando su flujo de trabajo normal.</p>
+        <h3>11. Gestión del historial de URLs</h3>
+        <p>Presiona <b>CTRL+Shift+A tres veces</b> para abrir el cuadro de diálogo Historial de URLs. Este cuadro de diálogo almacena cada URL e hiperenlace que copies usando <b>CTRL+Shift+A</b> (pulsación simple o doble), para que puedas acceder a ellos más tarde.</p>
+        <br>
+        <p><b>Uso del cuadro de diálogo Historial de URLs:</b></p>
+        <p>- Presiona <b>Enter</b> en cualquier elemento para copiar esa URL al portapapeles. NVDA anunciará la URL copiada.</p>
+        <p>- Presiona la <b>tecla Aplicaciones</b> o haz clic derecho para abrir el menú contextual.</p>
+        <p>- Desde el menú contextual, puedes <b>Anclar</b>, <b>Editar</b>, <b>Mover arriba</b>, <b>Mover abajo</b> o <b>Eliminar</b> un elemento.</p>
+        <p>- Presiona la tecla <b>Supr</b> para eliminar rápidamente el elemento seleccionado.</p>
+        <p>- Usa <b>Limpiar</b> desde el menú contextual para eliminar todos los elementos que no estén anclados.</p>
+        <br>
+        <p><b>Anclaje y nombres de visualización:</b></p>
+        <p>- Los elementos anclados están protegidos contra la limpieza automática y el comando Limpiar.</p>
+        <p>- Puedes asignar un nombre de visualización personalizado a cualquier URL eligiendo <b>Editar</b>. Esto es especialmente útil para URLs que usas a menudo, facilitando su identificación en la lista.</p>
+        <br>
+        <p><b>Límite de almacenamiento:</b></p>
+        <p>- El historial de URLs está limitado a <b>300 elementos</b>. Cuando se alcanza el límite, los elementos no anclados más antiguos se eliminan automáticamente para dejar espacio a los nuevos.</p>
+    </div>
+    <br>
+
+    <div class="feature-item">
+        <h3>12. Conciencia de contexto inteligente</h3>
+        <p>Cuando estás escribiendo en campos editables, simpleCopy no interfiere. Los comandos solo se activan cuando son útiles, preservando tu flujo de trabajo normal.</p>
     </div>
 </div>
 
 <br><br>
 
-<h2>Apóyeme</h2>
-    <p>Si este complemento le ayuda a trabajar de manera más eficiente, considere hacer una pequeña donación para apoyar el desarrollo futuro.</p>
+<h2>Apóyame</h2>
+    <p>Si este complemento te ayuda a trabajar de manera más eficiente, considera apoyar el desarrollo futuro con una pequeña donación.</p>
 
 <br>
 
@@ -222,12 +243,12 @@ b {
 </p>
 <br>
 
-<p>Su apoyo ayuda a mantener este proyecto vivo y en mejora.</p>
+<p>Tu apoyo ayuda a mantener este proyecto vivo y mejorando.</p>
 
 <br>
 
 <div class="footer-note">
-<p>&copy; 2026 Chai Chaimee Complemento para NVDA Publicado bajo la Licencia Pública General de GNU</p>
+<p>&copy; 2026 Chai Chaimee NVDA Add-on Publicado bajo la Licencia Pública General de GNU</p>
 </div>
 
 </div>
