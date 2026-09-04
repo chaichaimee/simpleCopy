@@ -31,3 +31,4 @@ class InputHandler:
 	def clear_pending_key(self, key_name):
 		if key_name in self.pending_key_press:
 			self.pending_key_press[key_name] = None
+

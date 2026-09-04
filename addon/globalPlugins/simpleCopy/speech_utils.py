@@ -182,3 +182,4 @@ class SpeechHistoryHandler:
 
 	def reset_navigation(self):
 		self.navigator.reset()
+

@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>simpleCopy NVDA Add-on</title>
+<title>SimpleCopy NVDA Add-on</title>
 <style>
 body {
     font-family: Arial, sans-serif;
@@ -65,192 +65,206 @@ b {
 
 <div class="section">
     <img src="https://www.nvaccess.org/files/nvda/documentation/userGuide/images/nvda.ico" alt="NVDA Logo" class="nvda-logo">
-    <h1>simpleCopy</h1>
-<br>
-<p style="text-align: center; font-size: 1.2em; color: #2c3e50;"><b>Copy, Append, and Manage Text Efficiently with NVDA</b></p>
+    <h1>SimpleCopy</h1>
+    <br>
+    <p style="text-align: center;">Copy anything, anywhere, with just one tap &mdash; text, windows, URLs, and even what NVDA just said.</p>
 </div>
-
 <br>
-
 <div class="section">
     <p style="text-align: center;"><b>author:</b> chai chaimee</p>
-    <p style="text-align: center;"><b>url:</b> https://github.com/chaichaimee/simpleCopy</p>
+    <p style="text-align: center;"><b>url:</b> <a href="https://github.com/chaichaimee/simpleCopy">https://github.com/chaichaimee/simpleCopy</a></p>
 </div>
-
-<hr>
-
-<div class="section">
-    <h2>Description</h2>
-    <br>
-    <p><b>simpleCopy</b> is a lightweight NVDA add-on that simplifies text copying, URL extraction, speech history management, and URL history organization.</p>
-    <br>
-    <p>This tool helps you capture and organize information quickly without interrupting your workflow. Whether you are copying text, grabbing web links, saving spoken content, or managing frequently used URLs, simpleCopy provides intuitive keyboard shortcuts that work seamlessly with NVDA.</p>
-</div>
-
 <br>
 
 <div class="section">
-    <h2>Hot Keys</h2>
-    <br>
-    <p>All commands use a multi-tap system. Press the key combination once, twice, or three times in quick succession to perform different actions.</p>
-    <br>
-
-    <div class="hotkey">
-        <h3>CTRL+Shift+A — URL, Link, and URL History</h3>
-        <div class="tap-explanation">
-            <p><b>Single Tap:</b> Copies the current webpage URL.</p>
-            <p><b>Double Tap:</b> Copies the destination URL of the focused hyperlink.</p>
-            <p><b>Triple Tap:</b> Opens the URL History dialog to manage saved URLs and hyperlinks.</p>
-        </div>
-    </div>
-    <br>
-
-    <div class="hotkey">
-        <h3>CTRL+Shift+V — Text Copy, Append, and Clipboard Management</h3>
-        <div class="tap-explanation">
-            <p><b>Single Tap:</b> Copies the selected text. If text already exists in the clipboard, the new selection is appended to it.</p>
-            <p><b>Double Tap:</b> Copies text from the current review cursor position. This works with any selection made using NVDA's review cursor, including multi-line selections and full document selection.</p>
-            <p><b>Triple Tap:</b> Clears all content from the clipboard.</p>
-        </div>
-    </div>
-    <br>
-
-    <div class="hotkey">
-        <h3>F9 — Speech Capture and Management</h3>
-        <div class="tap-explanation">
-            <p><b>Single Tap:</b> Copies the most recent speech output from NVDA.</p>
-            <p><b>Double Tap:</b> Appends the most recent speech output to existing clipboard content.</p>
-            <p><b>Triple Tap:</b> Copies all speech output accumulated since the first F9 press.</p>
-        </div>
-    </div>
-    <br>
-
-    <div class="hotkey">
-        <h3>Shift+F9 — Speech History Navigation</h3>
-        <div class="tap-explanation">
-            <p><b>Single Tap:</b> Navigates to the previous speech history item.</p>
-            <p><b>Double Tap:</b> Navigates to the next speech history item.</p>
-            <p><b>Triple Tap:</b> Opens the complete speech history log file.</p>
-        </div>
-    </div>
+<h2>Introduction</h2>
+<br>
+<p>SimpleCopy is an NVDA add-on that makes copying information effortless, no matter what you are doing on your computer.</p>
+<br>
+<p>Instead of hunting for the right key combination for every situation, SimpleCopy gives you just four easy-to-remember hotkeys that each do multiple related jobs depending on how many times you tap them. With SimpleCopy you can:</p>
+<br>
+<p>&bull; Copy or append selected text, and even grab the entire contents of a window when nothing is selected.<br>
+&bull; Copy the address of the page you are browsing, or the destination of a specific link, and keep a searchable history of every URL you copy.<br>
+&bull; Instantly copy the last thing NVDA said out loud &mdash; and even capture a whole stretch of speech until you decide to stop.<br>
+&bull; Step backward and forward through everything NVDA has recently spoken, and open a log file of your speech history at any time.</p>
+<br>
+<p>Everything is confirmed with clear spoken feedback and tones, so you always know exactly what has been copied.</p>
 </div>
-
 <br>
 
 <div class="section">
-    <h2>Features</h2>
-    <br>
-    <p>Here is how each feature works in practice:</p>
-    <br>
+<h3>Hot Keys</h3>
+<br>
+<div class="hotkey">
+<b>Control+Shift+V</b><br>
+Single Tap : Copy or append the selected text to the clipboard<br>
+Double Tap : Copy all text from the current window and show it in a review window<br>
+Triple Tap : Clear the clipboard
+</div>
+<br>
+<div class="hotkey">
+<b>Control+Shift+A</b><br>
+Single Tap : Copy the current browser page URL<br>
+Double Tap : Copy the URL of the link under the navigator object<br>
+Triple Tap : Open the URL History window
+</div>
+<br>
+<div class="hotkey">
+<b>F9</b><br>
+Single Tap : Copy the last thing NVDA spoke, and start capturing further speech<br>
+Double Tap : Silently append the last spoken phrase to the clipboard<br>
+Triple Tap : Copy everything spoken since capturing started
+</div>
+<br>
+<div class="hotkey">
+<b>Shift+F9</b><br>
+Single Tap : Move backward and re-speak an earlier item from the speech history<br>
+Double Tap : Move forward through the speech history<br>
+Triple Tap : Open the speech history log file
+</div>
+</div>
+<br>
 
-    <div class="feature-item">
-        <h3>1. Webpage URL Copy</h3>
-        <p>Press <b>CTRL+Shift+A once</b> while browsing any website. The current page URL is copied to your clipboard. NVDA confirms by speaking the copied URL.</p>
-    </div>
-    <br>
+<div class="section">
+<h2>Features</h2>
+<br>
 
-    <div class="feature-item">
-        <h3>2. Hyperlink URL Extraction</h3>
-        <p>Focus on any link and press <b>CTRL+Shift+A twice</b>. The destination URL is extracted and copied without opening the link.</p>
-    </div>
-    <br>
+<div class="feature-item">
+<h3>1. Smart Text Copy and Append (Control+Shift+V)</h3>
+<br>
+<p>This hotkey adapts to what you have selected and how many times you press it within half a second.</p>
+<br>
+<div class="tap-explanation">
+<b>Single Tap &mdash; Copy or Append Selected Text</b><br>
+<br>
+Step by step:<br>
+1. SimpleCopy looks at whatever object currently has focus and tries to read its selected text.<br>
+2. On newer NVDA/Python versions it first checks the browse-mode document's own selection, then falls back to reading the text object directly; on older versions it reads the text object directly first.<br>
+3. If neither method finds a selection, it automatically falls back to sending the standard Control+Shift+C copy command used by many applications, so you never lose functionality.<br>
+4. Once text is found, it is not simply overwritten into the clipboard &mdash; it is appended to whatever is already on the clipboard, separated by a new line. If the clipboard was empty, the text is copied as normal.<br>
+5. NVDA announces whether the text was "Appended" or "Copied", along with the character count of what you just added and, when appending, the new total character count.
+</div>
+<br>
+<div class="tap-explanation">
+<b>Double Tap &mdash; Copy Whole Window and Review It</b><br>
+<br>
+Step by step:<br>
+1. SimpleCopy tries to read the entire contents of the current window as one block of text, using the same review-cursor position as NVDA's built-in review commands.<br>
+2. If that produces very little text (under 100 characters), it walks through the window's objects one by one, collecting names, values, descriptions, and any editable text it finds, up to 200 objects, so nothing important is missed.<br>
+3. The collected text is copied to the clipboard, and NVDA announces the total character and line count with a confirmation tone.<br>
+4. Once the announcement has finished speaking (SimpleCopy waits for the synthesizer to actually finish, rather than guessing a fixed delay), a "Copied Text" window pops up showing the full text in a scrollable, read-only box you can read, browse, or select from freely. Pressing Escape closes it.
+</div>
+<br>
+<div class="tap-explanation">
+<b>Triple Tap &mdash; Clear Clipboard</b><br>
+<br>
+Empties the Windows clipboard completely, resets SimpleCopy's internal "text copied" flag, and clears any speech that was being captured. NVDA announces "Clean" to confirm.
+</div>
+</div>
+<br>
 
-    <div class="feature-item">
-        <h3>3. Text Copy and Append</h3>
-        <p>Select text and press <b>CTRL+Shift+V once</b>. If the clipboard is empty, the text is copied. If the clipboard already contains text, the new selection is appended with a line break.</p>
-    </div>
-    <br>
+<div class="feature-item">
+<h3>2. URL and Hyperlink Copy with History (Control+Shift+A)</h3>
+<br>
+<div class="tap-explanation">
+<b>Single Tap &mdash; Copy Current Page URL</b><br>
+<br>
+Step by step:<br>
+1. If you are currently focused in an editable text field, SimpleCopy steps aside and passes the keystroke through as the normal Control+Shift+A, so it never interferes with an application's own shortcut.<br>
+2. Otherwise, if the focused application is a recognised web browser (Chrome, Firefox, Edge, Opera, Safari, or Brave), SimpleCopy determines the current page address by trying, in order: the accessible document's own value, the browse-mode document's URL property, the UI Automation Url property, and finally the browser's own app-module method.<br>
+3. The address is copied to the clipboard, spoken aloud, and automatically saved into the URL History list.<br>
+4. If you are not in a supported browser, the keystroke is passed through as the standard Control+Shift+A.
+</div>
+<br>
+<div class="tap-explanation">
+<b>Double Tap &mdash; Copy Hyperlink URL</b><br>
+<br>
+While browsing, this looks at the object under your NVDA navigator cursor (or its nearby parents) to find a link, reads its destination address using whichever method the browser exposes it through, copies it to the clipboard, announces it, and adds it to the URL History list.
+</div>
+<br>
+<div class="tap-explanation">
+<b>Triple Tap &mdash; Open URL History</b><br>
+<br>
+Opens a dedicated URL History window listing every address you have copied, most recent first (up to 300 entries, with pinned items always protected from being trimmed). From this window you can:<br>
+&bull; Press Enter to copy an address again.<br>
+&bull; Right-click, or use the context menu key, to Pin/Unpin, Move Up, Move Down, Edit (give it a friendly display name), Delete a single entry, or Clear all non-pinned entries.<br>
+&bull; History is saved automatically to a file in your NVDA configuration folder, so it survives restarts.
+</div>
+</div>
+<br>
 
-    <div class="feature-item">
-        <h3>4. Review Cursor Copy</h3>
-        <p>Use NVDA's review cursor to select text (using NVDA+Shift+Down or NVDA+Ctrl+Shift+Down to select multiple lines), then press <b>CTRL+Shift+V twice</b>. All selected text from the review cursor position is copied to the clipboard. This works with any selection size, from a single word to an entire document.</p>
-    </div>
-    <br>
+<div class="feature-item">
+<h3>3. Speech Capture and Playback (F9)</h3>
+<br>
+<p>SimpleCopy quietly keeps a running log of the last 500 things NVDA has spoken, so it can be copied or replayed on demand.</p>
+<br>
+<div class="tap-explanation">
+<b>Single Tap &mdash; Copy Last Speech and Start Capturing</b><br>
+<br>
+Step by step:<br>
+1. Copies the most recent thing NVDA spoke straight to the clipboard, confirmed with a tone.<br>
+2. Starts "recording" mode: from this point on, every further utterance NVDA speaks is silently added to an internal buffer, ready to be copied all at once later with a triple tap. Repeated or "echoed" state announcements (for example, when a checkbox's state is re-announced) are automatically merged rather than duplicated.
+</div>
+<br>
+<div class="tap-explanation">
+<b>Double Tap &mdash; Silently Append Last Speech</b><br>
+<br>
+Adds the most recently spoken phrase onto the end of whatever is already on the clipboard (on a new line) without disturbing the rest of the clipboard contents, and confirms with a spoken "Append".
+</div>
+<br>
+<div class="tap-explanation">
+<b>Triple Tap &mdash; Copy Everything Captured</b><br>
+<br>
+If recording mode is active, joins every utterance captured since the single tap into one block of text (each on its own line), copies it to the clipboard, announces "Copy Until Last", and stops recording.
+</div>
+</div>
+<br>
 
-    <div class="feature-item">
-        <h3>5. Clipboard Clear</h3>
-        <p>Press <b>CTRL+Shift+V three times</b> to instantly clear all clipboard content. NVDA confirms with the message "Clean".</p>
-    </div>
-    <br>
+<div class="feature-item">
+<h3>4. Speech History Navigation (Shift+F9)</h3>
+<br>
+<div class="tap-explanation">
+<b>Single Tap &mdash; Step Backward</b><br>
+<br>
+Moves one step further back through NVDA's recent speech history and speaks that earlier utterance again, letting you catch something you missed.
+</div>
+<br>
+<div class="tap-explanation">
+<b>Double Tap &mdash; Step Forward</b><br>
+<br>
+Moves one step forward again, back toward the most recent speech, and speaks that entry.
+</div>
+<br>
+<div class="tap-explanation">
+<b>Triple Tap &mdash; Open Speech Log File</b><br>
+<br>
+Writes out all unique entries from the speech history to a text file in your NVDA configuration folder and opens it in your default text editor for reading, searching, or saving elsewhere.
+</div>
+</div>
+<br>
 
-    <div class="feature-item">
-        <h3>6. Last Speech Copy</h3>
-        <p>When NVDA speaks something you want to save, press <b>F9 once</b>. The last spoken phrase is copied to your clipboard.</p>
-    </div>
-    <br>
+<div class="note">
+<b>Note:</b> All tap-counting hotkeys use a short 0.5-second window between presses to distinguish single, double, and triple taps, so taps should be made in quick succession.
+</div>
 
-    <div class="feature-item">
-        <h3>7. Speech Append</h3>
-        <p>Press <b>F9 twice</b> to append the last spoken phrase to existing clipboard content.</p>
-    </div>
-    <br>
-
-    <div class="feature-item">
-        <h3>8. Speech History Logging</h3>
-        <p>Press <b>F9 three times</b> to copy all speech output accumulated during your current session.</p>
-    </div>
-    <br>
-
-    <div class="feature-item">
-        <h3>9. Speech History Navigation</h3>
-        <p>Use <b>Shift+F9 once</b> to move backward through speech history, and <b>Shift+F9 twice</b> to move forward. This lets you review past speech output without changing your current focus.</p>
-    </div>
-    <br>
-
-    <div class="feature-item">
-        <h3>10. Speech Log File Access</h3>
-        <p>Press <b>Shift+F9 three times</b> to open the complete speech history file in your default text editor for reviewing, searching, or copying.</p>
-    </div>
-    <br>
-
-    <div class="feature-item">
-        <h3>11. URL History Management</h3>
-        <p>Press <b>CTRL+Shift+A three times</b> to open the URL History dialog. This dialog stores every URL and hyperlink you copy using <b>CTRL+Shift+A</b> (single or double tap), so you can access them again later.</p>
-        <br>
-        <p><b>Using the URL History dialog:</b></p>
-        <p>- Press <b>Enter</b> on any item to copy that URL to the clipboard. NVDA will announce the copied URL.</p>
-        <p>- Press the <b>Applications key</b> or right-click to open the context menu.</p>
-        <p>- From the context menu, you can <b>Pin</b>, <b>Edit</b>, <b>Move Up</b>, <b>Move Down</b>, or <b>Delete</b> an item.</p>
-        <p>- Press the <b>Delete</b> key to quickly remove the selected item.</p>
-        <p>- Use <b>Clear</b> from the context menu to delete all items that are not pinned.</p>
-        <br>
-        <p><b>Pinning and display names:</b></p>
-        <p>- Pinned items are protected from automatic cleanup and from the Clear command.</p>
-        <p>- You can assign a custom display name to any URL by choosing <b>Edit</b>. This is especially useful for URLs you use often, making them easier to identify in the list.</p>
-        <br>
-        <p><b>Storage limit:</b></p>
-        <p>- The URL history is limited to <b>300 items</b>. When the limit is reached, the oldest non-pinned items are automatically removed to make room for new ones.</p>
-    </div>
-    <br>
-
-    <div class="feature-item">
-        <h3>12. Smart Context Awareness</h3>
-        <p>When you are typing in editable fields, simpleCopy does not interfere. Commands only activate when they are useful, preserving your normal workflow.</p>
-    </div>
 </div>
 
 <br><br>
-
 <h2>Support Me</h2>
-    <p>If this add-on helps you work more efficiently, consider supporting future development with a small donation.</p>
-
+    <p>If this tool has made your life easier, consider fueling the next update with a small donation.</p>
 <br>
-
 <p>
   <a href="https://buy.stripe.com/dRm9AU1xQ3Ds22N6VK1VK01">
     <img src="https://img.shields.io/badge/Donate-Support%20Me-blue?style=for-the-badge&logo=stripe" alt="Support me">
   </a>
 </p>
 <br>
-
-<p>Your support helps keep this project alive and improving.</p>
-
+<p>Your support means the world. Let's build something great together</p>
 <br>
-
-<div class="footer-note">
-<p>&copy; 2026 Chai Chaimee NVDA Add-on Released under GNU General Public License</p>
+  <div class="footer-note">
+<p>&copy; 2026 Chai Chaimee NVDA Add-on Released under GNU GPL</p>
 </div>
 
-</div>
+</div> <!-- End container -->
 </body>
 </html>

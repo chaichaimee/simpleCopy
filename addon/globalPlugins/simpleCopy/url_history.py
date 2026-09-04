@@ -1,9 +1,12 @@
 # url_history.py
+# Copyright (C) 2026 Chai Chaimee
+# Licensed under GNU General Public License. See COPYING.txt for details.
 
 import wx
 import os
 import json
 import time
+import copy
 import threading
 import logging
 import addonHandler
@@ -39,7 +42,7 @@ class URLHistoryManager:
 		def _doLoad():
 			try:
 				if not os.path.exists(self.data_path):
-					self.items = []
+					wx.CallAfter(self._set_items, [])
 					return
 				with open(self.data_path, "r", encoding="utf-8") as f:
 					loaded = json.load(f)
@@ -53,14 +56,17 @@ class URLHistoryManager:
 								"pinned": entry.get("pinned", False),
 								"display_name": entry.get("display_name")
 							})
-					self.items = restoredItems
+					wx.CallAfter(self._set_items, restoredItems)
 				else:
-					self.items = []
+					wx.CallAfter(self._set_items, [])
 			except (OSError, ValueError) as e:
 				log.error(f"Failed to load URL history: {e}")
-				self.items = []
+				wx.CallAfter(self._set_items, [])
 
 		threading.Thread(target=_doLoad, daemon=True).start()
+
+	def _set_items(self, items):
+		self.items = items
 
 	def _truncateIfNeeded(self):
 		if len(self.items) <= MAX_URL_HISTORY_ITEMS:
@@ -92,16 +98,23 @@ class URLHistoryManager:
 			log.debug("URL history save already in progress, skipping")
 			return
 		URLHistoryManager._is_saving = True
-		try:
-			uniqueSuffix = int(time.time() * 1000)
-			tempPath = f"{self.data_path}.{uniqueSuffix}.tmp"
-			with open(tempPath, "w", encoding="utf-8") as f:
-				json.dump(self.items, f, ensure_ascii=False, indent=2)
-			os.replace(tempPath, self.data_path)
-		except OSError as e:
-			log.error(f"Async URL history save failed: {e}")
-		finally:
-			URLHistoryManager._is_saving = False
+
+		itemsSnapshot = copy.deepcopy(self.items)
+		dataPath = self.data_path
+
+		def _doSave():
+			try:
+				uniqueSuffix = int(time.time() * 1000)
+				tempPath = f"{dataPath}.{uniqueSuffix}.tmp"
+				with open(tempPath, "w", encoding="utf-8") as f:
+					json.dump(itemsSnapshot, f, ensure_ascii=False, indent=2)
+				os.replace(tempPath, dataPath)
+			except OSError as e:
+				log.error(f"Async URL history save failed: {e}")
+			finally:
+				URLHistoryManager._is_saving = False
+
+		threading.Thread(target=_doSave, daemon=True).start()
 
 	def add_item(self, url):
 		if not url:
@@ -252,7 +265,7 @@ class URLHistoryDialog(wx.Dialog):
 
 	def _onShow(self, event):
 		if event.IsShown():
-			wx.CallAfter(self._focusFirstItem)
+			wx.CallLater(50, self._focusFirstItem)
 		event.Skip()
 
 	def _focusFirstItem(self):
@@ -389,3 +402,4 @@ class URLHistoryDialog(wx.Dialog):
 
 	def _onClose(self, event):
 		self.Destroy()
+
