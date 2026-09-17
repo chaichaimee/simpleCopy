@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.9.0\n"
+"Project-Id-Version: simpleCopy 2026.9.9\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-08-16 16:13+0700\n"
+"POT-Creation-Date: 2026-09-17 08:40+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Japanese\n"
@@ -12,185 +12,196 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: url_history.py:185
+#: url_history.py:198
 msgid "&Cancel"
 msgstr "キャンセル(&C)"
 
-#: url_history.py:184
+#: url_history.py:197
 msgid "&OK"
 msgstr "OK(&O)"
 
-#: __init__.py:291
+#: simplecopy_engine.py:397
 msgid "Append"
 msgstr "追加"
 
-#: clipboard_utils.py:215
+#: clipboard_utils.py:192
 msgid "Appended"
 msgstr "追加しました"
 
-#: clipboard_utils.py:190
+#: clipboard_utils.py:167
 msgid "Cannot append to non-text clipboard content"
 msgstr "非テキストのクリップボードコンテンツに追加できません"
 
-#: __init__.py:129
+#: simplecopy_engine.py:158
 msgid "Clean"
 msgstr "クリーン"
 
-#: url_history.py:354
+#: url_history.py:367
 msgid "Clear"
 msgstr "クリア"
 
-#: url_history.py:348
+#: url_history.py:361
 msgid "Cleared all non-pinned items"
 msgstr "ピン留めされていないすべてのアイテムをクリアしました"
 
-#: clipboard_utils.py:215
+#: simplecopy_engine.py:44
+msgid "Close"
+msgstr "閉じる"
+
+#: clipboard_utils.py:192
 msgid "Copied"
 msgstr "コピーしました"
 
-#: __init__.py:224
-#: __init__.py:237
-#: url_history.py:286
+#: simplecopy_engine.py:33
+msgid "Copied Text"
+msgstr "コピーされたテキスト"
+
+#: simplecopy_engine.py:224
+msgid "Copied from review cursor"
+msgstr "レビューカーソルからコピー"
+
+#: simplecopy_engine.py:330
+#: simplecopy_engine.py:343
+#: url_history.py:299
 msgid "Copy"
 msgstr "コピー"
 
-#: __init__.py:300
+#: simplecopy_engine.py:406
 msgid "Copy Until Last"
 msgstr "最後までコピー"
 
-#: __init__.py:182
-#: url_history.py:288
+#: url_history.py:301
 msgid "Copy failed"
 msgstr "コピーに失敗しました"
 
-#: __init__.py:178
-msgid "Copy from review"
-msgstr "レビューカーソルからコピー"
+#: simplecopy_engine.py:166
+msgid "Copy/Append selected text (single) Copy from review cursor and show text (double) Clear clipboard (triple)"
+msgstr "選択テキストをコピー/追加 (1回)、レビューカーソルからコピーしてテキストを表示 (2回)、クリップボードをクリア (3回)"
 
-#: __init__.py:137
-msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
-msgstr "選択テキストのコピー/追加 (1回) レビューカーソルからコピー (2回) クリップボードのクリア (3回)"
-
-#: url_history.py:367
+#: url_history.py:380
 msgid "Delete"
 msgstr "削除"
 
-#: url_history.py:296
+#: url_history.py:309
 msgid "Deleted"
 msgstr "削除しました"
 
-#: url_history.py:175
+#: url_history.py:188
 msgid "Display name (optional):"
 msgstr "表示名 (オプション):"
 
-#: url_history.py:366
+#: url_history.py:379
 msgid "Edit"
 msgstr "編集"
 
-#: url_history.py:303
+#: url_history.py:316
 msgid "Edit URL"
 msgstr "URL の編集"
 
-#: __init__.py:118
+#: simplecopy_engine.py:147
 msgid "Error during append operation"
 msgstr "追加操作中にエラーが発生しました"
 
-#: clipboard_utils.py:223
+#: clipboard_utils.py:200
 msgid "Error writing to clipboard"
 msgstr "クリップボードへの書き込みエラー"
 
-#: url_history.py:307
+#: url_history.py:320
 msgid "Item edited"
 msgstr "アイテムを編集しました"
 
-#: url_history.py:364
+#: url_history.py:377
 msgid "Move Down"
 msgstr "下へ移動"
 
-#: url_history.py:363
+#: url_history.py:376
 msgid "Move Up"
 msgstr "上へ移動"
 
-#: url_history.py:343
+#: url_history.py:356
 msgid "Moved down"
 msgstr "下へ移動しました"
 
-#: url_history.py:331
+#: url_history.py:344
 msgid "Moved up"
 msgstr "上へ移動しました"
 
-#: __init__.py:305
+#: simplecopy_engine.py:411
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
 msgstr "音声履歴の移動: 前へ (1回) 次へ (2回) ログファイルを開く (3回)"
 
-#: __init__.py:227
+#: simplecopy_engine.py:333
 msgid "No URL"
 msgstr "URL がありません"
 
-#: __init__.py:240
+#: simplecopy_engine.py:346
 msgid "No link found"
 msgstr "リンクが見つかりません"
 
-#: __init__.py:185
-msgid "No text at review cursor"
-msgstr "レビューカーソル位置にテキストがありません"
-
-#: __init__.py:91
+#: simplecopy_engine.py:120
 msgid "No text selected to append"
 msgstr "追加するテキストが選択されていません"
 
-#: url_history.py:360
+#: url_history.py:373
 msgid "Pin"
 msgstr "ピン留め"
 
-#: url_history.py:319
+#: url_history.py:332
 msgid "Pinned"
 msgstr "ピン留めされました"
 
-#: __init__.py:33
+#: simplecopy_engine.py:59
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: url_history.py:225
+#: url_history.py:238
 msgid "URL"
 msgstr "URL"
 
-#: url_history.py:209
+#: url_history.py:222
 msgid "URL History"
 msgstr "URL 履歴"
 
-#: url_history.py:170
+#: url_history.py:183
 msgid "URL:"
 msgstr "URL:"
 
-#: url_history.py:360
+#: url_history.py:373
 msgid "Unpin"
 msgstr "ピン留め解除"
 
-#: url_history.py:319
+#: url_history.py:332
 msgid "Unpinned"
 msgstr "ピン留め解除されました"
 
-#: __init__.py:99
-#: __init__.py:100
-#: __init__.py:177
+#: simplecopy_engine.py:128
+#: simplecopy_engine.py:129
+#: simplecopy_engine.py:219
 msgid "character"
 msgstr "文字"
 
-#: __init__.py:99
-#: __init__.py:100
-#: __init__.py:177
+#: simplecopy_engine.py:128
+#: simplecopy_engine.py:129
+#: simplecopy_engine.py:219
 msgid "characters"
 msgstr "文字"
 
-#: __init__.py:189
+#: simplecopy_engine.py:295
 msgid "copy URL (single) copy hyper link (double) open URL history (triple)"
 msgstr "URL のコピー (1回) ハイパーリンクのコピー (2回) URL 履歴を開く (3回)"
 
-#: __init__.py:247
+#: simplecopy_engine.py:353
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
 msgstr "最後の音声のコピー (1回) 最後の音声の追加 (2回) 最後の一節までコピー (3回)"
 
-#: __init__.py:106
+#: simplecopy_engine.py:220
+msgid "line"
+msgstr "行"
+
+#: simplecopy_engine.py:220
+msgid "lines"
+msgstr "行"
+
+#: simplecopy_engine.py:135
 msgid "total"
 msgstr "合計"

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.9.0\n"
+"Project-Id-Version: simpleCopy 2026.9.9\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-08-16 16:13+0700\n"
+"POT-Creation-Date: 2026-09-17 08:40+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: French\n"
@@ -12,185 +12,196 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: url_history.py:185
+#: url_history.py:198
 msgid "&Cancel"
 msgstr "&Annuler"
 
-#: url_history.py:184
+#: url_history.py:197
 msgid "&OK"
 msgstr "&OK"
 
-#: __init__.py:291
+#: simplecopy_engine.py:397
 msgid "Append"
 msgstr "Ajouter"
 
-#: clipboard_utils.py:215
+#: clipboard_utils.py:192
 msgid "Appended"
 msgstr "Ajouté"
 
-#: clipboard_utils.py:190
+#: clipboard_utils.py:167
 msgid "Cannot append to non-text clipboard content"
 msgstr "Impossible d'ajouter à un contenu du presse-papiers non textuel"
 
-#: __init__.py:129
+#: simplecopy_engine.py:158
 msgid "Clean"
 msgstr "Nettoyer"
 
-#: url_history.py:354
+#: url_history.py:367
 msgid "Clear"
 msgstr "Effacer"
 
-#: url_history.py:348
+#: url_history.py:361
 msgid "Cleared all non-pinned items"
 msgstr "Tous les éléments non épinglés ont été effacés"
 
-#: clipboard_utils.py:215
+#: simplecopy_engine.py:44
+msgid "Close"
+msgstr "Fermer"
+
+#: clipboard_utils.py:192
 msgid "Copied"
 msgstr "Copié"
 
-#: __init__.py:224
-#: __init__.py:237
-#: url_history.py:286
+#: simplecopy_engine.py:33
+msgid "Copied Text"
+msgstr "Texte copié"
+
+#: simplecopy_engine.py:224
+msgid "Copied from review cursor"
+msgstr "Copié depuis le curseur de révision"
+
+#: simplecopy_engine.py:330
+#: simplecopy_engine.py:343
+#: url_history.py:299
 msgid "Copy"
 msgstr "Copier"
 
-#: __init__.py:300
+#: simplecopy_engine.py:406
 msgid "Copy Until Last"
 msgstr "Copier jusqu'au dernier"
 
-#: __init__.py:182
-#: url_history.py:288
+#: url_history.py:301
 msgid "Copy failed"
 msgstr "Échec de la copie"
 
-#: __init__.py:178
-msgid "Copy from review"
-msgstr "Copier depuis le curseur de révision"
+#: simplecopy_engine.py:166
+msgid "Copy/Append selected text (single) Copy from review cursor and show text (double) Clear clipboard (triple)"
+msgstr "Copier/ajouter le texte sélectionné (simple) Copier depuis le curseur de révision et afficher le texte (double) Effacer le presse-papiers (triple)"
 
-#: __init__.py:137
-msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
-msgstr "Copier/ajouter le texte sélectionné (simple) Copier depuis le curseur de révision (double) Effacer le presse-papiers (triple)"
-
-#: url_history.py:367
+#: url_history.py:380
 msgid "Delete"
 msgstr "Supprimer"
 
-#: url_history.py:296
+#: url_history.py:309
 msgid "Deleted"
 msgstr "Supprimé"
 
-#: url_history.py:175
+#: url_history.py:188
 msgid "Display name (optional):"
 msgstr "Nom affiché (optionnel) :"
 
-#: url_history.py:366
+#: url_history.py:379
 msgid "Edit"
 msgstr "Modifier"
 
-#: url_history.py:303
+#: url_history.py:316
 msgid "Edit URL"
 msgstr "Modifier l'URL"
 
-#: __init__.py:118
+#: simplecopy_engine.py:147
 msgid "Error during append operation"
 msgstr "Erreur lors de l'opération d'ajout"
 
-#: clipboard_utils.py:223
+#: clipboard_utils.py:200
 msgid "Error writing to clipboard"
 msgstr "Erreur lors de l'écriture dans le presse-papiers"
 
-#: url_history.py:307
+#: url_history.py:320
 msgid "Item edited"
 msgstr "Élément modifié"
 
-#: url_history.py:364
+#: url_history.py:377
 msgid "Move Down"
 msgstr "Déplacer vers le bas"
 
-#: url_history.py:363
+#: url_history.py:376
 msgid "Move Up"
 msgstr "Déplacer vers le haut"
 
-#: url_history.py:343
+#: url_history.py:356
 msgid "Moved down"
 msgstr "Déplacé vers le bas"
 
-#: url_history.py:331
+#: url_history.py:344
 msgid "Moved up"
 msgstr "Déplacé vers le haut"
 
-#: __init__.py:305
+#: simplecopy_engine.py:411
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
 msgstr "Naviguer dans l'historique de la parole : précédent (simple) suivant (double) ouvrir le fichier journal (triple)"
 
-#: __init__.py:227
+#: simplecopy_engine.py:333
 msgid "No URL"
 msgstr "Aucune URL"
 
-#: __init__.py:240
+#: simplecopy_engine.py:346
 msgid "No link found"
 msgstr "Aucun lien trouvé"
 
-#: __init__.py:185
-msgid "No text at review cursor"
-msgstr "Aucun texte au curseur de révision"
-
-#: __init__.py:91
+#: simplecopy_engine.py:120
 msgid "No text selected to append"
 msgstr "Aucun texte sélectionné à ajouter"
 
-#: url_history.py:360
+#: url_history.py:373
 msgid "Pin"
 msgstr "Épingler"
 
-#: url_history.py:319
+#: url_history.py:332
 msgid "Pinned"
 msgstr "Épinglé"
 
-#: __init__.py:33
+#: simplecopy_engine.py:59
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: url_history.py:225
+#: url_history.py:238
 msgid "URL"
 msgstr "URL"
 
-#: url_history.py:209
+#: url_history.py:222
 msgid "URL History"
 msgstr "Historique des URL"
 
-#: url_history.py:170
+#: url_history.py:183
 msgid "URL:"
 msgstr "URL :"
 
-#: url_history.py:360
+#: url_history.py:373
 msgid "Unpin"
 msgstr "Désépingler"
 
-#: url_history.py:319
+#: url_history.py:332
 msgid "Unpinned"
 msgstr "Désépinglé"
 
-#: __init__.py:99
-#: __init__.py:100
-#: __init__.py:177
+#: simplecopy_engine.py:128
+#: simplecopy_engine.py:129
+#: simplecopy_engine.py:219
 msgid "character"
 msgstr "caractère"
 
-#: __init__.py:99
-#: __init__.py:100
-#: __init__.py:177
+#: simplecopy_engine.py:128
+#: simplecopy_engine.py:129
+#: simplecopy_engine.py:219
 msgid "characters"
 msgstr "caractères"
 
-#: __init__.py:189
+#: simplecopy_engine.py:295
 msgid "copy URL (single) copy hyper link (double) open URL history (triple)"
 msgstr "copier l'URL (simple) copier le lien hypertexte (double) ouvrir l'historique des URL (triple)"
 
-#: __init__.py:247
+#: simplecopy_engine.py:353
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
 msgstr "copier la dernière parole (simple) ajouter la dernière parole (double) copier jusqu'à la dernière parole (triple)"
 
-#: __init__.py:106
+#: simplecopy_engine.py:220
+msgid "line"
+msgstr "ligne"
+
+#: simplecopy_engine.py:220
+msgid "lines"
+msgstr "lignes"
+
+#: simplecopy_engine.py:135
 msgid "total"
 msgstr "total"

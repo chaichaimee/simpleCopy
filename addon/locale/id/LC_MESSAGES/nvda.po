@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.9.0\n"
+"Project-Id-Version: simpleCopy 2026.9.9\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-08-16 16:13+0700\n"
+"POT-Creation-Date: 2026-09-17 08:40+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Indonesian\n"
@@ -12,185 +12,196 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: url_history.py:185
+#: url_history.py:198
 msgid "&Cancel"
 msgstr "&Batal"
 
-#: url_history.py:184
+#: url_history.py:197
 msgid "&OK"
 msgstr "&OK"
 
-#: __init__.py:291
+#: simplecopy_engine.py:397
 msgid "Append"
 msgstr "Tambahkan"
 
-#: clipboard_utils.py:215
+#: clipboard_utils.py:192
 msgid "Appended"
 msgstr "Ditambahkan"
 
-#: clipboard_utils.py:190
+#: clipboard_utils.py:167
 msgid "Cannot append to non-text clipboard content"
 msgstr "Tidak dapat menambahkan ke konten papan klip non-teks"
 
-#: __init__.py:129
+#: simplecopy_engine.py:158
 msgid "Clean"
 msgstr "Bersihkan"
 
-#: url_history.py:354
+#: url_history.py:367
 msgid "Clear"
 msgstr "Hapus"
 
-#: url_history.py:348
+#: url_history.py:361
 msgid "Cleared all non-pinned items"
 msgstr "Semua item yang tidak disematkan telah dihapus"
 
-#: clipboard_utils.py:215
+#: simplecopy_engine.py:44
+msgid "Close"
+msgstr "Tutup"
+
+#: clipboard_utils.py:192
 msgid "Copied"
 msgstr "Disalin"
 
-#: __init__.py:224
-#: __init__.py:237
-#: url_history.py:286
+#: simplecopy_engine.py:33
+msgid "Copied Text"
+msgstr "Teks yang disalin"
+
+#: simplecopy_engine.py:224
+msgid "Copied from review cursor"
+msgstr "Disalin dari kursor tinjauan"
+
+#: simplecopy_engine.py:330
+#: simplecopy_engine.py:343
+#: url_history.py:299
 msgid "Copy"
 msgstr "Salin"
 
-#: __init__.py:300
+#: simplecopy_engine.py:406
 msgid "Copy Until Last"
 msgstr "Salin Sampai Terakhir"
 
-#: __init__.py:182
-#: url_history.py:288
+#: url_history.py:301
 msgid "Copy failed"
 msgstr "Gagal menyalin"
 
-#: __init__.py:178
-msgid "Copy from review"
-msgstr "Salin dari kursor peninjau"
+#: simplecopy_engine.py:166
+msgid "Copy/Append selected text (single) Copy from review cursor and show text (double) Clear clipboard (triple)"
+msgstr "Salin/Tambahkan teks yang dipilih (tunggal) Salin dari kursor tinjauan dan tampilkan teks (ganda) Bersihkan papan klip (tiga kali)"
 
-#: __init__.py:137
-msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
-msgstr "Salin/tambahkan teks terpilih (tunggal) Salin dari kursor peninjau (ganda) Hapus papan klip (tiga kali)"
-
-#: url_history.py:367
+#: url_history.py:380
 msgid "Delete"
 msgstr "Hapus"
 
-#: url_history.py:296
+#: url_history.py:309
 msgid "Deleted"
 msgstr "Dihapus"
 
-#: url_history.py:175
+#: url_history.py:188
 msgid "Display name (optional):"
 msgstr "Nama tampilan (opsional):"
 
-#: url_history.py:366
+#: url_history.py:379
 msgid "Edit"
 msgstr "Sunting"
 
-#: url_history.py:303
+#: url_history.py:316
 msgid "Edit URL"
 msgstr "Sunting URL"
 
-#: __init__.py:118
+#: simplecopy_engine.py:147
 msgid "Error during append operation"
 msgstr "Galat selama operasi penambahan"
 
-#: clipboard_utils.py:223
+#: clipboard_utils.py:200
 msgid "Error writing to clipboard"
 msgstr "Galat saat menulis ke papan klip"
 
-#: url_history.py:307
+#: url_history.py:320
 msgid "Item edited"
 msgstr "Item disunting"
 
-#: url_history.py:364
+#: url_history.py:377
 msgid "Move Down"
 msgstr "Pindahkan ke Bawah"
 
-#: url_history.py:363
+#: url_history.py:376
 msgid "Move Up"
 msgstr "Pindahkan ke Atas"
 
-#: url_history.py:343
+#: url_history.py:356
 msgid "Moved down"
 msgstr "Dipindahkan ke bawah"
 
-#: url_history.py:331
+#: url_history.py:344
 msgid "Moved up"
 msgstr "Dipindahkan ke atas"
 
-#: __init__.py:305
+#: simplecopy_engine.py:411
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
 msgstr "Navigasi riwayat ucapan: sebelumnya (tunggal) berikutnya (ganda) buka berkas log (tiga kali)"
 
-#: __init__.py:227
+#: simplecopy_engine.py:333
 msgid "No URL"
 msgstr "Tidak ada URL"
 
-#: __init__.py:240
+#: simplecopy_engine.py:346
 msgid "No link found"
 msgstr "Tautan tidak ditemukan"
 
-#: __init__.py:185
-msgid "No text at review cursor"
-msgstr "Tidak ada teks pada kursor peninjau"
-
-#: __init__.py:91
+#: simplecopy_engine.py:120
 msgid "No text selected to append"
 msgstr "Tidak ada teks yang dipilih untuk ditambahkan"
 
-#: url_history.py:360
+#: url_history.py:373
 msgid "Pin"
 msgstr "Sematkan"
 
-#: url_history.py:319
+#: url_history.py:332
 msgid "Pinned"
 msgstr "Disematkan"
 
-#: __init__.py:33
+#: simplecopy_engine.py:59
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: url_history.py:225
+#: url_history.py:238
 msgid "URL"
 msgstr "URL"
 
-#: url_history.py:209
+#: url_history.py:222
 msgid "URL History"
 msgstr "Riwayat URL"
 
-#: url_history.py:170
+#: url_history.py:183
 msgid "URL:"
 msgstr "URL:"
 
-#: url_history.py:360
+#: url_history.py:373
 msgid "Unpin"
 msgstr "Lepas Sematan"
 
-#: url_history.py:319
+#: url_history.py:332
 msgid "Unpinned"
 msgstr "Sematan dilepas"
 
-#: __init__.py:99
-#: __init__.py:100
-#: __init__.py:177
+#: simplecopy_engine.py:128
+#: simplecopy_engine.py:129
+#: simplecopy_engine.py:219
 msgid "character"
 msgstr "karakter"
 
-#: __init__.py:99
-#: __init__.py:100
-#: __init__.py:177
+#: simplecopy_engine.py:128
+#: simplecopy_engine.py:129
+#: simplecopy_engine.py:219
 msgid "characters"
 msgstr "karakter"
 
-#: __init__.py:189
+#: simplecopy_engine.py:295
 msgid "copy URL (single) copy hyper link (double) open URL history (triple)"
 msgstr "salin URL (tunggal) salin tautan hiper (ganda) buka riwayat URL (tiga kali)"
 
-#: __init__.py:247
+#: simplecopy_engine.py:353
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
 msgstr "salin ucapan terakhir (tunggal) tambahkan ucapan terakhir (ganda) salin sampai ucapan terakhir (tiga kali)"
 
-#: __init__.py:106
+#: simplecopy_engine.py:220
+msgid "line"
+msgstr "baris"
+
+#: simplecopy_engine.py:220
+msgid "lines"
+msgstr "baris"
+
+#: simplecopy_engine.py:135
 msgid "total"
 msgstr "total"

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.9.0\n"
+"Project-Id-Version: simpleCopy 2026.9.9\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-08-16 16:13+0700\n"
+"POT-Creation-Date: 2026-09-17 08:40+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Thai\n"
@@ -12,185 +12,196 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: DevOn Addon\n"
 
-#: url_history.py:185
+#: url_history.py:198
 msgid "&Cancel"
 msgstr "ยกเลิก(&C)"
 
-#: url_history.py:184
+#: url_history.py:197
 msgid "&OK"
 msgstr "ตกลง(&O)"
 
-#: __init__.py:291
+#: simplecopy_engine.py:397
 msgid "Append"
 msgstr "ต่อท้าย"
 
-#: clipboard_utils.py:215
+#: clipboard_utils.py:192
 msgid "Appended"
 msgstr "ต่อท้ายแล้ว"
 
-#: clipboard_utils.py:190
+#: clipboard_utils.py:167
 msgid "Cannot append to non-text clipboard content"
 msgstr "ไม่สามารถต่อท้ายไปยังเนื้อหาคลิปบอร์ดที่ไม่ใช่ข้อความได้"
 
-#: __init__.py:129
+#: simplecopy_engine.py:158
 msgid "Clean"
 msgstr "ทำความสะอาด"
 
-#: url_history.py:354
+#: url_history.py:367
 msgid "Clear"
 msgstr "ล้าง"
 
-#: url_history.py:348
+#: url_history.py:361
 msgid "Cleared all non-pinned items"
 msgstr "ล้างรายการที่ไม่ปักหมุดทั้งหมดแล้ว"
 
-#: clipboard_utils.py:215
+#: simplecopy_engine.py:44
+msgid "Close"
+msgstr "ปิด"
+
+#: clipboard_utils.py:192
 msgid "Copied"
 msgstr "คัดลอกแล้ว"
 
-#: __init__.py:224
-#: __init__.py:237
-#: url_history.py:286
+#: simplecopy_engine.py:33
+msgid "Copied Text"
+msgstr "คัดลอกข้อความแล้ว"
+
+#: simplecopy_engine.py:224
+msgid "Copied from review cursor"
+msgstr "คัดลอกมาจากเคอร์เซอร์รีวิว"
+
+#: simplecopy_engine.py:330
+#: simplecopy_engine.py:343
+#: url_history.py:299
 msgid "Copy"
 msgstr "คัดลอก"
 
-#: __init__.py:300
+#: simplecopy_engine.py:406
 msgid "Copy Until Last"
 msgstr "คัดลอกจนถึงล่าสุด"
 
-#: __init__.py:182
-#: url_history.py:288
+#: url_history.py:301
 msgid "Copy failed"
 msgstr "คัดลอกไม่สำเร็จ"
 
-#: __init__.py:178
-msgid "Copy from review"
-msgstr "คัดลอกจากการทบทวน"
+#: simplecopy_engine.py:166
+msgid "Copy/Append selected text (single) Copy from review cursor and show text (double) Clear clipboard (triple)"
+msgstr "คัดลอก/ต่อท้ายข้อความที่เลือก (กดหนึ่งครั้ง) คัดลอกมาจากเคอร์เซอร์รีวิวและแสดงข้อความ (กดสองครั้ง) ล้างคลิปบอร์ด (กดสามครั้ง)"
 
-#: __init__.py:137
-msgid "Copy/Append selected text (single) Copy from review cursor (double) Clear clipboard (triple)"
-msgstr "คัดลอก/ต่อท้ายข้อความที่เลือก (กดครั้งเดียว) คัดลอกตัวชี้ทบทวน (กดสองครั้ง) ล้างคลิปบอร์ด (กดสามครั้ง)"
-
-#: url_history.py:367
+#: url_history.py:380
 msgid "Delete"
 msgstr "ลบ"
 
-#: url_history.py:296
+#: url_history.py:309
 msgid "Deleted"
 msgstr "ลบแล้ว"
 
-#: url_history.py:175
+#: url_history.py:188
 msgid "Display name (optional):"
 msgstr "ชื่อที่แสดง (ไม่บังคับ):"
 
-#: url_history.py:366
+#: url_history.py:379
 msgid "Edit"
 msgstr "แก้ไข"
 
-#: url_history.py:303
+#: url_history.py:316
 msgid "Edit URL"
 msgstr "แก้ไข URL"
 
-#: __init__.py:118
+#: simplecopy_engine.py:147
 msgid "Error during append operation"
 msgstr "เกิดข้อผิดพลาดระหว่างการดำเนินการต่อท้าย"
 
-#: clipboard_utils.py:223
+#: clipboard_utils.py:200
 msgid "Error writing to clipboard"
 msgstr "เกิดข้อผิดพลาดในการเขียนลงคลิปบอร์ด"
 
-#: url_history.py:307
+#: url_history.py:320
 msgid "Item edited"
 msgstr "แก้ไขรายการแล้ว"
 
-#: url_history.py:364
+#: url_history.py:377
 msgid "Move Down"
 msgstr "ย้ายลง"
 
-#: url_history.py:363
+#: url_history.py:376
 msgid "Move Up"
 msgstr "ย้ายขึ้น"
 
-#: url_history.py:343
+#: url_history.py:356
 msgid "Moved down"
 msgstr "ย้ายลงแล้ว"
 
-#: url_history.py:331
+#: url_history.py:344
 msgid "Moved up"
 msgstr "ย้ายขึ้นแล้ว"
 
-#: __init__.py:305
+#: simplecopy_engine.py:411
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
 msgstr "นำทางประวัติคำพูด: ก่อนหน้า (กดครั้งเดียว) ถัดไป (กดสองครั้ง) เปิดไฟล์บันทึก (กดสามครั้ง)"
 
-#: __init__.py:227
+#: simplecopy_engine.py:333
 msgid "No URL"
 msgstr "ไม่มี URL"
 
-#: __init__.py:240
+#: simplecopy_engine.py:346
 msgid "No link found"
 msgstr "ไม่พบลิงก์"
 
-#: __init__.py:185
-msgid "No text at review cursor"
-msgstr "ไม่มีข้อความที่ตัวชี้ทบทวน"
-
-#: __init__.py:91
+#: simplecopy_engine.py:120
 msgid "No text selected to append"
 msgstr "ไม่มีข้อความที่เลือกเพื่อต่อท้าย"
 
-#: url_history.py:360
+#: url_history.py:373
 msgid "Pin"
 msgstr "ปักหมุด"
 
-#: url_history.py:319
+#: url_history.py:332
 msgid "Pinned"
 msgstr "ปักหมุดแล้ว"
 
-#: __init__.py:33
+#: simplecopy_engine.py:59
 msgid "Simple Copy"
 msgstr "Simple Copy"
 
-#: url_history.py:225
+#: url_history.py:238
 msgid "URL"
 msgstr "URL"
 
-#: url_history.py:209
+#: url_history.py:222
 msgid "URL History"
 msgstr "ประวัติ URL"
 
-#: url_history.py:170
+#: url_history.py:183
 msgid "URL:"
 msgstr "URL:"
 
-#: url_history.py:360
+#: url_history.py:373
 msgid "Unpin"
 msgstr "เลิกปักหมุด"
 
-#: url_history.py:319
+#: url_history.py:332
 msgid "Unpinned"
 msgstr "เลิกปักหมุดแล้ว"
 
-#: __init__.py:99
-#: __init__.py:100
-#: __init__.py:177
+#: simplecopy_engine.py:128
+#: simplecopy_engine.py:129
+#: simplecopy_engine.py:219
 msgid "character"
 msgstr "อักขระ"
 
-#: __init__.py:99
-#: __init__.py:100
-#: __init__.py:177
+#: simplecopy_engine.py:128
+#: simplecopy_engine.py:129
+#: simplecopy_engine.py:219
 msgid "characters"
 msgstr "อักขระ"
 
-#: __init__.py:189
+#: simplecopy_engine.py:295
 msgid "copy URL (single) copy hyper link (double) open URL history (triple)"
 msgstr "คัดลอก URL (กดครั้งเดียว) คัดลอกไฮเปอร์ลิงก์ (กดสองครั้ง) เปิดประวัติ URL (กดสามครั้ง)"
 
-#: __init__.py:247
+#: simplecopy_engine.py:353
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
 msgstr "คัดลอกคำพูดล่าสุด (กดครั้งเดียว) ต่อท้ายคำพูดล่าสุด (กดสองครั้ง) คัดลอกจนถึงคำพูดล่าสุด (กดสามครั้ง)"
 
-#: __init__.py:106
+#: simplecopy_engine.py:220
+msgid "line"
+msgstr "บรรทัด"
+
+#: simplecopy_engine.py:220
+msgid "lines"
+msgstr "บรรทัด"
+
+#: simplecopy_engine.py:135
 msgid "total"
 msgstr "ทั้งหมด"
