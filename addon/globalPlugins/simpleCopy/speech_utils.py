@@ -2,6 +2,7 @@
 
 import speech
 import speechViewer
+from speech.extensions import filter_speechSequence
 import os
 import globalVars
 from collections import deque, namedtuple
@@ -11,6 +12,17 @@ from eventHandler import FocusLossCancellableSpeechCommand
 log = logging.getLogger("nvda.simpleCopy.speech")
 
 SpeechHistoryEntry = namedtuple("SpeechHistoryEntry", ["sequence", "text"])
+
+_unrecordedSpeechDepth = 0
+
+
+def speakUnrecorded(sequence, *args, **kwargs):
+	global _unrecordedSpeechDepth
+	_unrecordedSpeechDepth += 1
+	try:
+		speech.speak(sequence, *args, **kwargs)
+	finally:
+		_unrecordedSpeechDepth -= 1
 
 
 class SpeechNavigator:
@@ -48,11 +60,10 @@ class SpeechHistoryHandler:
 	def __init__(self, maxlen=500, callback=None):
 		self.history = deque(maxlen=maxlen)
 		self.callback = callback
-		self._orig_speak = None
-		self._patched = False
+		self._filterRegistered = False
 		self._setup_storage()
 		self.navigator = SpeechNavigator(self.history)
-		self.patch_speech()
+		self.register_filter()
 
 	def _setup_storage(self):
 		config_path = globalVars.appArgs.configPath
@@ -67,28 +78,19 @@ class SpeechHistoryHandler:
 		except Exception as e:
 			log.error(f"Failed to initialize log file: {e}")
 
-	def patch_speech(self):
-		try:
-			if hasattr(speech, 'speech') and hasattr(speech.speech, 'speak'):
-				self._orig_speak = speech.speech.speak
-				speech.speech.speak = self._my_speak
-				self._patched = True
-			elif hasattr(speech, 'speak'):
-				self._orig_speak = speech.speak
-				speech.speak = self._my_speak
-				self._patched = True
-			log.info("Speech interception active")
-		except Exception as e:
-			log.error(f"Failed to patch speech: {e}")
+	def register_filter(self):
+		if self._filterRegistered:
+			return
+		filter_speechSequence.register(self._recordSequence)
+		self._filterRegistered = True
+		log.info("Speech interception active")
 
-	def restore_patch(self):
-		if self._patched:
-			if hasattr(speech, 'speech'):
-				speech.speech.speak = self._orig_speak
-			else:
-				speech.speak = self._orig_speak
-			self._patched = False
-			log.info("Speech interception restored")
+	def unregister_filter(self):
+		if not self._filterRegistered:
+			return
+		filter_speechSequence.unregister(self._recordSequence)
+		self._filterRegistered = False
+		log.info("Speech interception restored")
 
 	def _get_sequence_text(self, seq):
 		if not seq:
@@ -108,6 +110,14 @@ class SpeechHistoryHandler:
 
 		return ""
 
+	def _get_replayable_sequence(self, seq):
+		if not isinstance(seq, (list, tuple)):
+			return seq
+		return [
+			command for command in seq
+			if not isinstance(command, FocusLossCancellableSpeechCommand)
+		]
+
 	def _is_state_echo_duplicate(self, previous_text, current_text):
 		if not previous_text or not current_text:
 			return False
@@ -116,23 +126,24 @@ class SpeechHistoryHandler:
 		current_tokens = set(current_text.lower().split())
 		return bool(previous_tokens) and previous_tokens.issubset(current_tokens)
 
-	def _my_speak(self, sequence, *args, **kwargs):
-		if self._orig_speak:
-			self._orig_speak(sequence, *args, **kwargs)
+	def _recordSequence(self, sequence):
+		if _unrecordedSpeechDepth > 0:
+			return sequence
 
 		try:
 			text_version = self._get_sequence_text(sequence)
 			if not text_version:
-				return
+				return sequence
 
 			clean_text = text_version.strip()
 			if not clean_text:
-				return
+				return sequence
 
+			replaySequence = self._get_replayable_sequence(sequence)
 			if self.history and self._is_state_echo_duplicate(self.history[0].text, clean_text):
-				self.history[0] = SpeechHistoryEntry(sequence=sequence, text=clean_text)
+				self.history[0] = SpeechHistoryEntry(sequence=replaySequence, text=clean_text)
 			else:
-				self.history.appendleft(SpeechHistoryEntry(sequence=sequence, text=clean_text))
+				self.history.appendleft(SpeechHistoryEntry(sequence=replaySequence, text=clean_text))
 
 			if self.callback:
 				callback_text = clean_text
@@ -140,7 +151,8 @@ class SpeechHistoryHandler:
 					callback_text += "\n"
 				self.callback(callback_text)
 		except Exception as e:
-			log.error(f"MySpeak processing error: {e}")
+			log.error(f"Speech record error: {e}")
+		return sequence
 
 	def get_latest_sequence(self):
 		return self.history[0].sequence if self.history else None

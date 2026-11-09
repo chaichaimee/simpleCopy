@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.9.9\n"
+"Project-Id-Version: simpleCopy 2026.11.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-09-17 08:40+0700\n"
+"POT-Creation-Date: 2026-11-09 16:35+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Hindi\n"
@@ -10,21 +10,23 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: DevOn Addon\n"
+"X-Generator: ChaiBot Addon\n"
 
-#: url_history.py:198
+#: url_history.py:197
 msgid "&Cancel"
 msgstr "&रद्द करें"
 
-#: url_history.py:197
+#: url_history.py:196
 msgid "&OK"
 msgstr "&ٹھیک ہے"
 
-#: simplecopy_engine.py:397
+#: simplecopy_engine.py:541
+#: simplecopy_engine.py:544
 msgid "Append"
 msgstr "जोड़ें"
 
 #: clipboard_utils.py:192
+#: simplecopy_engine.py:136
 msgid "Appended"
 msgstr "जोड़ा गया"
 
@@ -32,19 +34,19 @@ msgstr "जोड़ा गया"
 msgid "Cannot append to non-text clipboard content"
 msgstr "गैर-पाठ क्लिपबोर्ड सामग्री में नहीं जोड़ा जा सकता"
 
-#: simplecopy_engine.py:158
+#: simplecopy_engine.py:179
 msgid "Clean"
 msgstr "साफ़ करें"
 
-#: url_history.py:367
+#: url_history.py:366
 msgid "Clear"
 msgstr "साफ़ करें"
 
-#: url_history.py:361
+#: url_history.py:360
 msgid "Cleared all non-pinned items"
 msgstr "सभी अनपिन किए गए आइटम साफ़ कर दिए गए"
 
-#: simplecopy_engine.py:44
+#: simplecopy_engine.py:42
 msgid "Close"
 msgstr "बंद करें"
 
@@ -52,53 +54,57 @@ msgstr "बंद करें"
 msgid "Copied"
 msgstr "कॉपी किया गया"
 
-#: simplecopy_engine.py:33
+#: simplecopy_engine.py:31
 msgid "Copied Text"
 msgstr "कॉपी किया गया पाठ"
 
-#: simplecopy_engine.py:224
+#: simplecopy_engine.py:365
 msgid "Copied from review cursor"
 msgstr "समीक्षा कर्सर से कॉपी किया गया"
 
-#: simplecopy_engine.py:330
-#: simplecopy_engine.py:343
-#: url_history.py:299
+#: simplecopy_engine.py:474
+#: simplecopy_engine.py:487
+#: url_history.py:298
 msgid "Copy"
 msgstr "कॉपी करें"
 
-#: simplecopy_engine.py:406
+#: simplecopy_engine.py:553
 msgid "Copy Until Last"
 msgstr "अंतिम तक कॉपी करें"
 
-#: url_history.py:301
+#: url_history.py:300
 msgid "Copy failed"
 msgstr "कॉपी करने में विफल"
 
-#: simplecopy_engine.py:166
-msgid "Copy/Append selected text (single) Copy from review cursor and show text (double) Clear clipboard (triple)"
-msgstr "चयनित पाठ कॉपी/जोड़ें (एक बार) समीक्षा कर्सर से कॉपी करें और पाठ दिखाएं (दो बार) क्लिपबोर्ड साफ़ करें (तीन बार)"
+#: simplecopy_engine.py:227
+msgid "Copy from review cursor and show text"
+msgstr "समीक्षा कर्सर से कॉपी करें और पाठ दिखाएँ"
 
-#: url_history.py:380
+#: simplecopy_engine.py:187
+msgid "Copy/Append selected text (single) Paste line by line (double) Clear clipboard (triple)"
+msgstr "चयनित"
+
+#: url_history.py:379
 msgid "Delete"
 msgstr "हटाएं"
 
-#: url_history.py:309
+#: url_history.py:308
 msgid "Deleted"
 msgstr "हटाया गया"
 
-#: url_history.py:188
+#: url_history.py:187
 msgid "Display name (optional):"
 msgstr "प्रदर्शित नाम (वैकल्पिक):"
 
-#: url_history.py:379
+#: url_history.py:378
 msgid "Edit"
 msgstr "संपादित करें"
 
-#: url_history.py:316
+#: url_history.py:315
 msgid "Edit URL"
 msgstr "URL संपादित करें"
 
-#: simplecopy_engine.py:147
+#: simplecopy_engine.py:167
 msgid "Error during append operation"
 msgstr "जोड़ने की प्रक्रिया के दौरान त्रुटि"
 
@@ -106,102 +112,109 @@ msgstr "जोड़ने की प्रक्रिया के दौर�
 msgid "Error writing to clipboard"
 msgstr "क्लिपबोर्ड पर लिखने में त्रुटि"
 
-#: url_history.py:320
+#: url_history.py:319
 msgid "Item edited"
 msgstr "आइटम संपादित किया गया"
 
-#: url_history.py:377
+#: url_history.py:376
 msgid "Move Down"
 msgstr "नीचे ले जाएं"
 
-#: url_history.py:376
+#: url_history.py:375
 msgid "Move Up"
 msgstr "ऊपर ले जाएं"
 
-#: url_history.py:356
+#: url_history.py:355
 msgid "Moved down"
 msgstr "नीचे ले जाया गया"
 
-#: url_history.py:344
+#: url_history.py:343
 msgid "Moved up"
 msgstr "ऊपर ले जाया गया"
 
-#: simplecopy_engine.py:411
+#: simplecopy_engine.py:558
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
 msgstr "वाक् इतिहास नेविगेट करें: पिछला (एकल) अगला (डबल) लॉग फ़ाइल खोलें (ट्रिपल)"
 
-#: simplecopy_engine.py:333
+#: simplecopy_engine.py:477
 msgid "No URL"
 msgstr "कोई URL नहीं"
 
-#: simplecopy_engine.py:346
+#: simplecopy_engine.py:490
 msgid "No link found"
 msgstr "कोई लिंक नहीं मिला"
 
-#: simplecopy_engine.py:120
+#: simplecopy_engine.py:127
 msgid "No text selected to append"
 msgstr "जोड़ने के लिए कोई पाठ चयनित नहीं है"
 
-#: url_history.py:373
+#: url_history.py:372
 msgid "Pin"
 msgstr "पिन करें"
 
-#: url_history.py:332
+#: url_history.py:331
 msgid "Pinned"
 msgstr "पिन किया गया"
 
-#: simplecopy_engine.py:59
+#: simplecopy_engine.py:57
 msgid "Simple Copy"
 msgstr "सिंपल कॉपी"
 
-#: url_history.py:238
+#: url_history.py:237
 msgid "URL"
 msgstr "URL"
 
-#: url_history.py:222
+#: url_history.py:221
 msgid "URL History"
 msgstr "URL इतिहास"
 
-#: url_history.py:183
+#: url_history.py:182
 msgid "URL:"
 msgstr "URL:"
 
-#: url_history.py:373
+#: url_history.py:372
 msgid "Unpin"
 msgstr "अनपिन करें"
 
-#: url_history.py:332
+#: url_history.py:331
 msgid "Unpinned"
 msgstr "अनपिन किया गया"
 
-#: simplecopy_engine.py:128
-#: simplecopy_engine.py:129
-#: simplecopy_engine.py:219
+#: simplecopy_engine.py:133
+#: simplecopy_engine.py:134
+#: simplecopy_engine.py:148
+#: simplecopy_engine.py:149
+#: simplecopy_engine.py:360
 msgid "character"
 msgstr "वर्ण"
 
-#: simplecopy_engine.py:128
-#: simplecopy_engine.py:129
-#: simplecopy_engine.py:219
+#: simplecopy_engine.py:133
+#: simplecopy_engine.py:134
+#: simplecopy_engine.py:148
+#: simplecopy_engine.py:149
+#: simplecopy_engine.py:360
 msgid "characters"
 msgstr "वर्ण"
 
-#: simplecopy_engine.py:295
+#: simplecopy_engine.py:439
 msgid "copy URL (single) copy hyper link (double) open URL history (triple)"
 msgstr "URL कॉपी करें (एकल) हाइपरलिंक कॉपी करें (डबल) URL इतिहास खोलें (ट्रिपल)"
 
-#: simplecopy_engine.py:353
+#: simplecopy_engine.py:497
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
 msgstr "अंतिम वाक् कॉपी करें (एकल) अंतिम वाक् जोड़ें (डबल) अंतिम वाक् तक कॉपी करें (ट्रिपल)"
 
-#: simplecopy_engine.py:220
+#: simplecopy_engine.py:298
+#: simplecopy_engine.py:361
 msgid "line"
 msgstr "पंक्ति"
 
-#: simplecopy_engine.py:220
+#: simplecopy_engine.py:298
+#: simplecopy_engine.py:361
 msgid "lines"
 msgstr "पंक्तियाँ"
 
-#: simplecopy_engine.py:135
+#: simplecopy_engine.py:138
+#: simplecopy_engine.py:155
 msgid "total"
 msgstr "कुल"

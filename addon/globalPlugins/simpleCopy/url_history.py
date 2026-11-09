@@ -1,6 +1,4 @@
 # url_history.py
-# Copyright (C) 2026 Chai Chaimee
-# Licensed under GNU General Public License. See COPYING.txt for details.
 
 import wx
 import os
@@ -14,7 +12,8 @@ import globalVars
 import core
 import api
 import ui
-import speech
+
+from . import speech_utils
 
 addonHandler.initTranslation()
 log = logging.getLogger(__name__)
@@ -296,9 +295,9 @@ class URLHistoryDialog(wx.Dialog):
 			announceLabel = item.get("display_name") or url
 			log.info(f"URL copied from history: {url[:80]}")
 			self.Close()
-			core.callLater(50, speech.speak, [_("Copy"), announceLabel])
+			core.callLater(50, speech_utils.speakUnrecorded, [_("Copy"), announceLabel])
 		else:
-			speech.speak([_("Copy failed")])
+			speech_utils.speakUnrecorded([_("Copy failed")])
 			wx.CallAfter(self.Close)
 
 	def _onDelete(self, event):

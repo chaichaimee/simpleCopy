@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>SimpleCopy NVDA Add-on</title>
+<title>simpleCopy NVDA Add-on</title>
 <style>
 body {
     font-family: Arial, sans-serif;
@@ -65,30 +65,23 @@ b {
 
 <div class="section">
     <img src="https://www.nvaccess.org/files/nvda/documentation/userGuide/images/nvda.ico" alt="NVDA Logo" class="nvda-logo">
-    <h1>SimpleCopy</h1>
+    <h1>simpleCopy</h1>
     <br>
-    <p style="text-align: center;">Kopieren Sie alles und überall mit nur einem Tastendruck &mdash; Text, Fenster, URLs und sogar das, was NVDA gerade gesprochen hat.</p>
+    <p style="text-align: center;">Kopieren, anhängen, einfügen und erfassen Sie alles, was Sie hören, lesen oder durchsuchen, mit wenigen einfachen Tastenkombinationen.</p>
 </div>
 <br>
 <div class="section">
     <p style="text-align: center;"><b>Autor:</b> chai chaimee</p>
-    <p style="text-align: center;"><b>URL:</b> <a href="https://github.com/chaichaimee/simpleCopy">https://github.com/chaichaimee/simpleCopy</a></p>
+    <p style="text-align: center;"><b>URL:</b> https://github.com/chaichaimee/simpleCopy</p>
 </div>
 <br>
 
 <div class="section">
-<h2>Einführung</h2>
+<h3>Einführung</h3>
 <br>
-<p>SimpleCopy ist ein NVDA-Add-on, das das Kopieren von Informationen mühelos macht, egal was Sie gerade am Computer tun.</p>
+<p>simpleCopy verwandelt die Zwischenablage in einen schnellen, barrierefreien Arbeitsbereich. Sie können mehrere Textabschnitte in einer Zwischenablage sammeln, diese zeilenweise wieder einfügen, den gesamten Text eines Fensters kopieren, die Adresse der aktuellen Webseite oder des Links übernehmen und alles kopieren, was NVDA gerade gesprochen hat. Ein integrierter URL-Verlauf speichert die erfassten Adressen, sodass Sie sie später wiederverwenden können.</p>
 <br>
-<p>Anstatt nach der richtigen Tastenkombination für jede Situation zu suchen, bietet Ihnen SimpleCopy nur vier leicht zu merkende Tastenkombinationen. Jede führt je nach Anzahl der Tastenanschläge mehrere zusammenhängende Aktionen aus. Mit SimpleCopy können Sie:</p>
-<br>
-<p>&bull; Ausgewählten Text kopieren oder anhängen und sogar den gesamten Inhalt eines Fensters erfassen, wenn nichts ausgewählt ist.<br>
-&bull; Die Adresse der aktuell aufgerufenen Seite oder das Ziel eines bestimmten Links kopieren und einen durchsuchbaren Verlauf aller kopierten URLs führen.<br>
-&bull; Sofort das zuletzt von NVDA Gesprochene kopieren &mdash; und sogar einen ganzen Sprachverlauf aufzeichnen, bis Sie ihn stoppen.<br>
-&bull; Vorwärts und rückwärts durch alles navigieren, was NVDA kürzlich gesprochen hat, und jederzeit eine Protokolldatei Ihres Sprachverlaufs öffnen.</p>
-<br>
-<p>Alles wird mit klarem Sprachfeedback und Signaltönen bestätigt, sodass Sie immer genau wissen, was kopiert wurde.</p>
+<p>Jede Aktion wird durch Sprachausgabe oder einen kurzen Piepton angekündigt, sodass Sie immer wissen, ob der Vorgang erfolgreich war.</p>
 </div>
 <br>
 
@@ -96,173 +89,188 @@ b {
 <h3>Tastenkombinationen</h3>
 <br>
 <div class="hotkey">
-<b>Strg+Shift+V</b><br>
-Einmal drücken : Ausgewählten Text kopieren oder an die Zwischenablage anhängen<br>
-Zweimal drücken : Gesamten Text des aktuellen Fensters kopieren und in einem Überprüfungsfenster anzeigen<br>
-Dreimal drücken : Zwischenablage leeren
-</div>
-<br>
-<div class="hotkey">
 <b>Strg+Shift+A</b><br>
-Einmal drücken : URL der aktuellen Browserseite kopieren<br>
-Zweimal drücken : URL des Links unter dem Navigator-Objekt kopieren<br>
-Dreimal drücken : URL-Verlaufsfenster öffnen
+Einfach-Tippen: URL kopieren<br>
+Doppel-Tippen: Hyperlink kopieren<br>
+Dreifach-Tippen: URL-Verlauf
 </div>
-<br>
+
+<div class="hotkey">
+<b>Strg+Shift+V</b><br>
+Einfach-Tippen: Text kopieren und anhängen<br>
+Doppel-Tippen: Zeile für Zeile einfügen<br>
+Dreifach-Tippen: Zwischenablage leeren
+</div>
+
+<div class="hotkey">
+<b>Shift+Windows+V</b><br>
+Einfach-Tippen: Fenstertext kopieren und anzeigen
+</div>
+
 <div class="hotkey">
 <b>F9</b><br>
-Einmal drücken : Das zuletzt von NVDA Gesprochene kopieren und die Aufzeichnung weiterer Sprachausgaben starten<br>
-Zweimal drücken : Den zuletzt gesprochenen Satz lautlos an die Zwischenablage anhängen<br>
-Dreimal drücken : Alles kopieren, was seit Beginn der Aufzeichnung gesprochen wurde
+Einfach-Tippen: Letzte Sprachausgabe kopieren<br>
+Doppel-Tippen: Letzte Sprachausgabe anhängen<br>
+Dreifach-Tippen: Bis zur letzten Sprachausgabe kopieren
 </div>
-<br>
+
 <div class="hotkey">
 <b>Shift+F9</b><br>
-Einmal drücken : Rückwärts bewegen und einen älteren Eintrag aus dem Sprachverlauf erneut vorlesen<br>
-Zweimal drücken : Vorwärts durch den Sprachverlauf bewegen<br>
-Dreimal drücken : Protokolldatei des Sprachverlaufs öffnen
+Einfach-Tippen: Vorheriger Eintrag im Sprachverlauf<br>
+Doppel-Tippen: Nächster Eintrag im Sprachverlauf<br>
+Dreifach-Tippen: Datei des Sprachverlaufs öffnen
 </div>
 </div>
 <br>
 
 <div class="section">
-<h2>Funktionen</h2>
+<h3>Funktionen</h3>
 <br>
 
 <div class="feature-item">
-<h3>1. Intelligentes Kopieren und Anhängen von Text (Strg+Shift+V)</h3>
+<h3>Text kopieren und anhängen</h3>
 <br>
-<p>Diese Tastenkombination passt sich an Ihre Auswahl an und reagiert darauf, wie oft Sie sie innerhalb einer halben Sekunde drücken.</p>
+<p>Markieren Sie Text und drücken Sie einmal <b>Strg+Shift+V</b>. Die erste Auswahl wird in die Zwischenablage kopiert. Jede weitere Auswahl wird in einer neuen Zeile an das Ende der Zwischenablage angehängt, anstatt diese zu ersetzen, und NVDA teilt Ihnen mit, wie viele Zeichen hinzugefügt wurden und wie hoch das neue Total ist. So können Sie Text von verschiedenen Orten in einer Zwischenablage zusammenfassen.</p>
 <br>
-<div class="tap-explanation">
-<b>Einmal drücken &mdash; Ausgewählten Text kopieren oder anhängen</b><br>
+<p>Wenn nichts markiert ist, wird die Tastenkombination als normales <b>Strg+Shift+C</b> an die Anwendung weitergeleitet.</p>
 <br>
-Schritt für Schritt:<br>
-1. SimpleCopy prüft das aktuell fokussierte Objekt und versucht, dessen ausgewählten Text zu lesen.<br>
-2. Bei neueren NVDA/Python-Versionen wird zuerst die Auswahl des virtuellen Dokuments geprüft und danach direkt das Textobjekt ausgelesen. Bei älteren Versionen wird zuerst direkt das Textobjekt ausgelesen.<br>
-3. Wenn keine Methode eine Auswahl findet, wird automatisch der Standardbefehl Strg+C gesendet, den viele Anwendungen zum Kopieren nutzen, damit keine Funktion verloren geht.<br>
-4. Sobald Text gefunden wird, wird er nicht einfach in der Zwischenablage überschrieben &mdash; er wird an den bestehenden Inhalt der Zwischenablage angehängt, getrennt durch eine neue Zeile. War die Zwischenablage leer, wird der Text normal kopiert.<br>
-5. NVDA sag an, ob der Text "Angehängt" oder "Kopiert" wurde, zusammen mit der Anzahl der hinzugefügten Zeichen und (beim Anhängen) der neuen Gesamtzeichenanzahl.
-</div>
-<br>
-<div class="tap-explanation">
-<b>Zweimal drücken &mdash; Ganzes Fenster kopieren und überprüfen</b><br>
-<br>
-Schritt für Schritt:<br>
-1. SimpleCopy versucht, den gesamten Inhalt des aktuellen Fensters als einen Textblock zu lesen, wobei dieselbe Review-Cursor-Position wie bei den integrierten NVDA-Überprüfungsbefehlen verwendet wird.<br>
-2. Wenn dabei sehr wenig Text erzeugt wird (unter 100 Zeichen), durchläuft es die Objekte des Fensters nacheinander und sammelt Namen, Werte, Beschreibungen und bearbeitbaren Text von bis zu 200 Objekten, damit nichts Wichtiges übersehen wird.<br>
-3. Der gesammelte Text wird in die Zwischenablage kopiert und NVDA sagt die Gesamtzahl der Zeichen und Zeilen mit einem Bestätigungston an.<br>
-4. Sobald die Ansage beendet ist (SimpleCopy wartet, bis die Sprachausgabe tatsächlich fertig ist, anstatt eine feste Verzögerung anzunehmen), öffnet sich ein Fenster "Kopierter Text", das den vollständigen Text in einem scrollbaren, schreibgeschützten Feld anzeigt. Sie können ihn frei lesen, durchsuchen oder auswählen. Das Drücken der Escape-Taste schließt es.
-</div>
-<br>
-<div class="tap-explanation">
-<b>Dreimal drücken &mdash; Zwischenablage leeren</b><br>
-<br>
-Leert die Windows-Zwischenablage vollständig, setzt das interne Flag "Text kopiert" von SimpleCopy zurück und löscht alle aufgezeichneten Sprachausgaben. NVDA sagt zur Bestätigung "Gereinigt" an.
-</div>
+<p><b>Beispiel:</b></p>
+<ol>
+<li>Markieren Sie den ersten Absatz und drücken Sie Strg+Shift+V. NVDA sagt „Kopiert“.</li>
+<li>Markieren Sie einen Absatz in einem anderen Dokument und drücken Sie Strg+Shift+V. NVDA sagt „Angehängt“ zusammen mit der Anzahl der Zeichen und dem Gesamtwert.</li>
+<li>Fügen Sie mit Strg+V ein. Beide Absätze erscheinen untereinander.</li>
+</ol>
 </div>
 <br>
 
 <div class="feature-item">
-<h3>2. URL- und Hyperlink-Kopieren mit Verlauf (Strg+Shift+A)</h3>
+<h3>Zeile für Zeile einfügen</h3>
 <br>
-<div class="tap-explanation">
-<b>Einmal drücken &mdash; URL der aktuellen Seite kopieren</b><br>
+<p>Nimmt den Text aus der Zwischenablage und fügt ihn zeilenweise ein, sodass Sie mehrere Felder oder Formulare aus einem einzigen Textblock ausfüllen können. Leere Zeilen werden übersprungen.</p>
 <br>
-Schritt für Schritt:<br>
-1. Wenn Sie sich derzeit in einem bearbeitbaren Textfeld befinden, reicht SimpleCopy den Tastendruck als normales Strg+Shift+A durch, damit eigene Kürzel von Anwendungen nicht gestört werden.<br>
-2. Andernfalls, wenn die fokussierte Anwendung ein unterstützter Webbrowser ist (Chrome, Firefox, Edge, Opera, Safari oder Brave), ermittelt SimpleCopy die aktuelle Seitenadresse durch Prüfung folgender Quellen in dieser Reihenfolge: Wert des barrierefreien Dokuments, URL-Eigenschaft des virtuellen Dokuments, UI Automation Url-Eigenschaft und schließlich die app-module-Methode des Browsers.<br>
-3. Die Adresse wird in die Zwischenablage kopiert, vorgelesen und automatisch in der URL-Verlaufsliste gespeichert.<br>
-4. Wenn Sie sich nicht in einem unterstützten Browser befinden, wird der Tastendruck als Standard Strg+Shift+A durchgereicht.
-</div>
+<ol>
+<li>Kopieren oder hängen Sie den gewünschten Text an.</li>
+<li>Drücken Sie zweimal Strg+Shift+V. Sie hören einen Piepton und NVDA gibt die Anzahl der Zeilen bekannt.</li>
+<li>Gehen Sie zum ersten Zielort des Textes und drücken Sie das normale <b>Strg+V</b>. Die erste Zeile wird eingefügt und NVDA gibt die Zeilennummer bekannt.</li>
+<li>Gehen Sie zum nächsten Zielort und drücken Sie erneut Strg+V. Die nächste Zeile wird eingefügt.</li>
+<li>Wiederholen Sie den Vorgang, bis die letzte Zeile eingefügt ist. Ein hoher Piepton signalisiert, dass die Liste fertig ist, und Ihr ursprünglicher Zwischenablagetext wird automatisch wiederhergestellt.</li>
+</ol>
 <br>
-<div class="tap-explanation">
-<b>Zweimal drücken &mdash; Hyperlink-URL kopieren</b><br>
-<br>
-Beim Surfen wird das Objekt unter dem NVDA-Navigator-Cursor (oder dessen übergeordnete Elemente) untersucht, um einen Link zu finden. Die Zieladresse wird über die vom Browser bereitgestellte Methode ausgelesen, in die Zwischenablage kopiert, angesagt und zum URL-Verlauf hinzugefügt.
-</div>
-<br>
-<div class="tap-explanation">
-<b>Dreimal drücken &mdash; URL-Verlauf öffnen</b><br>
-<br>
-Öffnet ein eigenes URL-Verlaufsfenster, das alle kopierten Adressen auflistet, sortiert nach der neusten (bis zu 300 Einträge; angeheftete Elemente sind stets vor dem Löschen geschützt). In diesem Fenster können Sie:<br>
-&bull; Eingabe drücken, um eine Adresse erneut zu kopieren.<br>
-&bull; Rechtsklicken oder die Kontextmenü-Taste nutzen zum Anheften/Loslösen, Nach oben/unten Bewegen, Bearbeiten (einen benutzerfreundlichen Namen vergeben), Löschen eines Eintrags oder Löschen aller nicht angehefteten Einträge.<br>
-&bull; Der Verlauf wird automatisch in einer Datei in Ihrem NVDA-Konfigurationsordner gespeichert, sodass er einen Neustart übersteht.
-</div>
+<p>Solange der zeilenweise Modus aktiv ist, können Sie weiterhin einmal Strg+Shift+V drücken, um der Warteschlange weiteren Text hinzuzufügen. Wenn Sie in der Zwischenzeit etwas anderes in die Zwischenablage kopieren, wird der Modus beendet und Strg+V fügt wie gewohnt ein.</p>
 </div>
 <br>
 
 <div class="feature-item">
-<h3>3. Spracherfassung und -wiedergabe (F9)</h3>
+<h3>Zwischenablage leeren</h3>
 <br>
-<p>SimpleCopy führt im Hintergrund ein Protokoll der letzten 500 Sprachausgaben von NVDA, sodass diese bei Bedarf kopiert oder erneut wiedergegeben werden können.</p>
-<br>
-<div class="tap-explanation">
-<b>Einmal drücken &mdash; Letzte Sprachausgabe kopieren und Aufzeichnung starten</b><br>
-<br>
-Schritt für Schritt:<br>
-1. Kopiert das zuletzt von NVDA Gesprochene direkt in die Zwischenablage, bestätigt durch einen Signalton.<br>
-2. Startet den "Aufnahmemodus": Ab diesem Zeitpunkt wird jede weitere Sprachausgabe von NVDA lautlos zu einem internen Puffer hinzugefügt, um später mit dreimaligem Drücken auf einmal kopiert zu werden. Wiederholte Zustandsansagen (z. B. wenn der Status einer Kontrollbox erneut angesagt wird) werden automatisch zusammengeführt, anstatt dupliziert zu werden.
-</div>
-<br>
-<div class="tap-explanation">
-<b>Zweimal drücken &mdash; Letzte Sprachausgabe lautlos anhängen</b><br>
-<br>
-Fügt den zuletzt gesprochenen Satz am Ende des Inhalts der Zwischenablage an (in einer neuen Zeile), ohne den übrigen Inhalt zu verändern, und bestätigt mit der Sprachausgabe "Angehängt".
-</div>
-<br>
-<div class="tap-explanation">
-<b>Dreimal drücken &mdash; Alles Aufgezeichnete kopieren</b><br>
-<br>
-Wenn der Aufnahmemodus aktiv ist, werden alle seit dem einfachen Drücken erfassten Sprachausgaben zu einem Textblock zusammengefügt (jeweils in einer eigenen Zeile), in die Zwischenablage kopiert, mit "Bis zum Letzten kopieren" angesagt und die Aufzeichnung wird beendet.
-</div>
+<p>Drücken Sie dreimal Strg+Shift+V, um die Zwischenablage zu leeren. NVDA sagt „Gereinigt“. Dadurch wird auch der zeilenweise Modus beendet und sämtliche für „Bis zur letzten Sprachausgabe kopieren“ erfasste Sprache gelöscht.</p>
 </div>
 <br>
 
 <div class="feature-item">
-<h3>4. Navigation im Sprachverlauf (Shift+F9)</h3>
+<h3>Fenstertext kopieren</h3>
 <br>
-<div class="tap-explanation">
-<b>Einmal drücken &mdash; Rückwärts navigieren</b><br>
-<br>
-Bewegt sich einen Schritt zurück im Sprachverlauf von NVDA und liest diesen älteren Eintrag erneut vor, damit Sie Verpasstes nachhören können.
-</div>
-<br>
-<div class="tap-explanation">
-<b>Zweimal drücken &mdash; Vorwärts navigieren</b><br>
-<br>
-Bewegt sich einen Schritt nach vorne im Sprachverlauf zurück zur aktuellsten Sprachausgabe und liest den Eintrag vor.
-</div>
-<br>
-<div class="tap-explanation">
-<b>Dreimal drücken &mdash; Sprachprotokolldatei öffnen</b><br>
-<br>
-Schreibt alle eindeutigen Einträge aus dem Sprachverlauf in eine Textdatei in Ihrem NVDA-Konfigurationsordner und öffnet diese in Ihrem Standard-Texteditor zum Lesen, Durchsuchen oder Speichern.
-</div>
+<p>Drücken Sie <b>Shift+Windows+V</b>, um den gesamten Text des aktiven Fensters in die Zwischenablage zu kopieren. Wenn das Fenster keinen Text direkt bereitstellt, liest simpleCopy stattdessen den Text des fokussierten Steuerelements über den Prüfcursor aus. NVDA gibt die Anzahl der kopierten Zeichen und Zeilen bekannt und öffnet anschließend ein schreibgeschütztes Fenster mit dem Titel „Kopierter Text“, das genau anzeigt, was kopiert wurde. Drücken Sie Escape oder wählen Sie Schließen, um zu Ihrer Arbeit zurückzukehren.</p>
 </div>
 <br>
 
-<div class="note">
-<b>Hinweis:</b> Alle mehrfach zu drückenden Tastenkombinationen nutzen ein kurzes Zeitfenster von 0,5 Sekunden zwischen den Tastenanschlägen, um zwischen einmaligem, zweimaligem und dreimaligem Drücken zu unterscheiden. Die Tasten sollten daher schnell hintereinander gedrückt werden.
+<div class="feature-item">
+<h3>URL kopieren</h3>
+<br>
+<p>Drücken Sie in einem Webbrowser (Chrome, Firefox, Edge, Opera, Safari und Brave) einmal <b>Strg+Shift+A</b>, um die Adresse der aktuellen Seite zu kopieren. NVDA sagt „Kopieren“ gefolgt von der Adresse, und die Adresse wird zum URL-Verlauf hinzugefügt. Wenn keine Adresse gefunden werden kann, sagt NVDA „Keine URL“.</p>
+<br>
+<p>Wenn Sie sich in einem Eingabefeld oder in einer Anwendung befinden, die kein Browser ist, wird die Tastenkombination unverändert an die Anwendung weitergeleitet.</p>
 </div>
+<br>
 
+<div class="feature-item">
+<h3>Hyperlink kopieren</h3>
+<br>
+<p>Bewegen Sie das Navigatorobjekt auf einen Link in einer Webseite und drücken Sie zweimal Strg+Shift+A. Die Adresse dieses Links wird kopiert, angesagt und zum URL-Verlauf hinzugefügt. Wenn kein Link vorhanden ist, sagt NVDA „Kein Link gefunden“.</p>
+</div>
+<br>
+
+<div class="feature-item">
+<h3>URL-Verlauf</h3>
+<br>
+<p>Drücken Sie dreimal Strg+Shift+A, um das URL-Verlaufsfenster zu öffnen. Es listet alle mit URL kopieren oder Hyperlink kopieren erfassten Adressen auf, beginnend mit der neuesten, und merkt sich bis zu 300 Adressen zwischen Sitzungen. Eine Adresse, die Sie erneut kopieren, wandert an den Anfang der Liste.</p>
+<br>
+<ol>
+<li>Drücken Sie dreimal Strg+Shift+A, um die Liste zu öffnen.</li>
+<li>Verwenden Sie die Pfeiltasten Oben und Unten, um eine Adresse auszuwählen.</li>
+<li>Drücken Sie Enter, um die ausgewählte Adresse in die Zwischenablage zu kopieren. Das Fenster schließt sich und NVDA gibt bekannt, was kopiert wurde.</li>
+<li>Drücken Sie Entf, um die ausgewählte Adresse zu entfernen, oder Escape, um das Fenster zu schließen.</li>
+</ol>
+<br>
+<p>Öffnen Sie das Kontextmenü für einen Eintrag (Anwendungstaste oder Rechtsklick), um weitere Optionen aufzurufen:</p>
+<br>
+<ul>
+<li><b>Löschen:</b> Entfernt alle Einträge, die nicht angeheftet sind.</li>
+<li><b>Anheften / Loslöschen:</b> Schützt einen Eintrag vor dem Löschen und vor dem automatischen Bereinigen, wenn die Liste voll ist.</li>
+<li><b>Nach oben / Nach unten:</b> Ändert die Position des Eintrags in der Liste.</li>
+<li><b>Bearbeiten:</b> Weist dem Eintrag einen optionalen Anzeigenamen zu, der anstelle der Adresse angezeigt wird. Lassen Sie den Namen leer, um wieder die Adresse anzuzeigen.</li>
+<li><b>Entfernen:</b> Löscht den Eintrag.</li>
+</ul>
+</div>
+<br>
+
+<div class="feature-item">
+<h3>Letzte Sprachausgabe kopieren</h3>
+<br>
+<p>Drücken Sie einmal <b>F9</b>, um das letzte von NVDA gesprochene Element in die Zwischenablage zu kopieren. Ein Piepton bestätigt den Kopiervorgang. Dadurch wird auch die Aufzeichnung aller nachfolgenden Sprachausgaben von NVDA gestartet, die für „Bis zur letzten Sprachausgabe kopieren“ verwendet wird.</p>
+</div>
+<br>
+
+<div class="feature-item">
+<h3>Letzte Sprachausgabe anhängen</h3>
+<br>
+<p>Drücken Sie zweimal F9, um das letzte von NVDA gesprochene Element in einer neuen Zeile an das Ende der Zwischenablage anzuhängen, ohne das bereits Vorhandene zu ersetzen. NVDA sagt „Anhängen“.</p>
+</div>
+<br>
+
+<div class="feature-item">
+<h3>Bis zur letzten Sprachausgabe kopieren</h3>
+<br>
+<p>Sammelt eine ganze Sprachsequenz – zum Beispiel mehrere Zeilen eines Chats oder eine lange Liste, die Sie durchlesen – in einem einzigen Zwischenablage-Eintrag.</p>
+<br>
+<ol>
+<li>Drücken Sie beim ersten gewünschten Element einmal F9. Es wird kopiert und die Aufzeichnung beginnt.</li>
+<li>Gehen Sie weiter und hören Sie sich die anderen gewünschten Elemente an. Alles, was NVDA spricht, wird aufgezeichnet.</li>
+<li>Drücken Sie dreimal F9. NVDA sagt „Bis zur letzten kopieren“, und alles, was seit der ersten Kopie aufgezeichnet wurde, wird zeilenweise in die Zwischenablage übernommen.</li>
+</ol>
+<br>
+<p>Wenn nichts aufgezeichnet wurde, hören Sie einen Fehlerpiepton. Die von simpleCopy selbst gesprochenen Meldungen werden nicht aufgezeichnet.</p>
+</div>
+<br>
+
+<div class="feature-item">
+<h3>Navigation im Sprachverlauf</h3>
+<br>
+<p>simpleCopy speichert die letzten 500 von NVDA gesprochenen Elemente. Drücken Sie einmal <b>Shift+F9</b>, um das vorherige Element zu hören, wobei Sie bei jedem Mal weiter zurückgehen. Drücken Sie zweimal Shift+F9, um sich wieder zum neuesten Element vorzuarbeiten. Wenn es in dieser Richtung nichts Weiteres gibt, hören Sie einen Fehlerpiepton.</p>
+</div>
+<br>
+
+<div class="feature-item">
+<h3>Datei des Sprachverlaufs öffnen</h3>
+<br>
+<p>Drücken Sie dreimal Shift+F9, um den Sprachverlauf in einer Textdatei zu speichern und in Ihrem Standard-Texteditor zu öffnen. Doppelte Zeilen werden nur einmal aufgeführt, beginnend mit der neuesten. Die Datei ist nützlich, um alles zu überprüfen oder zu durchsuchen, was während Ihrer Sitzung gesprochen wurde.</p>
+</div>
 </div>
 
 <br><br>
 <h2>Unterstützen Sie mich</h2>
-    <p>Wenn dieses Tool Ihren Alltag erleichtert hat, erwägen Sie bitte, die nächste Entwicklung mit einer kleinen Spende zu unterstützen.</p>
+    <p>Wenn dieses Tool Ihr Leben erleichtert hat, erwägen Sie bitte, das nächste Update mit einer kleinen Spende zu unterstützen.</p>
 <br>
 <p>
   <a href="https://buy.stripe.com/dRm9AU1xQ3Ds22N6VK1VK01">
-    <img src="https://img.shields.io/badge/Donate-Support%20Me-blue?style=for-the-badge&logo=stripe" alt="Unterstützen Sie mich">
+    <img src="https://img.shields.io/badge/Donate-Support%20Me-blue?style=for-the-badge&logo=stripe" alt="Support me">
   </a>
 </p>
 <br>
-<p>Ihre Unterstützung bedeutet mir sehr viel. Lassen Sie uns gemeinsam Großartiges schaffen!</p>
+<p>Ihre Unterstützung bedeutet mir sehr viel. Lassen Sie uns gemeinsam etwas Großartiges aufbauen!</p>
 <br>
   <div class="footer-note">
-<p>&copy; 2026 Chai Chaimee. NVDA-Add-on veröffentlicht unter der GNU GPL.</p>
+<p>&copy; 2026 Chai Chaimee NVDA Add-on Veröffentlicht unter GNU GPL</p>
 </div>
 
 </div> <!-- End container -->

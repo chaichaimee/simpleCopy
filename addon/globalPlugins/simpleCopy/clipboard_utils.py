@@ -115,7 +115,7 @@ class ClipboardHandler:
 		except Exception as e_snapshot:
 			self.logger.error(f"Error snapshotting clipboard: {str(e_snapshot)}")
 
-		keyboardHandler.injectKey("control+c")
+		keyboardHandler.KeyboardInputGesture.fromName("control+c").send()
 		core.callLater(
 			retryDelayMs, self._checkCtrlCResult,
 			originalClipboardData, callback, 1, maxAttempts, retryDelayMs
@@ -200,6 +200,38 @@ class ClipboardHandler:
 				"message": _("Error writing to clipboard"),
 				"fullText": ""
 			}
+
+	def read_text(self):
+		try:
+			with winUser.openClipboard(gui.mainFrame.Handle):
+				clipData = winUser.getClipboardData(winUser.CF_UNICODETEXT)
+		except OSError as e:
+			self.logger.warning(f"read_text: clipboard unavailable: {e}")
+			return None
+		return clipData if isinstance(clipData, str) else ""
+
+	def write_text(self, text):
+		try:
+			with winUser.openClipboard(gui.mainFrame.Handle):
+				winUser.emptyClipboard()
+				winUser.setClipboardData(winUser.CF_UNICODETEXT, text)
+			return True
+		except OSError as e:
+			self.logger.error(f"write_text: failed: {e}")
+			return False
+
+	def join_appended_text(self, existingText, newText):
+		newNormalized = newText.replace("\r\n", "\n").replace("\r", "\n")
+		if not existingText:
+			return newNormalized.replace("\n", "\r\n")
+		existingNormalized = existingText.replace("\r\n", "\n").replace("\r", "\n").rstrip("\n")
+		return (existingNormalized + "\n" + newNormalized.lstrip("\n")).replace("\n", "\r\n")
+
+	def split_paste_lines(self, text):
+		if not text:
+			return []
+		normalized = text.replace("\r\n", "\n").replace("\r", "\n")
+		return [line for line in normalized.split("\n") if line.strip()]
 
 	def append_text_silent(self, text_to_append):
 		clipData = ""

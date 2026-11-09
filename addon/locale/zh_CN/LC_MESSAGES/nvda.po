@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.9.9\n"
+"Project-Id-Version: simpleCopy 2026.11.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-09-17 08:40+0700\n"
+"POT-Creation-Date: 2026-11-09 16:35+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Chinese (Simplified)\n"
@@ -10,21 +10,23 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: DevOn Addon\n"
+"X-Generator: ChaiBot Addon\n"
 
-#: url_history.py:198
+#: url_history.py:197
 msgid "&Cancel"
 msgstr "取消(&C)"
 
-#: url_history.py:197
+#: url_history.py:196
 msgid "&OK"
 msgstr "确定(&O)"
 
-#: simplecopy_engine.py:397
+#: simplecopy_engine.py:541
+#: simplecopy_engine.py:544
 msgid "Append"
 msgstr "追加"
 
 #: clipboard_utils.py:192
+#: simplecopy_engine.py:136
 msgid "Appended"
 msgstr "已追加"
 
@@ -32,19 +34,19 @@ msgstr "已追加"
 msgid "Cannot append to non-text clipboard content"
 msgstr "无法追加到非文本剪贴板内容"
 
-#: simplecopy_engine.py:158
+#: simplecopy_engine.py:179
 msgid "Clean"
 msgstr "清理"
 
-#: url_history.py:367
+#: url_history.py:366
 msgid "Clear"
 msgstr "清除"
 
-#: url_history.py:361
+#: url_history.py:360
 msgid "Cleared all non-pinned items"
 msgstr "已清除所有未固定项"
 
-#: simplecopy_engine.py:44
+#: simplecopy_engine.py:42
 msgid "Close"
 msgstr "关闭"
 
@@ -52,53 +54,57 @@ msgstr "关闭"
 msgid "Copied"
 msgstr "已复制"
 
-#: simplecopy_engine.py:33
+#: simplecopy_engine.py:31
 msgid "Copied Text"
 msgstr "已复制文本"
 
-#: simplecopy_engine.py:224
+#: simplecopy_engine.py:365
 msgid "Copied from review cursor"
 msgstr "从审阅光标复制"
 
-#: simplecopy_engine.py:330
-#: simplecopy_engine.py:343
-#: url_history.py:299
+#: simplecopy_engine.py:474
+#: simplecopy_engine.py:487
+#: url_history.py:298
 msgid "Copy"
 msgstr "复制"
 
-#: simplecopy_engine.py:406
+#: simplecopy_engine.py:553
 msgid "Copy Until Last"
 msgstr "复制到最后"
 
-#: url_history.py:301
+#: url_history.py:300
 msgid "Copy failed"
 msgstr "复制失败"
 
-#: simplecopy_engine.py:166
-msgid "Copy/Append selected text (single) Copy from review cursor and show text (double) Clear clipboard (triple)"
-msgstr "复制/追加所选文本（单击），从审阅光标复制并显示文本（双击），清空剪贴板（三击）"
+#: simplecopy_engine.py:227
+msgid "Copy from review cursor and show text"
+msgstr "从审阅光标处复制并显示文本"
 
-#: url_history.py:380
+#: simplecopy_engine.py:187
+msgid "Copy/Append selected text (single) Paste line by line (double) Clear clipboard (triple)"
+msgstr "复制/追加所选文本（单击） 逐行粘贴（双击） 清空剪贴板（三击）"
+
+#: url_history.py:379
 msgid "Delete"
 msgstr "删除"
 
-#: url_history.py:309
+#: url_history.py:308
 msgid "Deleted"
 msgstr "已删除"
 
-#: url_history.py:188
+#: url_history.py:187
 msgid "Display name (optional):"
 msgstr "显示名称 (可选):"
 
-#: url_history.py:379
+#: url_history.py:378
 msgid "Edit"
 msgstr "编辑"
 
-#: url_history.py:316
+#: url_history.py:315
 msgid "Edit URL"
 msgstr "编辑 URL"
 
-#: simplecopy_engine.py:147
+#: simplecopy_engine.py:167
 msgid "Error during append operation"
 msgstr "追加操作期间出错"
 
@@ -106,102 +112,109 @@ msgstr "追加操作期间出错"
 msgid "Error writing to clipboard"
 msgstr "写入剪贴板时出错"
 
-#: url_history.py:320
+#: url_history.py:319
 msgid "Item edited"
 msgstr "已编辑项"
 
-#: url_history.py:377
+#: url_history.py:376
 msgid "Move Down"
 msgstr "向下移动"
 
-#: url_history.py:376
+#: url_history.py:375
 msgid "Move Up"
 msgstr "向上移动"
 
-#: url_history.py:356
+#: url_history.py:355
 msgid "Moved down"
 msgstr "已向下移动"
 
-#: url_history.py:344
+#: url_history.py:343
 msgid "Moved up"
 msgstr "已向上移动"
 
-#: simplecopy_engine.py:411
+#: simplecopy_engine.py:558
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
 msgstr "导航语音历史：上一个 (单击) 下一个 (双击) 打开日志文件 (三击)"
 
-#: simplecopy_engine.py:333
+#: simplecopy_engine.py:477
 msgid "No URL"
 msgstr "无 URL"
 
-#: simplecopy_engine.py:346
+#: simplecopy_engine.py:490
 msgid "No link found"
 msgstr "未找到链接"
 
-#: simplecopy_engine.py:120
+#: simplecopy_engine.py:127
 msgid "No text selected to append"
 msgstr "未选择要追加的文本"
 
-#: url_history.py:373
+#: url_history.py:372
 msgid "Pin"
 msgstr "固定"
 
-#: url_history.py:332
+#: url_history.py:331
 msgid "Pinned"
 msgstr "已固定"
 
-#: simplecopy_engine.py:59
+#: simplecopy_engine.py:57
 msgid "Simple Copy"
-msgstr "Simple Copy"
+msgstr "简单复制"
 
-#: url_history.py:238
+#: url_history.py:237
 msgid "URL"
 msgstr "URL"
 
-#: url_history.py:222
+#: url_history.py:221
 msgid "URL History"
 msgstr "URL 历史"
 
-#: url_history.py:183
+#: url_history.py:182
 msgid "URL:"
 msgstr "URL:"
 
-#: url_history.py:373
+#: url_history.py:372
 msgid "Unpin"
 msgstr "取消固定"
 
-#: url_history.py:332
+#: url_history.py:331
 msgid "Unpinned"
 msgstr "已取消固定"
 
-#: simplecopy_engine.py:128
-#: simplecopy_engine.py:129
-#: simplecopy_engine.py:219
+#: simplecopy_engine.py:133
+#: simplecopy_engine.py:134
+#: simplecopy_engine.py:148
+#: simplecopy_engine.py:149
+#: simplecopy_engine.py:360
 msgid "character"
 msgstr "字符"
 
-#: simplecopy_engine.py:128
-#: simplecopy_engine.py:129
-#: simplecopy_engine.py:219
+#: simplecopy_engine.py:133
+#: simplecopy_engine.py:134
+#: simplecopy_engine.py:148
+#: simplecopy_engine.py:149
+#: simplecopy_engine.py:360
 msgid "characters"
 msgstr "字符"
 
-#: simplecopy_engine.py:295
+#: simplecopy_engine.py:439
 msgid "copy URL (single) copy hyper link (double) open URL history (triple)"
 msgstr "复制 URL (单击) 复制超链接 (双击) 打开 URL 历史 (三击)"
 
-#: simplecopy_engine.py:353
+#: simplecopy_engine.py:497
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
 msgstr "复制最后一条语音 (单击) 追加最后一条语音 (双击) 复制到最后一条语音 (三击)"
 
-#: simplecopy_engine.py:220
+#: simplecopy_engine.py:298
+#: simplecopy_engine.py:361
 msgid "line"
 msgstr "行"
 
-#: simplecopy_engine.py:220
+#: simplecopy_engine.py:298
+#: simplecopy_engine.py:361
 msgid "lines"
 msgstr "行"
 
-#: simplecopy_engine.py:135
+#: simplecopy_engine.py:138
+#: simplecopy_engine.py:155
 msgid "total"
 msgstr "总计"

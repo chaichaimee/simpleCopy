@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: simpleCopy 2026.9.9\n"
+"Project-Id-Version: simpleCopy 2026.11.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-09-17 08:40+0700\n"
+"POT-Creation-Date: 2026-11-09 16:35+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Korean\n"
@@ -10,21 +10,23 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: DevOn Addon\n"
+"X-Generator: ChaiBot Addon\n"
 
-#: url_history.py:198
+#: url_history.py:197
 msgid "&Cancel"
 msgstr "&취소"
 
-#: url_history.py:197
+#: url_history.py:196
 msgid "&OK"
 msgstr "&확인"
 
-#: simplecopy_engine.py:397
+#: simplecopy_engine.py:541
+#: simplecopy_engine.py:544
 msgid "Append"
 msgstr "추가"
 
 #: clipboard_utils.py:192
+#: simplecopy_engine.py:136
 msgid "Appended"
 msgstr "추가됨"
 
@@ -32,19 +34,19 @@ msgstr "추가됨"
 msgid "Cannot append to non-text clipboard content"
 msgstr "텍스트가 아닌 클립보드 내용에는 추가할 수 없습니다"
 
-#: simplecopy_engine.py:158
+#: simplecopy_engine.py:179
 msgid "Clean"
 msgstr "정리"
 
-#: url_history.py:367
+#: url_history.py:366
 msgid "Clear"
 msgstr "지우기"
 
-#: url_history.py:361
+#: url_history.py:360
 msgid "Cleared all non-pinned items"
 msgstr "고정되지 않은 모든 항목을 지웠습니다"
 
-#: simplecopy_engine.py:44
+#: simplecopy_engine.py:42
 msgid "Close"
 msgstr "닫기"
 
@@ -52,53 +54,57 @@ msgstr "닫기"
 msgid "Copied"
 msgstr "복사됨"
 
-#: simplecopy_engine.py:33
+#: simplecopy_engine.py:31
 msgid "Copied Text"
 msgstr "복사된 텍스트"
 
-#: simplecopy_engine.py:224
+#: simplecopy_engine.py:365
 msgid "Copied from review cursor"
 msgstr "검토 커서에서 복사됨"
 
-#: simplecopy_engine.py:330
-#: simplecopy_engine.py:343
-#: url_history.py:299
+#: simplecopy_engine.py:474
+#: simplecopy_engine.py:487
+#: url_history.py:298
 msgid "Copy"
 msgstr "복사"
 
-#: simplecopy_engine.py:406
+#: simplecopy_engine.py:553
 msgid "Copy Until Last"
 msgstr "마지막까지 복사"
 
-#: url_history.py:301
+#: url_history.py:300
 msgid "Copy failed"
 msgstr "복사 실패"
 
-#: simplecopy_engine.py:166
-msgid "Copy/Append selected text (single) Copy from review cursor and show text (double) Clear clipboard (triple)"
-msgstr "선택한 텍스트 복사/추가(한 번), 검토 커서에서 복사 및 텍스트 표시(두 번), 클립보드 지우기(세 번)"
+#: simplecopy_engine.py:227
+msgid "Copy from review cursor and show text"
+msgstr "검토 커서에서 복사 및 텍스트 표시"
 
-#: url_history.py:380
+#: simplecopy_engine.py:187
+msgid "Copy/Append selected text (single) Paste line by line (double) Clear clipboard (triple)"
+msgstr "선택한 텍스트 복사/추가(한 번), 줄 단위로 붙여넣기(두 번), 클립보드 지우기(세 번)"
+
+#: url_history.py:379
 msgid "Delete"
 msgstr "삭제"
 
-#: url_history.py:309
+#: url_history.py:308
 msgid "Deleted"
 msgstr "삭제됨"
 
-#: url_history.py:188
+#: url_history.py:187
 msgid "Display name (optional):"
 msgstr "표시 이름(선택 사항):"
 
-#: url_history.py:379
+#: url_history.py:378
 msgid "Edit"
 msgstr "편집"
 
-#: url_history.py:316
+#: url_history.py:315
 msgid "Edit URL"
 msgstr "URL 편집"
 
-#: simplecopy_engine.py:147
+#: simplecopy_engine.py:167
 msgid "Error during append operation"
 msgstr "추가 작업 중 오류 발생"
 
@@ -106,102 +112,109 @@ msgstr "추가 작업 중 오류 발생"
 msgid "Error writing to clipboard"
 msgstr "클립보드에 쓰는 중 오류 발생"
 
-#: url_history.py:320
+#: url_history.py:319
 msgid "Item edited"
 msgstr "항목이 편집되었습니다"
 
-#: url_history.py:377
+#: url_history.py:376
 msgid "Move Down"
 msgstr "아래로 이동"
 
-#: url_history.py:376
+#: url_history.py:375
 msgid "Move Up"
 msgstr "위로 이동"
 
-#: url_history.py:356
+#: url_history.py:355
 msgid "Moved down"
 msgstr "아래로 이동됨"
 
-#: url_history.py:344
+#: url_history.py:343
 msgid "Moved up"
 msgstr "위로 이동됨"
 
-#: simplecopy_engine.py:411
+#: simplecopy_engine.py:558
 msgid "Navigate speech history: previous (single) next (double) open log file (triple)"
 msgstr "음성 기록 탐색: 이전(단일) 다음(이중) 로그 파일 열기(삼중)"
 
-#: simplecopy_engine.py:333
+#: simplecopy_engine.py:477
 msgid "No URL"
 msgstr "URL 없음"
 
-#: simplecopy_engine.py:346
+#: simplecopy_engine.py:490
 msgid "No link found"
 msgstr "링크를 찾을 수 없음"
 
-#: simplecopy_engine.py:120
+#: simplecopy_engine.py:127
 msgid "No text selected to append"
 msgstr "추가할 선택된 텍스트가 없습니다"
 
-#: url_history.py:373
+#: url_history.py:372
 msgid "Pin"
 msgstr "고정"
 
-#: url_history.py:332
+#: url_history.py:331
 msgid "Pinned"
 msgstr "고정됨"
 
-#: simplecopy_engine.py:59
+#: simplecopy_engine.py:57
 msgid "Simple Copy"
-msgstr "Simple Copy"
+msgstr "단순 복사"
 
-#: url_history.py:238
+#: url_history.py:237
 msgid "URL"
 msgstr "URL"
 
-#: url_history.py:222
+#: url_history.py:221
 msgid "URL History"
 msgstr "URL 기록"
 
-#: url_history.py:183
+#: url_history.py:182
 msgid "URL:"
 msgstr "URL:"
 
-#: url_history.py:373
+#: url_history.py:372
 msgid "Unpin"
 msgstr "고정 해제"
 
-#: url_history.py:332
+#: url_history.py:331
 msgid "Unpinned"
 msgstr "고정 해제됨"
 
-#: simplecopy_engine.py:128
-#: simplecopy_engine.py:129
-#: simplecopy_engine.py:219
+#: simplecopy_engine.py:133
+#: simplecopy_engine.py:134
+#: simplecopy_engine.py:148
+#: simplecopy_engine.py:149
+#: simplecopy_engine.py:360
 msgid "character"
 msgstr "문자"
 
-#: simplecopy_engine.py:128
-#: simplecopy_engine.py:129
-#: simplecopy_engine.py:219
+#: simplecopy_engine.py:133
+#: simplecopy_engine.py:134
+#: simplecopy_engine.py:148
+#: simplecopy_engine.py:149
+#: simplecopy_engine.py:360
 msgid "characters"
 msgstr "문자"
 
-#: simplecopy_engine.py:295
+#: simplecopy_engine.py:439
 msgid "copy URL (single) copy hyper link (double) open URL history (triple)"
 msgstr "URL 복사(단일) 하이퍼링크 복사(이중) URL 기록 열기(삼중)"
 
-#: simplecopy_engine.py:353
+#: simplecopy_engine.py:497
 msgid "copy last speech (single) append last speech (double) copy until last speech (triple)"
 msgstr "마지막 음성 복사(단일) 마지막 음성 추가(이중) 마지막 음성까지 복사(삼중)"
 
-#: simplecopy_engine.py:220
+#: simplecopy_engine.py:298
+#: simplecopy_engine.py:361
 msgid "line"
 msgstr "줄"
 
-#: simplecopy_engine.py:220
+#: simplecopy_engine.py:298
+#: simplecopy_engine.py:361
 msgid "lines"
 msgstr "줄"
 
-#: simplecopy_engine.py:135
+#: simplecopy_engine.py:138
+#: simplecopy_engine.py:155
 msgid "total"
 msgstr "총계"

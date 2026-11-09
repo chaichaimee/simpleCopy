@@ -1,10 +1,7 @@
 # simplecopy_engine.py
-# Copyright (C) 2026 Chai Chaimee
-# Licensed under GNU General Public License. See COPYING.txt for details.
 
 import globalPluginHandler
 import api
-import speech
 import keyboardHandler
 import scriptHandler
 import controlTypes
@@ -15,6 +12,7 @@ import wx
 import ctypes
 import core
 import synthDriverHandler
+import inputCore
 from ui import message as ui_message
 import tones
 
@@ -82,6 +80,15 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	_pending_review_text = None
 	_dialog_fallback_timer = None
+	_dialog_show_timer = None
+
+	_paste_active = False
+	_paste_lines = []
+	_paste_index = 0
+	_paste_expected_clip = None
+	_paste_restore_text = None
+	_paste_restore_timer = None
+	_paste_busy = False
 
 	def __init__(self):
 		super().__init__()
@@ -117,7 +124,20 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def _performAppendAction(self, selected_text):
 		try:
 			if not selected_text:
-				speech.speak([_("No text selected to append")])
+				speech_utils.speakUnrecorded([_("No text selected to append")])
+				return
+
+			queuedTotal = self._tryExtendPasteQueue(selected_text)
+			if queuedTotal is not None:
+				self.isTextCopied = True
+				queuedLabel = _("character") if len(selected_text) == 1 else _("characters")
+				queuedTotalLabel = _("character") if queuedTotal == 1 else _("characters")
+				speech_utils.speakUnrecorded([
+					_("Appended"),
+					f"{len(selected_text)} {queuedLabel}, ",
+					_("total"),
+					f"{queuedTotal} {queuedTotalLabel}"
+				])
 				return
 
 			result = self.clipboard_handler.append_to_clipboard(selected_text)
@@ -129,24 +149,25 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				total_label = _("character") if total_char_count == 1 else _("characters")
 
 				if result.get("appended"):
-					speech.speak([
+					speech_utils.speakUnrecorded([
 						result["message"],
 						f"{appended_char_count} {char_label}, ",
 						_("total"),
 						f"{total_char_count} {total_label}"
 					])
 				else:
-					speech.speak([
+					speech_utils.speakUnrecorded([
 						result["message"],
 						f"{appended_char_count} {char_label}"
 					])
 			else:
-				speech.speak([result["message"]])
+				speech_utils.speakUnrecorded([result["message"]])
 		except Exception as e:
 			log.error(f"Append action failed: {e}")
-			speech.speak([_("Error during append operation")])
+			speech_utils.speakUnrecorded([_("Error during append operation")])
 
 	def _clearClipboard(self):
+		self._endPasteSession(restore=False)
 		try:
 			user32 = ctypes.windll.user32
 			if user32.OpenClipboard(None):
@@ -155,7 +176,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				self.isTextCopied = False
 				self._captured_speech_buffer.clear()
 				self._is_recording_active = False
-				speech.speak([_("Clean")])
+				speech_utils.speakUnrecorded([_("Clean")])
 			else:
 				tones.beep(200, 100)
 		except Exception as e:
@@ -163,7 +184,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			tones.beep(200, 100)
 
 	@scriptHandler.script(
-		description=_("Copy/Append selected text (single) Copy from review cursor and show text (double) Clear clipboard (triple)"),
+		description=_("Copy/Append selected text (single) Paste line by line (double) Clear clipboard (triple)"),
 		gesture="kb:control+shift+v",
 		category=scriptCategory
 	)
@@ -181,13 +202,16 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self._ctrl_shift_v_timer = core.callLater(int(self._double_tap_threshold * 1000), self._execute_v_action)
 
 	def _execute_v_action(self):
-		if self._ctrl_shift_v_tap_count == 1:
-			self._handle_single_tap()
-		elif self._ctrl_shift_v_tap_count == 2:
-			self._handle_double_tap()
-		elif self._ctrl_shift_v_tap_count >= 3:
-			self._clearClipboard()
+		tapCount = self._ctrl_shift_v_tap_count
 		self._ctrl_shift_v_tap_count = 0
+		if tapCount >= 3:
+			self._clearClipboard()
+			return
+		if tapCount == 1:
+			self._handle_single_tap()
+		elif tapCount == 2:
+			self._endPasteSession(restore=True)
+			self._startPasteSession()
 
 	def _handle_single_tap(self):
 		obj = api.getFocusObject()
@@ -199,7 +223,124 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		self._performAppendAction(selected_text)
 
-	def _handle_double_tap(self):
+	@scriptHandler.script(
+		description=_("Copy from review cursor and show text"),
+		gesture="kb:shift+windows+v",
+		category=scriptCategory
+	)
+	def script_copyFromReviewCursor(self, gesture):
+		self._endPasteSession(restore=True)
+		self._copyFromReviewCursorAndShow()
+
+	def _onDecideExecuteGesture(self, gesture):
+		if not self._paste_active:
+			return True
+		if "kb:control+v" not in getattr(gesture, "normalizedIdentifiers", ()):
+			return True
+		wx.CallAfter(self._doPasteNextLine)
+		return False
+
+	def _sendNativePaste(self):
+		keyboardHandler.KeyboardInputGesture.fromName("control+v").send()
+
+	def _doPasteNextLine(self):
+		if not self._paste_active:
+			self._sendNativePaste()
+			return
+		if self._paste_busy:
+			return
+
+		currentClip = self.clipboard_handler.read_text()
+		if currentClip is None or currentClip != self._paste_expected_clip:
+			log.info("Paste line by line: clipboard changed externally, leaving paste mode")
+			self._endPasteSession(restore=False)
+			self._sendNativePaste()
+			return
+
+		line = self._paste_lines[self._paste_index]
+		if not self.clipboard_handler.write_text(line):
+			tones.beep(200, 100)
+			return
+
+		self._paste_expected_clip = line
+		self._paste_index += 1
+		log.debug(f"Paste line by line: line {self._paste_index} of {len(self._paste_lines)}")
+
+		self._paste_busy = True
+		self._sendNativePaste()
+		speech_utils.speakUnrecorded([str(self._paste_index)])
+		core.callLater(120, self._onLinePasted)
+
+	def _onLinePasted(self):
+		self._paste_busy = False
+		if not self._paste_active or self._paste_index < len(self._paste_lines):
+			return
+		self._unbindPasteGesture()
+		self._paste_active = False
+		tones.beep(1800, 200)
+		self._paste_restore_timer = core.callLater(300, self._endPasteSession, True)
+
+	def _startPasteSession(self):
+		clipText = self.clipboard_handler.read_text()
+		lines = self.clipboard_handler.split_paste_lines(clipText)
+		if not lines:
+			tones.beep(200, 100)
+			return
+
+		self._paste_lines = lines
+		self._paste_index = 0
+		self._paste_restore_text = clipText
+		self._paste_expected_clip = clipText
+		self._paste_busy = False
+		self._paste_active = True
+		inputCore.decide_executeGesture.register(self._onDecideExecuteGesture)
+		tones.beep(1000, 120)
+		lineLabel = _("line") if len(lines) == 1 else _("lines")
+		speech_utils.speakUnrecorded([f"{len(lines)} {lineLabel}"])
+
+	def _tryExtendPasteQueue(self, text):
+		if not self._paste_active:
+			self._endPasteSession(restore=True)
+			return None
+		currentClip = self.clipboard_handler.read_text()
+		if currentClip is None or currentClip != self._paste_expected_clip:
+			self._endPasteSession(restore=False)
+			return None
+		self._paste_lines.extend(self.clipboard_handler.split_paste_lines(text))
+		self._paste_restore_text = self.clipboard_handler.join_appended_text(self._paste_restore_text, text)
+		return len(self._paste_restore_text.replace("\r\n", "\n"))
+
+	def _unbindPasteGesture(self):
+		try:
+			inputCore.decide_executeGesture.unregister(self._onDecideExecuteGesture)
+		except (KeyError, ValueError):
+			pass
+
+	def _endPasteSession(self, restore):
+		if self._paste_restore_timer and self._paste_restore_timer.IsRunning():
+			self._paste_restore_timer.Stop()
+		self._paste_restore_timer = None
+
+		if self._paste_active:
+			self._unbindPasteGesture()
+			self._paste_active = False
+		self._paste_busy = False
+		self._paste_lines = []
+		self._paste_index = 0
+		expectedClip = self._paste_expected_clip
+		self._paste_expected_clip = None
+
+		restoreText = self._paste_restore_text
+		self._paste_restore_text = None
+		if not restore or restoreText is None:
+			return
+		if self.clipboard_handler.read_text() != expectedClip:
+			log.info("Paste line by line: clipboard changed since last paste, skipping restore")
+			return
+		if not self.clipboard_handler.write_text(restoreText):
+			log.warning("Paste line by line: could not restore clipboard")
+
+	def _copyFromReviewCursorAndShow(self):
 		try:
 			text = self.review_cursor_handler.copy_full_window_text()
 			if not text:
@@ -220,7 +361,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			line_label = _("line") if line_count == 1 else _("lines")
 
 			tones.beep(1500, 100)
-			speech.speak([
+			speech_utils.speakUnrecorded([
 				_("Copied from review cursor"),
 				f"{char_count} {char_label}, ",
 				f"{line_count} {line_label}"
@@ -257,7 +398,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		text = self._pending_review_text
 		self._pending_review_text = None
 		if text:
-			core.callLater(150, self._showCopiedTextDialog, text)
+			self._dialog_show_timer = core.callLater(150, self._showCopiedTextDialog, text)
 
 	def _onDialogFallbackTimeout(self):
 		self._dialog_fallback_timer = None
@@ -272,6 +413,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self._showCopiedTextDialog(text)
 
 	def _cancelPendingDialog(self):
+		if self._dialog_show_timer and self._dialog_show_timer.IsRunning():
+			self._dialog_show_timer.Stop()
+		self._dialog_show_timer = None
 		if self._dialog_fallback_timer and self._dialog_fallback_timer.IsRunning():
 			self._dialog_fallback_timer.Stop()
 		self._dialog_fallback_timer = None
@@ -327,7 +471,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if self.url_handler.is_browser_app(obj):
 			url = self.url_handler.get_current_url()
 			if url and api.copyToClip(url):
-				speech.speak([_("Copy"), url])
+				speech_utils.speakUnrecorded([_("Copy"), url])
 				self.url_history_handler.add_item(url)
 			else:
 				ui_message(_("No URL"))
@@ -340,7 +484,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			try:
 				url = self.url_handler.get_link_url(obj)
 				if url and api.copyToClip(url):
-					speech.speak([_("Copy"), url])
+					speech_utils.speakUnrecorded([_("Copy"), url])
 					self.url_history_handler.add_item(url)
 				else:
 					ui_message(_("No link found"))
@@ -393,8 +537,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if not text:
 			tones.beep(200, 100)
 			return
+		if self._tryExtendPasteQueue(text) is not None:
+			speech_utils.speakUnrecorded([_("Append")])
+			return
 		if self.clipboard_handler.append_text_silent(text):
-			speech.speak([_("Append")])
+			speech_utils.speakUnrecorded([_("Append")])
 
 	def _handle_f9_triple(self):
 		if not self._is_recording_active or not self._captured_speech_buffer:
@@ -403,7 +550,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 		combined_text = "\n".join(self._captured_speech_buffer)
 		if api.copyToClip(combined_text):
-			speech.speak([_("Copy Until Last")])
+			speech_utils.speakUnrecorded([_("Copy Until Last")])
 			self._captured_speech_buffer.clear()
 			self._is_recording_active = False
 
@@ -437,14 +584,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def _navigate_history_backward(self):
 		seq = self.speech_history.get_previous_sequence()
 		if seq is not None:
-			speech.speak(seq)
+			speech_utils.speakUnrecorded(seq)
 		else:
 			tones.beep(200, 100)
 
 	def _navigate_history_forward(self):
 		seq = self.speech_history.get_next_sequence()
 		if seq is not None:
-			speech.speak(seq)
+			speech_utils.speakUnrecorded(seq)
 		else:
 			tones.beep(200, 100)
 
@@ -460,9 +607,27 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gui.mainFrame.postPopup()
 		log.info("URL History dialog shown")
 
+	def _cancelTapTimers(self):
+		for timerName in (
+			"_ctrl_shift_v_timer",
+			"_ctrl_shift_a_timer",
+			"_f9_timer",
+			"_shift_f9_timer",
+		):
+			timer = getattr(self, timerName)
+			if timer and timer.IsRunning():
+				timer.Stop()
+			setattr(self, timerName, None)
+		self._ctrl_shift_v_tap_count = 0
+		self._ctrl_shift_a_tap_count = 0
+		self._f9_tap_count = 0
+		self._shift_f9_tap_count = 0
+
 	def terminate(self):
+		self._cancelTapTimers()
+		self._endPasteSession(restore=True)
 		self._cancelPendingDialog()
-		self.speech_history.restore_patch()
+		self.speech_history.unregister_filter()
 		if self.url_history_dialog:
 			self.url_history_dialog.Destroy()
 		if self.review_text_dialog and self.review_text_dialog.IsShown():
